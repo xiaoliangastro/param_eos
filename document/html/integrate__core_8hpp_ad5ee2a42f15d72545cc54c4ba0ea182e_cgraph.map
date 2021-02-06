@@ -1,0 +1,15 @@
+<map id="inner_to_outer" name="inner_to_outer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,113,159"/>
+<area shape="rect" id="node2" href="$integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="189,5,241,32"/>
+<area shape="rect" id="node3" href="$integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="187,56,243,83"/>
+<area shape="rect" id="node4" href="$integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="189,107,241,133"/>
+<area shape="rect" id="node5" href="$integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="191,157,240,184"/>
+<area shape="rect" id="node6" href="$integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="190,208,241,235"/>
+<area shape="rect" id="node7" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="161,259,269,285"/>
+<area shape="rect" id="node8" href="$integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="329,132,460,159"/>
+<area shape="rect" id="node9" href="$integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="325,183,465,209"/>
+<area shape="rect" id="node10" href="$integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="317,233,472,260"/>
+<area shape="rect" id="node11" href="$integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="336,284,453,311"/>
+<area shape="rect" id="node12" href="$integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="317,335,472,361"/>
+<area shape="rect" id="node13" href="$integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="331,385,459,412"/>
+</map>

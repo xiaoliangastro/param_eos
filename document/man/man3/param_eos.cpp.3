@@ -1,0 +1,128 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <exception>\fP
+.br
+\fC#include <iomanip>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <ctime>\fP
+.br
+\fC#include 'optimize_posterior\&.hpp'\fP
+.br
+\fC#include 'integrate_core\&.hpp'\fP
+.br
+\fC#include 'param_utils\&.hpp'\fP
+.br
+\fC#include 'non_param_utils\&.hpp'\fP
+.br
+\fC#include 'eos_init\&.hpp'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBcommand_line_init\fP (int argc, char *argv[])"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, char *argv[])"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "bool \fBnon_param\fP = 0"
+.br
+.RI "opt/rh/devtoolset-8/root/usr/bin/g++ -shared -fPIC -I/Software/boost/include -lgsl -std=c++17 -o param_eos\&.so \fBparam_eos\&.cpp\fP "
+.ti -1c
+.RI "bool \fBnon_param_mktb\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBroutine\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBcheckeos\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBmk_tool_table\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBopt_file\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBopt_sg_point\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBopt_sg_pair\fP = 0"
+.br
+.ti -1c
+.RI "string \fBeos_fname\fP = '/Users/jiangjinliang/work/try/Spectral_EoS/eos_table/std_ebase_lowdense_eos\&.txt'"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool command_line_init (int argc, char * argv[])"
+
+.PP
+Definition at line 147 of file param_eos\&.cpp\&.
+.SS "int main (int argc, char * argv[])"
+
+.PP
+Definition at line 35 of file param_eos\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "bool checkeos = 0"
+
+.PP
+Definition at line 23 of file param_eos\&.cpp\&.
+.SS "string eos_fname = '/Users/jiangjinliang/work/try/Spectral_EoS/eos_table/std_ebase_lowdense_eos\&.txt'"
+
+.PP
+Definition at line 29 of file param_eos\&.cpp\&.
+.SS "bool mk_tool_table = 0"
+
+.PP
+Definition at line 24 of file param_eos\&.cpp\&.
+.SS "bool non_param = 0"
+
+.PP
+opt/rh/devtoolset-8/root/usr/bin/g++ -shared -fPIC -I/Software/boost/include -lgsl -std=c++17 -o param_eos\&.so \fBparam_eos\&.cpp\fP 
+.PP
+Definition at line 20 of file param_eos\&.cpp\&.
+.SS "bool non_param_mktb = 0"
+
+.PP
+Definition at line 21 of file param_eos\&.cpp\&.
+.SS "bool opt_file = 0"
+
+.PP
+Definition at line 25 of file param_eos\&.cpp\&.
+.SS "bool opt_sg_pair = 0"
+
+.PP
+Definition at line 27 of file param_eos\&.cpp\&.
+.SS "bool opt_sg_point = 0"
+
+.PP
+Definition at line 26 of file param_eos\&.cpp\&.
+.SS "bool routine = 0"
+
+.PP
+Definition at line 22 of file param_eos\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

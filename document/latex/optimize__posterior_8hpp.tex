@@ -1,0 +1,212 @@
+\hypertarget{optimize__posterior_8hpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/optimize\+\_\+posterior.hpp File Reference}
+\label{optimize__posterior_8hpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/optimize\_posterior.hpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/optimize\_posterior.hpp}}
+{\ttfamily \#include $<$gsl/gsl\+\_\+min.\+h$>$}\newline
+{\ttfamily \#include $<$gsl/gsl\+\_\+errno.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}integrate\+\_\+core.\+hpp\char`\"{}}\newline
+Include dependency graph for optimize\+\_\+posterior.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{optimize__posterior_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef map$<$ double, double $>$\+::iterator \mbox{\hyperlink{optimize__posterior_8hpp_a8ca626a5f19fb8c71761743ddf156634}{itmap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{optimize__posterior_8hpp_a15d6d8653372c871397464e0f2f3cce6}{minfunc\+\_\+opt\+\_\+post}} (double h, void $\ast$params)
+\item 
+double \mbox{\hyperlink{optimize__posterior_8hpp_ae58efee8e935ee88aea236d91e11bd19}{find\+\_\+aim}} (double lower, double upper, double m\+\_\+aim)
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{optimize__posterior_8hpp_adb35fbf1985beb38639c4db0562e4c2c}{optimize\+\_\+single\+\_\+point}} (double mass)
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{optimize__posterior_8hpp_a7c2806d69096968d78c8ec3783616ba2}{optimize\+\_\+single\+\_\+pair}} (double m1, double m2)
+\item 
+void \mbox{\hyperlink{optimize__posterior_8hpp_afadba1d9091fad5661f35917b0d699ab}{optimize\+\_\+file}} (const string ifname, const string ofname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ double, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ \mbox{\hyperlink{optimize__posterior_8hpp_a61b43a5f8bda67a825bc745eb889f832}{h\+\_\+mrl}}
+\item 
+map$<$ double, double $>$ \mbox{\hyperlink{optimize__posterior_8hpp_acc2b980f7413d4b9e8f236554d1add16}{toolm\+\_\+h}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{optimize__posterior_8hpp_a8ca626a5f19fb8c71761743ddf156634}\label{optimize__posterior_8hpp_a8ca626a5f19fb8c71761743ddf156634}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!itmap@{itmap}}
+\index{itmap@{itmap}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{itmap}{itmap}}
+{\footnotesize\ttfamily typedef map$<$double, double$>$\+::iterator \mbox{\hyperlink{optimize__posterior_8hpp_a8ca626a5f19fb8c71761743ddf156634}{itmap}}}
+
+
+
+Definition at line 17 of file optimize\+\_\+posterior.\+hpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{optimize__posterior_8hpp_ae58efee8e935ee88aea236d91e11bd19}\label{optimize__posterior_8hpp_ae58efee8e935ee88aea236d91e11bd19}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!find\_aim@{find\_aim}}
+\index{find\_aim@{find\_aim}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_aim()}{find\_aim()}}
+{\footnotesize\ttfamily double find\+\_\+aim (\begin{DoxyParamCaption}\item[{double}]{lower,  }\item[{double}]{upper,  }\item[{double}]{m\+\_\+aim }\end{DoxyParamCaption})}
+
+
+
+Definition at line 41 of file optimize\+\_\+posterior.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_ae58efee8e935ee88aea236d91e11bd19_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_ae58efee8e935ee88aea236d91e11bd19_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{optimize__posterior_8hpp_a15d6d8653372c871397464e0f2f3cce6}\label{optimize__posterior_8hpp_a15d6d8653372c871397464e0f2f3cce6}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!minfunc\_opt\_post@{minfunc\_opt\_post}}
+\index{minfunc\_opt\_post@{minfunc\_opt\_post}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{minfunc\_opt\_post()}{minfunc\_opt\_post()}}
+{\footnotesize\ttfamily double minfunc\+\_\+opt\+\_\+post (\begin{DoxyParamCaption}\item[{double}]{h,  }\item[{void $\ast$}]{params }\end{DoxyParamCaption})}
+
+
+
+Definition at line 19 of file optimize\+\_\+posterior.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_a15d6d8653372c871397464e0f2f3cce6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_a15d6d8653372c871397464e0f2f3cce6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{optimize__posterior_8hpp_afadba1d9091fad5661f35917b0d699ab}\label{optimize__posterior_8hpp_afadba1d9091fad5661f35917b0d699ab}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!optimize\_file@{optimize\_file}}
+\index{optimize\_file@{optimize\_file}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{optimize\_file()}{optimize\_file()}}
+{\footnotesize\ttfamily void optimize\+\_\+file (\begin{DoxyParamCaption}\item[{const string}]{ifname,  }\item[{const string}]{ofname }\end{DoxyParamCaption})}
+
+
+
+Definition at line 93 of file optimize\+\_\+posterior.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_afadba1d9091fad5661f35917b0d699ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{optimize__posterior_8hpp_afadba1d9091fad5661f35917b0d699ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{optimize__posterior_8hpp_a7c2806d69096968d78c8ec3783616ba2}\label{optimize__posterior_8hpp_a7c2806d69096968d78c8ec3783616ba2}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!optimize\_single\_pair@{optimize\_single\_pair}}
+\index{optimize\_single\_pair@{optimize\_single\_pair}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{optimize\_single\_pair()}{optimize\_single\_pair()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} optimize\+\_\+single\+\_\+pair (\begin{DoxyParamCaption}\item[{double}]{m1,  }\item[{double}]{m2 }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file optimize\+\_\+posterior.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_a7c2806d69096968d78c8ec3783616ba2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_a7c2806d69096968d78c8ec3783616ba2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{optimize__posterior_8hpp_adb35fbf1985beb38639c4db0562e4c2c}\label{optimize__posterior_8hpp_adb35fbf1985beb38639c4db0562e4c2c}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!optimize\_single\_point@{optimize\_single\_point}}
+\index{optimize\_single\_point@{optimize\_single\_point}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{optimize\_single\_point()}{optimize\_single\_point()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} optimize\+\_\+single\+\_\+point (\begin{DoxyParamCaption}\item[{double}]{mass }\end{DoxyParamCaption})}
+
+
+
+Definition at line 67 of file optimize\+\_\+posterior.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_adb35fbf1985beb38639c4db0562e4c2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{optimize__posterior_8hpp_adb35fbf1985beb38639c4db0562e4c2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{optimize__posterior_8hpp_a61b43a5f8bda67a825bc745eb889f832}\label{optimize__posterior_8hpp_a61b43a5f8bda67a825bc745eb889f832}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!h\_mrl@{h\_mrl}}
+\index{h\_mrl@{h\_mrl}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{h\_mrl}{h\_mrl}}
+{\footnotesize\ttfamily map$<$double, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}$>$ h\+\_\+mrl}
+
+
+
+Definition at line 15 of file optimize\+\_\+posterior.\+hpp.
+
+\mbox{\Hypertarget{optimize__posterior_8hpp_acc2b980f7413d4b9e8f236554d1add16}\label{optimize__posterior_8hpp_acc2b980f7413d4b9e8f236554d1add16}} 
+\index{optimize\_posterior.hpp@{optimize\_posterior.hpp}!toolm\_h@{toolm\_h}}
+\index{toolm\_h@{toolm\_h}!optimize\_posterior.hpp@{optimize\_posterior.hpp}}
+\doxysubsubsection{\texorpdfstring{toolm\_h}{toolm\_h}}
+{\footnotesize\ttfamily map$<$double, double$>$ toolm\+\_\+h}
+
+
+
+Definition at line 16 of file optimize\+\_\+posterior.\+hpp.
+

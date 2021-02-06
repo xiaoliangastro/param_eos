@@ -1,0 +1,9 @@
+<map id="gamma_which" name="gamma_which">
+<area shape="rect" id="node1" title="Choose a proper function to calculate the adiabatic index." alt="" coords="5,132,113,159"/>
+<area shape="rect" id="node2" href="$integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="173,5,304,32"/>
+<area shape="rect" id="node3" href="$integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="169,56,309,83"/>
+<area shape="rect" id="node4" href="$integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="161,107,316,133"/>
+<area shape="rect" id="node5" href="$integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="180,157,297,184"/>
+<area shape="rect" id="node6" href="$integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="161,208,316,235"/>
+<area shape="rect" id="node7" href="$integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="175,259,303,285"/>
+</map>

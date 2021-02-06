@@ -1,0 +1,1176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="global__variable__constants_8hpp" kind="file" language="C++">
+    <compoundname>global_variable_constants.hpp</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">gsl/gsl_const_cgs.h</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="eos__init_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp</includedby>
+    <includedby refid="quark__star__utils_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp</includedby>
+    <includedby refid="integrate__core_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="2">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp</label>
+        <link refid="eos__init_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+      </node>
+      <node id="9">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" prot="public" static="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>typedef vector&lt; double &gt; state_type</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="51" column="16" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool interp_only</definition>
+        <argsstring></argsstring>
+        <name>interp_only</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>interpolation only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="24" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool piecewise</definition>
+        <argsstring></argsstring>
+        <name>piecewise</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>piecewise polytropic expansion, conflict with causal. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="25" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool piecewise_p</definition>
+        <argsstring></argsstring>
+        <name>piecewise_p</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>piecewise polytropic expansion with pressure at different densities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="26" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool spectral</definition>
+        <argsstring></argsstring>
+        <name>spectral</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>spectral expansion and interpolation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="27" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool spectral_causal</definition>
+        <argsstring></argsstring>
+        <name>spectral_causal</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>note that Gamma will have different meaning, see Lindblom_18. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="28" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" compoundref="integrate__core_8hpp" startline="103" endline="109">gammah_spectral</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phase_trans</definition>
+        <argsstring></argsstring>
+        <name>phase_trans</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>spectral eos causal, phase transition(<ulink url="https://arxiv.org/pdf/1811.10929.pdf,">https://arxiv.org/pdf/1811.10929.pdf,</ulink> Model2). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="29" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool quark_star</definition>
+        <argsstring></argsstring>
+        <name>quark_star</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>quark star model(Alford_2005_ApJ_629_969). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="30" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool adapt_piecewise</definition>
+        <argsstring></argsstring>
+        <name>adapt_piecewise</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>adaptive rho border, with parameters: delta_rho*n+speed_of_sound*n. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="31" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool cons_cs</definition>
+        <argsstring></argsstring>
+        <name>cons_cs</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>constant speed of sound. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="32" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool piece_spec_phtr_ccs</definition>
+        <argsstring></argsstring>
+        <name>piece_spec_phtr_ccs</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="33" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>(command: -v). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="40" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" compoundref="eos__init_8hpp" startline="17" endline="33">init_interp_coeff</referencedby>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" compoundref="integrate__core_8hpp" startline="42" endline="55">push_back_state_and_time::operator()</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" compoundref="optimize__posterior_8hpp" startline="41" endline="65">find_aim</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</referencedby>
+        <referencedby refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" compoundref="param__utils_8hpp" startline="107" endline="121">make_eos_table</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+        <referencedby refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" compoundref="param__utils_8hpp" startline="264" endline="319">find_closest</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vverbose</definition>
+        <argsstring></argsstring>
+        <name>vverbose</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>(command: -vv). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="41" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" compoundref="test_8cpp" startline="12" endline="41">integrate_func_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vvverbose</definition>
+        <argsstring></argsstring>
+        <name>vvverbose</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>(command: -vvv). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="42" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" compoundref="integrate__core_8hpp" startline="42" endline="55">push_back_state_and_time::operator()</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a3de327fde01c89d6993a82ac06db5af6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double minm_tov</definition>
+        <argsstring></argsstring>
+        <name>minm_tov</name>
+        <initializer>= 0.8</initializer>
+        <briefdescription>
+<para>minimum limit of TOV mass </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="44" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1aa8ac37cbfe75c0314bf944fa1939bef4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double maxm_tov</definition>
+        <argsstring></argsstring>
+        <name>maxm_tov</name>
+        <initializer>= 3.0</initializer>
+        <briefdescription>
+<para>maximum limit of TOV mass </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="45" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool const_inte_step</definition>
+        <argsstring></argsstring>
+        <name>const_inte_step</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>constant integration step </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="47" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="47" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</referencedby>
+        <referencedby refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" compoundref="test_8cpp" startline="12" endline="41">integrate_func_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double sg_const_step</definition>
+        <argsstring></argsstring>
+        <name>sg_const_step</name>
+        <initializer>= 1.e-5</initializer>
+        <briefdescription>
+<para>single step in constant integration step </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="48" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</referencedby>
+        <referencedby refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" compoundref="test_8cpp" startline="12" endline="41">integrate_func_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" prot="public" static="no" mutable="no">
+        <type>map&lt; double, <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt;::iterator</type>
+        <definition>map&lt;double, state_type&gt;::iterator coeftb_idx</definition>
+        <argsstring></argsstring>
+        <name>coeftb_idx</name>
+        <briefdescription>
+<para>index iterator-get the corresponding interval of h to use corresponding interpolation coefficients. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="52" column="16" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="52" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" compoundref="integrate__core_8hpp" startline="76" endline="80">eh</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" compoundref="integrate__core_8hpp" startline="82" endline="82">ph</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" compoundref="integrate__core_8hpp" startline="84" endline="84">gammah_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" prot="public" static="no" mutable="no">
+        <type>map&lt; double, <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt;</type>
+        <definition>map&lt;double, state_type&gt; coeftb</definition>
+        <argsstring></argsstring>
+        <name>coeftb</name>
+        <briefdescription>
+<para>coefficient of p, e and c, taking h as key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="53" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" compoundref="eos__init_8hpp" startline="17" endline="33">init_interp_coeff</referencedby>
+        <referencedby refid="eos__init_8hpp_1a0993541e6b56fc699d50f001f8371324" compoundref="eos__init_8hpp" startline="35" endline="50">init_interp_coeff_through_ep_array</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" compoundref="integrate__core_8hpp" startline="76" endline="80">eh</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" compoundref="non__param__utils_8hpp" startline="11" endline="30">transform_eostable</referencedby>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double mrl_result[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mrl_result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="54" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</referencedby>
+        <referencedby refid="param__utils_8hpp_1ab3c5a1a854e42b8e307ade519a977980" compoundref="param__utils_8hpp" startline="397" endline="427">get_unknowns_from_knowns</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" prot="public" static="no" mutable="no">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type e_borders</definition>
+        <argsstring></argsstring>
+        <name>e_borders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="55" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="55" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" compoundref="integrate__core_8hpp" startline="112" endline="116">gammae_piecewise</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" compoundref="integrate__core_8hpp" startline="119" endline="124">gammae_piecewise_p</referencedby>
+        <referencedby refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" compoundref="integrate__core_8hpp" startline="127" endline="133">gammah_phase_trans</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" prot="public" static="no" mutable="no">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type eos_params</definition>
+        <argsstring></argsstring>
+        <name>eos_params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="56" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" compoundref="integrate__core_8hpp" startline="159" endline="164">find_hp_at_e</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" compoundref="integrate__core_8hpp" startline="195" endline="200">cal_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ac10fdca83ba95668d86ff24ac666803d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool check_causal</definition>
+        <argsstring></argsstring>
+        <name>check_causal</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="59" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" compoundref="eos__init_8hpp" startline="52" endline="73">init_control_params</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double minimum_allowed_h</definition>
+        <argsstring></argsstring>
+        <name>minimum_allowed_h</name>
+        <initializer>= 0.0316</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="60" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="60" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+        <referencedby refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" compoundref="param__utils_8hpp" startline="264" endline="319">find_closest</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double suggested_start_point</definition>
+        <argsstring></argsstring>
+        <name>suggested_start_point</name>
+        <initializer>= <ref refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kindref="member">minimum_allowed_h</ref>+0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="61" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+        <referencedby refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" compoundref="param__utils_8hpp" startline="264" endline="319">find_closest</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+        <referencedby refid="param__utils_8hpp_1ab3c5a1a854e42b8e307ade519a977980" compoundref="param__utils_8hpp" startline="397" endline="427">get_unknowns_from_knowns</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double sg_step</definition>
+        <argsstring></argsstring>
+        <name>sg_step</name>
+        <initializer>= 1.e-10</initializer>
+        <briefdescription>
+<para>single step. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="76" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="76" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" compoundref="test_8cpp" startline="12" endline="41">integrate_func_test</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double h_surface</definition>
+        <argsstring></argsstring>
+        <name>h_surface</name>
+        <initializer>= 1e-10</initializer>
+        <briefdescription>
+<para>surface of the star. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="77" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="77" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double h_ig</definition>
+        <argsstring></argsstring>
+        <name>h_ig</name>
+        <initializer>=1e-7</initializer>
+        <briefdescription>
+<para>where to start integrate TOV equation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="78" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="78" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double rho_trans</definition>
+        <argsstring></argsstring>
+        <name>rho_trans</name>
+        <initializer>= 6.17714470405638e+17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="80" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="80" bodyend="-1"/>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" compoundref="param__utils_8hpp" startline="107" endline="121">make_eos_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double p_trans</definition>
+        <argsstring></argsstring>
+        <name>p_trans</name>
+        <initializer>= 5.55174079257738e+38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="81" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" compoundref="param__utils_8hpp" startline="107" endline="121">make_eos_table</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double r_trans</definition>
+        <argsstring></argsstring>
+        <name>r_trans</name>
+        <initializer>= 1.4766250385</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="82" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="82" bodyend="-1"/>
+        <referencedby refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</referencedby>
+        <referencedby refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" compoundref="param__utils_8hpp" startline="123" endline="142">make_tool_table</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double e_0</definition>
+        <argsstring></argsstring>
+        <name>e_0</name>
+        <initializer>= 9.075720079516068750e+13/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="84" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="84" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double p_0</definition>
+        <argsstring></argsstring>
+        <name>p_0</name>
+        <initializer>= 2.979148040306152863e+32/<ref refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kindref="member">p_trans</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="85" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="85" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" compoundref="integrate__core_8hpp" startline="119" endline="124">gammae_piecewise_p</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double h_0</definition>
+        <argsstring></argsstring>
+        <name>h_0</name>
+        <initializer>= 2.161113031691454245e-02</initializer>
+        <briefdescription>
+<para>border of two eos approximation methods. default: 0.0216 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="86" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double rho_0</definition>
+        <argsstring></argsstring>
+        <name>rho_0</name>
+        <initializer>= (<ref refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kindref="member">e_0</ref>+<ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref>)/exp(<ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="87" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="87" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" compoundref="integrate__core_8hpp" startline="119" endline="124">gammae_piecewise_p</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double rho_sat</definition>
+        <argsstring></argsstring>
+        <name>rho_sat</name>
+        <initializer>= 2.7e+14/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="88" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a1d1ff9b2da2a11d49bd9a6a4d42f32d2" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double max_possible_e</definition>
+        <argsstring></argsstring>
+        <name>max_possible_e</name>
+        <initializer>= 1000*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="89" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="89" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" prot="public" static="no" mutable="no">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type rho_borders</definition>
+        <argsstring></argsstring>
+        <name>rho_borders</name>
+        <initializer>{1.*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>, 1.85*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>, 3.7*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>, 7.4*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="90" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="90" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</referencedby>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" compoundref="integrate__core_8hpp" startline="119" endline="124">gammae_piecewise_p</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <initializer>= GSL_CONST_CGS_GRAVITATIONAL_CONSTANT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="97" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <initializer>= GSL_CONST_CGS_SPEED_OF_LIGHT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="98" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="98" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" compoundref="integrate__core_8hpp" startline="71" endline="72">cal_lambda</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Hb</definition>
+        <argsstring></argsstring>
+        <name>Hb</name>
+        <initializer>= GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="99" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double eV</definition>
+        <argsstring></argsstring>
+        <name>eV</name>
+        <initializer>= GSL_CONST_CGS_ELECTRON_VOLT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="100" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Ms</definition>
+        <argsstring></argsstring>
+        <name>Ms</name>
+        <initializer>= GSL_CONST_CGS_SOLAR_MASS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="101" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV_to_ifm</definition>
+        <argsstring></argsstring>
+        <name>MeV_to_ifm</name>
+        <initializer>= <ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/(<ref refid="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref>*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*1.e7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="103" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV3_to_ifm3</definition>
+        <argsstring></argsstring>
+        <name>MeV3_to_ifm3</name>
+        <initializer>= pow(<ref refid="global__variable__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref>, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="104" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="104" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeVEifm3_to_ergEicm3</definition>
+        <argsstring></argsstring>
+        <name>MeVEifm3_to_ergEicm3</name>
+        <initializer>= 1.e45*<ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="105" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="105" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeVEifm3_to_gEicm3</definition>
+        <argsstring></argsstring>
+        <name>MeVEifm3_to_gEicm3</name>
+        <initializer>= 1.e45*<ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="106" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="106" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double gEicm3_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>gEicm3_to_dmls</name>
+        <initializer>= pow(<ref refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>, 3)*pow(<ref refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>, 2)/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="108" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double ergEicm3_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>ergEicm3_to_dmls</name>
+        <initializer>= pow(<ref refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>, 3)*pow(<ref refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>, 2)/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="109" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV4_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>MeV4_to_dmls</name>
+        <initializer>= <ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>*<ref refid="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" line="111" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" bodystart="111" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__utils_8hpp" startline="29" endline="29">ph_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__utils_8hpp" startline="30" endline="30">eh_qks</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GLOBAL_VARIABLE_CONSTANTS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLOBAL_VARIABLE_CONSTANTS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_const_cgs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Variables<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//=======parameterization<sp/>method(method<sp/>of<sp/>joint<sp/>low<sp/>density<sp/>table<sp/>and<sp/>high<sp/>density)=======</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25" refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26" refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27" refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28" refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29" refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" kindref="member">phase_trans</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30" refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31" refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" kindref="member">adapt_piecewise</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32" refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" kindref="member">cons_cs</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33" refid="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" kindref="member">piece_spec_phtr_ccs</ref><sp/>=<sp/>0;</highlight><highlight class="comment">//piecewise+spectral+phase<sp/>transition+constant<sp/>speed<sp/>of<sp/>sound</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//=======Control<sp/>and<sp/>storage<sp/>related=======</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//verbose<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41" refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42" refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//tov<sp/>mass<sp/>allowed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="global__variable__constants_8hpp_1a3de327fde01c89d6993a82ac06db5af6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a3de327fde01c89d6993a82ac06db5af6" kindref="member">minm_tov</ref><sp/>=<sp/>0.8;</highlight></codeline>
+<codeline lineno="45" refid="global__variable__constants_8hpp_1aa8ac37cbfe75c0314bf944fa1939bef4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1aa8ac37cbfe75c0314bf944fa1939bef4" kindref="member">maxm_tov</ref><sp/>=<sp/>3.0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//constant<sp/>integration<sp/>step</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" kindref="member">const_inte_step</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48" refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kindref="member">sg_const_step</ref><sp/>=<sp/>1.e-5;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//important<sp/>global<sp/>volatile<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;<sp/>double<sp/>&gt;<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref>;</highlight></codeline>
+<codeline lineno="52" refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" refkind="member"><highlight class="normal">map&lt;double,<sp/>state_type&gt;::iterator<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>;</highlight></codeline>
+<codeline lineno="53" refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" refkind="member"><highlight class="normal">map&lt;double,<sp/>state_type&gt;<sp/><ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>;</highlight></codeline>
+<codeline lineno="54" refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" kindref="member">mrl_result</ref>[3];</highlight></codeline>
+<codeline lineno="55" refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>;</highlight></codeline>
+<codeline lineno="56" refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//author<sp/>suggested<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="global__variable__constants_8hpp_1ac10fdca83ba95668d86ff24ac666803d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ac10fdca83ba95668d86ff24ac666803d" kindref="member">check_causal</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="60" refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kindref="member">minimum_allowed_h</ref><sp/>=<sp/>0.0316;</highlight></codeline>
+<codeline lineno="61" refid="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" kindref="member">suggested_start_point</ref><sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kindref="member">minimum_allowed_h</ref>+0.1;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//array&lt;double,<sp/>4&gt;<sp/>eos_params<sp/>=<sp/>{1.007,<sp/>0.404,<sp/>-0.3709,<sp/>0.0696};///&lt;<sp/>H4(Lindblom-10<sp/>TableII).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Constants<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//=======integrate<sp/>related<sp/>constants=======</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//important<sp/>parameters<sp/>for<sp/>integration<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kindref="member">sg_step</ref><sp/>=<sp/>1.e-10;</highlight></codeline>
+<codeline lineno="77" refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" kindref="member">h_surface</ref><sp/>=<sp/>1e-10;</highlight></codeline>
+<codeline lineno="78" refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>=1e-7;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//constants<sp/>(transform<sp/>factor<sp/>with<sp/>CGS<sp/>unit)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref><sp/>=<sp/>6.17714470405638e+17;</highlight></codeline>
+<codeline lineno="81" refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kindref="member">p_trans</ref><sp/>=<sp/>5.55174079257738e+38;</highlight></codeline>
+<codeline lineno="82" refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" kindref="member">r_trans</ref><sp/>=<sp/>1.4766250385;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//core<sp/>and<sp/>border</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kindref="member">e_0</ref><sp/>=<sp/>9.075720079516068750e+13/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref>;</highlight></codeline>
+<codeline lineno="85" refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref><sp/>=<sp/>2.979148040306152863e+32/<ref refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kindref="member">p_trans</ref>;</highlight></codeline>
+<codeline lineno="86" refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref><sp/>=<sp/>2.161113031691454245e-02;</highlight></codeline>
+<codeline lineno="87" refid="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" kindref="member">rho_0</ref><sp/>=<sp/>(<ref refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kindref="member">e_0</ref>+<ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref>)/exp(<ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>);</highlight><highlight class="comment">//8.914126511164630e+13/rho_trans;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref><sp/>=<sp/>2.7e+14/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref>;</highlight></codeline>
+<codeline lineno="89" refid="global__variable__constants_8hpp_1a1d1ff9b2da2a11d49bd9a6a4d42f32d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a1d1ff9b2da2a11d49bd9a6a4d42f32d2" kindref="member">max_possible_e</ref><sp/>=<sp/>1000*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>;</highlight></codeline>
+<codeline lineno="90" refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kindref="member">rho_borders</ref>{1.*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>,<sp/>1.85*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>,<sp/>3.7*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>,<sp/>7.4*<ref refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kindref="member">rho_sat</ref>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//=======unit<sp/>transformation<sp/>related<sp/>constants=======</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//meta<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref><sp/>=<sp/>GSL_CONST_CGS_GRAVITATIONAL_CONSTANT;</highlight></codeline>
+<codeline lineno="98" refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref><sp/>=<sp/>GSL_CONST_CGS_SPEED_OF_LIGHT;</highlight></codeline>
+<codeline lineno="99" refid="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref><sp/>=<sp/>GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR;</highlight></codeline>
+<codeline lineno="100" refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref><sp/>=<sp/>GSL_CONST_CGS_ELECTRON_VOLT;</highlight></codeline>
+<codeline lineno="101" refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref><sp/>=<sp/>GSL_CONST_CGS_SOLAR_MASS;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//natural<sp/>to<sp/>cgs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="global__variable__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref><sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/(<ref refid="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref>*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*1.e7);</highlight><highlight class="comment">//original:<sp/>1e6*eV/(Hb*C*1e13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref><sp/>=<sp/>pow(<ref refid="global__variable__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref>,<sp/>3);</highlight></codeline>
+<codeline lineno="105" refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref><sp/>=<sp/>1.e45*<ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>;</highlight><highlight class="comment">//original:<sp/>1e6*eV/(1e-13)^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref><sp/>=<sp/>1.e45*<ref refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>2);</highlight><highlight class="comment">//original:<sp/>MeVEifm3_to_ergEicm3/C^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//cgs<sp/>to<sp/>cactus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="global__variable__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" kindref="member">gEicm3_to_dmls</ref><sp/>=<sp/>pow(<ref refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>,<sp/>3)*pow(<ref refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>,<sp/>2)/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>6);</highlight><highlight class="comment">//original:<sp/>1/Ms*(G*Ms/C^2)^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref><sp/>=<sp/>pow(<ref refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>,<sp/>3)*pow(<ref refid="global__variable__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>,<sp/>2)/pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>8);</highlight><highlight class="comment">//original:<sp/>gEicm3_to_dmls/C^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//natural<sp/>to<sp/>cactus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kindref="member">MeV4_to_dmls</ref><sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>*<ref refid="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;<ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp"/>
+  </compounddef>
+</doxygen>

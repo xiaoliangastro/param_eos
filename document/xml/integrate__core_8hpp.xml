@@ -1,0 +1,1481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="integrate__core_8hpp" kind="file" language="C++">
+    <compoundname>integrate_core.hpp</compoundname>
+    <includes local="no">boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</includes>
+    <includes local="no">boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</includes>
+    <includes local="no">boost/numeric/odeint/integrate/integrate_adaptive.hpp</includes>
+    <includes local="no">boost/numeric/odeint/integrate/integrate_const.hpp</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">array</includes>
+    <includes refid="quark__star__utils_8hpp" local="yes">quark_star_utils.hpp</includes>
+    <includes refid="global__variable__constants_8hpp" local="yes">global_variable_constants.hpp</includes>
+    <includes refid="data_8hpp" local="yes">data.hpp</includes>
+    <includedby refid="param__utils_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp</includedby>
+    <includedby refid="non__param__utils_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</includedby>
+    <includedby refid="optimize__posterior_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</includedby>
+    <includedby refid="param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</includedby>
+    <includedby refid="test_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp</includedby>
+    <incdepgraph>
+      <node id="18">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="2">
+        <label>boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="17">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>exception</label>
+      </node>
+      <node id="8">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+      <node id="15">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="12">
+        <label>quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>array</label>
+      </node>
+      <node id="16">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
+      </node>
+      <node id="19">
+        <label>data.hpp</label>
+        <link refid="data_8hpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
+      </node>
+      <node id="14">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="4">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpush__back__state__and__time" prot="public">push_back_state_and_time</innerclass>
+    <innernamespace refid="namespaceboost_1_1numeric_1_1odeint">boost::numeric::odeint</innernamespace>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" prot="public" static="no">
+        <type>runge_kutta_fehlberg78&lt; <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt;</type>
+        <definition>typedef runge_kutta_fehlberg78&lt; state_type &gt; error_stepper_type</definition>
+        <argsstring></argsstring>
+        <name>error_stepper_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="58" column="32" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="integrate__core_8hpp_1a316792556e400adc33b04b149de69507" prot="public" static="no">
+        <type>controlled_runge_kutta&lt; <ref refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" kindref="member">error_stepper_type</ref> &gt;</type>
+        <definition>typedef controlled_runge_kutta&lt; error_stepper_type &gt; controlled_stepper_type</definition>
+        <argsstring></argsstring>
+        <name>controlled_stepper_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="59" column="32" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="integrate__core_8hpp_1a460492ca5cb862b459c8d89a8a7b22ca" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double abs_err</definition>
+        <argsstring></argsstring>
+        <name>abs_err</name>
+        <initializer>= 1.0e-18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="60" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="integrate__core_8hpp_1acddbc945f890f2682b685e05defdda61" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double rel_err</definition>
+        <argsstring></argsstring>
+        <name>rel_err</name>
+        <initializer>= 1.0e-12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="60" column="17" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="integrate__core_8hpp_1a3b1660adcdf41418db65108cdb2e1b3f" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double a_x</definition>
+        <argsstring></argsstring>
+        <name>a_x</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="60" column="26" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="integrate__core_8hpp_1ad6fa022e04ac564718690673338017c0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double a_dxdt</definition>
+        <argsstring></argsstring>
+        <name>a_dxdt</name>
+        <initializer>= 1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="60" column="31" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="integrate__core_8hpp_1a316792556e400adc33b04b149de69507" kindref="member">controlled_stepper_type</ref></type>
+        <definition>controlled_stepper_type controlled_stepper</definition>
+        <argsstring>(default_error_checker&lt; double, range_algebra, default_operations &gt;(abs_err, rel_err, a_x, a_dxdt))</argsstring>
+        <name>controlled_stepper</name>
+        <param>
+          <type>default_error_checker&lt; double, range_algebra, default_operations &gt;</type>
+          <array>abs_err, rel_err, a_x, a_dxdt</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="61" column="25" declfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" declline="61" declcolumn="25"/>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</referencedby>
+        <referencedby refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" compoundref="test_8cpp" startline="12" endline="41">integrate_func_test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type integrate_func</definition>
+        <argsstring>(state_type x0, void func(const state_type &amp;, state_type &amp;, double), double start_t, double end_t, bool reverse)</argsstring>
+        <name>integrate_func</name>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>void </type>
+          <declname>func</declname>
+          <array>const state_type &amp;, state_type &amp;, double</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>start_t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>end_t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Integrated portable function to integrate ODE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="242" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="242" bodyend="271" declfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" declline="62" declcolumn="12"/>
+        <references refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" compoundref="global__variable__constants_8hpp" startline="47">const_inte_step</references>
+        <references refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4">controlled_stepper</references>
+        <references refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" compoundref="global__variable__constants_8hpp" startline="48">sg_const_step</references>
+        <references refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" compoundref="global__variable__constants_8hpp" startline="76">sg_step</references>
+        <references refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" compoundref="global__variable__constants_8hpp" startline="41">vverbose</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type int_whole_star</definition>
+        <argsstring>(double hc)</argsstring>
+        <name>int_whole_star</name>
+        <param>
+          <type>double</type>
+          <declname>hc</declname>
+        </param>
+        <briefdescription>
+<para>Integrate the whole structure of the star. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Give h_c, get m, r and y. <simplesect kind="note"><para>Radius r in this function should multiply half Schwarzschild radius of the sun. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enthalpy at the center of the compact star. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="307" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="307" bodyend="347" declfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" declline="63" declcolumn="12"/>
+        <references refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" compoundref="global__variable__constants_8hpp" startline="84">e_0</references>
+        <references refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__utils_8hpp" startline="30" endline="30">eh_qks</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" compoundref="global__variable__constants_8hpp" startline="86">h_0</references>
+        <references refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" compoundref="global__variable__constants_8hpp" startline="78">h_ig</references>
+        <references refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" compoundref="global__variable__constants_8hpp" startline="77">h_surface</references>
+        <references refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</references>
+        <references refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</references>
+        <references refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</references>
+        <references refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</references>
+        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="24">interp_only</references>
+        <references refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</references>
+        <references refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" compoundref="global__variable__constants_8hpp" startline="85">p_0</references>
+        <references refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__utils_8hpp" startline="29" endline="29">ph_qks</references>
+        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="30">quark_star</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <referencedby refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</referencedby>
+        <referencedby refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" compoundref="param__utils_8hpp" startline="264" endline="319">find_closest</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+        <referencedby refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" compoundref="param__utils_8hpp" startline="123" endline="142">make_tool_table</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double cal_lambda</definition>
+        <argsstring>(double C, double Y)</argsstring>
+        <name>cal_lambda</name>
+        <param>
+          <type>double</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="71" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="71" bodyend="72"/>
+        <references refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" compoundref="global__variable__constants_8hpp" startline="98">C</references>
+        <referencedby refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" compoundref="param__utils_8hpp" startline="264" endline="319">find_closest</referencedby>
+        <referencedby refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" compoundref="param__utils_8hpp" startline="332" endline="385">find_closest_with_maxm_known</referencedby>
+        <referencedby refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" compoundref="param__utils_8hpp" startline="123" endline="142">make_tool_table</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a55c49ad0b32fc3d7bdcfc1d07c9021cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double lambda_tilde</definition>
+        <argsstring>(double m1, double m2, double l1, double l2)</argsstring>
+        <name>lambda_tilde</name>
+        <param>
+          <type>double</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m2</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>l1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>l2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="74" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="74" bodyend="74"/>
+        <referencedby refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" compoundref="optimize__posterior_8hpp" startline="82" endline="91">optimize_single_pair</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double eh</definition>
+        <argsstring>(double h)</argsstring>
+        <name>eh</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="76" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="76" bodyend="80"/>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" compoundref="global__variable__constants_8hpp" startline="52">coeftb_idx</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" compoundref="integrate__core_8hpp" startline="82" endline="82">ph</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ph</definition>
+        <argsstring>(double h)</argsstring>
+        <name>ph</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="82" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="82" bodyend="82"/>
+        <references refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" compoundref="global__variable__constants_8hpp" startline="52">coeftb_idx</references>
+        <references refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" compoundref="integrate__core_8hpp" startline="76" endline="80">eh</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammah_interpolation</definition>
+        <argsstring>(double p, double e)</argsstring>
+        <name>gammah_interpolation</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="84" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="84" bodyend="84"/>
+        <references refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" compoundref="global__variable__constants_8hpp" startline="52">coeftb_idx</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1abd5004d4469acd8c8bf26b9df3ed8f50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammaeh_pspc</definition>
+        <argsstring>(double h, double p, double e, state_type a)</argsstring>
+        <name>gammaeh_pspc</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the piece_spec_phtr_ccs model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="87" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="87" bodyend="100"/>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammah_spectral</definition>
+        <argsstring>(double h, double p, double e, state_type a, double h_init=h_0)</argsstring>
+        <name>gammah_spectral</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h_init</declname>
+          <defval><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref></defval>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the spectral expansion model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="103" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="103" bodyend="109"/>
+        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="28">spectral_causal</references>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammae_piecewise</definition>
+        <argsstring>(double e, state_type a)</argsstring>
+        <name>gammae_piecewise</name>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the gamma piecewise model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="112" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="112" bodyend="116"/>
+        <references refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" compoundref="global__variable__constants_8hpp" startline="55">e_borders</references>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammae_piecewise_p</definition>
+        <argsstring>(double e, state_type a)</argsstring>
+        <name>gammae_piecewise_p</name>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the pressure piecewise model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="119" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="119" bodyend="124"/>
+        <references refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" compoundref="global__variable__constants_8hpp" startline="55">e_borders</references>
+        <references refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" compoundref="global__variable__constants_8hpp" startline="85">p_0</references>
+        <references refid="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" compoundref="global__variable__constants_8hpp" startline="87">rho_0</references>
+        <references refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" compoundref="global__variable__constants_8hpp" startline="90">rho_borders</references>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammah_phase_trans</definition>
+        <argsstring>(double p, double e, state_type a)</argsstring>
+        <name>gammah_phase_trans</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the phase transition model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="127" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="127" bodyend="133"/>
+        <references refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" compoundref="global__variable__constants_8hpp" startline="55">e_borders</references>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammae_cons_cs</definition>
+        <argsstring>(double p, double e, state_type a)</argsstring>
+        <name>gammae_cons_cs</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Calculate gamma in the constant speed of sound model. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="attention"><para>Define v^2=dp/de, and p=ke^{gamma}. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="138" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="138" bodyend="140"/>
+        <referencedby refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gamma_which</definition>
+        <argsstring>(double h, double p, double e, state_type a)</argsstring>
+        <name>gamma_which</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Choose a proper function to calculate the adiabatic index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enthalpy at where to calculate the gamma. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pressure at where to calculate the gamma. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Energy density at where to calculate the gamma. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State vector to store parameterization parameters. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="148" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="148" bodyend="156"/>
+        <references refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" compoundref="global__variable__constants_8hpp" startline="31">adapt_piecewise</references>
+        <references refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" compoundref="global__variable__constants_8hpp" startline="32">cons_cs</references>
+        <references refid="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" compoundref="integrate__core_8hpp" startline="138" endline="140">gammae_cons_cs</references>
+        <references refid="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" compoundref="integrate__core_8hpp" startline="112" endline="116">gammae_piecewise</references>
+        <references refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" compoundref="integrate__core_8hpp" startline="119" endline="124">gammae_piecewise_p</references>
+        <references refid="integrate__core_8hpp_1abd5004d4469acd8c8bf26b9df3ed8f50" compoundref="integrate__core_8hpp" startline="87" endline="100">gammaeh_pspc</references>
+        <references refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" compoundref="integrate__core_8hpp" startline="127" endline="133">gammah_phase_trans</references>
+        <references refid="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" compoundref="integrate__core_8hpp" startline="103" endline="109">gammah_spectral</references>
+        <references refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" compoundref="global__variable__constants_8hpp" startline="29">phase_trans</references>
+        <references refid="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" compoundref="global__variable__constants_8hpp" startline="33">piece_spec_phtr_ccs</references>
+        <references refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" compoundref="global__variable__constants_8hpp" startline="25">piecewise</references>
+        <references refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" compoundref="global__variable__constants_8hpp" startline="26">piecewise_p</references>
+        <references refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" compoundref="global__variable__constants_8hpp" startline="27">spectral</references>
+        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="28">spectral_causal</references>
+        <referencedby refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" compoundref="integrate__core_8hpp" startline="195" endline="200">cal_eos</referencedby>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" compoundref="integrate__core_8hpp" startline="159" endline="164">find_hp_at_e</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void find_hp_at_e</definition>
+        <argsstring>(const state_type &amp;x, state_type &amp;dxdt, double e)</argsstring>
+        <name>find_hp_at_e</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Calculate enthalpy and pressure at given energy density. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="159" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="159" bodyend="164"/>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</references>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dpdh</definition>
+        <argsstring>(double p, double e)</argsstring>
+        <name>dpdh</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="172" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="172" bodyend="172"/>
+        <referencedby refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" compoundref="integrate__core_8hpp" startline="195" endline="200">cal_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dedh</definition>
+        <argsstring>(double p, double e, double Gamma)</argsstring>
+        <name>dedh</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="174" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="174" bodyend="174"/>
+        <referencedby refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" compoundref="integrate__core_8hpp" startline="195" endline="200">cal_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double dmdh</definition>
+        <argsstring>(double p, double e, double m, double r)</argsstring>
+        <name>dmdh</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="176" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="176" bodyend="176"/>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double drdh</definition>
+        <argsstring>(double p, double e, double m, double r)</argsstring>
+        <name>drdh</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="178" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="178" bodyend="178"/>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double dydh</definition>
+        <argsstring>(double p, double e, double m, double r, double y, double Gamma)</argsstring>
+        <name>dydh</name>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Gamma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="180" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="180" bodyend="184"/>
+        <referencedby refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" compoundref="integrate__core_8hpp" startline="202" endline="210">inner_to_outer</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cal_eos</definition>
+        <argsstring>(const state_type &amp;x, state_type &amp;dxdt, double h)</argsstring>
+        <name>cal_eos</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="195" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="195" bodyend="200"/>
+        <references refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" compoundref="integrate__core_8hpp" startline="174" endline="174">dedh</references>
+        <references refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" compoundref="integrate__core_8hpp" startline="172" endline="172">dpdh</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</references>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inner_to_outer</definition>
+        <argsstring>(const state_type &amp;x, state_type &amp;dxdt, double h)</argsstring>
+        <name>inner_to_outer</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="202" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="202" bodyend="210"/>
+        <references refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" compoundref="integrate__core_8hpp" startline="174" endline="174">dedh</references>
+        <references refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" compoundref="integrate__core_8hpp" startline="176" endline="176">dmdh</references>
+        <references refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" compoundref="integrate__core_8hpp" startline="172" endline="172">dpdh</references>
+        <references refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" compoundref="integrate__core_8hpp" startline="178" endline="178">drdh</references>
+        <references refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" compoundref="integrate__core_8hpp" startline="180" endline="184">dydh</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</references>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void inner_to_outer_interpolation</definition>
+        <argsstring>(const state_type &amp;x, state_type &amp;dxdt, double h)</argsstring>
+        <name>inner_to_outer_interpolation</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="212" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="212" bodyend="228"/>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" compoundref="global__variable__constants_8hpp" startline="52">coeftb_idx</references>
+        <references refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" compoundref="integrate__core_8hpp" startline="176" endline="176">dmdh</references>
+        <references refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" compoundref="integrate__core_8hpp" startline="178" endline="178">drdh</references>
+        <references refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" compoundref="integrate__core_8hpp" startline="180" endline="184">dydh</references>
+        <references refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" compoundref="integrate__core_8hpp" startline="76" endline="80">eh</references>
+        <references refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__utils_8hpp" startline="30" endline="30">eh_qks</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" compoundref="integrate__core_8hpp" startline="84" endline="84">gammah_interpolation</references>
+        <references refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" compoundref="quark__star__utils_8hpp" startline="32" endline="39">gammah_qks</references>
+        <references refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" compoundref="integrate__core_8hpp" startline="82" endline="82">ph</references>
+        <references refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__utils_8hpp" startline="29" endline="29">ph_qks</references>
+        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="30">quark_star</references>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void outer_to_inner</definition>
+        <argsstring>(const state_type &amp;x, state_type &amp;dxdt, double h)</argsstring>
+        <name>outer_to_inner</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>dxdt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="230" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="230" bodyend="233"/>
+        <references refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" compoundref="integrate__core_8hpp" startline="174" endline="174">dedh</references>
+        <references refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" compoundref="integrate__core_8hpp" startline="172" endline="172">dpdh</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type initiate_core</definition>
+        <argsstring>(double hc, double hig=h_ig)</argsstring>
+        <name>initiate_core</name>
+        <param>
+          <type>double</type>
+          <declname>hc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hig</declname>
+          <defval><ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref></defval>
+        </param>
+        <briefdescription>
+<para>Integrate the most central core part of the compact star to avoid singular point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="274" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="274" bodyend="300"/>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" compoundref="global__variable__constants_8hpp" startline="52">coeftb_idx</references>
+        <references refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" compoundref="global__variable__constants_8hpp" startline="84">e_0</references>
+        <references refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" compoundref="integrate__core_8hpp" startline="76" endline="80">eh</references>
+        <references refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__utils_8hpp" startline="30" endline="30">eh_qks</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" compoundref="integrate__core_8hpp" startline="148" endline="156">gamma_which</references>
+        <references refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" compoundref="integrate__core_8hpp" startline="84" endline="84">gammah_interpolation</references>
+        <references refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" compoundref="quark__star__utils_8hpp" startline="32" endline="39">gammah_qks</references>
+        <references refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" compoundref="global__variable__constants_8hpp" startline="86">h_0</references>
+        <references refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" compoundref="integrate__core_8hpp" startline="242" endline="271">integrate_func</references>
+        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="24">interp_only</references>
+        <references refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" compoundref="integrate__core_8hpp" startline="230" endline="233">outer_to_inner</references>
+        <references refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" compoundref="global__variable__constants_8hpp" startline="85">p_0</references>
+        <references refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" compoundref="integrate__core_8hpp" startline="82" endline="82">ph</references>
+        <references refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__utils_8hpp" startline="29" endline="29">ph_qks</references>
+        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="30">quark_star</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <references refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" compoundref="global__variable__constants_8hpp" startline="41">vverbose</references>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INTEGRATE_CORE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTEGRATE_CORE_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>===================================================================================</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>unit<sp/>system:<sp/>C<sp/>=<sp/>1,<sp/>G<sp/>=<sp/>1,<sp/>M_sun<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>using<sp/>adaptive<sp/>runge_kutta_fehlberg78<sp/>method<sp/>implemented<sp/>in<sp/>boost<sp/>to<sp/>integrate</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Note:<sp/>1.<sp/>x0<sp/>will<sp/>change<sp/>after<sp/>calling<sp/>integrate_adaptive</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2.<sp/>use<sp/>abs<sp/>path<sp/>please</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>===================================================================================</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;boost/numeric/odeint/stepper/controlled_runge_kutta.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;boost/numeric/odeint/integrate/integrate_adaptive.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;boost/numeric/odeint/integrate/integrate_const.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="quark__star__utils_8hpp" kindref="compound">quark_star_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="global__variable__constants_8hpp" kindref="compound">global_variable_constants.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="data_8hpp" kindref="compound">data.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">boost::numeric::odeint;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//basic<sp/>integrate<sp/>controller<sp/>initiate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structpush__back__state__and__time" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structpush__back__state__and__time" kindref="compound">push_back_state_and_time</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="structpush__back__state__and__time_1a77cbb3168a0580fe679316c7b4fb6ec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>state_type<sp/>&gt;&amp;<sp/><ref refid="structpush__back__state__and__time_1a77cbb3168a0580fe679316c7b4fb6ec2" kindref="member">m_states</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structpush__back__state__and__time_1ac05817dae9b7ef7cd9177a92c221bd8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;<sp/>double<sp/>&gt;&amp;<sp/><ref refid="structpush__back__state__and__time_1ac05817dae9b7ef7cd9177a92c221bd8a" kindref="member">m_times</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structpush__back__state__and__time_1a5ffbdaa95423e8b0d5873760c494ce5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpush__back__state__and__time_1a5ffbdaa95423e8b0d5873760c494ce5f" kindref="member">push_back_state_and_time</ref>(<sp/>std::vector&lt;<sp/>state_type<sp/>&gt;<sp/>&amp;states,<sp/>std::vector&lt;<sp/>double<sp/>&gt;<sp/>&amp;times<sp/>):<sp/>m_states(<sp/>states<sp/>),<sp/>m_times(<sp/>times<sp/>)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="42" refid="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" kindref="member">operator()</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>t<sp/>){</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_states.size()%20==0){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>t:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;t&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>x:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;x.size();i++){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref>)<sp/>cout&lt;&lt;x[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x[i]&gt;1e6<sp/>or<sp/>std::isnan(x[i])<sp/>or<sp/>m_times.size()&gt;1e6)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>x[&quot;</highlight><highlight class="normal">&lt;&lt;i&lt;&lt;</highlight><highlight class="stringliteral">&quot;]=&quot;</highlight><highlight class="normal">&lt;&lt;x[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>encountered<sp/>at<sp/>t=&quot;</highlight><highlight class="normal">&lt;&lt;t&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>with<sp/>x<sp/>size:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;x.size()&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>exception();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>x<sp/>size:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;x.size()&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_states.push_back(<sp/>x<sp/>);<sp/>m_times.push_back(<sp/>t<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>runge_kutta_fehlberg78&lt;<sp/>state_type<sp/>&gt;<sp/><ref refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" kindref="member">error_stepper_type</ref>;</highlight></codeline>
+<codeline lineno="59" refid="integrate__core_8hpp_1a316792556e400adc33b04b149de69507" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>controlled_runge_kutta&lt;<sp/>error_stepper_type<sp/>&gt;<sp/><ref refid="integrate__core_8hpp_1a316792556e400adc33b04b149de69507" kindref="member">controlled_stepper_type</ref>;</highlight></codeline>
+<codeline lineno="60" refid="integrate__core_8hpp_1acddbc945f890f2682b685e05defdda61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a460492ca5cb862b459c8d89a8a7b22ca" kindref="member">abs_err</ref><sp/>=<sp/>1.0e-18,<sp/><ref refid="integrate__core_8hpp_1acddbc945f890f2682b685e05defdda61" kindref="member">rel_err</ref><sp/>=<sp/>1.0e-12,<sp/><ref refid="integrate__core_8hpp_1a3b1660adcdf41418db65108cdb2e1b3f" kindref="member">a_x</ref><sp/>=<sp/>1.0,<sp/><ref refid="integrate__core_8hpp_1ad6fa022e04ac564718690673338017c0" kindref="member">a_dxdt</ref><sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="integrate__core_8hpp_1a316792556e400adc33b04b149de69507" kindref="member">controlled_stepper_type</ref><sp/><ref refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4" kindref="member">controlled_stepper</ref>(default_error_checker&lt;<sp/>double,<sp/>range_algebra,<sp/>default_operations<sp/>&gt;(<sp/><ref refid="integrate__core_8hpp_1a460492ca5cb862b459c8d89a8a7b22ca" kindref="member">abs_err</ref>,<sp/><ref refid="integrate__core_8hpp_1acddbc945f890f2682b685e05defdda61" kindref="member">rel_err</ref>,<sp/><ref refid="integrate__core_8hpp_1a3b1660adcdf41418db65108cdb2e1b3f" kindref="member">a_x</ref>,<sp/><ref refid="integrate__core_8hpp_1ad6fa022e04ac564718690673338017c0" kindref="member">a_dxdt</ref><sp/>)<sp/>);</highlight><highlight class="comment">//controlled_stepper_type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(<ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x0,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>start_t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>end_t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kindref="member">int_whole_star</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//basic<sp/>functions<sp/>to<sp/>calculate<sp/>the<sp/>eos<sp/>properties<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" kindref="member">cal_lambda</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Y){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>16*pow(1-2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>2.0)*(2+2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*(Y-1)-Y)/(15*</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(4*pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>3.0)*(13-11*Y+<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*(3*Y-2)+2*pow(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>2.0)*(1+Y))+3*pow(1-2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>2.0)*(2-Y+2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*(Y-1))*log(1-2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>)+2*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*(6-3*Y+3*<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*(5*Y-8))));}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="integrate__core_8hpp_1a55c49ad0b32fc3d7bdcfc1d07c9021cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a55c49ad0b32fc3d7bdcfc1d07c9021cb" kindref="member">lambda_tilde</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m2,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>l2){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>16.0/13.0*(((12.0*m2+m1)/pow((m1+m2),<sp/>5))*pow(m1,<sp/>4)*l1+((12.0*m1+m2)/pow((m1+m2),<sp/>5))*pow(m2,<sp/>4)*l2);}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" kindref="member">eh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>co_p<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[0],<sp/>co_e<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[1],<sp/>co_c<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[2],<sp/>co_h<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;first;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>!=<sp/><ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>.begin())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_e*pow((co_e+co_p)/co_p*exp((co_c-1.0)/co_c*(h-co_h))-co_e/co_p,<sp/>1.0/(co_c-1.0));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>co_e*pow(co_e/co_p*(exp(2.0*h/5.0)-1.0),<sp/>1.5);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" kindref="member">ph</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[0]*pow(<ref refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" kindref="member">eh</ref>(h)/<ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[1],<sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[2]);}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" kindref="member">gammah_interpolation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref>-&gt;second[2]*(p/e+1.0);<sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="integrate__core_8hpp_1abd5004d4469acd8c8bf26b9df3ed8f50" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1abd5004d4469acd8c8bf26b9df3ed8f50" kindref="member">gammaeh_pspc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//expected<sp/>a:<sp/>rhob1,<sp/>gamma1,<sp/>rhob2,<sp/>gamma2,<sp/>rhob3,<sp/>h0,<sp/>g0,<sp/>g1,<sp/>g2,<sp/>g3,<sp/>rhob4,<sp/>gamma_pt,<sp/>cs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho<sp/>=<sp/>(e+p)/exp(h),<sp/>gamma,<sp/>loggamma<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>cout.precision(10);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rho&lt;a[0])<sp/>gamma<sp/>=<sp/>a[1];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rho&lt;a[2])<sp/>gamma<sp/>=<sp/>a[3];</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rho&lt;a[4])<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j&lt;4;<sp/>j++){<sp/>loggamma<sp/>+=<sp/>a[6+j]*pow(log(h/a[5]),<sp/>j);<sp/>}</highlight><highlight class="comment">//cout&lt;&lt;a[4+j]*pow(log(h/a[3]),<sp/>j)&lt;&lt;&quot;<sp/>&quot;;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamma<sp/>=<sp/>(e+p)/((exp(loggamma)+1.)*p);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rho&lt;a[10])<sp/>gamma<sp/>=<sp/>a[11];</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>gamma<sp/>=<sp/>(e+p)*pow(a[12],<sp/>2)/p;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gamma;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" kindref="member">gammah_spectral</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_init=<ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loggamma<sp/>=<sp/>0.0,<sp/>ret;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j&lt;a.size();<sp/>j++)<sp/>loggamma<sp/>+=<sp/>a[j]*pow(log(h/h_init),<sp/>j);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>exp(loggamma);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref>)<sp/>ret<sp/>=<sp/>(e+p)/((ret+1.)*p);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" kindref="member">gammae_piecewise</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>upper<sp/>=<sp/>std::lower_bound(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin()+1,<sp/><ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.end(),<sp/>e);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>std::distance(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin(),<sp/>upper)-1;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a[idx];</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" kindref="member">gammae_piecewise_p</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>upper<sp/>=<sp/>std::lower_bound(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin()+1,<sp/><ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.end(),<sp/>e);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>std::distance(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin(),<sp/>upper)-1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx==0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log(a[0]/<ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref>)/log(<ref refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kindref="member">rho_borders</ref>[0]/<ref refid="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" kindref="member">rho_0</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log(a[idx]/a[idx-1])/log(<ref refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kindref="member">rho_borders</ref>[idx]/<ref refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kindref="member">rho_borders</ref>[idx-1]);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" kindref="member">gammah_phase_trans</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>upper<sp/>=<sp/>std::lower_bound(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin()+1,<sp/><ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.end(),<sp/>e);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>std::distance(<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.begin(),<sp/>upper)-1;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx&lt;=2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>a[idx];</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx==3)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e/p+1.;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(e/p+1.)*(1./3.);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" kindref="member">gammae_cons_cs</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(e+p)*pow(a[0],<sp/>2)/p;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" refkind="member"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>a){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a76e3865c0c7ced67ae2f5393407d47ed" kindref="member">gammae_piecewise</ref>(e,<sp/>a);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" kindref="member">cons_cs</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" kindref="member">gammae_cons_cs</ref>(p,<sp/>e,<sp/>a);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" kindref="member">piece_spec_phtr_ccs</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1abd5004d4469acd8c8bf26b9df3ed8f50" kindref="member">gammaeh_pspc</ref>(h,<sp/>p,<sp/>e,<sp/>a);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" kindref="member">adapt_piecewise</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a1b4de4c4509b5c4c1ce02f535c84fa16" kindref="member">gammae_piecewise_p</ref>(e,<sp/>a);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a784a9dfa05351509561ae469693951fa" kindref="member">gammah_spectral</ref>(h,<sp/>p,<sp/>e,<sp/>a);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" kindref="member">phase_trans</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" kindref="member">gammah_phase_trans</ref>(p,<sp/>e,<sp/>a);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unknown<sp/>method<sp/>of<sp/>jointing<sp/>low<sp/>density<sp/>eos<sp/>table<sp/>and<sp/>high<sp/>density<sp/>one.&quot;</highlight><highlight class="normal">&lt;&lt;endl;<sp/>exit(0);}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" kindref="member">find_hp_at_e</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;dxdt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//x<sp/>=<sp/>[h,<sp/>p]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(x[0],<sp/>x[1],<sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[0]<sp/>=<sp/>x[1]*gamma/pow((x[1]+e),<sp/>2);</highlight><highlight class="comment">//dhde</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[1]<sp/>=<sp/>x[1]*gamma/(x[1]+e);</highlight><highlight class="comment">//dpde</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//ODE<sp/>group<sp/>to<sp/>be<sp/>solved,<sp/>x<sp/>=<sp/>(p,<sp/>e,<sp/>m,<sp/>r,<sp/>y)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kindref="member">dpdh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e+p;}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" kindref="member">dedh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow((e+p),<sp/>2.0)/(p*Gamma);}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" kindref="member">dmdh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-(4*M_PI*e*pow(r,<sp/>3.0)*(r-2*m))/(m+4*M_PI*pow(r,<sp/>3.0)*p);}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" kindref="member">drdh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-(r*(r-2*m))/(m+4*M_PI*pow(r,<sp/>3.0)*p);}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" kindref="member">dydh</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dydh1<sp/>=<sp/>((r-2*m)*(y+1)*y)/(m+4*M_PI*pow(r,<sp/>3.0)*p)+y+((m-4*M_PI*pow(r,<sp/>3.0)*e)*y+4*M_PI*pow(r,<sp/>3.0)*(5*e+9*p)-6*r)/(m+4*M_PI*pow(r,<sp/>3.0)*p);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dydh2<sp/>=<sp/>(4*M_PI*pow(r,<sp/>3.0)*pow(e+p,<sp/>2))/((m+4*M_PI*pow(r,<sp/>3.0)*p)*p*Gamma)-4*(m+4*M_PI*pow(r,<sp/>3.0)*p)/(r-2*m);<sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(dydh1+dydh2);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//inline<sp/>double<sp/>dbmdh(double<sp/>p,<sp/>double<sp/>rho,<sp/>double<sp/>m,<sp/>double<sp/>r){return<sp/>-(4*M_PI*rho*pow(r,<sp/>3.0)*(r-2*m))/(m+4*M_PI*pow(r,<sp/>3.0)*p);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//inline<sp/>double<sp/>dIdh(double<sp/>p,<sp/>double<sp/>rho,<sp/>double<sp/>m,<sp/>double<sp/>r){return<sp/>-(8./3.*M_PI*rho*pow(r,<sp/>5.0)*(r-2*m))/(m+4*M_PI*pow(r,<sp/>3.0)*p);}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//second<sp/>order<sp/>utilities<sp/>to<sp/>integrate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a86f802d0af08d9982cd9d828e4ee52ae" kindref="member">cal_eos</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;dxdt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(h,<sp/>x[0],<sp/>x[1],<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[0]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kindref="member">dpdh</ref>(x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[1]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" kindref="member">dedh</ref>(x[0],<sp/>x[1],<sp/>gamma);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[2]<sp/>=<sp/>x[2]/(gamma*x[0])*<ref refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kindref="member">dpdh</ref>(x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" kindref="member">inner_to_outer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;dxdt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(h,<sp/>x[0],<sp/>x[1],<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[0]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kindref="member">dpdh</ref>(x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[1]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" kindref="member">dedh</ref>(x[0],<sp/>x[1],<sp/>gamma);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[2]<sp/>=<sp/><ref refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" kindref="member">dmdh</ref>(x[0],<sp/>x[1],<sp/>x[2],<sp/>x[3]);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[3]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" kindref="member">drdh</ref>(x[0],<sp/>x[1],<sp/>x[2],<sp/>x[3]);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[4]<sp/>=<sp/><ref refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" kindref="member">dydh</ref>(x[0],<sp/>x[1],<sp/>x[2],<sp/>x[3],<sp/>x[4],<sp/>gamma);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(vvverbose)<sp/>cout&lt;&lt;&quot;<sp/><sp/><sp/>h:<sp/>&quot;&lt;&lt;h&lt;&lt;&quot;,<sp/>p:<sp/>&quot;&lt;&lt;x[0]&lt;&lt;&quot;,<sp/>e:<sp/>&quot;&lt;&lt;x[1]&lt;&lt;&quot;,<sp/>Gamma:<sp/>&quot;&lt;&lt;gamma&lt;&lt;&quot;,<sp/>v**2:<sp/>&quot;&lt;&lt;((gamma+1)*x[0])/(x[0]+x[1])&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" kindref="member">inner_to_outer_interpolation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;dxdt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p_h,<sp/>e_h,<sp/>gamma;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>){</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_h<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" kindref="member">ph_qks</ref>(h,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);<sp/>e_h<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" kindref="member">eh_qks</ref>(h,<sp/>p_h,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamma<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" kindref="member">gammah_qks</ref>(h,<sp/>p_h,<sp/>e_h,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref><sp/>=<sp/>--<ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>.upper_bound(h);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_h<sp/>=<sp/><ref refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" kindref="member">ph</ref>(h);<sp/>e_h<sp/>=<sp/><ref refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" kindref="member">eh</ref>(h);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gamma<sp/>=<sp/><ref refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" kindref="member">gammah_interpolation</ref>(p_h,<sp/>e_h);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;&quot;is<sp/>changed?:&quot;&lt;&lt;coeftb_idx-&gt;first&lt;&lt;&quot;\t\t&quot;&lt;&lt;coeftb_idx-&gt;second[0]&lt;&lt;&quot;\t\t&quot;&lt;&lt;coeftb_idx-&gt;second[1]&lt;&lt;&quot;\t\t&quot;&lt;&lt;coeftb_idx-&gt;second[2]&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[0]<sp/>=<sp/><ref refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" kindref="member">dmdh</ref>(p_h,<sp/>e_h,<sp/>x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[1]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a80371cb559ff987c3eb4711da75313f8" kindref="member">drdh</ref>(p_h,<sp/>e_h,<sp/>x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[2]<sp/>=<sp/><ref refid="integrate__core_8hpp_1ae1dc7b36c9b1f2921e63389b914a4828" kindref="member">dydh</ref>(p_h,<sp/>e_h,<sp/>x[0],<sp/>x[1],<sp/>x[2],<sp/>gamma);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(verbose)<sp/>cout&lt;&lt;&quot;h:<sp/>&quot;&lt;&lt;h&lt;&lt;&quot;,<sp/>m:<sp/>&quot;&lt;&lt;x[0]&lt;&lt;&quot;,<sp/>dmdh:<sp/>&quot;&lt;&lt;dxdt[0]&lt;&lt;&quot;;<sp/>r:<sp/>&quot;&lt;&lt;x[1]&lt;&lt;&quot;,<sp/>drdh:<sp/>&quot;&lt;&lt;dxdt[1]&lt;&lt;&quot;;<sp/>y:<sp/>&quot;&lt;&lt;x[2]&lt;&lt;&quot;,<sp/>dydh:<sp/>&quot;&lt;&lt;dxdt[2]&lt;&lt;&quot;;<sp/>p:<sp/>&quot;&lt;&lt;p_h&lt;&lt;&quot;,<sp/>e:<sp/>&quot;&lt;&lt;e_h&lt;&lt;&quot;,<sp/>gamma:&quot;&lt;&lt;gamma&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" kindref="member">outer_to_inner</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;x,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;dxdt,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h){</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[0]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kindref="member">dpdh</ref>(x[0],<sp/>x[1]);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>dxdt[1]<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" kindref="member">dedh</ref>(x[0],<sp/>x[1],<sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(h,<sp/>x[0],<sp/>x[1],<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>));</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//third<sp/>order<sp/>utilities<sp/>to<sp/>integrate<sp/>the<sp/>whole<sp/>star</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(<ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x0,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>start_t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>end_t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse){</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;state_type&gt;<sp/>x_o;</highlight><highlight class="comment">//x<sp/>for<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>h_o;</highlight><highlight class="comment">//h<sp/>for<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//lower<sp/>bound<sp/>must<sp/>smaller<sp/>than<sp/>upper<sp/>bound,<sp/>so<sp/>special<sp/>care<sp/>should<sp/>be<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" kindref="member">const_inte_step</ref>){</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reverse)<sp/>dt<sp/>=<sp/>-<ref refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kindref="member">sg_const_step</ref>;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kindref="member">sg_const_step</ref>;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integrate_const(<ref refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" kindref="member">error_stepper_type</ref>(),<sp/>func,<sp/>x0,<sp/>start_t,<sp/>end_t,<sp/>dt,<sp/><ref refid="structpush__back__state__and__time" kindref="compound">push_back_state_and_time</ref>(x_o,<sp/>h_o));</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reverse)<sp/>dt<sp/>=<sp/>-<ref refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kindref="member">sg_step</ref>;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kindref="member">sg_step</ref>;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integrate_adaptive(<ref refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4" kindref="member">controlled_stepper</ref>,<sp/>func,<sp/>x0,<sp/>start_t,<sp/>end_t,<sp/>dt,<sp/><ref refid="structpush__back__state__and__time" kindref="compound">push_back_state_and_time</ref>(x_o,<sp/>h_o));</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref>){</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;iter<sp/>steps:&quot;</highlight><highlight class="normal">&lt;&lt;h_o.size()&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h_i&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;m&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j&lt;h_o.size();<sp/>j++){</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;h_o[j]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;x_o[j].size();<sp/>i++)<sp/>cout&lt;&lt;x_o[j][i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x_o.back();</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" kindref="member">initiate_core</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hig=<ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>){</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ec,<sp/>pc,<sp/>Gamma_c;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>init_x(3);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>){<ref refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kindref="member">coeftb_idx</ref><sp/>=<sp/>--<ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>.upper_bound(hc);<sp/>ec<sp/>=<sp/><ref refid="integrate__core_8hpp_1a5bd395991f95231deed00b9a52bffecd" kindref="member">eh</ref>(hc);<sp/>pc<sp/>=<sp/><ref refid="integrate__core_8hpp_1a8ad4cb6876fef3c488b0dc9067bdf035" kindref="member">ph</ref>(hc);<sp/>Gamma_c<sp/>=<sp/><ref refid="integrate__core_8hpp_1a3c6882bb4d37f66684a037145b64abfd" kindref="member">gammah_interpolation</ref>(pc,<sp/>ec);}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>){pc<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" kindref="member">ph_qks</ref>(hc,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);<sp/>ec<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" kindref="member">eh_qks</ref>(hc,<sp/>pc,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);<sp/>Gamma_c<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" kindref="member">gammah_qks</ref>(hc,<sp/>pc,<sp/>ec,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x0(2);<sp/>x0[0]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref>;<sp/>x0[1]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kindref="member">e_0</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(x0,<sp/><ref refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" kindref="member">outer_to_inner</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>,<sp/>hc,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ec<sp/>=<sp/>result[1],<sp/>pc<sp/>=<sp/>result[0],<sp/>Gamma_c<sp/>=<sp/><ref refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kindref="member">gamma_which</ref>(hc,<sp/>pc,<sp/>ec,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>initiate_core&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r1<sp/>=<sp/>pow(3.0/(2*M_PI*(ec+3*pc)),<sp/>0.5);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r3<sp/>=<sp/>-r1/(4*(ec+3*pc))*(ec-3*pc-3*pow(ec+pc,<sp/>2.0)/(5*pc*Gamma_c));</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m3<sp/>=<sp/>4*M_PI/3.0*ec*pow(r1,<sp/>3.0);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m5<sp/>=<sp/>4*M_PI*pow(r1,<sp/>3.0)*(r3*ec/r1-pow(ec+pc,<sp/>2.0)/(5*pc*Gamma_c));</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y2<sp/>=<sp/>-6*(ec/3+11*pc+pow(ec+pc,<sp/>2.0)/(pc*Gamma_c))/(7*(ec+3*pc));</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>init_x[0]<sp/>=<sp/>m3*pow(hig,<sp/>1.5)+m5*pow(hig,<sp/>2.5);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>init_x[1]<sp/>=<sp/>r1*pow(hig,<sp/>0.5)+r3*pow(hig,<sp/>1.5);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>init_x[2]<sp/>=<sp/>2+y2*(hig);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;M_init:&quot;</highlight><highlight class="normal">&lt;&lt;init_x[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/>R_init:&quot;</highlight><highlight class="normal">&lt;&lt;init_x[1]&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>init_x;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kindref="member">int_whole_star</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc){</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><sp/>x_result(3);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc_lowerbound<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>+0.01;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((not<sp/><ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>)<sp/>and<sp/>(hc&lt;hc_lowerbound)){</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>int_whole_star,<sp/>hc=&quot;</highlight><highlight class="normal">&lt;&lt;hc&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&lt;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;hc_lowerbound&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>not<sp/>valid&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>exception();</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>init_x<sp/>=<sp/><ref refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" kindref="member">initiate_core</ref>(hc);</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>){x_result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(init_x,<sp/><ref refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" kindref="member">inner_to_outer_interpolation</ref>,<sp/>hc-<ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" kindref="member">h_surface</ref>);}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>){</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_surf_qks<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[3];</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p_surf_qks<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" kindref="member">ph_qks</ref>(h_surf_qks,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p_surf_qks&lt;1e-300){<sp/></highlight><highlight class="comment">//avoid<sp/>divided<sp/>by<sp/>zero<sp/>in<sp/>calculating<sp/>lambda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[3]<sp/>+=<sp/>1e-8;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_surf_qks<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[3];</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_surf_qks<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" kindref="member">ph_qks</ref>(h_surf_qks,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e_surf_qks<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" kindref="member">eh_qks</ref>(h_surf_qks,<sp/>p_surf_qks,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(init_x,<sp/><ref refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" kindref="member">inner_to_outer_interpolation</ref>,<sp/>hc-<ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>,<sp/>h_surf_qks);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>average_e<sp/>=<sp/>x_result[0]/(4.*M_PI*pow(x_result[1],3)/3.);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_result[2]<sp/>-=<sp/>3*e_surf_qks/average_e;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x0(5),<sp/>xresult(5),<sp/>x_0(3),<sp/>pe_ig0(2),<sp/>pe_ig(2);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pe_ig0[0]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kindref="member">p_0</ref>;<sp/>pe_ig0[1]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kindref="member">e_0</ref>;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pe_ig<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(pe_ig0,<sp/><ref refid="integrate__core_8hpp_1a7d14308d810a0df831ad2eda66249fe0" kindref="member">outer_to_inner</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>,<sp/>hc-<ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x0[0]<sp/>=<sp/>pe_ig[0];<sp/>x0[1]<sp/>=<sp/>pe_ig[1];<sp/>x0[2]<sp/>=<sp/>init_x[0];</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x0[3]<sp/>=<sp/>init_x[1];<sp/>x0[4]<sp/>=<sp/>init_x[2];</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xresult<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(x0,<sp/><ref refid="integrate__core_8hpp_1ad5ee2a42f15d72545cc54c4ba0ea182e" kindref="member">inner_to_outer</ref>,<sp/>hc-<ref refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kindref="member">h_ig</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_0[0]<sp/>=<sp/>xresult[2];<sp/>x_0[1]<sp/>=<sp/>xresult[3];<sp/>x_0[2]<sp/>=<sp/>xresult[4];</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kindref="member">integrate_func</ref>(x_0,<sp/><ref refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" kindref="member">inner_to_outer_interpolation</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kindref="member">h_0</ref>,<sp/><ref refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" kindref="member">h_surface</ref>);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>int_whole_star(&quot;</highlight><highlight class="normal">&lt;&lt;hc&lt;&lt;</highlight><highlight class="stringliteral">&quot;),<sp/>set<sp/>results<sp/>to<sp/>0&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x_result[0]=0;x_result[1]=0;x_result[2]=0;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x_result;</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp"/>
+  </compounddef>
+</doxygen>

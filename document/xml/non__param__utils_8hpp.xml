@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="non__param__utils_8hpp" kind="file" language="C++">
+    <compoundname>non_param_utils.hpp</compoundname>
+    <includes refid="param__utils_8hpp" local="yes">param_utils.hpp</includes>
+    <includes refid="integrate__core_8hpp" local="yes">integrate_core.hpp</includes>
+    <includes local="no">boost/math/interpolators/makima.hpp</includes>
+    <includedby refid="non__param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</includedby>
+    <includedby refid="param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</includedby>
+    <incdepgraph>
+      <node id="22">
+        <label>boost/math/interpolators/makima.hpp</label>
+      </node>
+      <node id="20">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="4">
+        <label>boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="11">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>exception</label>
+      </node>
+      <node id="10">
+        <label>fstream</label>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
+      </node>
+      <node id="15">
+        <label>vector</label>
+      </node>
+      <node id="17">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="14">
+        <label>quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>array</label>
+      </node>
+      <node id="18">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
+      </node>
+      <node id="21">
+        <label>data.hpp</label>
+        <link refid="data_8hpp"/>
+      </node>
+      <node id="3">
+        <label>integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
+      </node>
+      <node id="16">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void transform_eostable</definition>
+        <argsstring>(state_type e, state_type p)</argsstring>
+        <name>transform_eostable</name>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" line="11" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" bodystart="11" bodyend="30"/>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double non_param_like</definition>
+        <argsstring>(int step_i, double frac, bool mktb)</argsstring>
+        <name>non_param_like</name>
+        <param>
+          <type>int</type>
+          <declname>step_i</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>frac</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mktb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" line="32" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" bodystart="32" bodyend="107"/>
+        <references refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</references>
+        <references refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" compoundref="data_8hpp" startline="5">COEFF_TABLE</references>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" compoundref="data_8hpp" startline="1951">EP_TABLE</references>
+        <references refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" compoundref="non__param__eos_8cpp" startline="16">non_param_struct::frac</references>
+        <references refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</references>
+        <references refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" compoundref="data_8hpp" startline="1850">MR_TABLE</references>
+        <references refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" compoundref="global__variable__constants_8hpp" startline="54">mrl_result</references>
+        <references refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" compoundref="global__variable__constants_8hpp" startline="81">p_trans</references>
+        <references refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" compoundref="global__variable__constants_8hpp" startline="80">rho_trans</references>
+        <references refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" compoundref="non__param__eos_8cpp" startline="15">non_param_struct::step_i</references>
+        <references refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" compoundref="non__param__utils_8hpp" startline="11" endline="30">transform_eostable</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NON_PARAM_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NON_PARAM_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="param__utils_8hpp" kindref="compound">param_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="integrate__core_8hpp" kindref="compound">integrate_core.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;boost/math/interpolators/makima.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>boost::math::interpolators::makima;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" kindref="member">transform_eostable</ref>(<ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>p){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_eos<sp/>=<sp/>e.size();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>cc,<sp/>hh;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>key<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>.end()-&gt;first;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>hh.push_back(key);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;len_eos-1;<sp/>i++){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cc.push_back(log(p[i+1]/p[i])/log(e[i+1]/e[i]));</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hh.push_back(hh[i]+(cc[i]/(cc[i]-1))*log((e[i]*(e[i+1]+p[i+1]))/(e[i+1]*(e[i]+p[i]))));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>cc.push_back(cc[len_eos-2]);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;len_eos;<sp/>i++){<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>add{p[i],<sp/>e[i],<sp/>cc[i]};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>[hh[i]]<sp/>=<sp/>add;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//for(auto<sp/>it=coeftb.begin();<sp/>it!=coeftb.end();<sp/>it++){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>cout&lt;&lt;&quot;coef<sp/>table:<sp/>&quot;&lt;&lt;it-&gt;first&lt;&lt;&quot;:&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>for(int<sp/>itt=0;<sp/>itt&lt;it-&gt;second.size();<sp/>itt++)<sp/>cout&lt;&lt;&quot;<sp/><sp/>&quot;&lt;&lt;it-&gt;second[itt];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>cout&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" kindref="member">non_param_like</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>mktb){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>check_nonparam_causal<sp/>=<sp/>[=]<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e2,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p2){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(p2-p1)/(e2-e1)&gt;0.<sp/>and<sp/>(p2-p1)/(e2-e1)&lt;1;<sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>e_upd,<sp/>p_upd,<sp/>m_org,<sp/>r_org,<sp/>m_c,<sp/>r_c;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>likelihood=0,<sp/>like_product=1,<sp/>safe_hmax_error=0.05,<sp/><sp/>min_m=1.0,<sp/>min_h=0.05;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_max,<sp/>hc_max,<sp/>h_step,<sp/>m_step,<sp/>r_stand,<sp/>r_comp,<sp/>safe_hcm,<sp/>safe_mm,<sp/>val1,<sp/>val2;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_table=20,<sp/>table_rows,<sp/>len_eos,<sp/>si;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>iscausal,<sp/>dummy;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initiate<sp/>tables<sp/>and<sp/>eos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[0][0])/2;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{m_org.push_back(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[i][0]);<sp/>r_org.push_back(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[i][1]);}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[0][0])/2;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{e_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][0]/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref>);<sp/>p_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][1]/<ref refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kindref="member">p_trans</ref>);}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[0][0])/4;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{<ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>[<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][3]]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref>({<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][0],<sp/><ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][1],<sp/><ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][2]});}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>len_eos<sp/>=<sp/>e_upd.size();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mktb){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>fp_chooselist(</highlight><highlight class="stringliteral">&quot;../result/choose_list.txt&quot;</highlight><highlight class="normal">,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp_chooselist&gt;&gt;val1&gt;&gt;val2)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(val2&gt;0)<sp/>p_upd[val2]<sp/>*=<sp/>1.+<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(val2&lt;0)<sp/>p_upd[abs(val2)]<sp/>*=<sp/>1.-<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(val1==<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp_chooselist.close();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>==0)<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iscausal<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>&lt;=len_eos)<sp/>{si<sp/>=<sp/><ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>-1;<sp/>p_upd[si]<sp/>*=<sp/>(1.+<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>);}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{si<sp/>=<sp/><ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>-len_eos-1;<sp/>p_upd[si]<sp/>/=<sp/>(1.-<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>);}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//judge<sp/>causal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(si==0)<sp/>iscausal<sp/>=<sp/>check_nonparam_causal(e_upd[si],<sp/>p_upd[si],<sp/>e_upd[si+1],<sp/>p_upd[si+1]);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(si==(len_eos-1))<sp/>iscausal<sp/>=<sp/>check_nonparam_causal(e_upd[si-1],<sp/>p_upd[si-1],<sp/>e_upd[si],<sp/>p_upd[si]);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>iscausal<sp/>=<sp/>check_nonparam_causal(e_upd[si],<sp/>p_upd[si],<sp/>e_upd[si+1],<sp/>p_upd[si+1])<sp/>and<sp/>\</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check_nonparam_causal(e_upd[si-1],<sp/>p_upd[si-1],<sp/>e_upd[si],<sp/>p_upd[si]);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iscausal){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" kindref="member">transform_eostable</ref>(e_upd,<sp/>p_upd);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dummy<sp/>=<sp/><ref refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" kindref="member">check_mmax</ref>(&amp;hc_max,<sp/>&amp;m_max);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dummy){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>safe_hcm<sp/>=<sp/>hc_max-safe_hmax_error;<sp/></highlight><highlight class="comment">//safe_mm<sp/>=<sp/>get_mrl(safe_hcm)[0];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_step<sp/>=<sp/>(safe_hcm-min_h)/</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(n_table);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_step<sp/>=<sp/>0.03;</highlight><highlight class="comment">//(std::min(safe_mm,<sp/>*std::max_element(m_org.begin(),<sp/>m_org.end()))-min_m)/double(n_table);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;n_table;<sp/>i++){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" kindref="member">get_mrl</ref>(min_h+h_step*i);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_c.push_back(<ref refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" kindref="member">mrl_result</ref>[0]);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r_c.push_back(<ref refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" kindref="member">mrl_result</ref>[1]);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;min_h+h_step*i&lt;&lt;&quot;<sp/><sp/><sp/>&quot;&lt;&lt;m_c[i]&lt;&lt;&quot;<sp/><sp/>&quot;&lt;&lt;r_c[i]&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_morg<sp/>=<sp/>*std::max_element(m_org.begin(),<sp/>m_org.end());</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_mc<sp/>=<sp/>*std::max_element(m_c.begin(),<sp/>m_c.end());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_m<sp/>=<sp/>std::min(max_morg,<sp/>max_mc);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>f_compare<sp/>=<sp/>makima(std::move(m_c),<sp/>std::move(r_c));</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>f_standard<sp/>=<sp/>makima(std::move(m_org),<sp/>std::move(r_org));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>step_m<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mm<sp/>=<sp/>min_m;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mktb)<sp/>system(</highlight><highlight class="stringliteral">&quot;:&gt;<sp/>../result/cpmr_table.txt&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(mm&lt;max_m){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r_stand<sp/>=<sp/>f_standard(mm);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r_comp<sp/>=<sp/>f_compare(mm);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>likelihood<sp/>+=<sp/>exp(-pow(r_stand-r_comp,<sp/>2)/r_stand);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mktb)<sp/>system((</highlight><highlight class="stringliteral">&quot;echo<sp/>\&apos;&quot;</highlight><highlight class="normal">+std::to_string(mm)+</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">+std::to_string(r_comp)+</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">+std::to_string(r_stand)+</highlight><highlight class="stringliteral">&quot;\&apos;<sp/>&gt;&gt;<sp/>../result/cpmr_table.txt&quot;</highlight><highlight class="normal">).c_str());<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step_m<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mm<sp/>=<sp/>min_m+step_m*m_step;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//likelihood<sp/>=<sp/>like_product;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;maximum<sp/>mass<sp/>not<sp/>allowed<sp/>in<sp/>step_i:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>&lt;&lt;endl;<sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;non<sp/>causal<sp/>encountered<sp/>in<sp/>step_i:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>&lt;&lt;endl;<sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;&quot;step:<sp/>&quot;&lt;&lt;step_i&lt;&lt;&quot;<sp/><sp/>&quot;&lt;&lt;likelihood&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>likelihood;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,350 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <boost/numeric/odeint/stepper/controlled_runge_kutta\&.hpp>\fP
+.br
+\fC#include <boost/numeric/odeint/stepper/runge_kutta_fehlberg78\&.hpp>\fP
+.br
+\fC#include <boost/numeric/odeint/integrate/integrate_adaptive\&.hpp>\fP
+.br
+\fC#include <boost/numeric/odeint/integrate/integrate_const\&.hpp>\fP
+.br
+\fC#include <exception>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <array>\fP
+.br
+\fC#include 'quark_star_utils\&.hpp'\fP
+.br
+\fC#include 'global_variable_constants\&.hpp'\fP
+.br
+\fC#include 'data\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBpush_back_state_and_time\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef runge_kutta_fehlberg78< \fBstate_type\fP > \fBerror_stepper_type\fP"
+.br
+.ti -1c
+.RI "typedef controlled_runge_kutta< \fBerror_stepper_type\fP > \fBcontrolled_stepper_type\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBcontrolled_stepper_type\fP \fBcontrolled_stepper\fP (default_error_checker< double, range_algebra, default_operations >(\fBabs_err\fP, \fBrel_err\fP, \fBa_x\fP, \fBa_dxdt\fP))"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBintegrate_func\fP (\fBstate_type\fP x0, void func(const \fBstate_type\fP &, \fBstate_type\fP &, double), double start_t, double end_t, bool reverse)"
+.br
+.RI "Integrated portable function to integrate ODE\&. "
+.ti -1c
+.RI "\fBstate_type\fP \fBint_whole_star\fP (double hc)"
+.br
+.RI "Integrate the whole structure of the star\&. "
+.ti -1c
+.RI "double \fBcal_lambda\fP (double \fBC\fP, double Y)"
+.br
+.ti -1c
+.RI "double \fBlambda_tilde\fP (double m1, double m2, double l1, double l2)"
+.br
+.ti -1c
+.RI "double \fBeh\fP (double h)"
+.br
+.ti -1c
+.RI "double \fBph\fP (double h)"
+.br
+.ti -1c
+.RI "double \fBgammah_interpolation\fP (double p, double e)"
+.br
+.ti -1c
+.RI "double \fBgammaeh_pspc\fP (double h, double p, double e, \fBstate_type\fP a)"
+.br
+.RI "Calculate gamma in the piece_spec_phtr_ccs model\&. "
+.ti -1c
+.RI "double \fBgammah_spectral\fP (double h, double p, double e, \fBstate_type\fP a, double h_init=\fBh_0\fP)"
+.br
+.RI "Calculate gamma in the spectral expansion model\&. "
+.ti -1c
+.RI "double \fBgammae_piecewise\fP (double e, \fBstate_type\fP a)"
+.br
+.RI "Calculate gamma in the gamma piecewise model\&. "
+.ti -1c
+.RI "double \fBgammae_piecewise_p\fP (double e, \fBstate_type\fP a)"
+.br
+.RI "Calculate gamma in the pressure piecewise model\&. "
+.ti -1c
+.RI "double \fBgammah_phase_trans\fP (double p, double e, \fBstate_type\fP a)"
+.br
+.RI "Calculate gamma in the phase transition model\&. "
+.ti -1c
+.RI "double \fBgammae_cons_cs\fP (double p, double e, \fBstate_type\fP a)"
+.br
+.RI "Calculate gamma in the constant speed of sound model\&. "
+.ti -1c
+.RI "double \fBgamma_which\fP (double h, double p, double e, \fBstate_type\fP a)"
+.br
+.RI "Choose a proper function to calculate the adiabatic index\&. "
+.ti -1c
+.RI "void \fBfind_hp_at_e\fP (const \fBstate_type\fP &x, \fBstate_type\fP &dxdt, double e)"
+.br
+.RI "Calculate enthalpy and pressure at given energy density\&. "
+.ti -1c
+.RI "double \fBdpdh\fP (double p, double e)"
+.br
+.ti -1c
+.RI "double \fBdedh\fP (double p, double e, double Gamma)"
+.br
+.ti -1c
+.RI "double \fBdmdh\fP (double p, double e, double m, double r)"
+.br
+.ti -1c
+.RI "double \fBdrdh\fP (double p, double e, double m, double r)"
+.br
+.ti -1c
+.RI "double \fBdydh\fP (double p, double e, double m, double r, double y, double Gamma)"
+.br
+.ti -1c
+.RI "void \fBcal_eos\fP (const \fBstate_type\fP &x, \fBstate_type\fP &dxdt, double h)"
+.br
+.ti -1c
+.RI "void \fBinner_to_outer\fP (const \fBstate_type\fP &x, \fBstate_type\fP &dxdt, double h)"
+.br
+.ti -1c
+.RI "void \fBinner_to_outer_interpolation\fP (const \fBstate_type\fP &x, \fBstate_type\fP &dxdt, double h)"
+.br
+.ti -1c
+.RI "void \fBouter_to_inner\fP (const \fBstate_type\fP &x, \fBstate_type\fP &dxdt, double h)"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBinitiate_core\fP (double hc, double hig=\fBh_ig\fP)"
+.br
+.RI "Integrate the most central core part of the compact star to avoid singular point\&. "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "double \fBabs_err\fP = 1\&.0e\-18"
+.br
+.ti -1c
+.RI "double \fBrel_err\fP = 1\&.0e\-12"
+.br
+.ti -1c
+.RI "double \fBa_x\fP = 1\&.0"
+.br
+.ti -1c
+.RI "double \fBa_dxdt\fP = 1\&.0"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef controlled_runge_kutta< \fBerror_stepper_type\fP > \fBcontrolled_stepper_type\fP"
+
+.PP
+Definition at line 59 of file integrate_core\&.hpp\&.
+.SS "typedef runge_kutta_fehlberg78< \fBstate_type\fP > \fBerror_stepper_type\fP"
+
+.PP
+Definition at line 58 of file integrate_core\&.hpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "void cal_eos (const \fBstate_type\fP & x, \fBstate_type\fP & dxdt, double h)"
+
+.PP
+Definition at line 195 of file integrate_core\&.hpp\&.
+.SS "double cal_lambda (double C, double Y)\fC [inline]\fP"
+
+.PP
+Definition at line 71 of file integrate_core\&.hpp\&.
+.SS "\fBcontrolled_stepper_type\fP controlled_stepper (default_error_checker< double, range_algebra, default_operations >abs_err, rel_err, a_x, a_dxdt)"
+
+.SS "double dedh (double p, double e, double Gamma)\fC [inline]\fP"
+
+.PP
+Definition at line 174 of file integrate_core\&.hpp\&.
+.SS "double dmdh (double p, double e, double m, double r)\fC [inline]\fP"
+
+.PP
+Definition at line 176 of file integrate_core\&.hpp\&.
+.SS "double dpdh (double p, double e)\fC [inline]\fP"
+
+.PP
+Definition at line 172 of file integrate_core\&.hpp\&.
+.SS "double drdh (double p, double e, double m, double r)\fC [inline]\fP"
+
+.PP
+Definition at line 178 of file integrate_core\&.hpp\&.
+.SS "double dydh (double p, double e, double m, double r, double y, double Gamma)"
+
+.PP
+Definition at line 180 of file integrate_core\&.hpp\&.
+.SS "double eh (double h)"
+
+.PP
+Definition at line 76 of file integrate_core\&.hpp\&.
+.SS "void find_hp_at_e (const \fBstate_type\fP & x, \fBstate_type\fP & dxdt, double e)"
+
+.PP
+Calculate enthalpy and pressure at given energy density\&. 
+.PP
+Definition at line 159 of file integrate_core\&.hpp\&.
+.SS "double gamma_which (double h, double p, double e, \fBstate_type\fP a)"
+
+.PP
+Choose a proper function to calculate the adiabatic index\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIh\fP Enthalpy at where to calculate the gamma\&. 
+.br
+\fIp\fP Pressure at where to calculate the gamma\&. 
+.br
+\fIe\fP Energy density at where to calculate the gamma\&. 
+.br
+\fIa\fP State vector to store parameterization parameters\&. 
+.RE
+.PP
+
+.PP
+Definition at line 148 of file integrate_core\&.hpp\&.
+.SS "double gammae_cons_cs (double p, double e, \fBstate_type\fP a)"
+
+.PP
+Calculate gamma in the constant speed of sound model\&. 
+.PP
+\fBAttention\fP
+.RS 4
+Define v^2=dp/de, and p=ke^{gamma}\&. 
+.RE
+.PP
+
+.PP
+Definition at line 138 of file integrate_core\&.hpp\&.
+.SS "double gammae_piecewise (double e, \fBstate_type\fP a)"
+
+.PP
+Calculate gamma in the gamma piecewise model\&. 
+.PP
+Definition at line 112 of file integrate_core\&.hpp\&.
+.SS "double gammae_piecewise_p (double e, \fBstate_type\fP a)"
+
+.PP
+Calculate gamma in the pressure piecewise model\&. 
+.PP
+Definition at line 119 of file integrate_core\&.hpp\&.
+.SS "double gammaeh_pspc (double h, double p, double e, \fBstate_type\fP a)"
+
+.PP
+Calculate gamma in the piece_spec_phtr_ccs model\&. 
+.PP
+Definition at line 87 of file integrate_core\&.hpp\&.
+.SS "double gammah_interpolation (double p, double e)\fC [inline]\fP"
+
+.PP
+Definition at line 84 of file integrate_core\&.hpp\&.
+.SS "double gammah_phase_trans (double p, double e, \fBstate_type\fP a)"
+
+.PP
+Calculate gamma in the phase transition model\&. 
+.PP
+Definition at line 127 of file integrate_core\&.hpp\&.
+.SS "double gammah_spectral (double h, double p, double e, \fBstate_type\fP a, double h_init = \fC\fBh_0\fP\fP)"
+
+.PP
+Calculate gamma in the spectral expansion model\&. 
+.PP
+Definition at line 103 of file integrate_core\&.hpp\&.
+.SS "\fBstate_type\fP initiate_core (double hc, double hig = \fC\fBh_ig\fP\fP)"
+
+.PP
+Integrate the most central core part of the compact star to avoid singular point\&. 
+.PP
+Definition at line 274 of file integrate_core\&.hpp\&.
+.SS "void inner_to_outer (const \fBstate_type\fP & x, \fBstate_type\fP & dxdt, double h)"
+
+.PP
+Definition at line 202 of file integrate_core\&.hpp\&.
+.SS "void inner_to_outer_interpolation (const \fBstate_type\fP & x, \fBstate_type\fP & dxdt, double h)"
+
+.PP
+Definition at line 212 of file integrate_core\&.hpp\&.
+.SS "\fBstate_type\fP int_whole_star (double hc)"
+
+.PP
+Integrate the whole structure of the star\&. Give h_c, get m, r and y\&. 
+.PP
+\fBNote\fP
+.RS 4
+Radius r in this function should multiply half Schwarzschild radius of the sun\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhc\fP enthalpy at the center of the compact star\&. 
+.RE
+.PP
+
+.PP
+Definition at line 307 of file integrate_core\&.hpp\&.
+.SS "\fBstate_type\fP integrate_func (\fBstate_type\fP x0, void  funcconst state_type &, state_type &, double, double start_t, double end_t, bool reverse = \fCtrue\fP)"
+
+.PP
+Integrated portable function to integrate ODE\&. 
+.PP
+Definition at line 242 of file integrate_core\&.hpp\&.
+.SS "double lambda_tilde (double m1, double m2, double l1, double l2)\fC [inline]\fP"
+
+.PP
+Definition at line 74 of file integrate_core\&.hpp\&.
+.SS "void outer_to_inner (const \fBstate_type\fP & x, \fBstate_type\fP & dxdt, double h)"
+
+.PP
+Definition at line 230 of file integrate_core\&.hpp\&.
+.SS "double ph (double h)\fC [inline]\fP"
+
+.PP
+Definition at line 82 of file integrate_core\&.hpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "double a_dxdt = 1\&.0"
+
+.PP
+Definition at line 60 of file integrate_core\&.hpp\&.
+.SS "double a_x = 1\&.0"
+
+.PP
+Definition at line 60 of file integrate_core\&.hpp\&.
+.SS "double abs_err = 1\&.0e\-18"
+
+.PP
+Definition at line 60 of file integrate_core\&.hpp\&.
+.SS "double rel_err = 1\&.0e\-12"
+
+.PP
+Definition at line 60 of file integrate_core\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

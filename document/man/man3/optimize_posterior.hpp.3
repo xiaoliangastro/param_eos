@@ -1,0 +1,96 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <gsl/gsl_min\&.h>\fP
+.br
+\fC#include <gsl/gsl_errno\&.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include 'integrate_core\&.hpp'\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef map< double, double >::iterator \fBitmap\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBminfunc_opt_post\fP (double h, void *params)"
+.br
+.ti -1c
+.RI "double \fBfind_aim\fP (double lower, double upper, double m_aim)"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBoptimize_single_point\fP (double mass)"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBoptimize_single_pair\fP (double m1, double m2)"
+.br
+.ti -1c
+.RI "void \fBoptimize_file\fP (const string ifname, const string ofname)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "map< double, \fBstate_type\fP > \fBh_mrl\fP"
+.br
+.ti -1c
+.RI "map< double, double > \fBtoolm_h\fP"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef map<double, double>::iterator \fBitmap\fP"
+
+.PP
+Definition at line 17 of file optimize_posterior\&.hpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "double find_aim (double lower, double upper, double m_aim)"
+
+.PP
+Definition at line 41 of file optimize_posterior\&.hpp\&.
+.SS "double minfunc_opt_post (double h, void * params)"
+
+.PP
+Definition at line 19 of file optimize_posterior\&.hpp\&.
+.SS "void optimize_file (const string ifname, const string ofname)"
+
+.PP
+Definition at line 93 of file optimize_posterior\&.hpp\&.
+.SS "\fBstate_type\fP optimize_single_pair (double m1, double m2)"
+
+.PP
+Definition at line 82 of file optimize_posterior\&.hpp\&.
+.SS "\fBstate_type\fP optimize_single_point (double mass)"
+
+.PP
+Definition at line 67 of file optimize_posterior\&.hpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "map<double, \fBstate_type\fP> h_mrl"
+
+.PP
+Definition at line 15 of file optimize_posterior\&.hpp\&.
+.SS "map<double, double> toolm_h"
+
+.PP
+Definition at line 16 of file optimize_posterior\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

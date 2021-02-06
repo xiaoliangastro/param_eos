@@ -1,0 +1,357 @@
+\hypertarget{param__utils_8hpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/param\+\_\+utils.hpp File Reference}
+\label{param__utils_8hpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/param\_utils.hpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/param\_utils.hpp}}
+{\ttfamily \#include \char`\"{}integrate\+\_\+core.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$boost/math/interpolators/makima.\+hpp$>$}\newline
+Include dependency graph for param\+\_\+utils.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{param__utils_8hpp_a54b1ccb702b0746a0fb52c4862210696}{fail\+\_\+process}}()~$\ast$h\+\_\+closest = -\/1; $\ast$unknown=0; return false;
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \mbox{\hyperlink{param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229}{get\+\_\+mrl}} (double hc)
+\begin{DoxyCompactList}\small\item\em Python interface function for integrating the whole structure of the star. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a}{check\+\_\+eos}} (double $\ast$hc)
+\item 
+bool \mbox{\hyperlink{param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7}{check\+\_\+mmax}} (double $\ast$hc, double $\ast$M\+\_\+max)
+\begin{DoxyCompactList}\small\item\em Find non-\/rotating maximum supported mass of an EoS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886}{make\+\_\+eos\+\_\+table}} (double h\+\_\+start, double h\+\_\+end, double dh, int precision, char $\ast$f\+\_\+name, const char $\ast$unit=\char`\"{}cgs\char`\"{})
+\item 
+bool \mbox{\hyperlink{param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980}{get\+\_\+unknowns\+\_\+from\+\_\+knowns}} (double known1, double known2, double $\ast$unknown1, double $\ast$unknown2, double $\ast$h\+\_\+max, int get\+\_\+type)
+\begin{DoxyCompactList}\small\item\em find nearest known property, return corresponding unknown ones. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad}{find\+\_\+closest}} (double m\+\_\+aim, double h\+\_\+i, double h\+\_\+max, double $\ast$h\+\_\+closest, double $\ast$lambda, bool use\+\_\+user\+\_\+start\+\_\+point=false)
+\item 
+bool \mbox{\hyperlink{param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a}{find\+\_\+closest\+\_\+with\+\_\+maxm\+\_\+known}} (double known\+\_\+aim, double h\+\_\+i, double h\+\_\+max, double $\ast$h\+\_\+closest, double $\ast$unknown, int get\+\_\+type, bool use\+\_\+user\+\_\+start\+\_\+point)
+\begin{DoxyCompactList}\small\item\em Find a global\+\_\+a with another global\+\_\+b. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{param__utils_8hpp_a0e5c0924c152182239b53b638717efcc}{integrate\+\_\+eos}} (double h\+\_\+start, double h\+\_\+end, double dh, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$h\+\_\+tb, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$p\+\_\+tb, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$e\+\_\+tb, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$rho\+\_\+tb, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$gamma\+\_\+tb, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$v\+\_\+sq\+\_\+tb)
+\item 
+void \mbox{\hyperlink{param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de}{make\+\_\+tool\+\_\+table}} (double minh, double maxh, double dh)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{param__utils_8hpp_a54b1ccb702b0746a0fb52c4862210696}\label{param__utils_8hpp_a54b1ccb702b0746a0fb52c4862210696}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!fail\_process@{fail\_process}}
+\index{fail\_process@{fail\_process}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{fail\_process}{fail\_process}}
+{\footnotesize\ttfamily \#define fail\+\_\+process(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~$\ast$h\+\_\+closest = -\/1; $\ast$unknown=0; return false;}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a}\label{param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!check\_eos@{check\_eos}}
+\index{check\_eos@{check\_eos}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{check\_eos()}{check\_eos()}}
+{\footnotesize\ttfamily bool check\+\_\+eos (\begin{DoxyParamCaption}\item[{double $\ast$}]{hc }\end{DoxyParamCaption})}
+
+
+
+Definition at line 150 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7}\label{param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!check\_mmax@{check\_mmax}}
+\index{check\_mmax@{check\_mmax}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{check\_mmax()}{check\_mmax()}}
+{\footnotesize\ttfamily bool check\+\_\+mmax (\begin{DoxyParamCaption}\item[{double $\ast$}]{hc,  }\item[{double $\ast$}]{M\+\_\+max }\end{DoxyParamCaption})}
+
+
+
+Find non-\/rotating maximum supported mass of an EoS. 
+
+The challenge is the \char`\"{}noise\char`\"{} or none monotonicity property, the solution is\+:
+\begin{DoxyEnumerate}
+\item A bigger guard to check again, 2. Judge whether a step before is larger. error\+: $\sim$0.005 M\+\_\+sun 
+\begin{DoxyParams}{Parameters}
+{\em hc} & Pointer to the central enthalpy, return -\/1 if finding error. \\
+\hline
+{\em M\+\_\+max} & Pointer to the maximum mass, return 0 if finding error. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & whether finding process correctly worked. \\
+\hline
+\end{DoxyRetVals}
+
+\end{DoxyEnumerate}
+
+Definition at line 202 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad}\label{param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!find\_closest@{find\_closest}}
+\index{find\_closest@{find\_closest}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_closest()}{find\_closest()}}
+{\footnotesize\ttfamily bool find\+\_\+closest (\begin{DoxyParamCaption}\item[{double}]{m\+\_\+aim,  }\item[{double}]{h\+\_\+i,  }\item[{double}]{h\+\_\+max,  }\item[{double $\ast$}]{h\+\_\+closest,  }\item[{double $\ast$}]{lambda,  }\item[{bool}]{use\+\_\+user\+\_\+start\+\_\+point = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 264 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a}\label{param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!find\_closest\_with\_maxm\_known@{find\_closest\_with\_maxm\_known}}
+\index{find\_closest\_with\_maxm\_known@{find\_closest\_with\_maxm\_known}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_closest\_with\_maxm\_known()}{find\_closest\_with\_maxm\_known()}}
+{\footnotesize\ttfamily bool find\+\_\+closest\+\_\+with\+\_\+maxm\+\_\+known (\begin{DoxyParamCaption}\item[{double}]{known\+\_\+aim,  }\item[{double}]{h\+\_\+i,  }\item[{double}]{h\+\_\+max,  }\item[{double $\ast$}]{h\+\_\+closest,  }\item[{double $\ast$}]{unknown,  }\item[{int}]{get\+\_\+type,  }\item[{bool}]{use\+\_\+user\+\_\+start\+\_\+point = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Find a global\+\_\+a with another global\+\_\+b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em known\+\_\+aim} & Global\+\_\+b. \\
+\hline
+{\em h\+\_\+i} & Initial guess. \\
+\hline
+{\em h\+\_\+max} & Known maximum enthalpy. \\
+\hline
+{\em h\+\_\+closest} & Pointer to the closest enthalpy, return -\/1 if finding error. \\
+\hline
+{\em unknown} & Pointer to the global\+\_\+a to be found, return 0 if finding error. \\
+\hline
+{\em get\+\_\+type} & 1. mass to lambda; 2. mass to radius; 3. lambda to mass. \\
+\hline
+{\em use\+\_\+user\+\_\+start\+\_\+point} & Whether to use user specified initial guess h\+\_\+i or use system default value. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & whether finding process correctly worked. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 332 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229}\label{param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!get\_mrl@{get\_mrl}}
+\index{get\_mrl@{get\_mrl}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_mrl()}{get\_mrl()}}
+{\footnotesize\ttfamily double $\ast$ get\+\_\+mrl (\begin{DoxyParamCaption}\item[{double}]{hc }\end{DoxyParamCaption})}
+
+
+
+Python interface function for integrating the whole structure of the star. 
+
+Give h\+\_\+c, get M/\+M\+\_\+sun, R/km and L, which are stored in global variable double $\ast$mrl\+\_\+result. \begin{DoxyAttention}{Attention}
+Use this for python control only, because double$\ast$ is convenient for python, and global variable is needed, ~\newline
+ which may cause confuse problem if used in c++ main, so please use int\+\_\+whole\+\_\+star instead for c++, because that do not need to return global variable. 
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em hc} & enthalpy at the center of the compact star. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 37 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980}\label{param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!get\_unknowns\_from\_knowns@{get\_unknowns\_from\_knowns}}
+\index{get\_unknowns\_from\_knowns@{get\_unknowns\_from\_knowns}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{get\_unknowns\_from\_knowns()}{get\_unknowns\_from\_knowns()}}
+{\footnotesize\ttfamily bool get\+\_\+unknowns\+\_\+from\+\_\+knowns (\begin{DoxyParamCaption}\item[{double}]{known1,  }\item[{double}]{known2,  }\item[{double $\ast$}]{unknown1,  }\item[{double $\ast$}]{unknown2,  }\item[{double $\ast$}]{h\+\_\+max,  }\item[{int}]{get\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+find nearest known property, return corresponding unknown ones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em known1} & Known global 1 to find with. \\
+\hline
+{\em known2} & Known global 2 to find with. \\
+\hline
+{\em unknown1} & Unknown global 1 to be found. \\
+\hline
+{\em unknown2} & Unknown global 2 to be found. \\
+\hline
+{\em h\+\_\+max} & Pointer to stare maximum enthalpy. \\
+\hline
+{\em get\+\_\+type} & 1. mass to lambda; 2. mass to radius; 3. lambda to mass. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em bool} & Whether finding process correctly worked. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 397 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_a0e5c0924c152182239b53b638717efcc}\label{param__utils_8hpp_a0e5c0924c152182239b53b638717efcc}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!integrate\_eos@{integrate\_eos}}
+\index{integrate\_eos@{integrate\_eos}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{integrate\_eos()}{integrate\_eos()}}
+{\footnotesize\ttfamily bool integrate\+\_\+eos (\begin{DoxyParamCaption}\item[{double}]{h\+\_\+start,  }\item[{double}]{h\+\_\+end,  }\item[{double}]{dh,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{h\+\_\+tb,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{p\+\_\+tb,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{e\+\_\+tb,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{rho\+\_\+tb,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{gamma\+\_\+tb,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $\ast$}]{v\+\_\+sq\+\_\+tb }\end{DoxyParamCaption})}
+
+
+
+Definition at line 51 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886}\label{param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!make\_eos\_table@{make\_eos\_table}}
+\index{make\_eos\_table@{make\_eos\_table}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{make\_eos\_table()}{make\_eos\_table()}}
+{\footnotesize\ttfamily void make\+\_\+eos\+\_\+table (\begin{DoxyParamCaption}\item[{double}]{h\+\_\+start,  }\item[{double}]{h\+\_\+end,  }\item[{double}]{dh,  }\item[{int}]{precision,  }\item[{char $\ast$}]{f\+\_\+name,  }\item[{const char $\ast$}]{unit = {\ttfamily \char`\"{}cgs\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 107 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de}\label{param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de}} 
+\index{param\_utils.hpp@{param\_utils.hpp}!make\_tool\_table@{make\_tool\_table}}
+\index{make\_tool\_table@{make\_tool\_table}!param\_utils.hpp@{param\_utils.hpp}}
+\doxysubsubsection{\texorpdfstring{make\_tool\_table()}{make\_tool\_table()}}
+{\footnotesize\ttfamily void make\+\_\+tool\+\_\+table (\begin{DoxyParamCaption}\item[{double}]{minh,  }\item[{double}]{maxh,  }\item[{double}]{dh }\end{DoxyParamCaption})}
+
+
+
+Definition at line 123 of file param\+\_\+utils.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_icgraph}
+\end{center}
+\end{figure}

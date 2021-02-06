@@ -1,0 +1,778 @@
+\hypertarget{integrate__core_8hpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/integrate\+\_\+core.hpp File Reference}
+\label{integrate__core_8hpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/integrate\_core.hpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/integrate\_core.hpp}}
+{\ttfamily \#include $<$boost/numeric/odeint/stepper/controlled\+\_\+runge\+\_\+kutta.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/odeint/stepper/runge\+\_\+kutta\+\_\+fehlberg78.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/odeint/integrate/integrate\+\_\+adaptive.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/numeric/odeint/integrate/integrate\+\_\+const.\+hpp$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include \char`\"{}quark\+\_\+star\+\_\+utils.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}global\+\_\+variable\+\_\+constants.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data.\+hpp\char`\"{}}\newline
+Include dependency graph for integrate\+\_\+core.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpush__back__state__and__time}{push\+\_\+back\+\_\+state\+\_\+and\+\_\+time}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef runge\+\_\+kutta\+\_\+fehlberg78$<$ \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ \mbox{\hyperlink{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}{error\+\_\+stepper\+\_\+type}}
+\item 
+typedef controlled\+\_\+runge\+\_\+kutta$<$ \mbox{\hyperlink{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}{error\+\_\+stepper\+\_\+type}} $>$ \mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4}{controlled\+\_\+stepper}} (default\+\_\+error\+\_\+checker$<$ double, range\+\_\+algebra, default\+\_\+operations $>$(\mbox{\hyperlink{integrate__core_8hpp_a460492ca5cb862b459c8d89a8a7b22ca}{abs\+\_\+err}}, \mbox{\hyperlink{integrate__core_8hpp_acddbc945f890f2682b685e05defdda61}{rel\+\_\+err}}, \mbox{\hyperlink{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}{a\+\_\+x}}, \mbox{\hyperlink{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}{a\+\_\+dxdt}}))
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168}{integrate\+\_\+func}} (\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} x0, void func(const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&, double), double start\+\_\+t, double end\+\_\+t, bool reverse)
+\begin{DoxyCompactList}\small\item\em Integrated portable function to integrate O\+DE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823}{int\+\_\+whole\+\_\+star}} (double hc)
+\begin{DoxyCompactList}\small\item\em Integrate the whole structure of the star. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_ac44351f385d2bf728eb529d1d0a640c2}{cal\+\_\+lambda}} (double \mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, double Y)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a55c49ad0b32fc3d7bdcfc1d07c9021cb}{lambda\+\_\+tilde}} (double m1, double m2, double l1, double l2)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a5bd395991f95231deed00b9a52bffecd}{eh}} (double h)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}{ph}} (double h)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a3c6882bb4d37f66684a037145b64abfd}{gammah\+\_\+interpolation}} (double p, double e)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_abd5004d4469acd8c8bf26b9df3ed8f50}{gammaeh\+\_\+pspc}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+ccs model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a784a9dfa05351509561ae469693951fa}{gammah\+\_\+spectral}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a, double h\+\_\+init=\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the spectral expansion model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a76e3865c0c7ced67ae2f5393407d47ed}{gammae\+\_\+piecewise}} (double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the gamma piecewise model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a1b4de4c4509b5c4c1ce02f535c84fa16}{gammae\+\_\+piecewise\+\_\+p}} (double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the pressure piecewise model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_abae461af630e5af52f7242b4880d86e6}{gammah\+\_\+phase\+\_\+trans}} (double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the phase transition model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a98f7292845a0dda5c9385d3426a09340}{gammae\+\_\+cons\+\_\+cs}} (double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the constant speed of sound model. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}{gamma\+\_\+which}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
+\begin{DoxyCompactList}\small\item\em Choose a proper function to calculate the adiabatic index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}{find\+\_\+hp\+\_\+at\+\_\+e}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double e)
+\begin{DoxyCompactList}\small\item\em Calculate enthalpy and pressure at given energy density. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a36f9d85f06e2332267fd04cfd5efbcd7}{dpdh}} (double p, double e)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}{dedh}} (double p, double e, double Gamma)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_aed2763437383ebd8b78bbc28466fdb9b}{dmdh}} (double p, double e, double m, double r)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a80371cb559ff987c3eb4711da75313f8}{drdh}} (double p, double e, double m, double r)
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_ae1dc7b36c9b1f2921e63389b914a4828}{dydh}} (double p, double e, double m, double r, double y, double Gamma)
+\item 
+void \mbox{\hyperlink{integrate__core_8hpp_a86f802d0af08d9982cd9d828e4ee52ae}{cal\+\_\+eos}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double h)
+\item 
+void \mbox{\hyperlink{integrate__core_8hpp_ad5ee2a42f15d72545cc54c4ba0ea182e}{inner\+\_\+to\+\_\+outer}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double h)
+\item 
+void \mbox{\hyperlink{integrate__core_8hpp_a75bc4b8b8be857c5cb21e1ccbc2ab035}{inner\+\_\+to\+\_\+outer\+\_\+interpolation}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double h)
+\item 
+void \mbox{\hyperlink{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0}{outer\+\_\+to\+\_\+inner}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double h)
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a9bfd97f8b9b041cdbc4cbf75441ad389}{initiate\+\_\+core}} (double hc, double hig=\mbox{\hyperlink{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}{h\+\_\+ig}})
+\begin{DoxyCompactList}\small\item\em Integrate the most central core part of the compact star to avoid singular point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a460492ca5cb862b459c8d89a8a7b22ca}{abs\+\_\+err}} = 1.\+0e-\/18
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_acddbc945f890f2682b685e05defdda61}{rel\+\_\+err}} = 1.\+0e-\/12
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}{a\+\_\+x}} = 1.\+0
+\item 
+double \mbox{\hyperlink{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}{a\+\_\+dxdt}} = 1.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{integrate__core_8hpp_a316792556e400adc33b04b149de69507}\label{integrate__core_8hpp_a316792556e400adc33b04b149de69507}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!controlled\_stepper\_type@{controlled\_stepper\_type}}
+\index{controlled\_stepper\_type@{controlled\_stepper\_type}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{controlled\_stepper\_type}{controlled\_stepper\_type}}
+{\footnotesize\ttfamily typedef controlled\+\_\+runge\+\_\+kutta$<$ \mbox{\hyperlink{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}{error\+\_\+stepper\+\_\+type}} $>$ \mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}}}
+
+
+
+Definition at line 59 of file integrate\+\_\+core.\+hpp.
+
+\mbox{\Hypertarget{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}\label{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!error\_stepper\_type@{error\_stepper\_type}}
+\index{error\_stepper\_type@{error\_stepper\_type}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{error\_stepper\_type}{error\_stepper\_type}}
+{\footnotesize\ttfamily typedef runge\+\_\+kutta\+\_\+fehlberg78$<$ \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ \mbox{\hyperlink{integrate__core_8hpp_a043fb59041d31caa54395ec863e93c63}{error\+\_\+stepper\+\_\+type}}}
+
+
+
+Definition at line 58 of file integrate\+\_\+core.\+hpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{integrate__core_8hpp_a86f802d0af08d9982cd9d828e4ee52ae}\label{integrate__core_8hpp_a86f802d0af08d9982cd9d828e4ee52ae}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!cal\_eos@{cal\_eos}}
+\index{cal\_eos@{cal\_eos}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{cal\_eos()}{cal\_eos()}}
+{\footnotesize\ttfamily void cal\+\_\+eos (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 195 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a86f802d0af08d9982cd9d828e4ee52ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a86f802d0af08d9982cd9d828e4ee52ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_ac44351f385d2bf728eb529d1d0a640c2}\label{integrate__core_8hpp_ac44351f385d2bf728eb529d1d0a640c2}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!cal\_lambda@{cal\_lambda}}
+\index{cal\_lambda@{cal\_lambda}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{cal\_lambda()}{cal\_lambda()}}
+{\footnotesize\ttfamily double cal\+\_\+lambda (\begin{DoxyParamCaption}\item[{double}]{C,  }\item[{double}]{Y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 71 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_ac44351f385d2bf728eb529d1d0a640c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4}\label{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!controlled\_stepper@{controlled\_stepper}}
+\index{controlled\_stepper@{controlled\_stepper}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{controlled\_stepper()}{controlled\_stepper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}} controlled\+\_\+stepper (\begin{DoxyParamCaption}\item[{default\+\_\+error\+\_\+checker$<$ double, range\+\_\+algebra, default\+\_\+operations $>$}]{abs\+\_\+err, rel\+\_\+err, a\+\_\+x, a\+\_\+dxdt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}\label{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!dedh@{dedh}}
+\index{dedh@{dedh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{dedh()}{dedh()}}
+{\footnotesize\ttfamily double dedh (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{double}]{Gamma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_aed2763437383ebd8b78bbc28466fdb9b}\label{integrate__core_8hpp_aed2763437383ebd8b78bbc28466fdb9b}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!dmdh@{dmdh}}
+\index{dmdh@{dmdh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{dmdh()}{dmdh()}}
+{\footnotesize\ttfamily double dmdh (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{double}]{m,  }\item[{double}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 176 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_aed2763437383ebd8b78bbc28466fdb9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a36f9d85f06e2332267fd04cfd5efbcd7}\label{integrate__core_8hpp_a36f9d85f06e2332267fd04cfd5efbcd7}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!dpdh@{dpdh}}
+\index{dpdh@{dpdh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{dpdh()}{dpdh()}}
+{\footnotesize\ttfamily double dpdh (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 172 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a36f9d85f06e2332267fd04cfd5efbcd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a80371cb559ff987c3eb4711da75313f8}\label{integrate__core_8hpp_a80371cb559ff987c3eb4711da75313f8}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!drdh@{drdh}}
+\index{drdh@{drdh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{drdh()}{drdh()}}
+{\footnotesize\ttfamily double drdh (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{double}]{m,  }\item[{double}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 178 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a80371cb559ff987c3eb4711da75313f8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_ae1dc7b36c9b1f2921e63389b914a4828}\label{integrate__core_8hpp_ae1dc7b36c9b1f2921e63389b914a4828}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!dydh@{dydh}}
+\index{dydh@{dydh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{dydh()}{dydh()}}
+{\footnotesize\ttfamily double dydh (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{double}]{m,  }\item[{double}]{r,  }\item[{double}]{y,  }\item[{double}]{Gamma }\end{DoxyParamCaption})}
+
+
+
+Definition at line 180 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_ae1dc7b36c9b1f2921e63389b914a4828_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a5bd395991f95231deed00b9a52bffecd}\label{integrate__core_8hpp_a5bd395991f95231deed00b9a52bffecd}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!eh@{eh}}
+\index{eh@{eh}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{eh()}{eh()}}
+{\footnotesize\ttfamily double eh (\begin{DoxyParamCaption}\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 76 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a5bd395991f95231deed00b9a52bffecd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}\label{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!find\_hp\_at\_e@{find\_hp\_at\_e}}
+\index{find\_hp\_at\_e@{find\_hp\_at\_e}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{find\_hp\_at\_e()}{find\_hp\_at\_e()}}
+{\footnotesize\ttfamily void find\+\_\+hp\+\_\+at\+\_\+e (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{e }\end{DoxyParamCaption})}
+
+
+
+Calculate enthalpy and pressure at given energy density. 
+
+
+
+Definition at line 159 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}\label{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gamma\_which@{gamma\_which}}
+\index{gamma\_which@{gamma\_which}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gamma\_which()}{gamma\_which()}}
+{\footnotesize\ttfamily double gamma\+\_\+which (\begin{DoxyParamCaption}\item[{double}]{h,  }\item[{double}]{p,  }\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Choose a proper function to calculate the adiabatic index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & Enthalpy at where to calculate the gamma. \\
+\hline
+{\em p} & Pressure at where to calculate the gamma. \\
+\hline
+{\em e} & Energy density at where to calculate the gamma. \\
+\hline
+{\em a} & State vector to store parameterization parameters. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 148 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a98f7292845a0dda5c9385d3426a09340}\label{integrate__core_8hpp_a98f7292845a0dda5c9385d3426a09340}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammae\_cons\_cs@{gammae\_cons\_cs}}
+\index{gammae\_cons\_cs@{gammae\_cons\_cs}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammae\_cons\_cs()}{gammae\_cons\_cs()}}
+{\footnotesize\ttfamily double gammae\+\_\+cons\+\_\+cs (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the constant speed of sound model. 
+
+\begin{DoxyAttention}{Attention}
+Define v$^\wedge$2=dp/de, and p=ke$^\wedge$\{gamma\}. 
+\end{DoxyAttention}
+
+
+Definition at line 138 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a98f7292845a0dda5c9385d3426a09340_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a76e3865c0c7ced67ae2f5393407d47ed}\label{integrate__core_8hpp_a76e3865c0c7ced67ae2f5393407d47ed}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammae\_piecewise@{gammae\_piecewise}}
+\index{gammae\_piecewise@{gammae\_piecewise}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammae\_piecewise()}{gammae\_piecewise()}}
+{\footnotesize\ttfamily double gammae\+\_\+piecewise (\begin{DoxyParamCaption}\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the gamma piecewise model. 
+
+
+
+Definition at line 112 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a76e3865c0c7ced67ae2f5393407d47ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a1b4de4c4509b5c4c1ce02f535c84fa16}\label{integrate__core_8hpp_a1b4de4c4509b5c4c1ce02f535c84fa16}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammae\_piecewise\_p@{gammae\_piecewise\_p}}
+\index{gammae\_piecewise\_p@{gammae\_piecewise\_p}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammae\_piecewise\_p()}{gammae\_piecewise\_p()}}
+{\footnotesize\ttfamily double gammae\+\_\+piecewise\+\_\+p (\begin{DoxyParamCaption}\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the pressure piecewise model. 
+
+
+
+Definition at line 119 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a1b4de4c4509b5c4c1ce02f535c84fa16_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_abd5004d4469acd8c8bf26b9df3ed8f50}\label{integrate__core_8hpp_abd5004d4469acd8c8bf26b9df3ed8f50}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammaeh\_pspc@{gammaeh\_pspc}}
+\index{gammaeh\_pspc@{gammaeh\_pspc}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammaeh\_pspc()}{gammaeh\_pspc()}}
+{\footnotesize\ttfamily double gammaeh\+\_\+pspc (\begin{DoxyParamCaption}\item[{double}]{h,  }\item[{double}]{p,  }\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+ccs model. 
+
+
+
+Definition at line 87 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_abd5004d4469acd8c8bf26b9df3ed8f50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a3c6882bb4d37f66684a037145b64abfd}\label{integrate__core_8hpp_a3c6882bb4d37f66684a037145b64abfd}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammah\_interpolation@{gammah\_interpolation}}
+\index{gammah\_interpolation@{gammah\_interpolation}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammah\_interpolation()}{gammah\_interpolation()}}
+{\footnotesize\ttfamily double gammah\+\_\+interpolation (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 84 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a3c6882bb4d37f66684a037145b64abfd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_abae461af630e5af52f7242b4880d86e6}\label{integrate__core_8hpp_abae461af630e5af52f7242b4880d86e6}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammah\_phase\_trans@{gammah\_phase\_trans}}
+\index{gammah\_phase\_trans@{gammah\_phase\_trans}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammah\_phase\_trans()}{gammah\_phase\_trans()}}
+{\footnotesize\ttfamily double gammah\+\_\+phase\+\_\+trans (\begin{DoxyParamCaption}\item[{double}]{p,  }\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the phase transition model. 
+
+
+
+Definition at line 127 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_abae461af630e5af52f7242b4880d86e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a784a9dfa05351509561ae469693951fa}\label{integrate__core_8hpp_a784a9dfa05351509561ae469693951fa}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!gammah\_spectral@{gammah\_spectral}}
+\index{gammah\_spectral@{gammah\_spectral}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{gammah\_spectral()}{gammah\_spectral()}}
+{\footnotesize\ttfamily double gammah\+\_\+spectral (\begin{DoxyParamCaption}\item[{double}]{h,  }\item[{double}]{p,  }\item[{double}]{e,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{a,  }\item[{double}]{h\+\_\+init = {\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}}} }\end{DoxyParamCaption})}
+
+
+
+Calculate gamma in the spectral expansion model. 
+
+
+
+Definition at line 103 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a784a9dfa05351509561ae469693951fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a9bfd97f8b9b041cdbc4cbf75441ad389}\label{integrate__core_8hpp_a9bfd97f8b9b041cdbc4cbf75441ad389}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!initiate\_core@{initiate\_core}}
+\index{initiate\_core@{initiate\_core}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{initiate\_core()}{initiate\_core()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} initiate\+\_\+core (\begin{DoxyParamCaption}\item[{double}]{hc,  }\item[{double}]{hig = {\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}{h\+\_\+ig}}} }\end{DoxyParamCaption})}
+
+
+
+Integrate the most central core part of the compact star to avoid singular point. 
+
+
+
+Definition at line 274 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a9bfd97f8b9b041cdbc4cbf75441ad389_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a9bfd97f8b9b041cdbc4cbf75441ad389_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_ad5ee2a42f15d72545cc54c4ba0ea182e}\label{integrate__core_8hpp_ad5ee2a42f15d72545cc54c4ba0ea182e}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!inner\_to\_outer@{inner\_to\_outer}}
+\index{inner\_to\_outer@{inner\_to\_outer}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{inner\_to\_outer()}{inner\_to\_outer()}}
+{\footnotesize\ttfamily void inner\+\_\+to\+\_\+outer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 202 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_ad5ee2a42f15d72545cc54c4ba0ea182e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_ad5ee2a42f15d72545cc54c4ba0ea182e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a75bc4b8b8be857c5cb21e1ccbc2ab035}\label{integrate__core_8hpp_a75bc4b8b8be857c5cb21e1ccbc2ab035}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!inner\_to\_outer\_interpolation@{inner\_to\_outer\_interpolation}}
+\index{inner\_to\_outer\_interpolation@{inner\_to\_outer\_interpolation}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{inner\_to\_outer\_interpolation()}{inner\_to\_outer\_interpolation()}}
+{\footnotesize\ttfamily void inner\+\_\+to\+\_\+outer\+\_\+interpolation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 212 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a75bc4b8b8be857c5cb21e1ccbc2ab035_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a75bc4b8b8be857c5cb21e1ccbc2ab035_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823}\label{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!int\_whole\_star@{int\_whole\_star}}
+\index{int\_whole\_star@{int\_whole\_star}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{int\_whole\_star()}{int\_whole\_star()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} int\+\_\+whole\+\_\+star (\begin{DoxyParamCaption}\item[{double}]{hc }\end{DoxyParamCaption})}
+
+
+
+Integrate the whole structure of the star. 
+
+Give h\+\_\+c, get m, r and y. \begin{DoxyNote}{Note}
+Radius r in this function should multiply half Schwarzschild radius of the sun. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em hc} & enthalpy at the center of the compact star. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 307 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168}\label{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!integrate\_func@{integrate\_func}}
+\index{integrate\_func@{integrate\_func}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{integrate\_func()}{integrate\_func()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} integrate\+\_\+func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{x0,  }\item[{void }]{funcconst state\+\_\+type \&, state\+\_\+type \&, double,  }\item[{double}]{start\+\_\+t,  }\item[{double}]{end\+\_\+t,  }\item[{bool}]{reverse = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Integrated portable function to integrate O\+DE. 
+
+
+
+Definition at line 242 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a55c49ad0b32fc3d7bdcfc1d07c9021cb}\label{integrate__core_8hpp_a55c49ad0b32fc3d7bdcfc1d07c9021cb}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!lambda\_tilde@{lambda\_tilde}}
+\index{lambda\_tilde@{lambda\_tilde}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{lambda\_tilde()}{lambda\_tilde()}}
+{\footnotesize\ttfamily double lambda\+\_\+tilde (\begin{DoxyParamCaption}\item[{double}]{m1,  }\item[{double}]{m2,  }\item[{double}]{l1,  }\item[{double}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file integrate\+\_\+core.\+hpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a55c49ad0b32fc3d7bdcfc1d07c9021cb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0}\label{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!outer\_to\_inner@{outer\_to\_inner}}
+\index{outer\_to\_inner@{outer\_to\_inner}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{outer\_to\_inner()}{outer\_to\_inner()}}
+{\footnotesize\ttfamily void outer\+\_\+to\+\_\+inner (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{h }\end{DoxyParamCaption})}
+
+
+
+Definition at line 230 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}\label{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!ph@{ph}}
+\index{ph@{ph}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{ph()}{ph()}}
+{\footnotesize\ttfamily double ph (\begin{DoxyParamCaption}\item[{double}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 82 of file integrate\+\_\+core.\+hpp.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}\label{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!a\_dxdt@{a\_dxdt}}
+\index{a\_dxdt@{a\_dxdt}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{a\_dxdt}{a\_dxdt}}
+{\footnotesize\ttfamily double a\+\_\+dxdt = 1.\+0}
+
+
+
+Definition at line 60 of file integrate\+\_\+core.\+hpp.
+
+\mbox{\Hypertarget{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}\label{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!a\_x@{a\_x}}
+\index{a\_x@{a\_x}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{a\_x}{a\_x}}
+{\footnotesize\ttfamily double a\+\_\+x = 1.\+0}
+
+
+
+Definition at line 60 of file integrate\+\_\+core.\+hpp.
+
+\mbox{\Hypertarget{integrate__core_8hpp_a460492ca5cb862b459c8d89a8a7b22ca}\label{integrate__core_8hpp_a460492ca5cb862b459c8d89a8a7b22ca}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!abs\_err@{abs\_err}}
+\index{abs\_err@{abs\_err}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{abs\_err}{abs\_err}}
+{\footnotesize\ttfamily double abs\+\_\+err = 1.\+0e-\/18}
+
+
+
+Definition at line 60 of file integrate\+\_\+core.\+hpp.
+
+\mbox{\Hypertarget{integrate__core_8hpp_acddbc945f890f2682b685e05defdda61}\label{integrate__core_8hpp_acddbc945f890f2682b685e05defdda61}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!rel\_err@{rel\_err}}
+\index{rel\_err@{rel\_err}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{rel\_err}{rel\_err}}
+{\footnotesize\ttfamily double rel\+\_\+err = 1.\+0e-\/12}
+
+
+
+Definition at line 60 of file integrate\+\_\+core.\+hpp.
+

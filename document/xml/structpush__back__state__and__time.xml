@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="structpush__back__state__and__time" kind="struct" language="C++" prot="public">
+    <compoundname>push_back_state_and_time</compoundname>
+    <includes refid="integrate__core_8hpp" local="no">integrate_core.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpush__back__state__and__time_1a77cbb3168a0580fe679316c7b4fb6ec2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt; &amp;</type>
+        <definition>std::vector&lt; state_type &gt;&amp; push_back_state_and_time::m_states</definition>
+        <argsstring></argsstring>
+        <name>m_states</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="39" column="17" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpush__back__state__and__time_1ac05817dae9b7ef7cd9177a92c221bd8a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt; &amp;</type>
+        <definition>std::vector&lt; double &gt;&amp; push_back_state_and_time::m_times</definition>
+        <argsstring></argsstring>
+        <name>m_times</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="40" column="17" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structpush__back__state__and__time_1a5ffbdaa95423e8b0d5873760c494ce5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>push_back_state_and_time::push_back_state_and_time</definition>
+        <argsstring>(std::vector&lt; state_type &gt; &amp;states, std::vector&lt; double &gt; &amp;times)</argsstring>
+        <name>push_back_state_and_time</name>
+        <param>
+          <type>std::vector&lt; <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt; &amp;</type>
+          <declname>states</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>times</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="41" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void push_back_state_and_time::operator()</definition>
+        <argsstring>(const state_type &amp;x, double t)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="42" column="10" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="42" bodyend="55"/>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="42">vvverbose</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="38" column="31" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="38" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structpush__back__state__and__time_1a77cbb3168a0580fe679316c7b4fb6ec2" prot="public" virt="non-virtual"><scope>push_back_state_and_time</scope><name>m_states</name></member>
+      <member refid="structpush__back__state__and__time_1ac05817dae9b7ef7cd9177a92c221bd8a" prot="public" virt="non-virtual"><scope>push_back_state_and_time</scope><name>m_times</name></member>
+      <member refid="structpush__back__state__and__time_1ae87878f301527a237a8670a000224003" prot="public" virt="non-virtual"><scope>push_back_state_and_time</scope><name>operator()</name></member>
+      <member refid="structpush__back__state__and__time_1a5ffbdaa95423e8b0d5873760c494ce5f" prot="public" virt="non-virtual"><scope>push_back_state_and_time</scope><name>push_back_state_and_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

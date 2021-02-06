@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="structquark__params" kind="struct" language="C++" prot="public">
+    <compoundname>quark_params</compoundname>
+    <includes refid="quark__star__utils_8hpp" local="no">quark_star_utils.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structquark__params_1a469bce4832afb0b395d1ce76648c98f6" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quark_params::a4</definition>
+        <argsstring></argsstring>
+        <name>a4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="20" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structquark__params_1a7718e55ad9f5ac5bd78888eeeae3cde7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quark_params::Beff</definition>
+        <argsstring></argsstring>
+        <name>Beff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="20" column="11" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double quark_params::egap</definition>
+        <argsstring></argsstring>
+        <name>egap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="20" column="16" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="19" column="19" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="19" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structquark__params_1a469bce4832afb0b395d1ce76648c98f6" prot="public" virt="non-virtual"><scope>quark_params</scope><name>a4</name></member>
+      <member refid="structquark__params_1a7718e55ad9f5ac5bd78888eeeae3cde7" prot="public" virt="non-virtual"><scope>quark_params</scope><name>Beff</name></member>
+      <member refid="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" prot="public" virt="non-virtual"><scope>quark_params</scope><name>egap</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

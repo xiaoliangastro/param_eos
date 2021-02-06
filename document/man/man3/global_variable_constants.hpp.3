@@ -1,0 +1,457 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/global_variable_constants.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <map>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <gsl/gsl_const_cgs\&.h>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef vector< double > \fBstate_type\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "bool \fBinterp_only\fP = 0"
+.br
+.RI "interpolation only\&. "
+.ti -1c
+.RI "bool \fBpiecewise\fP = 0"
+.br
+.RI "piecewise polytropic expansion, conflict with causal\&. "
+.ti -1c
+.RI "bool \fBpiecewise_p\fP = 0"
+.br
+.RI "piecewise polytropic expansion with pressure at different densities\&. "
+.ti -1c
+.RI "bool \fBspectral\fP = 0"
+.br
+.RI "spectral expansion and interpolation\&. "
+.ti -1c
+.RI "bool \fBspectral_causal\fP = 0"
+.br
+.RI "note that Gamma will have different meaning, see Lindblom_18\&. "
+.ti -1c
+.RI "bool \fBphase_trans\fP = 0"
+.br
+.RI "spectral eos causal, phase transition(https://arxiv.org/pdf/1811.10929.pdf, Model2)\&. "
+.ti -1c
+.RI "bool \fBquark_star\fP = 0"
+.br
+.RI "quark star model(Alford_2005_ApJ_629_969)\&. "
+.ti -1c
+.RI "bool \fBadapt_piecewise\fP = 0"
+.br
+.RI "adaptive rho border, with parameters: delta_rho*n+speed_of_sound*n\&. "
+.ti -1c
+.RI "bool \fBcons_cs\fP = 0"
+.br
+.RI "constant speed of sound\&. "
+.ti -1c
+.RI "bool \fBpiece_spec_phtr_ccs\fP = 0"
+.br
+.ti -1c
+.RI "bool \fBverbose\fP = 0"
+.br
+.RI "(command: -v)\&. "
+.ti -1c
+.RI "bool \fBvverbose\fP = 0"
+.br
+.RI "(command: -vv)\&. "
+.ti -1c
+.RI "bool \fBvvverbose\fP = 0"
+.br
+.RI "(command: -vvv)\&. "
+.ti -1c
+.RI "double \fBminm_tov\fP = 0\&.8"
+.br
+.RI "minimum limit of TOV mass "
+.ti -1c
+.RI "double \fBmaxm_tov\fP = 3\&.0"
+.br
+.RI "maximum limit of TOV mass "
+.ti -1c
+.RI "bool \fBconst_inte_step\fP = 0"
+.br
+.RI "constant integration step "
+.ti -1c
+.RI "double \fBsg_const_step\fP = 1\&.e\-5"
+.br
+.RI "single step in constant integration step "
+.ti -1c
+.RI "map< double, \fBstate_type\fP >::iterator \fBcoeftb_idx\fP"
+.br
+.RI "index iterator-get the corresponding interval of h to use corresponding interpolation coefficients\&. "
+.ti -1c
+.RI "map< double, \fBstate_type\fP > \fBcoeftb\fP"
+.br
+.RI "coefficient of p, e and c, taking h as key\&. "
+.ti -1c
+.RI "double \fBmrl_result\fP [3]"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBe_borders\fP"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBeos_params\fP"
+.br
+.ti -1c
+.RI "bool \fBcheck_causal\fP = 1"
+.br
+.ti -1c
+.RI "double \fBminimum_allowed_h\fP = 0\&.0316"
+.br
+.ti -1c
+.RI "double \fBsuggested_start_point\fP = \fBminimum_allowed_h\fP+0\&.1"
+.br
+.ti -1c
+.RI "const double \fBsg_step\fP = 1\&.e\-10"
+.br
+.RI "single step\&. "
+.ti -1c
+.RI "const double \fBh_surface\fP = 1e\-10"
+.br
+.RI "surface of the star\&. "
+.ti -1c
+.RI "const double \fBh_ig\fP =1e\-7"
+.br
+.RI "where to start integrate TOV equation\&. "
+.ti -1c
+.RI "const double \fBrho_trans\fP = 6\&.17714470405638e+17"
+.br
+.ti -1c
+.RI "const double \fBp_trans\fP = 5\&.55174079257738e+38"
+.br
+.ti -1c
+.RI "const double \fBr_trans\fP = 1\&.4766250385"
+.br
+.ti -1c
+.RI "const double \fBe_0\fP = 9\&.075720079516068750e+13/\fBrho_trans\fP"
+.br
+.ti -1c
+.RI "const double \fBp_0\fP = 2\&.979148040306152863e+32/\fBp_trans\fP"
+.br
+.ti -1c
+.RI "const double \fBh_0\fP = 2\&.161113031691454245e\-02"
+.br
+.RI "border of two eos approximation methods\&. default: 0\&.0216 "
+.ti -1c
+.RI "const double \fBrho_0\fP = (\fBe_0\fP+\fBp_0\fP)/exp(\fBh_0\fP)"
+.br
+.ti -1c
+.RI "const double \fBrho_sat\fP = 2\&.7e+14/\fBrho_trans\fP"
+.br
+.ti -1c
+.RI "const double \fBmax_possible_e\fP = 1000*\fBrho_sat\fP"
+.br
+.ti -1c
+.RI "\fBstate_type\fP \fBrho_borders\fP {1\&.*\fBrho_sat\fP, 1\&.85*\fBrho_sat\fP, 3\&.7*\fBrho_sat\fP, 7\&.4*\fBrho_sat\fP}"
+.br
+.ti -1c
+.RI "const double \fBG\fP = GSL_CONST_CGS_GRAVITATIONAL_CONSTANT"
+.br
+.ti -1c
+.RI "const double \fBC\fP = GSL_CONST_CGS_SPEED_OF_LIGHT"
+.br
+.ti -1c
+.RI "const double \fBHb\fP = GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR"
+.br
+.ti -1c
+.RI "const double \fBeV\fP = GSL_CONST_CGS_ELECTRON_VOLT"
+.br
+.ti -1c
+.RI "const double \fBMs\fP = GSL_CONST_CGS_SOLAR_MASS"
+.br
+.ti -1c
+.RI "const double \fBMeV_to_ifm\fP = \fBeV\fP/(\fBHb\fP*\fBC\fP*1\&.e7)"
+.br
+.ti -1c
+.RI "const double \fBMeV3_to_ifm3\fP = pow(\fBMeV_to_ifm\fP, 3)"
+.br
+.ti -1c
+.RI "const double \fBMeVEifm3_to_ergEicm3\fP = 1\&.e45*\fBeV\fP"
+.br
+.ti -1c
+.RI "const double \fBMeVEifm3_to_gEicm3\fP = 1\&.e45*\fBeV\fP/pow(\fBC\fP, 2)"
+.br
+.ti -1c
+.RI "const double \fBgEicm3_to_dmls\fP = pow(\fBG\fP, 3)*pow(\fBMs\fP, 2)/pow(\fBC\fP, 6)"
+.br
+.ti -1c
+.RI "const double \fBergEicm3_to_dmls\fP = pow(\fBG\fP, 3)*pow(\fBMs\fP, 2)/pow(\fBC\fP, 8)"
+.br
+.ti -1c
+.RI "const double \fBMeV4_to_dmls\fP = \fBMeV3_to_ifm3\fP*\fBMeVEifm3_to_ergEicm3\fP*\fBergEicm3_to_dmls\fP"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef vector< double > \fBstate_type\fP"
+
+.PP
+Definition at line 51 of file global_variable_constants\&.hpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "bool adapt_piecewise = 0"
+
+.PP
+adaptive rho border, with parameters: delta_rho*n+speed_of_sound*n\&. 
+.PP
+Definition at line 31 of file global_variable_constants\&.hpp\&.
+.SS "const double C = GSL_CONST_CGS_SPEED_OF_LIGHT"
+
+.PP
+Definition at line 98 of file global_variable_constants\&.hpp\&.
+.SS "bool check_causal = 1"
+
+.PP
+Definition at line 59 of file global_variable_constants\&.hpp\&.
+.SS "map<double, \fBstate_type\fP> coeftb"
+
+.PP
+coefficient of p, e and c, taking h as key\&. 
+.PP
+Definition at line 53 of file global_variable_constants\&.hpp\&.
+.SS "map<double, \fBstate_type\fP>::iterator coeftb_idx"
+
+.PP
+index iterator-get the corresponding interval of h to use corresponding interpolation coefficients\&. 
+.PP
+Definition at line 52 of file global_variable_constants\&.hpp\&.
+.SS "bool cons_cs = 0"
+
+.PP
+constant speed of sound\&. 
+.PP
+Definition at line 32 of file global_variable_constants\&.hpp\&.
+.SS "bool const_inte_step = 0"
+
+.PP
+constant integration step 
+.PP
+Definition at line 47 of file global_variable_constants\&.hpp\&.
+.SS "const double e_0 = 9\&.075720079516068750e+13/\fBrho_trans\fP"
+
+.PP
+Definition at line 84 of file global_variable_constants\&.hpp\&.
+.SS "\fBstate_type\fP e_borders"
+
+.PP
+Definition at line 55 of file global_variable_constants\&.hpp\&.
+.SS "\fBstate_type\fP eos_params"
+
+.PP
+Definition at line 56 of file global_variable_constants\&.hpp\&.
+.SS "const double ergEicm3_to_dmls = pow(\fBG\fP, 3)*pow(\fBMs\fP, 2)/pow(\fBC\fP, 8)"
+
+.PP
+Definition at line 109 of file global_variable_constants\&.hpp\&.
+.SS "const double eV = GSL_CONST_CGS_ELECTRON_VOLT"
+
+.PP
+Definition at line 100 of file global_variable_constants\&.hpp\&.
+.SS "const double G = GSL_CONST_CGS_GRAVITATIONAL_CONSTANT"
+
+.PP
+Definition at line 97 of file global_variable_constants\&.hpp\&.
+.SS "const double gEicm3_to_dmls = pow(\fBG\fP, 3)*pow(\fBMs\fP, 2)/pow(\fBC\fP, 6)"
+
+.PP
+Definition at line 108 of file global_variable_constants\&.hpp\&.
+.SS "const double h_0 = 2\&.161113031691454245e\-02"
+
+.PP
+border of two eos approximation methods\&. default: 0\&.0216 
+.PP
+Definition at line 86 of file global_variable_constants\&.hpp\&.
+.SS "const double h_ig =1e\-7"
+
+.PP
+where to start integrate TOV equation\&. 
+.PP
+Definition at line 78 of file global_variable_constants\&.hpp\&.
+.SS "const double h_surface = 1e\-10"
+
+.PP
+surface of the star\&. 
+.PP
+Definition at line 77 of file global_variable_constants\&.hpp\&.
+.SS "const double Hb = GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR"
+
+.PP
+Definition at line 99 of file global_variable_constants\&.hpp\&.
+.SS "bool interp_only = 0"
+
+.PP
+interpolation only\&. 
+.PP
+Definition at line 24 of file global_variable_constants\&.hpp\&.
+.SS "const double max_possible_e = 1000*\fBrho_sat\fP"
+
+.PP
+Definition at line 89 of file global_variable_constants\&.hpp\&.
+.SS "double maxm_tov = 3\&.0"
+
+.PP
+maximum limit of TOV mass 
+.PP
+Definition at line 45 of file global_variable_constants\&.hpp\&.
+.SS "const double MeV3_to_ifm3 = pow(\fBMeV_to_ifm\fP, 3)"
+
+.PP
+Definition at line 104 of file global_variable_constants\&.hpp\&.
+.SS "const double MeV4_to_dmls = \fBMeV3_to_ifm3\fP*\fBMeVEifm3_to_ergEicm3\fP*\fBergEicm3_to_dmls\fP"
+
+.PP
+Definition at line 111 of file global_variable_constants\&.hpp\&.
+.SS "const double MeV_to_ifm = \fBeV\fP/(\fBHb\fP*\fBC\fP*1\&.e7)"
+
+.PP
+Definition at line 103 of file global_variable_constants\&.hpp\&.
+.SS "const double MeVEifm3_to_ergEicm3 = 1\&.e45*\fBeV\fP"
+
+.PP
+Definition at line 105 of file global_variable_constants\&.hpp\&.
+.SS "const double MeVEifm3_to_gEicm3 = 1\&.e45*\fBeV\fP/pow(\fBC\fP, 2)"
+
+.PP
+Definition at line 106 of file global_variable_constants\&.hpp\&.
+.SS "double minimum_allowed_h = 0\&.0316"
+
+.PP
+Definition at line 60 of file global_variable_constants\&.hpp\&.
+.SS "double minm_tov = 0\&.8"
+
+.PP
+minimum limit of TOV mass 
+.PP
+Definition at line 44 of file global_variable_constants\&.hpp\&.
+.SS "double mrl_result[3]"
+
+.PP
+Definition at line 54 of file global_variable_constants\&.hpp\&.
+.SS "const double Ms = GSL_CONST_CGS_SOLAR_MASS"
+
+.PP
+Definition at line 101 of file global_variable_constants\&.hpp\&.
+.SS "const double p_0 = 2\&.979148040306152863e+32/\fBp_trans\fP"
+
+.PP
+Definition at line 85 of file global_variable_constants\&.hpp\&.
+.SS "const double p_trans = 5\&.55174079257738e+38"
+
+.PP
+Definition at line 81 of file global_variable_constants\&.hpp\&.
+.SS "bool phase_trans = 0"
+
+.PP
+spectral eos causal, phase transition(https://arxiv.org/pdf/1811.10929.pdf, Model2)\&. 
+.PP
+Definition at line 29 of file global_variable_constants\&.hpp\&.
+.SS "bool piece_spec_phtr_ccs = 0"
+
+.PP
+Definition at line 33 of file global_variable_constants\&.hpp\&.
+.SS "bool piecewise = 0"
+
+.PP
+piecewise polytropic expansion, conflict with causal\&. 
+.PP
+Definition at line 25 of file global_variable_constants\&.hpp\&.
+.SS "bool piecewise_p = 0"
+
+.PP
+piecewise polytropic expansion with pressure at different densities\&. 
+.PP
+Definition at line 26 of file global_variable_constants\&.hpp\&.
+.SS "bool quark_star = 0"
+
+.PP
+quark star model(Alford_2005_ApJ_629_969)\&. 
+.PP
+Definition at line 30 of file global_variable_constants\&.hpp\&.
+.SS "const double r_trans = 1\&.4766250385"
+
+.PP
+Definition at line 82 of file global_variable_constants\&.hpp\&.
+.SS "const double rho_0 = (\fBe_0\fP+\fBp_0\fP)/exp(\fBh_0\fP)"
+
+.PP
+Definition at line 87 of file global_variable_constants\&.hpp\&.
+.SS "\fBstate_type\fP rho_borders {1\&.*\fBrho_sat\fP, 1\&.85*\fBrho_sat\fP, 3\&.7*\fBrho_sat\fP, 7\&.4*\fBrho_sat\fP}"
+
+.PP
+Definition at line 90 of file global_variable_constants\&.hpp\&.
+.SS "const double rho_sat = 2\&.7e+14/\fBrho_trans\fP"
+
+.PP
+Definition at line 88 of file global_variable_constants\&.hpp\&.
+.SS "const double rho_trans = 6\&.17714470405638e+17"
+
+.PP
+Definition at line 80 of file global_variable_constants\&.hpp\&.
+.SS "double sg_const_step = 1\&.e\-5"
+
+.PP
+single step in constant integration step 
+.PP
+Definition at line 48 of file global_variable_constants\&.hpp\&.
+.SS "const double sg_step = 1\&.e\-10"
+
+.PP
+single step\&. 
+.PP
+Definition at line 76 of file global_variable_constants\&.hpp\&.
+.SS "bool spectral = 0"
+
+.PP
+spectral expansion and interpolation\&. 
+.PP
+Definition at line 27 of file global_variable_constants\&.hpp\&.
+.SS "bool spectral_causal = 0"
+
+.PP
+note that Gamma will have different meaning, see Lindblom_18\&. 
+.PP
+Definition at line 28 of file global_variable_constants\&.hpp\&.
+.SS "double suggested_start_point = \fBminimum_allowed_h\fP+0\&.1"
+
+.PP
+Definition at line 61 of file global_variable_constants\&.hpp\&.
+.SS "bool verbose = 0"
+
+.PP
+(command: -v)\&. 
+.PP
+Definition at line 40 of file global_variable_constants\&.hpp\&.
+.SS "bool vverbose = 0"
+
+.PP
+(command: -vv)\&. 
+.PP
+Definition at line 41 of file global_variable_constants\&.hpp\&.
+.SS "bool vvverbose = 0"
+
+.PP
+(command: -vvv)\&. 
+.PP
+Definition at line 42 of file global_variable_constants\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

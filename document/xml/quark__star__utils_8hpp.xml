@@ -1,0 +1,679 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="quark__star__utils_8hpp" kind="file" language="C++">
+    <compoundname>quark_star_utils.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">gsl/gsl_errno.h</includes>
+    <includes local="no">gsl/gsl_roots.h</includes>
+    <includes refid="global__variable__constants_8hpp" local="yes">global_variable_constants.hpp</includes>
+    <includedby refid="eos__init_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp</includedby>
+    <includedby refid="integrate__core_8hpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="8">
+        <label>map</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="7">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp</label>
+        <link refid="test_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp</label>
+        <link refid="eos__init_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+      </node>
+      <node id="8">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structquark__params" prot="public">quark_params</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="quark__star__utils_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" prot="public" static="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>typedef vector&lt; double &gt; state_type</definition>
+        <argsstring></argsstring>
+        <name>state_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="13" column="16" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double m_qk</definition>
+        <argsstring></argsstring>
+        <name>m_qk</name>
+        <initializer>= 100.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="16" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" compoundref="quark__star__utils_8hpp" startline="23" endline="24">Omega_CFL</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" compoundref="quark__star__utils_8hpp" startline="25" endline="26">n_CFL</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" compoundref="quark__star__utils_8hpp" startline="32" endline="39">gammah_qks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double m_br</definition>
+        <argsstring></argsstring>
+        <name>m_br</name>
+        <initializer>= 930.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="17" column="14" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" compoundref="quark__star__utils_8hpp" startline="27" endline="27">ph_qks_org</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" compoundref="quark__star__utils_8hpp" startline="28" endline="28">eh_qks_org</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" compoundref="quark__star__utils_8hpp" startline="32" endline="39">gammah_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double Omega_CFL</definition>
+        <argsstring>(double mu, double a4, double Beff, double egap)</argsstring>
+        <name>Omega_CFL</name>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Beff</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>egap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="23" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="23" bodyend="24"/>
+        <references refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" compoundref="quark__star__utils_8hpp" startline="16">m_qk</references>
+        <referencedby refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" compoundref="quark__star__utils_8hpp" startline="27" endline="27">ph_qks_org</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double n_CFL</definition>
+        <argsstring>(double mu, double a4, double Beff, double egap)</argsstring>
+        <name>n_CFL</name>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a4</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>Beff</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>egap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="25" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="25" bodyend="26"/>
+        <references refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" compoundref="quark__star__utils_8hpp" startline="16">m_qk</references>
+        <referencedby refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" compoundref="quark__star__utils_8hpp" startline="28" endline="28">eh_qks_org</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" compoundref="quark__star__utils_8hpp" startline="32" endline="39">gammah_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ph_qks_org</definition>
+        <argsstring>(double h, state_type par_eos)</argsstring>
+        <name>ph_qks_org</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="27" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="27" bodyend="27"/>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" compoundref="quark__star__utils_8hpp" startline="23" endline="24">Omega_CFL</references>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__utils_8hpp" startline="29" endline="29">ph_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eh_qks_org</definition>
+        <argsstring>(double h, double p, state_type par_eos)</argsstring>
+        <name>eh_qks_org</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="28" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="28" bodyend="28"/>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" compoundref="quark__star__utils_8hpp" startline="25" endline="26">n_CFL</references>
+        <referencedby refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__utils_8hpp" startline="30" endline="30">eh_qks</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__utils_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double ph_qks</definition>
+        <argsstring>(double h, state_type par_eos)</argsstring>
+        <name>ph_qks</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="29" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="29" bodyend="29"/>
+        <references refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" compoundref="global__variable__constants_8hpp" startline="111">MeV4_to_dmls</references>
+        <references refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" compoundref="quark__star__utils_8hpp" startline="27" endline="27">ph_qks_org</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double eh_qks</definition>
+        <argsstring>(double h, double p, state_type par_eos)</argsstring>
+        <name>eh_qks</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="30" column="15" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="30" bodyend="30"/>
+        <references refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" compoundref="quark__star__utils_8hpp" startline="28" endline="28">eh_qks_org</references>
+        <references refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" compoundref="global__variable__constants_8hpp" startline="111">MeV4_to_dmls</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double gammah_qks</definition>
+        <argsstring>(double h, double p, double e, state_type par_eos)</argsstring>
+        <name>gammah_qks</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="32" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="32" bodyend="39"/>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" compoundref="quark__star__utils_8hpp" startline="16">m_qk</references>
+        <references refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" compoundref="quark__star__utils_8hpp" startline="25" endline="26">n_CFL</references>
+        <referencedby refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" compoundref="param__utils_8hpp" startline="150" endline="190">check_eos</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a9bfd97f8b9b041cdbc4cbf75441ad389" compoundref="integrate__core_8hpp" startline="274" endline="300">initiate_core</referencedby>
+        <referencedby refid="integrate__core_8hpp_1a75bc4b8b8be857c5cb21e1ccbc2ab035" compoundref="integrate__core_8hpp" startline="212" endline="228">inner_to_outer_interpolation</referencedby>
+        <referencedby refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" compoundref="param__utils_8hpp" startline="51" endline="105">integrate_eos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double minfunc_qks</definition>
+        <argsstring>(double h, void *params)</argsstring>
+        <name>minfunc_qks</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="41" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="41" bodyend="44"/>
+        <references refid="structquark__params_1a469bce4832afb0b395d1ce76648c98f6" compoundref="quark__star__utils_8hpp" startline="20">quark_params::a4</references>
+        <references refid="structquark__params_1a7718e55ad9f5ac5bd78888eeeae3cde7" compoundref="quark__star__utils_8hpp" startline="20">quark_params::Beff</references>
+        <references refid="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" compoundref="quark__star__utils_8hpp" startline="20">quark_params::egap</references>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" compoundref="quark__star__utils_8hpp" startline="23" endline="24">Omega_CFL</references>
+        <referencedby refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" compoundref="quark__star__utils_8hpp" startline="47" endline="80">solve_surface_h</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double solve_surface_h</definition>
+        <argsstring>(double lower_h, double upper_h, state_type par_eos, int max_iter=100)</argsstring>
+        <name>solve_surface_h</name>
+        <param>
+          <type>double</type>
+          <declname>lower_h</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upper_h</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_iter</declname>
+          <defval>100</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="47" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="47" bodyend="80"/>
+        <references refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" compoundref="quark__star__utils_8hpp" startline="41" endline="44">minfunc_qks</references>
+        <referencedby refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" compoundref="eos__init_8hpp" startline="125" endline="181">change_pars</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__utils_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void make_qks_eos_table</definition>
+        <argsstring>(double h_begin, double h_end, int n_table, state_type par_eos, string unit=&quot;MeV&quot;)</argsstring>
+        <name>make_qks_eos_table</name>
+        <param>
+          <type>double</type>
+          <declname>h_begin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h_end</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_table</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>unit</declname>
+          <defval>&quot;MeV&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="83" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="83" bodyend="97"/>
+        <references refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" compoundref="quark__star__utils_8hpp" startline="28" endline="28">eh_qks_org</references>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" compoundref="global__variable__constants_8hpp" startline="104">MeV3_to_ifm3</references>
+        <references refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" compoundref="global__variable__constants_8hpp" startline="105">MeVEifm3_to_ergEicm3</references>
+        <references refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" compoundref="global__variable__constants_8hpp" startline="106">MeVEifm3_to_gEicm3</references>
+        <references refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" compoundref="quark__star__utils_8hpp" startline="25" endline="26">n_CFL</references>
+        <references refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" compoundref="quark__star__utils_8hpp" startline="27" endline="27">ph_qks_org</references>
+      </memberdef>
+      <memberdef kind="function" id="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool print_quark_star_surface</definition>
+        <argsstring>(double fh_low, double fh_up, state_type par_eos, string unit=&quot;MeV&quot;)</argsstring>
+        <name>print_quark_star_surface</name>
+        <param>
+          <type>double</type>
+          <declname>fh_low</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>fh_up</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>par_eos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>unit</declname>
+          <defval>&quot;MeV&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" line="100" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" bodystart="100" bodyend="121"/>
+        <references refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" compoundref="quark__star__utils_8hpp" startline="28" endline="28">eh_qks_org</references>
+        <references refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" compoundref="quark__star__utils_8hpp" startline="17">m_br</references>
+        <references refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" compoundref="global__variable__constants_8hpp" startline="104">MeV3_to_ifm3</references>
+        <references refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" compoundref="global__variable__constants_8hpp" startline="105">MeVEifm3_to_ergEicm3</references>
+        <references refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" compoundref="global__variable__constants_8hpp" startline="106">MeVEifm3_to_gEicm3</references>
+        <references refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" compoundref="quark__star__utils_8hpp" startline="25" endline="26">n_CFL</references>
+        <references refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" compoundref="quark__star__utils_8hpp" startline="27" endline="27">ph_qks_org</references>
+        <references refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" compoundref="quark__star__utils_8hpp" startline="47" endline="80">solve_surface_h</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>QUARK_STAR_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>QUARK_STAR_UTILS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_roots.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="global__variable__constants_8hpp" kindref="compound">global_variable_constants.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="13" refid="quark__star__utils_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>vector&lt;<sp/>double<sp/>&gt;<sp/><ref refid="quark__star__utils_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref><sp/>=<sp/>100.;<sp/></highlight><highlight class="comment">//<sp/>mass<sp/>of<sp/>strange<sp/>quark<sp/>in<sp/>MeV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref><sp/>=<sp/>930.;<sp/></highlight><highlight class="comment">//<sp/>rest<sp/>baryon<sp/>mass<sp/>on<sp/>stellar<sp/>surface<sp/>in<sp/>MeV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structquark__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquark__params" kindref="compound">quark_params</ref>{</highlight></codeline>
+<codeline lineno="20" refid="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a4,<sp/>Beff,<sp/><ref refid="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" kindref="member">egap</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" kindref="member">Omega_CFL</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a4,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Beff,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>egap){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>3.*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,2.)*pow(mu,2.)/4./M_PI/M_PI-<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>3.*pow(mu,4.)/4./M_PI/M_PI-(1.-12.*log(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>/2./mu))/32./M_PI/M_PI*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,4.)+(1.-a4)*3.*pow(mu,4.)/4./M_PI/M_PI-3.*pow(egap,2.)*pow(mu,2.)/M_PI/M_PI+Beff;}</highlight></codeline>
+<codeline lineno="25" refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" kindref="member">n_CFL</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a4,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Beff,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>egap){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-(3.*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,2.)*mu/2./M_PI/M_PI-3.*pow(mu,3.)/M_PI/M_PI<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>-3.*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,4.)/8./M_PI/M_PI/mu+(1.-a4)*3.*pow(mu,3.)/M_PI/M_PI-6.*pow(egap,2.)*mu/M_PI/M_PI)/3.;}</highlight></codeline>
+<codeline lineno="27" refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" kindref="member">ph_qks_org</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" kindref="member">Omega_CFL</ref>(exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2]);}</highlight></codeline>
+<codeline lineno="28" refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" kindref="member">eh_qks_org</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-p+3.*<ref refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" kindref="member">n_CFL</ref>(exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2])*(exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.);}</highlight></codeline>
+<codeline lineno="29" refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a270550ca7295802d7a80068ad867aec0" kindref="member">ph_qks</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" kindref="member">ph_qks_org</ref>(h,<sp/>par_eos)*<ref refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kindref="member">MeV4_to_dmls</ref>;}</highlight></codeline>
+<codeline lineno="30" refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" kindref="member">eh_qks</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" kindref="member">eh_qks_org</ref>(h,<sp/>p/<ref refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kindref="member">MeV4_to_dmls</ref>,<sp/>par_eos)*<ref refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kindref="member">MeV4_to_dmls</ref>;}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a894121d0ec2087fe413b0a7803f2f204" kindref="member">gammah_qks</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//As<sp/>soon<sp/>as<sp/>the<sp/>unit<sp/>of<sp/>p<sp/>and<sp/>e<sp/>are<sp/>the<sp/>same,<sp/>it<sp/>will<sp/>be<sp/>OK,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//no<sp/>matter<sp/>it<sp/>is<sp/>MeV^4<sp/>or<sp/>dimensionless,<sp/>because<sp/>they<sp/>will<sp/>cancel<sp/>each<sp/>other.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu<sp/>=<sp/>exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>n<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" kindref="member">n_CFL</ref>(mu,<sp/>par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2]);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mu_dot_n_mu<sp/>=<sp/><sp/>-(3.*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,2.)*mu/2./M_PI/M_PI-9.*pow(mu,3.)/M_PI/M_PI<sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>+3.*pow(<ref refid="quark__star__utils_8hpp_1a610e313f69e6c879cff0cdc705679b95" kindref="member">m_qk</ref>,4.)/8./M_PI/M_PI/mu+(1.-par_eos[0])*9.*pow(mu,3.)/M_PI/M_PI-6.*pow(par_eos[2],2.)*mu/M_PI/M_PI)/3.;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(e+p)*n/(mu_dot_n_mu*p);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" kindref="member">minfunc_qks</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*params){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquark__params" kindref="compound">quark_params</ref><sp/>*p<sp/>=<sp/>static_cast&lt;struct<sp/>quark_params<sp/>*&gt;(params);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a8b2dfc87ecc8cc476f9448b184584ab2" kindref="member">Omega_CFL</ref>(exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>p-&gt;<ref refid="structquark__params_1a469bce4832afb0b395d1ce76648c98f6" kindref="member">a4</ref>,<sp/>p-&gt;<ref refid="structquark__params_1a7718e55ad9f5ac5bd78888eeeae3cde7" kindref="member">Beff</ref>,<sp/>p-&gt;<ref refid="structquark__params_1a8682067de632bd6bf9dfa00c82e88786" kindref="member">egap</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" kindref="member">solve_surface_h</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lower_h,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upper_h,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_iter=100){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initiate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>guess<sp/>=<sp/>(lower_h+upper_h)/2.,<sp/>h_low,<sp/>h_up,<sp/>h_tol<sp/>=<sp/>1e-8;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_root_fsolver_type<sp/>*ST;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_root_fsolver<sp/>*solver;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_function<sp/>Func;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structquark__params" kindref="compound">quark_params</ref><sp/>params<sp/>=<sp/>{par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2]};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>Func.function<sp/>=<sp/>&amp;<ref refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" kindref="member">minfunc_qks</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>Func.params<sp/>=<sp/>&amp;params;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>ST<sp/>=<sp/>gsl_root_fsolver_brent;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>solver<sp/>=<sp/>gsl_root_fsolver_alloc(ST);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//check<sp/>root<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>f_lower<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" kindref="member">minfunc_qks</ref>(lower_h,<sp/>&amp;params),<sp/>f_upper<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a34b96d39c4ed4659487ac27799f7ecf1" kindref="member">minfunc_qks</ref>(upper_h,<sp/>&amp;params);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((f_lower<sp/>&lt;<sp/>0.0<sp/>&amp;&amp;<sp/>f_upper<sp/>&lt;<sp/>0.0)<sp/>||<sp/>(f_lower<sp/>&gt;<sp/>0.0<sp/>&amp;&amp;<sp/>f_upper<sp/>&gt;<sp/>0.0)){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;f_lower:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;f_lower&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>f_upper:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;f_upper&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;Do<sp/>not<sp/>have<sp/>root<sp/>in<sp/>given<sp/>region!(in<sp/>function<sp/>solve_surface_h)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{gsl_root_fsolver_set(solver,<sp/>&amp;Func,<sp/>lower_h,<sp/>upper_h);}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//find<sp/>root</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter++;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_root_fsolver_iterate(solver);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>guess<sp/>=<sp/>gsl_root_fsolver_root(solver);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_low<sp/>=<sp/>gsl_root_fsolver_x_lower(solver);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_up<sp/>=<sp/>gsl_root_fsolver_x_upper(solver);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_root_test_interval(h_low,<sp/>h_up,<sp/>0.,<sp/>h_tol);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;h_low&lt;&lt;&quot;\t&quot;&lt;&lt;guess&lt;&lt;&quot;\t&quot;&lt;&lt;h_up&lt;&lt;&quot;\t&quot;&lt;&lt;minfunc_qks(guess,<sp/>&amp;params)&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(status==GSL_CONTINUE<sp/>&amp;&amp;<sp/>iter&lt;max_iter);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_root_fsolver_free(solver);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>guess;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" kindref="member">make_qks_eos_table</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_begin,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_end,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_table,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>unit=</highlight><highlight class="stringliteral">&quot;MeV&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/>p,<sp/>n;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>h_begin;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_step<sp/>=<sp/>(h_end-h_begin)/n_table;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unit==</highlight><highlight class="stringliteral">&quot;cgs&quot;</highlight><highlight class="normal">){cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;n/fm-3&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e/(g*cm-3)&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p/(erg*cm-3)&quot;</highlight><highlight class="normal">&lt;&lt;endl;}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;n/fm-3&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e/(MeV*fm-3)&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p/(MeV*fm-3)&quot;</highlight><highlight class="normal">&lt;&lt;endl;}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;n_table+1;<sp/>i++){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" kindref="member">n_CFL</ref>(exp(h)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2]);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" kindref="member">ph_qks_org</ref>(h,<sp/>par_eos);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" kindref="member">eh_qks_org</ref>(h,<sp/>p,<sp/>par_eos);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unit==</highlight><highlight class="stringliteral">&quot;cgs&quot;</highlight><highlight class="normal">){cout&lt;&lt;h&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;n*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;e*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;p*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>&lt;&lt;endl;}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;h&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;n*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;e*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;p*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;endl;}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>+=<sp/>h_step;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" kindref="member">print_quark_star_surface</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fh_low,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fh_up,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>par_eos,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>unit=</highlight><highlight class="stringliteral">&quot;MeV&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h_surf,<sp/>e_surf,<sp/>p_surf,<sp/>n_surf;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_surf<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" kindref="member">solve_surface_h</ref>(fh_low,<sp/>fh_up,<sp/>par_eos);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_surf<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1aec8fef5fa1b32ce531d10795c9559abe" kindref="member">n_CFL</ref>(exp(h_surf)*<ref refid="quark__star__utils_8hpp_1afb07b5d7597586eacf8eec67e0bb5778" kindref="member">m_br</ref>/3.,<sp/>par_eos[0],<sp/>par_eos[1],<sp/>par_eos[2]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_surf<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ade62bd9362d57c2f67639557d30784cb" kindref="member">ph_qks_org</ref>(h_surf,<sp/>par_eos);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e_surf<sp/>=<sp/><ref refid="quark__star__utils_8hpp_1ab35af16c223fe587846751af4d2772fb" kindref="member">eh_qks_org</ref>(h_surf,<sp/>p_surf,<sp/>par_eos);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unit==</highlight><highlight class="stringliteral">&quot;cgs&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;n/fm-3&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e/(g*cm-3)&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p/(erg*cm-3)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;h_surf&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;n_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;e_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;p_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;n/fm-3&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e/(MeV*fm-3)&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p/(MeV*fm-3)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;h_surf&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">&lt;&lt;n_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;e_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;p_surf*<ref refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(exception&amp;<sp/>e){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;e.what()&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp"/>
+  </compounddef>
+</doxygen>

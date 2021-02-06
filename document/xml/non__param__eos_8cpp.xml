@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="non__param__eos_8cpp" kind="file" language="C++">
+    <compoundname>non_param_eos.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">pthread.h</includes>
+    <includes refid="param__utils_8hpp" local="yes">param_utils.hpp</includes>
+    <includes refid="non__param__utils_8hpp" local="yes">non_param_utils.hpp</includes>
+    <incdepgraph>
+      <node id="25">
+        <label>boost/math/interpolators/makima.hpp</label>
+      </node>
+      <node id="23">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="10">
+        <label>boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</label>
+      </node>
+      <node id="15">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>map</label>
+      </node>
+      <node id="14">
+        <label>exception</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="26">
+        <label>non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
+      </node>
+      <node id="7">
+        <label>pthread.h</label>
+      </node>
+      <node id="18">
+        <label>vector</label>
+      </node>
+      <node id="20">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="17">
+        <label>quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>array</label>
+      </node>
+      <node id="21">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="8">
+        <label>param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
+      </node>
+      <node id="24">
+        <label>data.hpp</label>
+        <link refid="data_8hpp"/>
+      </node>
+      <node id="9">
+        <label>integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
+      </node>
+      <node id="19">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structnon__param__struct" prot="public">non_param_struct</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="non__param__eos_8cpp_1a471bfcd4a423595b967d3fd6bea77c77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool my_compare</definition>
+        <argsstring>(map&lt; int, double &gt;::value_type &amp;it1, map&lt; int, double &gt;::value_type &amp;it2)</argsstring>
+        <name>my_compare</name>
+        <param>
+          <type>map&lt; int, double &gt;::value_type &amp;</type>
+          <declname>it1</declname>
+        </param>
+        <param>
+          <type>map&lt; int, double &gt;::value_type &amp;</type>
+          <declname>it2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="19" column="13" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="19" bodyend="19"/>
+        <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* cal_like</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>cal_like</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="21" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="21" bodyend="26"/>
+        <references refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" compoundref="non__param__eos_8cpp" startline="16">non_param_struct::frac</references>
+        <references refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" compoundref="non__param__eos_8cpp" startline="15">non_param_struct::step_i</references>
+        <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="non__param__eos_8cpp_1a5923b5bc5603293023a81bb62ba91bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_data</definition>
+        <argsstring>(const string f_data, const string f_mr, const string f_coeff, state_type e_org, state_type p_org)</argsstring>
+        <name>create_data</name>
+        <param>
+          <type>const string</type>
+          <declname>f_data</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>f_mr</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>f_coeff</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>e_org</declname>
+        </param>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>p_org</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="28" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="28" bodyend="61"/>
+        <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="64" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="64" bodyend="133"/>
+        <references refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" compoundref="non__param__eos_8cpp" startline="21" endline="26">cal_like</references>
+        <references refid="non__param__eos_8cpp_1a5923b5bc5603293023a81bb62ba91bf0" compoundref="non__param__eos_8cpp" startline="28" endline="61">create_data</references>
+        <references refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" compoundref="non__param__eos_8cpp" startline="16">non_param_struct::frac</references>
+        <references refid="non__param__eos_8cpp_1a471bfcd4a423595b967d3fd6bea77c77" compoundref="non__param__eos_8cpp" startline="19" endline="19">my_compare</references>
+        <references refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" compoundref="non__param__eos_8cpp" startline="15">non_param_struct::step_i</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="param__utils_8hpp" kindref="compound">param_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="non__param__utils_8hpp" kindref="compound">non_param_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structnon__param__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnon__param__struct" kindref="compound">non_param_struct</ref>{</highlight></codeline>
+<codeline lineno="15" refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="non__param__eos_8cpp_1a471bfcd4a423595b967d3fd6bea77c77" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="non__param__eos_8cpp_1a471bfcd4a423595b967d3fd6bea77c77" kindref="member">my_compare</ref>(map&lt;int,<sp/>double&gt;::value_type<sp/>&amp;it1,<sp/>map&lt;int,<sp/>double&gt;::value_type<sp/>&amp;it2){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>it1.second&lt;it2.second;}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" kindref="member">cal_like</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*args){</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnon__param__struct" kindref="compound">non_param_struct</ref><sp/>*data<sp/>=<sp/>static_cast&lt;non_param_struct*&gt;(args);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>exe_str<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;./do<sp/>nonp<sp/>&quot;</highlight><highlight class="normal">+std::to_string(data-&gt;<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref>)+</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">+std::to_string(data-&gt;<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>system(exe_str.c_str());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_exit(NULL);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="non__param__eos_8cpp_1a5923b5bc5603293023a81bb62ba91bf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="non__param__eos_8cpp_1a5923b5bc5603293023a81bb62ba91bf0" kindref="member">create_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_mr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_coeff,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>e_org,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>p_org){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>table_rows;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val0,<sp/>val1,<sp/>val2,<sp/>val3;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>m_org,<sp/>r_org,<sp/>p_tb,<sp/>e_tb,<sp/>c_tb,<sp/>h_tb;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>fp_data(f_data,<sp/>ofstream::out);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>coeff<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>fp_coeff(f_coeff,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp_coeff&gt;&gt;val0&gt;&gt;val1&gt;&gt;val2&gt;&gt;val3){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_tb.push_back(val0);<sp/>e_tb.push_back(val1);<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c_tb.push_back(val2);<sp/>h_tb.push_back(val3);<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_coeff.close();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/>e_tb.size();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;</highlight><highlight class="stringliteral">&quot;#ifndef<sp/>DATA_HPP&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;</highlight><highlight class="stringliteral">&quot;#define<sp/>DATA_HPP&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;</highlight><highlight class="stringliteral">&quot;const<sp/>double<sp/>COEFF_TABLE[&quot;</highlight><highlight class="normal">&lt;&lt;table_rows&lt;&lt;</highlight><highlight class="stringliteral">&quot;][4]<sp/>=<sp/>{{&quot;</highlight><highlight class="normal">&lt;&lt;p_tb[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;e_tb[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;c_tb[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;h_tb[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;table_rows-1;<sp/>i++)<sp/>fp_data&lt;&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(37,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;p_tb[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;e_tb[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;c_tb[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;h_tb[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;string(37,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;p_tb[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;e_tb[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;c_tb[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;h_tb[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;}};&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>m-r<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>fp_mr(f_mr,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_mr.ignore(std::numeric_limits&lt;std::streamsize&gt;::max(),<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp_mr&gt;&gt;val0&gt;&gt;val1&gt;&gt;val2&gt;&gt;val3){<sp/>m_org.push_back(val1);<sp/>r_org.push_back(val2);<sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_mr.close();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/>m_org.size();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;</highlight><highlight class="stringliteral">&quot;const<sp/>double<sp/>MR_TABLE[&quot;</highlight><highlight class="normal">&lt;&lt;table_rows&lt;&lt;</highlight><highlight class="stringliteral">&quot;][2]<sp/>=<sp/>{{&quot;</highlight><highlight class="normal">&lt;&lt;m_org[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;r_org[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;table_rows-1;<sp/>i++)<sp/>fp_data&lt;&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(33,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;m_org[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;r_org[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;string(33,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;m_org[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;r_org[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;}};&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>eos<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/>e_org.size();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;</highlight><highlight class="stringliteral">&quot;const<sp/>double<sp/>EP_TABLE[&quot;</highlight><highlight class="normal">&lt;&lt;table_rows&lt;&lt;</highlight><highlight class="stringliteral">&quot;][2]<sp/>=<sp/>{{&quot;</highlight><highlight class="normal">&lt;&lt;e_org[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;p_org[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;table_rows-1;<sp/>i++)<sp/>fp_data&lt;&lt;</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(32,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;e_org[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;p_org[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;},<sp/>\\&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;string(32,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">&lt;&lt;e_org[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;p_org[table_rows-1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;}};&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data&lt;&lt;endl&lt;&lt;</highlight><highlight class="stringliteral">&quot;#endif&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>fp_data.close();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[]){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>steps<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref><sp/>=<sp/>0.01,<sp/>val0,<sp/>val1,<sp/>val2,<sp/>val3,<sp/>like_base;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>e_org,<sp/>p_org;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;int,<sp/>double&gt;<sp/>likelihood_table;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//files<sp/>to<sp/>be<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_base1<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_base2<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_mr<sp/>=<sp/>f_base1+</highlight><highlight class="stringliteral">&quot;data/ap3_hmrl.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_coeff<sp/>=<sp/>f_base1+</highlight><highlight class="stringliteral">&quot;eos_table/std_ebase_lowdense_eos.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_data<sp/>=<sp/>f_base2+</highlight><highlight class="stringliteral">&quot;code/data.h&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fi_eos<sp/>=<sp/>f_base2+</highlight><highlight class="stringliteral">&quot;result/res_eos_bk.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fo_eos<sp/>=<sp/>f_base2+</highlight><highlight class="stringliteral">&quot;result/res_eos.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>f_like<sp/>=<sp/>f_base2+</highlight><highlight class="stringliteral">&quot;result/likelihood_table.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//load<sp/>eos<sp/>table</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>fpi_eos(fi_eos,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fpi_eos&gt;&gt;val1&gt;&gt;val2){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e_org.push_back(val1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_org.push_back(val2);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>fpi_eos.close();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len_eos<sp/>=<sp/>e_org.size();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>e_upd(e_org),<sp/>p_upd(p_org);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>threads<sp/>and<sp/>initiate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_threads<sp/>=<sp/>2*len_eos+1;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_t<sp/>threads[num_threads];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_attr_t<sp/>attr;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*status;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_attr_init(&amp;attr);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_attr_setdetachstate(&amp;attr,<sp/>PTHREAD_CREATE_JOINABLE);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structnon__param__struct" kindref="compound">non_param_struct</ref><sp/>args[num_threads];</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;num_threads;<sp/>i++)<sp/>{args[i].<ref refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kindref="member">step_i</ref><sp/>=<sp/>i;<sp/>args[i].<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref><sp/>=<sp/><ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>;}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//run</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;steps;<sp/>i++){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;endl&lt;&lt;</highlight><highlight class="stringliteral">&quot;============================&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;</highlight><highlight class="stringliteral">&quot;=========step<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;i+1&lt;&lt;</highlight><highlight class="stringliteral">&quot;=========&quot;</highlight><highlight class="normal">&lt;&lt;endl&lt;&lt;</highlight><highlight class="stringliteral">&quot;============================&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="non__param__eos_8cpp_1a5923b5bc5603293023a81bb62ba91bf0" kindref="member">create_data</ref>(f_data,<sp/>f_mr,<sp/>f_coeff,<sp/>e_upd,<sp/>p_upd);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>likelihood_table.clear();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system((</highlight><highlight class="stringliteral">&quot;:&gt;<sp/>&quot;</highlight><highlight class="normal">+f_like).c_str());</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>system((</highlight><highlight class="stringliteral">&quot;/opt/rh/devtoolset-8/root/usr/bin/g++<sp/>-I/Software/boost/include<sp/>-lgsl<sp/>-std=c++17<sp/>-o<sp/>do<sp/>&quot;</highlight><highlight class="normal">+f_base1+</highlight><highlight class="stringliteral">&quot;code/rml_rkf78.cpp&quot;</highlight><highlight class="normal">).c_str());</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;num_threads;<sp/>j++){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rc<sp/>=<sp/>pthread_create(&amp;threads[j],<sp/>&amp;attr,<sp/><ref refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" kindref="member">cal_like</ref>,<sp/>&amp;args[j]);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rc){</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Error:<sp/>unable<sp/>to<sp/>create<sp/>thread<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;j&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;rc&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-shared<sp/>-fPIC<sp/><sp/>-lgsl<sp/>-std=c++17<sp/>-o<sp/>rkf78_eos.so<sp/>rml_rkf78.cpp<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;num_threads;<sp/>j++){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rc<sp/>=<sp/>pthread_join(threads[j],<sp/>&amp;status);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(rc){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Error:<sp/>unable<sp/>to<sp/>join<sp/>thread<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;j&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;rc&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>fp_like(f_like,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp_like&gt;&gt;val0&gt;&gt;val1)<sp/>{likelihood_table[val0]<sp/>=<sp/>val1;}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp_like.close();</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//find<sp/>max<sp/>change<sp/>and<sp/>adjust</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>like_base<sp/>=<sp/>likelihood_table[0];</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idx<sp/>=<sp/>std::distance(likelihood_table.begin(),<sp/>std::max_element(likelihood_table.begin(),<sp/>likelihood_table.end(),<sp/><ref refid="non__param__eos_8cpp_1a471bfcd4a423595b967d3fd6bea77c77" kindref="member">my_compare</ref>));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx==0)<sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;No<sp/>better<sp/>choice,<sp/>better<sp/>remain<sp/>unchanged<sp/>at<sp/>step<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;i&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idx&lt;=len_eos)<sp/>p_upd[idx-1]<sp/>*=<sp/>(1.+<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>p_upd[idx-len_eos-1]<sp/>/=<sp/>(1.-<ref refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kindref="member">frac</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;chosen<sp/>idx:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;pow(-1,<sp/>idx/len_eos)*(idx%len_eos)&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//output<sp/>eos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>fpo_eos(fo_eos,<sp/>ofstream::out);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;len_eos;<sp/>i++){fpo_eos&lt;&lt;e_upd[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">&lt;&lt;p_upd[i]&lt;&lt;endl;}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>fpo_eos.close();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp"/>
+  </compounddef>
+</doxygen>

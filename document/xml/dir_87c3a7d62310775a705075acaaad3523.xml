@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_87c3a7d62310775a705075acaaad3523" kind="dir">
+    <compoundname>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool</compoundname>
+    <innerfile refid="data_8hpp">data.hpp</innerfile>
+    <innerfile refid="eos__init_8hpp">eos_init.hpp</innerfile>
+    <innerfile refid="global__variable__constants_8hpp">global_variable_constants.hpp</innerfile>
+    <innerfile refid="integrate__core_8hpp">integrate_core.hpp</innerfile>
+    <innerfile refid="non__param__eos_8cpp">non_param_eos.cpp</innerfile>
+    <innerfile refid="non__param__utils_8hpp">non_param_utils.hpp</innerfile>
+    <innerfile refid="optimize__posterior_8hpp">optimize_posterior.hpp</innerfile>
+    <innerfile refid="param__eos_8cpp">param_eos.cpp</innerfile>
+    <innerfile refid="param__utils_8hpp">param_utils.hpp</innerfile>
+    <innerfile refid="quark__star__utils_8hpp">quark_star_utils.hpp</innerfile>
+    <innerfile refid="test_8cpp">test.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/"/>
+  </compounddef>
+</doxygen>

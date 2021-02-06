@@ -1,0 +1,147 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/quark_star_utils.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cmath>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <gsl/gsl_errno\&.h>\fP
+.br
+\fC#include <gsl/gsl_roots\&.h>\fP
+.br
+\fC#include 'global_variable_constants\&.hpp'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBquark_params\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef vector< double > \fBstate_type\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double \fBOmega_CFL\fP (double mu, double a4, double Beff, double egap)"
+.br
+.ti -1c
+.RI "double \fBn_CFL\fP (double mu, double a4, double Beff, double egap)"
+.br
+.ti -1c
+.RI "double \fBph_qks_org\fP (double h, \fBstate_type\fP par_eos)"
+.br
+.ti -1c
+.RI "double \fBeh_qks_org\fP (double h, double p, \fBstate_type\fP par_eos)"
+.br
+.ti -1c
+.RI "double \fBph_qks\fP (double h, \fBstate_type\fP par_eos)"
+.br
+.ti -1c
+.RI "double \fBeh_qks\fP (double h, double p, \fBstate_type\fP par_eos)"
+.br
+.ti -1c
+.RI "double \fBgammah_qks\fP (double h, double p, double e, \fBstate_type\fP par_eos)"
+.br
+.ti -1c
+.RI "double \fBminfunc_qks\fP (double h, void *params)"
+.br
+.ti -1c
+.RI "double \fBsolve_surface_h\fP (double lower_h, double upper_h, \fBstate_type\fP par_eos, int max_iter=100)"
+.br
+.ti -1c
+.RI "void \fBmake_qks_eos_table\fP (double h_begin, double h_end, int n_table, \fBstate_type\fP par_eos, string unit='MeV')"
+.br
+.ti -1c
+.RI "bool \fBprint_quark_star_surface\fP (double fh_low, double fh_up, \fBstate_type\fP par_eos, string unit='MeV')"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const double \fBm_qk\fP = 100\&."
+.br
+.ti -1c
+.RI "const double \fBm_br\fP = 930\&."
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef vector< double > \fBstate_type\fP"
+
+.PP
+Definition at line 13 of file quark_star_utils\&.hpp\&.
+.SH "Function Documentation"
+.PP 
+.SS "double eh_qks (double h, double p, \fBstate_type\fP par_eos)\fC [inline]\fP"
+
+.PP
+Definition at line 30 of file quark_star_utils\&.hpp\&.
+.SS "double eh_qks_org (double h, double p, \fBstate_type\fP par_eos)\fC [inline]\fP"
+
+.PP
+Definition at line 28 of file quark_star_utils\&.hpp\&.
+.SS "double gammah_qks (double h, double p, double e, \fBstate_type\fP par_eos)"
+
+.PP
+Definition at line 32 of file quark_star_utils\&.hpp\&.
+.SS "void make_qks_eos_table (double h_begin, double h_end, int n_table, \fBstate_type\fP par_eos, string unit = \fC'MeV'\fP)"
+
+.PP
+Definition at line 83 of file quark_star_utils\&.hpp\&.
+.SS "double minfunc_qks (double h, void * params)"
+
+.PP
+Definition at line 41 of file quark_star_utils\&.hpp\&.
+.SS "double n_CFL (double mu, double a4, double Beff, double egap)\fC [inline]\fP"
+
+.PP
+Definition at line 25 of file quark_star_utils\&.hpp\&.
+.SS "double Omega_CFL (double mu, double a4, double Beff, double egap)\fC [inline]\fP"
+
+.PP
+Definition at line 23 of file quark_star_utils\&.hpp\&.
+.SS "double ph_qks (double h, \fBstate_type\fP par_eos)\fC [inline]\fP"
+
+.PP
+Definition at line 29 of file quark_star_utils\&.hpp\&.
+.SS "double ph_qks_org (double h, \fBstate_type\fP par_eos)\fC [inline]\fP"
+
+.PP
+Definition at line 27 of file quark_star_utils\&.hpp\&.
+.SS "bool print_quark_star_surface (double fh_low, double fh_up, \fBstate_type\fP par_eos, string unit = \fC'MeV'\fP)"
+
+.PP
+Definition at line 100 of file quark_star_utils\&.hpp\&.
+.SS "double solve_surface_h (double lower_h, double upper_h, \fBstate_type\fP par_eos, int max_iter = \fC100\fP)"
+
+.PP
+Definition at line 47 of file quark_star_utils\&.hpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "const double m_br = 930\&."
+
+.PP
+Definition at line 17 of file quark_star_utils\&.hpp\&.
+.SS "const double m_qk = 100\&."
+
+.PP
+Definition at line 16 of file quark_star_utils\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="test_8cpp" kind="file" language="C++">
+    <compoundname>test.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">string</includes>
+    <includes local="no">ctime</includes>
+    <includes refid="integrate__core_8hpp" local="yes">integrate_core.hpp</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>iomanip</label>
+      </node>
+      <node id="21">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="10">
+        <label>boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</label>
+      </node>
+      <node id="4">
+        <label>cmath</label>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="20">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>exception</label>
+      </node>
+      <node id="3">
+        <label>fstream</label>
+      </node>
+      <node id="11">
+        <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
+      </node>
+      <node id="8">
+        <label>ctime</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+      <node id="18">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="15">
+        <label>quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>array</label>
+      </node>
+      <node id="19">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp</label>
+        <link refid="test_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="13">
+        <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
+      </node>
+      <node id="22">
+        <label>data.hpp</label>
+        <link refid="data_8hpp"/>
+      </node>
+      <node id="9">
+        <label>integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
+      </node>
+      <node id="17">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="test_8cpp_1a978f1c5a382a775575c6e561efece175" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type integrate_func_test</definition>
+        <argsstring>(state_type x0, void func(const state_type &amp;, state_type &amp;, double), double start_t, double end_t, bool reverse)</argsstring>
+        <name>integrate_func_test</name>
+        <param>
+          <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+          <declname>x0</declname>
+        </param>
+        <param>
+          <type>void </type>
+          <declname>func</declname>
+          <array>const state_type &amp;, state_type &amp;, double</array>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>start_t</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>end_t</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>reverse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp" line="12" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp" bodystart="12" bodyend="41"/>
+        <references refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" compoundref="global__variable__constants_8hpp" startline="47">const_inte_step</references>
+        <references refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4">controlled_stepper</references>
+        <references refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" compoundref="global__variable__constants_8hpp" startline="48">sg_const_step</references>
+        <references refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" compoundref="global__variable__constants_8hpp" startline="76">sg_step</references>
+        <references refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" compoundref="global__variable__constants_8hpp" startline="41">vverbose</references>
+      </memberdef>
+      <memberdef kind="function" id="test_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char *argv[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp" line="44" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="integrate__core_8hpp" kindref="compound">integrate_core.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" kindref="member">integrate_func_test</ref>(<ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x0,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>func(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>&amp;,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>start_t,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>end_t,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>reverse){</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;state_type&gt;<sp/>x_o;</highlight><highlight class="comment">//x<sp/>for<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>h_o;</highlight><highlight class="comment">//h<sp/>for<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dt;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//lower<sp/>bound<sp/>must<sp/>smaller<sp/>than<sp/>upper<sp/>bound,<sp/>so<sp/>special<sp/>care<sp/>should<sp/>be<sp/>taken</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" kindref="member">const_inte_step</ref>){</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reverse)<sp/>dt<sp/>=<sp/>-<ref refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kindref="member">sg_const_step</ref>;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kindref="member">sg_const_step</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integrate_const(<ref refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" kindref="member">error_stepper_type</ref>(),<sp/>func,<sp/>x0,<sp/>start_t,<sp/>end_t,<sp/>dt,<sp/><ref refid="structpush__back__state__and__time" kindref="compound">push_back_state_and_time</ref>(x_o,<sp/>h_o));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reverse)<sp/>dt<sp/>=<sp/>-<ref refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kindref="member">sg_step</ref>;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kindref="member">sg_step</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integrate_adaptive(<ref refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4" kindref="member">controlled_stepper</ref>,<sp/>func,<sp/>x0,<sp/>start_t,<sp/>end_t,<sp/>dt,<sp/><ref refid="structpush__back__state__and__time" kindref="compound">push_back_state_and_time</ref>(x_o,<sp/>h_o));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//debug</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref>){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;iter<sp/>steps:&quot;</highlight><highlight class="normal">&lt;&lt;h_o.size()&lt;&lt;endl&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;h_i&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;p&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;e&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;m&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;r&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;y&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j&lt;h_o.size();<sp/>j++){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;h_o[j]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;x_o[j].size();<sp/>i++)<sp/>cout&lt;&lt;x_o[j][i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x_o.back();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="test_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="test_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[]){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>d</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/test.cpp"/>
+  </compounddef>
+</doxygen>

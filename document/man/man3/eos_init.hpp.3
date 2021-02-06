@@ -1,0 +1,57 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'global_variable_constants\&.hpp'\fP
+.br
+\fC#include 'quark_star_utils\&.hpp'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinit_interp_coeff\fP (const char *e_name)"
+.br
+.ti -1c
+.RI "void \fBinit_interp_coeff_through_ep_array\fP (double ee[], double pp[], const int len_eos)"
+.br
+.ti -1c
+.RI "void \fBinit_control_params\fP (double min_tov, double max_tov, bool ck_causal, int param_method, int verbose_level, double redundant_f, bool redundant_b)"
+.br
+.ti -1c
+.RI "void \fBchange_pars\fP (double ppar[], int len_par, int len_border)"
+.br
+.ti -1c
+.RI "void \fBcal_eborders\fP (\fBstate_type\fP params)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void cal_eborders (\fBstate_type\fP params)"
+
+.PP
+Definition at line 82 of file eos_init\&.hpp\&.
+.SS "void change_pars (double ppar[], int len_par, int len_border)"
+
+.PP
+Definition at line 125 of file eos_init\&.hpp\&.
+.SS "void init_control_params (double min_tov, double max_tov, bool ck_causal, int param_method, int verbose_level, double redundant_f, bool redundant_b)"
+
+.PP
+Definition at line 52 of file eos_init\&.hpp\&.
+.SS "void init_interp_coeff (const char * e_name)"
+
+.PP
+Definition at line 17 of file eos_init\&.hpp\&.
+.SS "void init_interp_coeff_through_ep_array (double ee[], double pp[], const int len_eos)"
+
+.PP
+Definition at line 35 of file eos_init\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

@@ -1,0 +1,186 @@
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'integrate_core\&.hpp'\fP
+.br
+\fC#include <boost/math/interpolators/makima\&.hpp>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBfail_process\fP()   *h_closest = \-1; *unknown=0; return false;"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "double * \fBget_mrl\fP (double hc)"
+.br
+.RI "Python interface function for integrating the whole structure of the star\&. "
+.ti -1c
+.RI "bool \fBcheck_eos\fP (double *hc)"
+.br
+.ti -1c
+.RI "bool \fBcheck_mmax\fP (double *hc, double *M_max)"
+.br
+.RI "Find non-rotating maximum supported mass of an EoS\&. "
+.ti -1c
+.RI "void \fBmake_eos_table\fP (double h_start, double h_end, double dh, int precision, char *f_name, const char *unit='cgs')"
+.br
+.ti -1c
+.RI "bool \fBget_unknowns_from_knowns\fP (double known1, double known2, double *unknown1, double *unknown2, double *h_max, int get_type)"
+.br
+.RI "find nearest known property, return corresponding unknown ones\&. "
+.ti -1c
+.RI "bool \fBfind_closest\fP (double m_aim, double h_i, double h_max, double *h_closest, double *lambda, bool use_user_start_point=false)"
+.br
+.ti -1c
+.RI "bool \fBfind_closest_with_maxm_known\fP (double known_aim, double h_i, double h_max, double *h_closest, double *unknown, int get_type, bool use_user_start_point)"
+.br
+.RI "Find a global_a with another global_b\&. "
+.ti -1c
+.RI "bool \fBintegrate_eos\fP (double h_start, double h_end, double dh, \fBstate_type\fP *h_tb, \fBstate_type\fP *p_tb, \fBstate_type\fP *e_tb, \fBstate_type\fP *rho_tb, \fBstate_type\fP *gamma_tb, \fBstate_type\fP *v_sq_tb)"
+.br
+.ti -1c
+.RI "void \fBmake_tool_table\fP (double minh, double maxh, double dh)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define fail_process()   *h_closest = \-1; *unknown=0; return false;"
+
+.SH "Function Documentation"
+.PP 
+.SS "bool check_eos (double * hc)"
+
+.PP
+Definition at line 150 of file param_utils\&.hpp\&.
+.SS "bool check_mmax (double * hc, double * M_max)"
+
+.PP
+Find non-rotating maximum supported mass of an EoS\&. The challenge is the 'noise' or none monotonicity property, the solution is:
+.IP "1." 4
+A bigger guard to check again, 2\&. Judge whether a step before is larger\&. error: ~0\&.005 M_sun 
+.PP
+\fBParameters\fP
+.RS 4
+\fIhc\fP Pointer to the central enthalpy, return -1 if finding error\&. 
+.br
+\fIM_max\fP Pointer to the maximum mass, return 0 if finding error\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIbool\fP whether finding process correctly worked\&. 
+.RE
+.PP
+
+.PP
+
+.PP
+Definition at line 202 of file param_utils\&.hpp\&.
+.SS "bool find_closest (double m_aim, double h_i, double h_max, double * h_closest, double * lambda, bool use_user_start_point = \fCfalse\fP)"
+
+.PP
+Definition at line 264 of file param_utils\&.hpp\&.
+.SS "bool find_closest_with_maxm_known (double known_aim, double h_i, double h_max, double * h_closest, double * unknown, int get_type, bool use_user_start_point = \fCfalse\fP)"
+
+.PP
+Find a global_a with another global_b\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIknown_aim\fP Global_b\&. 
+.br
+\fIh_i\fP Initial guess\&. 
+.br
+\fIh_max\fP Known maximum enthalpy\&. 
+.br
+\fIh_closest\fP Pointer to the closest enthalpy, return -1 if finding error\&. 
+.br
+\fIunknown\fP Pointer to the global_a to be found, return 0 if finding error\&. 
+.br
+\fIget_type\fP 1\&. mass to lambda; 2\&. mass to radius; 3\&. lambda to mass\&. 
+.br
+\fIuse_user_start_point\fP Whether to use user specified initial guess h_i or use system default value\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIbool\fP whether finding process correctly worked\&. 
+.RE
+.PP
+
+.PP
+Definition at line 332 of file param_utils\&.hpp\&.
+.SS "double * get_mrl (double hc)"
+
+.PP
+Python interface function for integrating the whole structure of the star\&. Give h_c, get M/M_sun, R/km and L, which are stored in global variable double *mrl_result\&. 
+.PP
+\fBAttention\fP
+.RS 4
+Use this for python control only, because double* is convenient for python, and global variable is needed, 
+.br
+ which may cause confuse problem if used in c++ main, so please use int_whole_star instead for c++, because that do not need to return global variable\&. 
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIhc\fP enthalpy at the center of the compact star\&. 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file param_utils\&.hpp\&.
+.SS "bool get_unknowns_from_knowns (double known1, double known2, double * unknown1, double * unknown2, double * h_max, int get_type)"
+
+.PP
+find nearest known property, return corresponding unknown ones\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIknown1\fP Known global 1 to find with\&. 
+.br
+\fIknown2\fP Known global 2 to find with\&. 
+.br
+\fIunknown1\fP Unknown global 1 to be found\&. 
+.br
+\fIunknown2\fP Unknown global 2 to be found\&. 
+.br
+\fIh_max\fP Pointer to stare maximum enthalpy\&. 
+.br
+\fIget_type\fP 1\&. mass to lambda; 2\&. mass to radius; 3\&. lambda to mass\&. 
+.RE
+.PP
+\fBReturn values\fP
+.RS 4
+\fIbool\fP Whether finding process correctly worked\&. 
+.RE
+.PP
+
+.PP
+Definition at line 397 of file param_utils\&.hpp\&.
+.SS "bool integrate_eos (double h_start, double h_end, double dh, \fBstate_type\fP * h_tb, \fBstate_type\fP * p_tb, \fBstate_type\fP * e_tb, \fBstate_type\fP * rho_tb, \fBstate_type\fP * gamma_tb, \fBstate_type\fP * v_sq_tb)"
+
+.PP
+Definition at line 51 of file param_utils\&.hpp\&.
+.SS "void make_eos_table (double h_start, double h_end, double dh, int precision, char * f_name, const char * unit = \fC'cgs'\fP)"
+
+.PP
+Definition at line 107 of file param_utils\&.hpp\&.
+.SS "void make_tool_table (double minh, double maxh, double dh)"
+
+.PP
+Definition at line 123 of file param_utils\&.hpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for my_ns_structure from the source code\&.

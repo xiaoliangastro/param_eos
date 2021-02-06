@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="my__constants_8hpp" kind="file" language="C++">
+    <compoundname>my_constants.hpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">gsl/gsl_const_cgs.h</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="quark__star__eos_8hpp" local="yes">eostool/quark_star_eos.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>eostool/my_constants.hpp</label>
+        <link refid="my__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="7">
+        <label>eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="6">
+        <label>eostool/non_param_utils.hpp</label>
+        <link refid="non__param__utils_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>eostool/quark_star_eos.hpp</label>
+        <link refid="quark__star__eos_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>eostool/param_utils.hpp</label>
+        <link refid="param__utils_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>eostool/non_param_eos.cpp</label>
+        <link refid="non__param__eos_8cpp"/>
+      </node>
+      <node id="8">
+        <label>eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>eostool/my_constants.hpp</label>
+        <link refid="my__constants_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>eostool/integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="my__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double G</definition>
+        <argsstring></argsstring>
+        <name>G</name>
+        <initializer>= GSL_CONST_CGS_GRAVITATIONAL_CONSTANT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="12" column="14" bodyfile="eostool/my_constants.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double C</definition>
+        <argsstring></argsstring>
+        <name>C</name>
+        <initializer>= GSL_CONST_CGS_SPEED_OF_LIGHT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="13" column="14" bodyfile="eostool/my_constants.hpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" compoundref="integrate__core_8hpp" startline="117" endline="118">cal_lambda</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="43" endline="148">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Hb</definition>
+        <argsstring></argsstring>
+        <name>Hb</name>
+        <initializer>= GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="14" column="14" bodyfile="eostool/my_constants.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double eV</definition>
+        <argsstring></argsstring>
+        <name>eV</name>
+        <initializer>= GSL_CONST_CGS_ELECTRON_VOLT</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="15" column="14" bodyfile="eostool/my_constants.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Ms</definition>
+        <argsstring></argsstring>
+        <name>Ms</name>
+        <initializer>= GSL_CONST_CGS_SOLAR_MASS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="16" column="14" bodyfile="eostool/my_constants.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV_to_ifm</definition>
+        <argsstring></argsstring>
+        <name>MeV_to_ifm</name>
+        <initializer>= <ref refid="test_8cpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/(<ref refid="test_8cpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref>*<ref refid="test_8cpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*1.e7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="19" column="14" bodyfile="eostool/my_constants.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV3_to_ifm3</definition>
+        <argsstring></argsstring>
+        <name>MeV3_to_ifm3</name>
+        <initializer>= pow(<ref refid="test_8cpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref>, 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="20" column="14" bodyfile="eostool/my_constants.hpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="quark__star__eos_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__eos_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__eos_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__eos_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeVEifm3_to_ergEicm3</definition>
+        <argsstring></argsstring>
+        <name>MeVEifm3_to_ergEicm3</name>
+        <initializer>= 1.e45*<ref refid="test_8cpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="21" column="14" bodyfile="eostool/my_constants.hpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="quark__star__eos_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__eos_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__eos_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__eos_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeVEifm3_to_gEicm3</definition>
+        <argsstring></argsstring>
+        <name>MeVEifm3_to_gEicm3</name>
+        <initializer>= 1.e45*<ref refid="test_8cpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/pow(<ref refid="test_8cpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="22" column="14" bodyfile="eostool/my_constants.hpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="quark__star__eos_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" compoundref="quark__star__eos_8hpp" startline="83" endline="97">make_qks_eos_table</referencedby>
+        <referencedby refid="quark__star__eos_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" compoundref="quark__star__eos_8hpp" startline="100" endline="121">print_quark_star_surface</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double gEicm3_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>gEicm3_to_dmls</name>
+        <initializer>= pow(<ref refid="test_8cpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>, 3)*pow(<ref refid="test_8cpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>, 2)/pow(<ref refid="test_8cpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="25" column="14" bodyfile="eostool/my_constants.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double ergEicm3_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>ergEicm3_to_dmls</name>
+        <initializer>= pow(<ref refid="test_8cpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>, 3)*pow(<ref refid="test_8cpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>, 2)/pow(<ref refid="test_8cpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>, 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="26" column="14" bodyfile="eostool/my_constants.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="my__constants_8hpp_1ada123d429e18016f9a60537c63db162c" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MeV4_to_dmls</definition>
+        <argsstring></argsstring>
+        <name>MeV4_to_dmls</name>
+        <initializer>= <ref refid="test_8cpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="test_8cpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>*<ref refid="test_8cpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="eostool/my_constants.hpp" line="29" column="14" bodyfile="eostool/my_constants.hpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="quark__star__eos_8hpp_1a270550ca7295802d7a80068ad867aec0" compoundref="quark__star__eos_8hpp" startline="29" endline="29">ph_qks</referencedby>
+        <referencedby refid="quark__star__eos_8hpp_1ac6fc12ffe5a897dd97b16e2142ee6b48" compoundref="quark__star__eos_8hpp" startline="30" endline="30">eh_qks</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MY_CONSTANTS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MY_CONSTANTS_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_const_cgs.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//meta<sp/>unit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="my__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref><sp/>=<sp/>GSL_CONST_CGS_GRAVITATIONAL_CONSTANT;</highlight></codeline>
+<codeline lineno="13" refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref><sp/>=<sp/>GSL_CONST_CGS_SPEED_OF_LIGHT;</highlight></codeline>
+<codeline lineno="14" refid="my__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref><sp/>=<sp/>GSL_CONST_CGS_PLANCKS_CONSTANT_HBAR;</highlight></codeline>
+<codeline lineno="15" refid="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref><sp/>=<sp/>GSL_CONST_CGS_ELECTRON_VOLT;</highlight></codeline>
+<codeline lineno="16" refid="my__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref><sp/>=<sp/>GSL_CONST_CGS_SOLAR_MASS;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//natural<sp/>to<sp/>cgs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="my__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref><sp/>=<sp/><ref refid="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/(<ref refid="my__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kindref="member">Hb</ref>*<ref refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>*1.e7);</highlight><highlight class="comment">//original:<sp/>1e6*eV/(Hb*C*1e13)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="my__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref><sp/>=<sp/>pow(<ref refid="my__constants_8hpp_1a53a643b51e60be20232b711a82ce3a61" kindref="member">MeV_to_ifm</ref>,<sp/>3);</highlight></codeline>
+<codeline lineno="21" refid="my__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref><sp/>=<sp/>1.e45*<ref refid="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>;</highlight><highlight class="comment">//original:<sp/>1e6*eV/(1e-13)^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="my__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref><sp/>=<sp/>1.e45*<ref refid="my__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kindref="member">eV</ref>/pow(<ref refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>2);</highlight><highlight class="comment">//original:<sp/>MeVEifm3_to_ergEicm3/C^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//cgs<sp/>to<sp/>cactus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="my__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" kindref="member">gEicm3_to_dmls</ref><sp/>=<sp/>pow(<ref refid="my__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>,<sp/>3)*pow(<ref refid="my__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>,<sp/>2)/pow(<ref refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>6);</highlight><highlight class="comment">//original:<sp/>1/Ms*(G*Ms/C^2)^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="my__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref><sp/>=<sp/>pow(<ref refid="my__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kindref="member">G</ref>,<sp/>3)*pow(<ref refid="my__constants_8hpp_1a7ce81a15c9978aea3357a2e6e36bd97c" kindref="member">Ms</ref>,<sp/>2)/pow(<ref refid="my__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>8);</highlight><highlight class="comment">//original:<sp/>gEicm3_to_dmls/C^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//natural<sp/>to<sp/>cactus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="my__constants_8hpp_1ada123d429e18016f9a60537c63db162c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="my__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kindref="member">MeV4_to_dmls</ref><sp/>=<sp/><ref refid="my__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kindref="member">MeV3_to_ifm3</ref>*<ref refid="my__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>*<ref refid="my__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kindref="member">ergEicm3_to_dmls</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout&lt;&lt;<ref refid="my__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kindref="member">MeVEifm3_to_ergEicm3</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="my__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kindref="member">MeVEifm3_to_gEicm3</ref>&lt;&lt;std::endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="eostool/my_constants.hpp"/>
+  </compounddef>
+</doxygen>

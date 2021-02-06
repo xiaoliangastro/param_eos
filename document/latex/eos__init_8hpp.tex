@@ -1,0 +1,110 @@
+\hypertarget{eos__init_8hpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/eos\+\_\+init.hpp File Reference}
+\label{eos__init_8hpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/eos\_init.hpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/eos\_init.hpp}}
+{\ttfamily \#include \char`\"{}global\+\_\+variable\+\_\+constants.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quark\+\_\+star\+\_\+utils.\+hpp\char`\"{}}\newline
+Include dependency graph for eos\+\_\+init.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{eos__init_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}{init\+\_\+interp\+\_\+coeff}} (const char $\ast$e\+\_\+name)
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a0993541e6b56fc699d50f001f8371324}{init\+\_\+interp\+\_\+coeff\+\_\+through\+\_\+ep\+\_\+array}} (double ee\mbox{[}$\,$\mbox{]}, double pp\mbox{[}$\,$\mbox{]}, const int len\+\_\+eos)
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}{init\+\_\+control\+\_\+params}} (double min\+\_\+tov, double max\+\_\+tov, bool ck\+\_\+causal, int param\+\_\+method, int verbose\+\_\+level, double redundant\+\_\+f, bool redundant\+\_\+b)
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}{change\+\_\+pars}} (double ppar\mbox{[}$\,$\mbox{]}, int len\+\_\+par, int len\+\_\+border)
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c}{cal\+\_\+eborders}} (\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} params)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c}\label{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!cal\_eborders@{cal\_eborders}}
+\index{cal\_eborders@{cal\_eborders}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{cal\_eborders()}{cal\_eborders()}}
+{\footnotesize\ttfamily void cal\+\_\+eborders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}}]{params }\end{DoxyParamCaption})}
+
+
+
+Definition at line 82 of file eos\+\_\+init.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}\label{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!change\_pars@{change\_pars}}
+\index{change\_pars@{change\_pars}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{change\_pars()}{change\_pars()}}
+{\footnotesize\ttfamily void change\+\_\+pars (\begin{DoxyParamCaption}\item[{double}]{ppar\mbox{[}$\,$\mbox{]},  }\item[{int}]{len\+\_\+par,  }\item[{int}]{len\+\_\+border }\end{DoxyParamCaption})}
+
+
+
+Definition at line 125 of file eos\+\_\+init.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}\label{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!init\_control\_params@{init\_control\_params}}
+\index{init\_control\_params@{init\_control\_params}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{init\_control\_params()}{init\_control\_params()}}
+{\footnotesize\ttfamily void init\+\_\+control\+\_\+params (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+tov,  }\item[{double}]{max\+\_\+tov,  }\item[{bool}]{ck\+\_\+causal,  }\item[{int}]{param\+\_\+method,  }\item[{int}]{verbose\+\_\+level,  }\item[{double}]{redundant\+\_\+f,  }\item[{bool}]{redundant\+\_\+b }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file eos\+\_\+init.\+hpp.
+
+\mbox{\Hypertarget{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}\label{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!init\_interp\_coeff@{init\_interp\_coeff}}
+\index{init\_interp\_coeff@{init\_interp\_coeff}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{init\_interp\_coeff()}{init\_interp\_coeff()}}
+{\footnotesize\ttfamily void init\+\_\+interp\+\_\+coeff (\begin{DoxyParamCaption}\item[{const char $\ast$}]{e\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Definition at line 17 of file eos\+\_\+init.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_a0993541e6b56fc699d50f001f8371324}\label{eos__init_8hpp_a0993541e6b56fc699d50f001f8371324}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!init\_interp\_coeff\_through\_ep\_array@{init\_interp\_coeff\_through\_ep\_array}}
+\index{init\_interp\_coeff\_through\_ep\_array@{init\_interp\_coeff\_through\_ep\_array}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{init\_interp\_coeff\_through\_ep\_array()}{init\_interp\_coeff\_through\_ep\_array()}}
+{\footnotesize\ttfamily void init\+\_\+interp\+\_\+coeff\+\_\+through\+\_\+ep\+\_\+array (\begin{DoxyParamCaption}\item[{double}]{ee\mbox{[}$\,$\mbox{]},  }\item[{double}]{pp\mbox{[}$\,$\mbox{]},  }\item[{const int}]{len\+\_\+eos }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file eos\+\_\+init.\+hpp.
+

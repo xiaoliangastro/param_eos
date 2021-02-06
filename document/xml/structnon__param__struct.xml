@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="structnon__param__struct" kind="struct" language="C++" prot="public">
+    <compoundname>non_param_struct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int non_param_struct::step_i</definition>
+        <argsstring></argsstring>
+        <name>step_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="15" column="9" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" compoundref="non__param__eos_8cpp" startline="21" endline="26">cal_like</referencedby>
+        <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double non_param_struct::frac</definition>
+        <argsstring></argsstring>
+        <name>frac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="16" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" compoundref="non__param__eos_8cpp" startline="21" endline="26">cal_like</referencedby>
+        <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
+        <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" line="14" column="23" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp" bodystart="14" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" prot="public" virt="non-virtual"><scope>non_param_struct</scope><name>frac</name></member>
+      <member refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" prot="public" virt="non-virtual"><scope>non_param_struct</scope><name>step_i</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

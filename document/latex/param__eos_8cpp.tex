@@ -1,0 +1,185 @@
+\hypertarget{param__eos_8cpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/param\+\_\+eos.cpp File Reference}
+\label{param__eos_8cpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/param\_eos.cpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/param\_eos.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$exception$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include \char`\"{}optimize\+\_\+posterior.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}integrate\+\_\+core.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}param\+\_\+utils.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}non\+\_\+param\+\_\+utils.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}eos\+\_\+init.\+hpp\char`\"{}}\newline
+Include dependency graph for param\+\_\+eos.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__eos_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_a1d56075a6e615cb22adc8cb7e62a1929}{command\+\_\+line\+\_\+init}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{param__eos_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_ac6c0fc5210023a9390358054bd8769f1}{non\+\_\+param}} = 0
+\begin{DoxyCompactList}\small\item\em opt/rh/devtoolset-\/8/root/usr/bin/g++ -\/shared -\/f\+P\+IC -\/I/\+Software/boost/include -\/lgsl -\/std=c++17 -\/o param\+\_\+eos.\+so \mbox{\hyperlink{param__eos_8cpp}{param\+\_\+eos.\+cpp}} \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{param__eos_8cpp_a612a24239deac64748507b65f16d5d8b}{non\+\_\+param\+\_\+mktb}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_ae69e343ec34f0f3704c86269852f35b5}{routine}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_a9c58280bccf354faa879b95609db3b9f}{checkeos}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_adbb075e08b70bdb7abfe2dc204e3bd8b}{mk\+\_\+tool\+\_\+table}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_a7fc834134077bd4a3f1a1745da41fb36}{opt\+\_\+file}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_af8051b73cc475149ee3686129b7c190c}{opt\+\_\+sg\+\_\+point}} = 0
+\item 
+bool \mbox{\hyperlink{param__eos_8cpp_a5269eaf15afa2bb3e628025b71af2792}{opt\+\_\+sg\+\_\+pair}} = 0
+\item 
+string \mbox{\hyperlink{param__eos_8cpp_a89e36e09623fa06b2f97e5321d10d9b2}{eos\+\_\+fname}} = \char`\"{}/Users/jiangjinliang/work/try/Spectral\+\_\+\+EoS/eos\+\_\+table/std\+\_\+ebase\+\_\+lowdense\+\_\+eos.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{param__eos_8cpp_a1d56075a6e615cb22adc8cb7e62a1929}\label{param__eos_8cpp_a1d56075a6e615cb22adc8cb7e62a1929}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!command\_line\_init@{command\_line\_init}}
+\index{command\_line\_init@{command\_line\_init}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{command\_line\_init()}{command\_line\_init()}}
+{\footnotesize\ttfamily bool command\+\_\+line\+\_\+init (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 147 of file param\+\_\+eos.\+cpp.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{param__eos_8cpp_a1d56075a6e615cb22adc8cb7e62a1929_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{param__eos_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{param__eos_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!main@{main}}
+\index{main@{main}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file param\+\_\+eos.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{param__eos_8cpp_a0ddf1224851353fc92bfbff6f499fa97_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{param__eos_8cpp_a9c58280bccf354faa879b95609db3b9f}\label{param__eos_8cpp_a9c58280bccf354faa879b95609db3b9f}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!checkeos@{checkeos}}
+\index{checkeos@{checkeos}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{checkeos}{checkeos}}
+{\footnotesize\ttfamily bool checkeos = 0}
+
+
+
+Definition at line 23 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_a89e36e09623fa06b2f97e5321d10d9b2}\label{param__eos_8cpp_a89e36e09623fa06b2f97e5321d10d9b2}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!eos\_fname@{eos\_fname}}
+\index{eos\_fname@{eos\_fname}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{eos\_fname}{eos\_fname}}
+{\footnotesize\ttfamily string eos\+\_\+fname = \char`\"{}/Users/jiangjinliang/work/try/Spectral\+\_\+\+EoS/eos\+\_\+table/std\+\_\+ebase\+\_\+lowdense\+\_\+eos.\+txt\char`\"{}}
+
+
+
+Definition at line 29 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_adbb075e08b70bdb7abfe2dc204e3bd8b}\label{param__eos_8cpp_adbb075e08b70bdb7abfe2dc204e3bd8b}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!mk\_tool\_table@{mk\_tool\_table}}
+\index{mk\_tool\_table@{mk\_tool\_table}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{mk\_tool\_table}{mk\_tool\_table}}
+{\footnotesize\ttfamily bool mk\+\_\+tool\+\_\+table = 0}
+
+
+
+Definition at line 24 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_ac6c0fc5210023a9390358054bd8769f1}\label{param__eos_8cpp_ac6c0fc5210023a9390358054bd8769f1}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!non\_param@{non\_param}}
+\index{non\_param@{non\_param}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{non\_param}{non\_param}}
+{\footnotesize\ttfamily bool non\+\_\+param = 0}
+
+
+
+opt/rh/devtoolset-\/8/root/usr/bin/g++ -\/shared -\/f\+P\+IC -\/I/\+Software/boost/include -\/lgsl -\/std=c++17 -\/o param\+\_\+eos.\+so \mbox{\hyperlink{param__eos_8cpp}{param\+\_\+eos.\+cpp}} 
+
+
+
+Definition at line 20 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_a612a24239deac64748507b65f16d5d8b}\label{param__eos_8cpp_a612a24239deac64748507b65f16d5d8b}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!non\_param\_mktb@{non\_param\_mktb}}
+\index{non\_param\_mktb@{non\_param\_mktb}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{non\_param\_mktb}{non\_param\_mktb}}
+{\footnotesize\ttfamily bool non\+\_\+param\+\_\+mktb = 0}
+
+
+
+Definition at line 21 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_a7fc834134077bd4a3f1a1745da41fb36}\label{param__eos_8cpp_a7fc834134077bd4a3f1a1745da41fb36}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!opt\_file@{opt\_file}}
+\index{opt\_file@{opt\_file}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{opt\_file}{opt\_file}}
+{\footnotesize\ttfamily bool opt\+\_\+file = 0}
+
+
+
+Definition at line 25 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_a5269eaf15afa2bb3e628025b71af2792}\label{param__eos_8cpp_a5269eaf15afa2bb3e628025b71af2792}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!opt\_sg\_pair@{opt\_sg\_pair}}
+\index{opt\_sg\_pair@{opt\_sg\_pair}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{opt\_sg\_pair}{opt\_sg\_pair}}
+{\footnotesize\ttfamily bool opt\+\_\+sg\+\_\+pair = 0}
+
+
+
+Definition at line 27 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_af8051b73cc475149ee3686129b7c190c}\label{param__eos_8cpp_af8051b73cc475149ee3686129b7c190c}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!opt\_sg\_point@{opt\_sg\_point}}
+\index{opt\_sg\_point@{opt\_sg\_point}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{opt\_sg\_point}{opt\_sg\_point}}
+{\footnotesize\ttfamily bool opt\+\_\+sg\+\_\+point = 0}
+
+
+
+Definition at line 26 of file param\+\_\+eos.\+cpp.
+
+\mbox{\Hypertarget{param__eos_8cpp_ae69e343ec34f0f3704c86269852f35b5}\label{param__eos_8cpp_ae69e343ec34f0f3704c86269852f35b5}} 
+\index{param\_eos.cpp@{param\_eos.cpp}!routine@{routine}}
+\index{routine@{routine}!param\_eos.cpp@{param\_eos.cpp}}
+\doxysubsubsection{\texorpdfstring{routine}{routine}}
+{\footnotesize\ttfamily bool routine = 0}
+
+
+
+Definition at line 22 of file param\+\_\+eos.\+cpp.
+

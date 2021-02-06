@@ -1,0 +1,446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="optimize__posterior_8hpp" kind="file" language="C++">
+    <compoundname>optimize_posterior.hpp</compoundname>
+    <includes local="no">gsl/gsl_min.h</includes>
+    <includes local="no">gsl/gsl_errno.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="integrate__core_8hpp" local="yes">integrate_core.hpp</includes>
+    <includedby refid="param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gsl/gsl_min.h</label>
+      </node>
+      <node id="20">
+        <label>gsl/gsl_const_cgs.h</label>
+      </node>
+      <node id="7">
+        <label>boost/numeric/odeint/stepper/controlled_runge_kutta.hpp</label>
+      </node>
+      <node id="13">
+        <label>cmath</label>
+      </node>
+      <node id="12">
+        <label>string</label>
+      </node>
+      <node id="19">
+        <label>map</label>
+      </node>
+      <node id="11">
+        <label>exception</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
+      </node>
+      <node id="16">
+        <label>vector</label>
+      </node>
+      <node id="17">
+        <label>gsl/gsl_roots.h</label>
+      </node>
+      <node id="15">
+        <label>quark_star_utils.hpp</label>
+        <link refid="quark__star__utils_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>array</label>
+      </node>
+      <node id="18">
+        <label>global_variable_constants.hpp</label>
+        <link refid="global__variable__constants_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>data.hpp</label>
+        <link refid="data_8hpp"/>
+      </node>
+      <node id="6">
+        <label>integrate_core.hpp</label>
+        <link refid="integrate__core_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
+      </node>
+      <node id="3">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</label>
+        <link refid="param__eos_8cpp"/>
+      </node>
+      <node id="1">
+        <label>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp</label>
+        <link refid="optimize__posterior_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="optimize__posterior_8hpp_1a8ca626a5f19fb8c71761743ddf156634" prot="public" static="no">
+        <type>map&lt; double, double &gt;::iterator</type>
+        <definition>typedef map&lt;double, double&gt;::iterator itmap</definition>
+        <argsstring></argsstring>
+        <name>itmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="17" column="24" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" prot="public" static="no" mutable="no">
+        <type>map&lt; double, <ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref> &gt;</type>
+        <definition>map&lt;double, state_type&gt; h_mrl</definition>
+        <argsstring></argsstring>
+        <name>h_mrl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="15" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="15" bodyend="-1"/>
+        <referencedby refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" prot="public" static="no" mutable="no">
+        <type>map&lt; double, double &gt;</type>
+        <definition>map&lt;double, double&gt; toolm_h</definition>
+        <argsstring></argsstring>
+        <name>toolm_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="16" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double minfunc_opt_post</definition>
+        <argsstring>(double h, void *params)</argsstring>
+        <name>minfunc_opt_post</name>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="19" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="19" bodyend="39"/>
+        <references refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" compoundref="integrate__core_8hpp" startline="71" endline="72">cal_lambda</references>
+        <references refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" compoundref="optimize__posterior_8hpp" startline="15">h_mrl</references>
+        <references refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</references>
+        <references refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" compoundref="global__variable__constants_8hpp" startline="82">r_trans</references>
+        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="42">vvverbose</references>
+        <referencedby refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" compoundref="optimize__posterior_8hpp" startline="41" endline="65">find_aim</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double find_aim</definition>
+        <argsstring>(double lower, double upper, double m_aim)</argsstring>
+        <name>find_aim</name>
+        <param>
+          <type>double</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upper</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m_aim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="41" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="41" bodyend="65"/>
+        <references refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" compoundref="optimize__posterior_8hpp" startline="19" endline="39">minfunc_opt_post</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <referencedby refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type optimize_single_point</definition>
+        <argsstring>(double mass)</argsstring>
+        <name>optimize_single_point</name>
+        <param>
+          <type>double</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="67" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="67" bodyend="80"/>
+        <references refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" compoundref="optimize__posterior_8hpp" startline="41" endline="65">find_aim</references>
+        <references refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" compoundref="optimize__posterior_8hpp" startline="15">h_mrl</references>
+        <references refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" compoundref="optimize__posterior_8hpp" startline="16">toolm_h</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" compoundref="optimize__posterior_8hpp" startline="82" endline="91">optimize_single_pair</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref></type>
+        <definition>state_type optimize_single_pair</definition>
+        <argsstring>(double m1, double m2)</argsstring>
+        <name>optimize_single_pair</name>
+        <param>
+          <type>double</type>
+          <declname>m1</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>m2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="82" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="82" bodyend="91"/>
+        <references refid="integrate__core_8hpp_1a55c49ad0b32fc3d7bdcfc1d07c9021cb" compoundref="integrate__core_8hpp" startline="74" endline="74">lambda_tilde</references>
+        <references refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" compoundref="optimize__posterior_8hpp" startline="93" endline="109">optimize_file</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void optimize_file</definition>
+        <argsstring>(const string ifname, const string ofname)</argsstring>
+        <name>optimize_file</name>
+        <param>
+          <type>const string</type>
+          <declname>ifname</declname>
+        </param>
+        <param>
+          <type>const string</type>
+          <declname>ofname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" line="93" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp" bodystart="93" bodyend="109"/>
+        <references refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" compoundref="optimize__posterior_8hpp" startline="82" endline="91">optimize_single_pair</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OPTIMIZE_POSTERIOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPTIMIZE_POSTERIOR_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//optimization<sp/>related<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_min.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;gsl/gsl_errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;<ref refid="integrate__core_8hpp" kindref="compound">integrate_core.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="15" refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" refkind="member"><highlight class="normal">map&lt;double,<sp/>state_type&gt;<sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>;</highlight><highlight class="comment">//store<sp/>state<sp/>of<sp/>minimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" refkind="member"><highlight class="normal">map&lt;double,<sp/>double&gt;<sp/><ref refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" kindref="member">toolm_h</ref>;</highlight><highlight class="comment">//tool<sp/>table<sp/>of<sp/>h,<sp/>taking<sp/>m<sp/>as<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="optimize__posterior_8hpp_1a8ca626a5f19fb8c71761743ddf156634" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>map&lt;double,<sp/>double&gt;::iterator<sp/><ref refid="optimize__posterior_8hpp_1a8ca626a5f19fb8c71761743ddf156634" kindref="member">itmap</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" kindref="member">minfunc_opt_post</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*params){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//function<sp/>to<sp/>minimize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;evaluated<sp/>hc:<sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">&lt;&lt;h&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*m_aim<sp/>=<sp/>static_cast&lt;double*&gt;(params);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>test_m;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrl;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kindref="member">int_whole_star</ref>(h);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lambda<sp/>=<sp/><ref refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" kindref="member">cal_lambda</ref>(*m_aim/result[1],<sp/>result[2]);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>test_m<sp/>=<sp/>result[0];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrl.push_back(test_m);<sp/>mrl.push_back(result[1]*<ref refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" kindref="member">r_trans</ref>);<sp/>mrl.push_back(lambda);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>[h]<sp/>=<sp/>mrl;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>minfunc_opt_post,<sp/>set<sp/>zero<sp/>to<sp/>h_mrl<sp/>table<sp/>at<sp/>h=&quot;</highlight><highlight class="normal">&lt;&lt;h&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mrl.push_back(0.),<sp/>mrl.push_back(0.),<sp/>mrl.push_back(0.);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>[h]<sp/>=<sp/>mrl;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow((*m_aim-0.),<sp/>2);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow((*m_aim-test_m),<sp/>2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" kindref="member">find_aim</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>lower,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upper,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_aim){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//controller<sp/>of<sp/>gsl<sp/>minimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>gsl_min_fminimizer_type<sp/>*T;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_min_fminimizer<sp/>*solver;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>guess<sp/>=<sp/>(lower+upper)/2.0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_function<sp/>F;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>F.function<sp/>=<sp/>&amp;<ref refid="optimize__posterior_8hpp_1a15d6d8653372c871397464e0f2f3cce6" kindref="member">minfunc_opt_post</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>F.params<sp/>=<sp/>&amp;m_aim;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>=<sp/>gsl_min_fminimizer_quad_golden;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>solver<sp/>=<sp/>gsl_min_fminimizer_alloc(T);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_min_fminimizer_set(solver,<sp/>&amp;F,<sp/>guess,<sp/>lower,<sp/>upper);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//solve</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_min_fminimizer_iterate(solver);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>guess<sp/>=<sp/>gsl_min_fminimizer_x_minimum(solver);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lower<sp/>=<sp/>gsl_min_fminimizer_x_lower(solver);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upper<sp/>=<sp/>gsl_min_fminimizer_x_upper(solver);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;lower:&quot;</highlight><highlight class="normal">&lt;&lt;lower&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>gusess:&quot;</highlight><highlight class="normal">&lt;&lt;guess&lt;&lt;</highlight><highlight class="stringliteral">&quot;,<sp/>upper:&quot;</highlight><highlight class="normal">&lt;&lt;upper&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/>gsl_min_test_interval(lower,<sp/>upper,<sp/>1e-5,<sp/>1e-5);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(status<sp/>==<sp/>GSL_CONTINUE);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>gsl_min_fminimizer_free(solver);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>guess;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" kindref="member">optimize_single_point</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//return<sp/>m,<sp/>r,<sp/>l,<sp/>h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1a8ca626a5f19fb8c71761743ddf156634" kindref="member">itmap</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" kindref="member">toolm_h</ref>.lower_bound(mass);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1a8ca626a5f19fb8c71761743ddf156634" kindref="member">itmap</ref><sp/>id_l<sp/>=<sp/>id,<sp/>id_u<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>id_l--;<sp/>id_l--;<sp/>id_u++;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>.erase(<ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>.begin(),<sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>.end());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//h<sp/>=<sp/>find_aim(toolm_h.begin()-&gt;second,<sp/>toolm_h.end()-&gt;second,<sp/>mass);//only<sp/>if<sp/>eos<sp/>is<sp/>strange!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1ae58efee8e935ee88aea236d91e11bd19" kindref="member">find_aim</ref>(id_l-&gt;second,<sp/>id_u-&gt;second,<sp/>mass);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrlh<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1a61b43a5f8bda67a825bc745eb889f832" kindref="member">h_mrl</ref>[h];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>mrlh.push_back(h);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;accepted<sp/>values:<sp/><sp/><sp/>m:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>r:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[2]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>h:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[3]&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mrlh;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" refkind="member"><highlight class="normal"><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/><ref refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" kindref="member">optimize_single_pair</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m2){</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//return<sp/>l1,<sp/>l2,<sp/>lt,<sp/>m1,<sp/>m2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrlh1<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" kindref="member">optimize_single_point</ref>(m1);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrlh2<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" kindref="member">optimize_single_point</ref>(m2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>l12t_m12;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>l12t_m12.push_back(mrlh1[2]);<sp/>l12t_m12.push_back(mrlh2[2]);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>l12t_m12.push_back(<ref refid="integrate__core_8hpp_1a55c49ad0b32fc3d7bdcfc1d07c9021cb" kindref="member">lambda_tilde</ref>(m1,<sp/>m2,<sp/>mrlh1[2],<sp/>mrlh2[2]));</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>l12t_m12.push_back(mrlh1[0]);<sp/>l12t_m12.push_back(mrlh2[0]);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l12t_m12;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" kindref="member">optimize_file</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ifname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ofname){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//ifname<sp/>contains<sp/>mass<sp/>pairs<sp/>to<sp/>be<sp/>optimized,<sp/>ofname<sp/>accept<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass1,<sp/>mass2;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>l12t_m12;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//read<sp/>posterior<sp/>mass_tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>fpi(ifname,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>fpo(ofname,<sp/>ofstream::out);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fpi&gt;&gt;mass1&gt;&gt;mass2){</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l12t_m12<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" kindref="member">optimize_single_pair</ref>(mass1,<sp/>mass2);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fpo&lt;&lt;l12t_m12[2]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[3]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[4]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[1]&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;j&lt;&lt;</highlight><highlight class="stringliteral">&quot;th<sp/>point&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>fpi.close();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>fpo.close();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/optimize_posterior.hpp"/>
+  </compounddef>
+</doxygen>
