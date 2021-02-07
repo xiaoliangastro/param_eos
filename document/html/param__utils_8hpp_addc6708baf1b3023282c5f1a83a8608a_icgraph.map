@@ -1,4 +1,4 @@
 <map id="find_closest_with_maxm_known" name="find_closest_with_maxm_known">
 <area shape="rect" id="node1" title="Find a global_a with another global_b." alt="" coords="248,5,415,47"/>
-<area shape="rect" id="node2" href="$param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="5,13,200,39"/>
+<area shape="rect" id="node2" href="$param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="5,13,200,39"/>
 </map>

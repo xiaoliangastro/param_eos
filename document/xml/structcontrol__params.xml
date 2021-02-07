@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="structcontrol__params" kind="struct" language="C++" prot="public">
+    <compoundname>control_params</compoundname>
+    <includes refid="eos__init_8hpp" local="no">eos_init.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcontrol__params_1a9abee03203f6cbae2dae3b58a35d5634" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double control_params::min_tov_mass</definition>
+        <argsstring></argsstring>
+        <name>min_tov_mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="10" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1ac50f6d418f5efafa53906d7d07ff5d0b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double control_params::max_tov_mass</definition>
+        <argsstring></argsstring>
+        <name>max_tov_mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="10" column="25" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a9469b6b2b0a9db81114b1b70354c35b3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool control_params::check_causal</definition>
+        <argsstring></argsstring>
+        <name>check_causal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="11" column="10" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a71c03e2fcb56766bc9919cebe3aebad6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int control_params::param_method</definition>
+        <argsstring></argsstring>
+        <name>param_method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="11" column="27" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1ae01f86fee59cdc28d4709b9fa94a387f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int control_params::verbose_level</definition>
+        <argsstring></argsstring>
+        <name>verbose_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="11" column="40" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1af2f5bd942bc8c4ba79a97a6ba13695d5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double control_params::eos_table_max_h</definition>
+        <argsstring></argsstring>
+        <name>eos_table_max_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="12" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1ae55b5e07b946d9e0717bdc46902a1bd1" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char control_params::init_interpolation_function_type[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>init_interpolation_function_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="12" column="33" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="12" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a7e4f26963619a8c2567e0c52b3529ebb" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double control_params::const_inter_step</definition>
+        <argsstring></argsstring>
+        <name>const_inter_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="13" column="12" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a4ceba0be409627e198f9bc5785be1096" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double control_params::dev_G</definition>
+        <argsstring></argsstring>
+        <name>dev_G</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="13" column="29" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a24ca3637d21117d985410c0ef7dcdab5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool control_params::consid_const_inter_step</definition>
+        <argsstring></argsstring>
+        <name>consid_const_inter_step</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="14" column="10" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcontrol__params_1a740b74396de53775a2ca6da342fbec22" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool control_params::consid_dev_G</definition>
+        <argsstring></argsstring>
+        <name>consid_dev_G</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="14" column="34" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" compoundref="eos__init_8hpp" startline="79" endline="107">init_control_params</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" line="9" column="21" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" bodystart="9" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structcontrol__params_1a9469b6b2b0a9db81114b1b70354c35b3" prot="public" virt="non-virtual"><scope>control_params</scope><name>check_causal</name></member>
+      <member refid="structcontrol__params_1a24ca3637d21117d985410c0ef7dcdab5" prot="public" virt="non-virtual"><scope>control_params</scope><name>consid_const_inter_step</name></member>
+      <member refid="structcontrol__params_1a740b74396de53775a2ca6da342fbec22" prot="public" virt="non-virtual"><scope>control_params</scope><name>consid_dev_G</name></member>
+      <member refid="structcontrol__params_1a7e4f26963619a8c2567e0c52b3529ebb" prot="public" virt="non-virtual"><scope>control_params</scope><name>const_inter_step</name></member>
+      <member refid="structcontrol__params_1a4ceba0be409627e198f9bc5785be1096" prot="public" virt="non-virtual"><scope>control_params</scope><name>dev_G</name></member>
+      <member refid="structcontrol__params_1af2f5bd942bc8c4ba79a97a6ba13695d5" prot="public" virt="non-virtual"><scope>control_params</scope><name>eos_table_max_h</name></member>
+      <member refid="structcontrol__params_1ae55b5e07b946d9e0717bdc46902a1bd1" prot="public" virt="non-virtual"><scope>control_params</scope><name>init_interpolation_function_type</name></member>
+      <member refid="structcontrol__params_1ac50f6d418f5efafa53906d7d07ff5d0b" prot="public" virt="non-virtual"><scope>control_params</scope><name>max_tov_mass</name></member>
+      <member refid="structcontrol__params_1a9abee03203f6cbae2dae3b58a35d5634" prot="public" virt="non-virtual"><scope>control_params</scope><name>min_tov_mass</name></member>
+      <member refid="structcontrol__params_1a71c03e2fcb56766bc9919cebe3aebad6" prot="public" virt="non-virtual"><scope>control_params</scope><name>param_method</name></member>
+      <member refid="structcontrol__params_1ae01f86fee59cdc28d4709b9fa94a387f" prot="public" virt="non-virtual"><scope>control_params</scope><name>verbose_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

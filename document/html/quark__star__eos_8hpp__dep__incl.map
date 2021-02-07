@@ -1,9 +1,0 @@
-<map id="eostool/quark_star_eos.hpp" name="eostool/quark_star_eos.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="283,5,415,47"/>
-<area shape="rect" id="node2" href="$integrate__core_8hpp.html" title=" " alt="" coords="259,95,439,121"/>
-<area shape="rect" id="node3" href="$param__utils_8hpp.html" title=" " alt="" coords="172,169,336,196"/>
-<area shape="rect" id="node5" href="$non__param__utils_8hpp.html" title=" " alt="" coords="5,244,199,271"/>
-<area shape="rect" id="node6" href="$param__eos_8cpp.html" title=" " alt="" coords="315,319,475,345"/>
-<area shape="rect" id="node7" href="$optimize__posterior_8hpp.html" title=" " alt="" coords="325,244,529,271"/>
-<area shape="rect" id="node4" href="$non__param__eos_8cpp.html" title=" " alt="" coords="69,319,260,345"/>
-</map>

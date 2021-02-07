@@ -1,12 +1,14 @@
 <map id="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" name="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="202,5,379,61"/>
-<area shape="rect" id="node2" href="$global__variable__constants_8hpp.html" title=" " alt="" coords="120,184,323,211"/>
-<area shape="rect" id="node8" href="$quark__star__utils_8hpp.html" title=" " alt="" coords="289,109,431,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="88,259,136,285"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,259,64,285"/>
-<area shape="rect" id="node5" title=" " alt="" coords="323,259,381,285"/>
-<area shape="rect" id="node6" title=" " alt="" coords="160,259,299,285"/>
-<area shape="rect" id="node7" title=" " alt="" coords="406,259,479,285"/>
-<area shape="rect" id="node9" title=" " alt="" coords="448,184,557,211"/>
-<area shape="rect" id="node10" title=" " alt="" coords="582,184,690,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="329,5,506,61"/>
+<area shape="rect" id="node2" title=" " alt="" coords="325,109,379,136"/>
+<area shape="rect" id="node3" href="$global__variable__constants_8hpp.html" title=" " alt="" coords="301,184,504,211"/>
+<area shape="rect" id="node10" href="$quark__star__utils_8hpp.html" title=" " alt="" coords="470,109,613,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="88,266,136,293"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,266,64,293"/>
+<area shape="rect" id="node6" title=" " alt="" coords="512,266,571,293"/>
+<area shape="rect" id="node7" title=" " alt="" coords="160,266,299,293"/>
+<area shape="rect" id="node8" title=" " alt="" coords="595,266,669,293"/>
+<area shape="rect" id="node9" title=" " alt="" coords="323,259,488,300"/>
+<area shape="rect" id="node11" title=" " alt="" coords="629,184,739,211"/>
+<area shape="rect" id="node12" title=" " alt="" coords="763,184,871,211"/>
 </map>

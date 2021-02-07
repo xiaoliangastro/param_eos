@@ -73,8 +73,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" line="42" column="10" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/integrate_core.hpp" bodystart="42" bodyend="55"/>
-        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
-        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="42">vvverbose</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="42">verbose</references>
+        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="44">vvverbose</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

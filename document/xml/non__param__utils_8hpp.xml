@@ -8,10 +8,10 @@
     <includedby refid="non__param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_eos.cpp</includedby>
     <includedby refid="param__eos_8cpp" local="yes">/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp</includedby>
     <incdepgraph>
-      <node id="22">
+      <node id="23">
         <label>boost/math/interpolators/makima.hpp</label>
       </node>
-      <node id="20">
+      <node id="17">
         <label>gsl/gsl_const_cgs.h</label>
       </node>
       <node id="4">
@@ -23,7 +23,7 @@
       <node id="11">
         <label>string</label>
       </node>
-      <node id="19">
+      <node id="15">
         <label>map</label>
       </node>
       <node id="8">
@@ -39,50 +39,58 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
       <node id="5">
         <label>boost/numeric/odeint/stepper/runge_kutta_fehlberg78.hpp</label>
       </node>
-      <node id="15">
+      <node id="18">
+        <label>boost/math/interpolators/pchip.hpp</label>
+      </node>
+      <node id="16">
         <label>vector</label>
       </node>
-      <node id="17">
+      <node id="21">
         <label>gsl/gsl_roots.h</label>
       </node>
-      <node id="14">
+      <node id="19">
         <label>quark_star_utils.hpp</label>
         <link refid="quark__star__utils_8hpp"/>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
       <node id="13">
         <label>array</label>
       </node>
-      <node id="18">
+      <node id="14">
         <label>global_variable_constants.hpp</label>
         <link refid="global__variable__constants_8hpp"/>
-        <childnode refid="19" relation="include">
-        </childnode>
         <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>cstdlib</label>
       </node>
       <node id="9">
         <label>iostream</label>
@@ -92,13 +100,15 @@
         <link refid="param__utils_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>data.hpp</label>
         <link refid="data_8hpp"/>
       </node>
@@ -127,15 +137,15 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="6">
         <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
       </node>
-      <node id="16">
+      <node id="20">
         <label>gsl/gsl_errno.h</label>
       </node>
     </incdepgraph>
@@ -178,7 +188,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" line="11" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" bodystart="11" bodyend="30"/>
-        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="57">coeftb</references>
         <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
       </memberdef>
       <memberdef kind="function" id="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -205,20 +215,20 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" line="32" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/non_param_utils.hpp" bodystart="32" bodyend="107"/>
-        <references refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" compoundref="param__utils_8hpp" startline="202" endline="262">check_mmax</references>
+        <references refid="param__utils_8hpp_1ab5160e911d86e6fcfa634708dde4fd07" compoundref="param__utils_8hpp" startline="293" endline="370">check_mmax</references>
         <references refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" compoundref="data_8hpp" startline="5">COEFF_TABLE</references>
-        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="53">coeftb</references>
+        <references refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" compoundref="global__variable__constants_8hpp" startline="57">coeftb</references>
         <references refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" compoundref="data_8hpp" startline="1951">EP_TABLE</references>
         <references refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" compoundref="non__param__eos_8cpp" startline="16">non_param_struct::frac</references>
-        <references refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="37" endline="49">get_mrl</references>
+        <references refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" compoundref="param__utils_8hpp" startline="40" endline="52">get_mrl</references>
         <references refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" compoundref="data_8hpp" startline="1850">MR_TABLE</references>
-        <references refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" compoundref="global__variable__constants_8hpp" startline="54">mrl_result</references>
-        <references refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" compoundref="global__variable__constants_8hpp" startline="81">p_trans</references>
-        <references refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" compoundref="global__variable__constants_8hpp" startline="80">rho_trans</references>
+        <references refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" compoundref="global__variable__constants_8hpp" startline="58">mrl_result</references>
+        <references refid="global__variable__constants_8hpp_1ac1224f202a914cb1e244ea080e80f47f" compoundref="global__variable__constants_8hpp" startline="119">p_trans</references>
+        <references refid="global__variable__constants_8hpp_1a352bf98659c3980ded56d97ec50e83ca" compoundref="global__variable__constants_8hpp" startline="118">rho_trans</references>
         <references refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" compoundref="non__param__eos_8cpp" startline="15">non_param_struct::step_i</references>
         <references refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" compoundref="non__param__utils_8hpp" startline="11" endline="30">transform_eostable</references>
-        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="42">verbose</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -268,7 +278,7 @@
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[0][0])/2;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{m_org.push_back(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[i][0]);<sp/>r_org.push_back(<ref refid="data_8hpp_1ae1e001a1815f8a84c7678f7c0d6b0c3a" kindref="member">MR_TABLE</ref>[i][1]);}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[0][0])/2;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{e_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][0]/<ref refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kindref="member">rho_trans</ref>);<sp/>p_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][1]/<ref refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kindref="member">p_trans</ref>);}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{e_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][0]/<ref refid="global__variable__constants_8hpp_1a352bf98659c3980ded56d97ec50e83ca" kindref="member">rho_trans</ref>);<sp/>p_upd.push_back(<ref refid="data_8hpp_1ac032af437dee892909d95a5bdc88215b" kindref="member">EP_TABLE</ref>[i][1]/<ref refid="global__variable__constants_8hpp_1ac1224f202a914cb1e244ea080e80f47f" kindref="member">p_trans</ref>);}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>table_rows<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>)/</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[0][0])/4;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;table_rows;<sp/>i++)<sp/>{<ref refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kindref="member">coeftb</ref>[<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][3]]<sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref>({<ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][0],<sp/><ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][1],<sp/><ref refid="data_8hpp_1a440ee18f702f4dfba24d78d1409604f1" kindref="member">COEFF_TABLE</ref>[i][2]});}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>len_eos<sp/>=<sp/>e_upd.size();</highlight></codeline>
@@ -298,7 +308,7 @@
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iscausal){</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="non__param__utils_8hpp_1a04b0dc2a856611178dde6982d8bec900" kindref="member">transform_eostable</ref>(e_upd,<sp/>p_upd);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dummy<sp/>=<sp/><ref refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" kindref="member">check_mmax</ref>(&amp;hc_max,<sp/>&amp;m_max);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dummy<sp/>=<sp/><ref refid="param__utils_8hpp_1ab5160e911d86e6fcfa634708dde4fd07" kindref="member">check_mmax</ref>(&amp;hc_max,<sp/>&amp;m_max);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dummy){</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>safe_hcm<sp/>=<sp/>hc_max-safe_hmax_error;<sp/></highlight><highlight class="comment">//safe_mm<sp/>=<sp/>get_mrl(safe_hcm)[0];</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_step<sp/>=<sp/>(safe_hcm-min_h)/</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">(n_table);</highlight></codeline>

@@ -1,4 +1,4 @@
-.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/eos_init.hpp" 3 "Sun Feb 7 2021" "my_ns_structure" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,11 +6,20 @@
 .SH SYNOPSIS
 .br
 .PP
+\fC#include <string>\fP
+.br
 \fC#include 'global_variable_constants\&.hpp'\fP
 .br
 \fC#include 'quark_star_utils\&.hpp'\fP
 .br
 
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcontrol_params\fP"
+.br
+.in -1c
 .SS "Functions"
 
 .in +1c
@@ -21,13 +30,25 @@
 .RI "void \fBinit_interp_coeff_through_ep_array\fP (double ee[], double pp[], const int len_eos)"
 .br
 .ti -1c
-.RI "void \fBinit_control_params\fP (double min_tov, double max_tov, bool ck_causal, int param_method, int verbose_level, double redundant_f, bool redundant_b)"
+.RI "void \fBinit_control_params\fP (\fBcontrol_params\fP parameters)"
 .br
 .ti -1c
-.RI "void \fBchange_pars\fP (double ppar[], int len_par, int len_border)"
+.RI "bool \fBchange_pars\fP (double ppar[], int len_par, int len_border, double h_max=\fBeos_table_max_h\fP, const char init_function_type[]=\fBinit_interpolation_function_type\fP)"
+.br
+.ti -1c
+.RI "void \fBinit_G_related_parameters\fP ()"
 .br
 .ti -1c
 .RI "void \fBcal_eborders\fP (\fBstate_type\fP params)"
+.br
+.ti -1c
+.RI "void \fBcal_eos_table\fP (double h_max, const char init_function_type[])"
+.br
+.ti -1c
+.RI "bool \fBcheck_p_at_rho185\fP ()"
+.br
+.ti -1c
+.RI "bool \fBcheck_gamma_piece_spec_phtr_css\fP (double start_h=\fBh_0\fP, double max_check_rho=5\&.)"
 .br
 .in -1c
 .SH "Function Documentation"
@@ -35,23 +56,39 @@
 .SS "void cal_eborders (\fBstate_type\fP params)"
 
 .PP
-Definition at line 82 of file eos_init\&.hpp\&.
-.SS "void change_pars (double ppar[], int len_par, int len_border)"
+Definition at line 116 of file eos_init\&.hpp\&.
+.SS "void cal_eos_table (double h_max, const char init_function_type[])"
 
 .PP
-Definition at line 125 of file eos_init\&.hpp\&.
-.SS "void init_control_params (double min_tov, double max_tov, bool ck_causal, int param_method, int verbose_level, double redundant_f, bool redundant_b)"
+Definition at line 159 of file eos_init\&.hpp\&.
+.SS "bool change_pars (double ppar[], int len_par, int len_border, double h_max = \fC\fBeos_table_max_h\fP\fP, const char init_function_type[] = \fC\fBinit_interpolation_function_type\fP\fP)"
 
 .PP
-Definition at line 52 of file eos_init\&.hpp\&.
+Definition at line 231 of file eos_init\&.hpp\&.
+.SS "bool check_gamma_piece_spec_phtr_css (double start_h = \fC\fBh_0\fP\fP, double max_check_rho = \fC5\&.\fP)"
+
+.PP
+Definition at line 209 of file eos_init\&.hpp\&.
+.SS "bool check_p_at_rho185 ()\fC [inline]\fP"
+
+.PP
+Definition at line 207 of file eos_init\&.hpp\&.
+.SS "void init_control_params (\fBcontrol_params\fP parameters)"
+
+.PP
+Definition at line 79 of file eos_init\&.hpp\&.
+.SS "void init_G_related_parameters ()"
+
+.PP
+Definition at line 60 of file eos_init\&.hpp\&.
 .SS "void init_interp_coeff (const char * e_name)"
 
 .PP
-Definition at line 17 of file eos_init\&.hpp\&.
+Definition at line 25 of file eos_init\&.hpp\&.
 .SS "void init_interp_coeff_through_ep_array (double ee[], double pp[], const int len_eos)"
 
 .PP
-Definition at line 35 of file eos_init\&.hpp\&.
+Definition at line 43 of file eos_init\&.hpp\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for my_ns_structure from the source code\&.

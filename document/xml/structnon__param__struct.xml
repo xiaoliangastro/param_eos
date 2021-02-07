@@ -18,6 +18,7 @@
         <referencedby refid="non__param__eos_8cpp_1af3c76022e52981249ebb1c3c8b8dfd16" compoundref="non__param__eos_8cpp" startline="21" endline="26">cal_like</referencedby>
         <referencedby refid="non__param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="non__param__eos_8cpp" startline="64" endline="133">main</referencedby>
         <referencedby refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</referencedby>
+        <referencedby refid="param__utils_8hpp_1aef1b9c57ed0bd39d11bc20a32173f215" compoundref="param__utils_8hpp" startline="372" endline="443">check_mmax_gd</referencedby>
       </memberdef>
       <memberdef kind="variable" id="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" prot="public" static="no" mutable="no">
         <type>double</type>

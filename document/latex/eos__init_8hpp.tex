@@ -1,5 +1,6 @@
 \hypertarget{eos__init_8hpp}{}\doxysection{/\+Users/jiangjinliang/work/try/\+Spectral\+\_\+\+Eo\+S/code/eostool/eos\+\_\+init.hpp File Reference}
 \label{eos__init_8hpp}\index{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/eos\_init.hpp@{/Users/jiangjinliang/work/try/Spectral\_EoS/code/eostool/eos\_init.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include \char`\"{}global\+\_\+variable\+\_\+constants.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}quark\+\_\+star\+\_\+utils.\+hpp\char`\"{}}\newline
 Include dependency graph for eos\+\_\+init.\+hpp\+:
@@ -18,6 +19,11 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=228pt]{eos__init_8hpp__dep__incl}
 \end{center}
 \end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcontrol__params}{control\+\_\+params}}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,11 +31,19 @@ void \mbox{\hyperlink{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}{init\+\_
 \item 
 void \mbox{\hyperlink{eos__init_8hpp_a0993541e6b56fc699d50f001f8371324}{init\+\_\+interp\+\_\+coeff\+\_\+through\+\_\+ep\+\_\+array}} (double ee\mbox{[}$\,$\mbox{]}, double pp\mbox{[}$\,$\mbox{]}, const int len\+\_\+eos)
 \item 
-void \mbox{\hyperlink{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}{init\+\_\+control\+\_\+params}} (double min\+\_\+tov, double max\+\_\+tov, bool ck\+\_\+causal, int param\+\_\+method, int verbose\+\_\+level, double redundant\+\_\+f, bool redundant\+\_\+b)
+void \mbox{\hyperlink{eos__init_8hpp_af5a1b499ffdcf8335477839d3c11c6cd}{init\+\_\+control\+\_\+params}} (\mbox{\hyperlink{structcontrol__params}{control\+\_\+params}} parameters)
 \item 
-void \mbox{\hyperlink{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}{change\+\_\+pars}} (double ppar\mbox{[}$\,$\mbox{]}, int len\+\_\+par, int len\+\_\+border)
+bool \mbox{\hyperlink{eos__init_8hpp_a1c80e0e32a8e25d237368dfcd635f382}{change\+\_\+pars}} (double ppar\mbox{[}$\,$\mbox{]}, int len\+\_\+par, int len\+\_\+border, double h\+\_\+max=\mbox{\hyperlink{global__variable__constants_8hpp_aa9c04f5beb6a7f4a31c52d13ea5a046e}{eos\+\_\+table\+\_\+max\+\_\+h}}, const char init\+\_\+function\+\_\+type\mbox{[}$\,$\mbox{]}=\mbox{\hyperlink{global__variable__constants_8hpp_a8925e3ae3177d73b690c3921f946a5c9}{init\+\_\+interpolation\+\_\+function\+\_\+type}})
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_ab0666a02b7b027b4303150e408e492e4}{init\+\_\+\+G\+\_\+related\+\_\+parameters}} ()
 \item 
 void \mbox{\hyperlink{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c}{cal\+\_\+eborders}} (\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} params)
+\item 
+void \mbox{\hyperlink{eos__init_8hpp_a8ff996bff52113bea7452f533095fb90}{cal\+\_\+eos\+\_\+table}} (double h\+\_\+max, const char init\+\_\+function\+\_\+type\mbox{[}$\,$\mbox{]})
+\item 
+bool \mbox{\hyperlink{eos__init_8hpp_a435ea1b8b01b2bc084d7295e440afff3}{check\+\_\+p\+\_\+at\+\_\+rho185}} ()
+\item 
+bool \mbox{\hyperlink{eos__init_8hpp_ab0d22f60c3e9f33d5922fa5e5e908aea}{check\+\_\+gamma\+\_\+piece\+\_\+spec\+\_\+phtr\+\_\+css}} (double start\+\_\+h=\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}}, double max\+\_\+check\+\_\+rho=5.)
 \end{DoxyCompactItemize}
 
 
@@ -42,44 +56,148 @@ void \mbox{\hyperlink{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c}{cal\+\_\
 
 
 
-Definition at line 82 of file eos\+\_\+init.\+hpp.
+Definition at line 116 of file eos\+\_\+init.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=264pt]{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c_icgraph}
+\includegraphics[width=338pt]{eos__init_8hpp_a7b2ab5cd167f87d4a280866fa43be85c_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}\label{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76}} 
-\index{eos\_init.hpp@{eos\_init.hpp}!change\_pars@{change\_pars}}
-\index{change\_pars@{change\_pars}!eos\_init.hpp@{eos\_init.hpp}}
-\doxysubsubsection{\texorpdfstring{change\_pars()}{change\_pars()}}
-{\footnotesize\ttfamily void change\+\_\+pars (\begin{DoxyParamCaption}\item[{double}]{ppar\mbox{[}$\,$\mbox{]},  }\item[{int}]{len\+\_\+par,  }\item[{int}]{len\+\_\+border }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{eos__init_8hpp_a8ff996bff52113bea7452f533095fb90}\label{eos__init_8hpp_a8ff996bff52113bea7452f533095fb90}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!cal\_eos\_table@{cal\_eos\_table}}
+\index{cal\_eos\_table@{cal\_eos\_table}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{cal\_eos\_table()}{cal\_eos\_table()}}
+{\footnotesize\ttfamily void cal\+\_\+eos\+\_\+table (\begin{DoxyParamCaption}\item[{double}]{h\+\_\+max,  }\item[{const char}]{init\+\_\+function\+\_\+type\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
 
 
 
-Definition at line 125 of file eos\+\_\+init.\+hpp.
+Definition at line 159 of file eos\+\_\+init.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{eos__init_8hpp_a03491c8e307f5ad8ef4ce32b9e4f9f76_cgraph}
+\includegraphics[width=350pt]{eos__init_8hpp_a8ff996bff52113bea7452f533095fb90_cgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}\label{eos__init_8hpp_a66d1d010d09d55450dabf0ce5fd91fe6}} 
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{eos__init_8hpp_a8ff996bff52113bea7452f533095fb90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_a1c80e0e32a8e25d237368dfcd635f382}\label{eos__init_8hpp_a1c80e0e32a8e25d237368dfcd635f382}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!change\_pars@{change\_pars}}
+\index{change\_pars@{change\_pars}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{change\_pars()}{change\_pars()}}
+{\footnotesize\ttfamily bool change\+\_\+pars (\begin{DoxyParamCaption}\item[{double}]{ppar\mbox{[}$\,$\mbox{]},  }\item[{int}]{len\+\_\+par,  }\item[{int}]{len\+\_\+border,  }\item[{double}]{h\+\_\+max = {\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_aa9c04f5beb6a7f4a31c52d13ea5a046e}{eos\+\_\+table\+\_\+max\+\_\+h}}},  }\item[{const char}]{init\+\_\+function\+\_\+type\mbox{[}$\,$\mbox{]} = {\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a8925e3ae3177d73b690c3921f946a5c9}{init\+\_\+interpolation\+\_\+function\+\_\+type}}} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 231 of file eos\+\_\+init.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_a1c80e0e32a8e25d237368dfcd635f382_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{eos__init_8hpp_a1c80e0e32a8e25d237368dfcd635f382_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_ab0d22f60c3e9f33d5922fa5e5e908aea}\label{eos__init_8hpp_ab0d22f60c3e9f33d5922fa5e5e908aea}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!check\_gamma\_piece\_spec\_phtr\_css@{check\_gamma\_piece\_spec\_phtr\_css}}
+\index{check\_gamma\_piece\_spec\_phtr\_css@{check\_gamma\_piece\_spec\_phtr\_css}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{check\_gamma\_piece\_spec\_phtr\_css()}{check\_gamma\_piece\_spec\_phtr\_css()}}
+{\footnotesize\ttfamily bool check\+\_\+gamma\+\_\+piece\+\_\+spec\+\_\+phtr\+\_\+css (\begin{DoxyParamCaption}\item[{double}]{start\+\_\+h = {\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}}},  }\item[{double}]{max\+\_\+check\+\_\+rho = {\ttfamily 5.} }\end{DoxyParamCaption})}
+
+
+
+Definition at line 209 of file eos\+\_\+init.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_ab0d22f60c3e9f33d5922fa5e5e908aea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_ab0d22f60c3e9f33d5922fa5e5e908aea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_a435ea1b8b01b2bc084d7295e440afff3}\label{eos__init_8hpp_a435ea1b8b01b2bc084d7295e440afff3}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!check\_p\_at\_rho185@{check\_p\_at\_rho185}}
+\index{check\_p\_at\_rho185@{check\_p\_at\_rho185}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{check\_p\_at\_rho185()}{check\_p\_at\_rho185()}}
+{\footnotesize\ttfamily bool check\+\_\+p\+\_\+at\+\_\+rho185 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 207 of file eos\+\_\+init.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_a435ea1b8b01b2bc084d7295e440afff3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_af5a1b499ffdcf8335477839d3c11c6cd}\label{eos__init_8hpp_af5a1b499ffdcf8335477839d3c11c6cd}} 
 \index{eos\_init.hpp@{eos\_init.hpp}!init\_control\_params@{init\_control\_params}}
 \index{init\_control\_params@{init\_control\_params}!eos\_init.hpp@{eos\_init.hpp}}
 \doxysubsubsection{\texorpdfstring{init\_control\_params()}{init\_control\_params()}}
-{\footnotesize\ttfamily void init\+\_\+control\+\_\+params (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+tov,  }\item[{double}]{max\+\_\+tov,  }\item[{bool}]{ck\+\_\+causal,  }\item[{int}]{param\+\_\+method,  }\item[{int}]{verbose\+\_\+level,  }\item[{double}]{redundant\+\_\+f,  }\item[{bool}]{redundant\+\_\+b }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void init\+\_\+control\+\_\+params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcontrol__params}{control\+\_\+params}}}]{parameters }\end{DoxyParamCaption})}
 
 
 
-Definition at line 52 of file eos\+\_\+init.\+hpp.
+Definition at line 79 of file eos\+\_\+init.\+hpp.
 
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_af5a1b499ffdcf8335477839d3c11c6cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{eos__init_8hpp_ab0666a02b7b027b4303150e408e492e4}\label{eos__init_8hpp_ab0666a02b7b027b4303150e408e492e4}} 
+\index{eos\_init.hpp@{eos\_init.hpp}!init\_G\_related\_parameters@{init\_G\_related\_parameters}}
+\index{init\_G\_related\_parameters@{init\_G\_related\_parameters}!eos\_init.hpp@{eos\_init.hpp}}
+\doxysubsubsection{\texorpdfstring{init\_G\_related\_parameters()}{init\_G\_related\_parameters()}}
+{\footnotesize\ttfamily void init\+\_\+\+G\+\_\+related\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 60 of file eos\+\_\+init.\+hpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eos__init_8hpp_ab0666a02b7b027b4303150e408e492e4_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}\label{eos__init_8hpp_a1764f6f4dbc2fe6080ebb9033544acfa}} 
 \index{eos\_init.hpp@{eos\_init.hpp}!init\_interp\_coeff@{init\_interp\_coeff}}
 \index{init\_interp\_coeff@{init\_interp\_coeff}!eos\_init.hpp@{eos\_init.hpp}}
@@ -88,7 +206,7 @@ Definition at line 52 of file eos\+\_\+init.\+hpp.
 
 
 
-Definition at line 17 of file eos\+\_\+init.\+hpp.
+Definition at line 25 of file eos\+\_\+init.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -106,5 +224,5 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 35 of file eos\+\_\+init.\+hpp.
+Definition at line 43 of file eos\+\_\+init.\+hpp.
 

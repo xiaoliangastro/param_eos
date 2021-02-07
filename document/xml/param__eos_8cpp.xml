@@ -21,10 +21,10 @@
       <node id="10">
         <label>gsl/gsl_min.h</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>boost/math/interpolators/makima.hpp</label>
       </node>
-      <node id="23">
+      <node id="21">
         <label>gsl/gsl_const_cgs.h</label>
       </node>
       <node id="13">
@@ -54,17 +54,17 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>string</label>
       </node>
-      <node id="22">
+      <node id="19">
         <label>map</label>
       </node>
       <node id="5">
@@ -73,14 +73,14 @@
       <node id="3">
         <label>fstream</label>
       </node>
-      <node id="27">
+      <node id="29">
         <label>non_param_utils.hpp</label>
         <link refid="non__param__utils_8hpp"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="14">
@@ -89,62 +89,74 @@
       <node id="8">
         <label>ctime</label>
       </node>
-      <node id="19">
-        <label>vector</label>
+      <node id="22">
+        <label>boost/math/interpolators/pchip.hpp</label>
       </node>
       <node id="20">
+        <label>vector</label>
+      </node>
+      <node id="24">
         <label>gsl/gsl_roots.h</label>
       </node>
-      <node id="18">
+      <node id="23">
         <label>quark_star_utils.hpp</label>
         <link refid="quark__star__utils_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
       <node id="17">
         <label>array</label>
       </node>
-      <node id="21">
+      <node id="18">
         <label>global_variable_constants.hpp</label>
         <link refid="global__variable__constants_8hpp"/>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>cstdlib</label>
       </node>
       <node id="2">
         <label>iostream</label>
       </node>
-      <node id="28">
+      <node id="30">
         <label>eos_init.hpp</label>
         <link refid="eos__init_8hpp"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>param_utils.hpp</label>
         <link refid="param__utils_8hpp"/>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -164,7 +176,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>data.hpp</label>
         <link refid="data_8hpp"/>
       </node>
@@ -193,9 +205,9 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
       <node id="15">
@@ -220,8 +232,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="20" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="20" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1a612a24239deac64748507b65f16d5d8b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -236,8 +248,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="21" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="21" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -252,8 +264,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="22" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="22" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -268,8 +280,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="23" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="23" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -284,8 +296,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="24" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="24" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -300,8 +312,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="25" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="25" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -316,8 +328,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="26" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="26" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -332,8 +344,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="27" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="27" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
-        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</referencedby>
       </memberdef>
       <memberdef kind="variable" id="param__eos_8cpp_1a89e36e09623fa06b2f97e5321d10d9b2" prot="public" static="no" mutable="no">
         <type>string</type>
@@ -348,7 +360,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="29" column="8" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="29" bodyend="-1"/>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -372,28 +384,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="147" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="147" bodyend="190" declfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" declline="32" declcolumn="6"/>
-        <references refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" compoundref="global__variable__constants_8hpp" startline="31">adapt_piecewise</references>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="153" column="6" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="153" bodyend="197" declfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" declline="32" declcolumn="6"/>
+        <references refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" compoundref="global__variable__constants_8hpp" startline="33">adapt_piecewise</references>
         <references refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" compoundref="param__eos_8cpp" startline="23">checkeos</references>
-        <references refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" compoundref="global__variable__constants_8hpp" startline="32">cons_cs</references>
-        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="24">interp_only</references>
+        <references refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" compoundref="global__variable__constants_8hpp" startline="34">cons_cs</references>
+        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="26">interp_only</references>
         <references refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" compoundref="param__eos_8cpp" startline="24">mk_tool_table</references>
         <references refid="param__eos_8cpp_1ac6c0fc5210023a9390358054bd8769f1" compoundref="param__eos_8cpp" startline="20">non_param</references>
         <references refid="param__eos_8cpp_1a612a24239deac64748507b65f16d5d8b" compoundref="param__eos_8cpp" startline="21">non_param_mktb</references>
         <references refid="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" compoundref="param__eos_8cpp" startline="25">opt_file</references>
         <references refid="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" compoundref="param__eos_8cpp" startline="27">opt_sg_pair</references>
         <references refid="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" compoundref="param__eos_8cpp" startline="26">opt_sg_point</references>
-        <references refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" compoundref="global__variable__constants_8hpp" startline="29">phase_trans</references>
-        <references refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" compoundref="global__variable__constants_8hpp" startline="25">piecewise</references>
-        <references refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" compoundref="global__variable__constants_8hpp" startline="26">piecewise_p</references>
-        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="30">quark_star</references>
+        <references refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" compoundref="global__variable__constants_8hpp" startline="31">phase_trans</references>
+        <references refid="global__variable__constants_8hpp_1a860b84a4bd0a3ecfa0569fb545d09359" compoundref="global__variable__constants_8hpp" startline="35">piece_spec_phtr_css</references>
+        <references refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" compoundref="global__variable__constants_8hpp" startline="27">piecewise</references>
+        <references refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" compoundref="global__variable__constants_8hpp" startline="28">piecewise_p</references>
+        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="32">quark_star</references>
         <references refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" compoundref="param__eos_8cpp" startline="22">routine</references>
-        <references refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" compoundref="global__variable__constants_8hpp" startline="27">spectral</references>
-        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="28">spectral_causal</references>
-        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
-        <references refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" compoundref="global__variable__constants_8hpp" startline="41">vverbose</references>
-        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="42">vvverbose</references>
-        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="139">main</referencedby>
+        <references refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" compoundref="global__variable__constants_8hpp" startline="29">spectral</references>
+        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="30">spectral_causal</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="42">verbose</references>
+        <references refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" compoundref="global__variable__constants_8hpp" startline="43">vverbose</references>
+        <references refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" compoundref="global__variable__constants_8hpp" startline="44">vvverbose</references>
+        <referencedby refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" compoundref="param__eos_8cpp" startline="35" endline="145">main</referencedby>
       </memberdef>
       <memberdef kind="function" id="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -415,22 +428,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="35" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="35" bodyend="139"/>
-        <references refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" compoundref="global__variable__constants_8hpp" startline="98">C</references>
-        <references refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="82" endline="123">cal_eborders</references>
-        <references refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" compoundref="integrate__core_8hpp" startline="71" endline="72">cal_lambda</references>
+        <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" line="35" column="5" bodyfile="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp" bodystart="35" bodyend="145"/>
+        <references refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" compoundref="global__variable__constants_8hpp" startline="89">C</references>
+        <references refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" compoundref="eos__init_8hpp" startline="116" endline="157">cal_eborders</references>
+        <references refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" compoundref="integrate__core_8hpp" startline="72" endline="73">cal_lambda</references>
+        <references refid="eos__init_8hpp_1a1c80e0e32a8e25d237368dfcd635f382" compoundref="eos__init_8hpp" startline="231" endline="313">change_pars</references>
         <references refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" compoundref="param__eos_8cpp" startline="23">checkeos</references>
-        <references refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="147" endline="190">command_line_init</references>
-        <references refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" compoundref="global__variable__constants_8hpp" startline="55">e_borders</references>
+        <references refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" compoundref="param__eos_8cpp" startline="153" endline="197">command_line_init</references>
+        <references refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" compoundref="global__variable__constants_8hpp" startline="59">e_borders</references>
         <references refid="param__eos_8cpp_1a89e36e09623fa06b2f97e5321d10d9b2" compoundref="param__eos_8cpp" startline="29">eos_fname</references>
-        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="56">eos_params</references>
+        <references refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" compoundref="global__variable__constants_8hpp" startline="60">eos_params</references>
         <references refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" compoundref="non__param__eos_8cpp" startline="16">non_param_struct::frac</references>
-        <references refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" compoundref="eos__init_8hpp" startline="17" endline="33">init_interp_coeff</references>
-        <references refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="307" endline="347">int_whole_star</references>
-        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="24">interp_only</references>
-        <references refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" compoundref="param__utils_8hpp" startline="107" endline="121">make_eos_table</references>
-        <references refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" compoundref="param__utils_8hpp" startline="123" endline="142">make_tool_table</references>
-        <references refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" compoundref="global__variable__constants_8hpp" startline="60">minimum_allowed_h</references>
+        <references refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" compoundref="eos__init_8hpp" startline="25" endline="41">init_interp_coeff</references>
+        <references refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" compoundref="integrate__core_8hpp" startline="297" endline="332">int_whole_star</references>
+        <references refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" compoundref="global__variable__constants_8hpp" startline="26">interp_only</references>
+        <references refid="param__utils_8hpp_1a15dd165a72366a31be8a581455aba8d4" compoundref="param__utils_8hpp" startline="203" endline="217">make_eos_table</references>
+        <references refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" compoundref="param__utils_8hpp" startline="219" endline="238">make_tool_table</references>
         <references refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" compoundref="param__eos_8cpp" startline="24">mk_tool_table</references>
         <references refid="param__eos_8cpp_1ac6c0fc5210023a9390358054bd8769f1" compoundref="param__eos_8cpp" startline="20">non_param</references>
         <references refid="non__param__utils_8hpp_1a0242b489eaaa0afb9df3c4f5e81cb8e4" compoundref="non__param__utils_8hpp" startline="32" endline="107">non_param_like</references>
@@ -441,18 +454,17 @@
         <references refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" compoundref="optimize__posterior_8hpp" startline="93" endline="109">optimize_file</references>
         <references refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" compoundref="optimize__posterior_8hpp" startline="82" endline="91">optimize_single_pair</references>
         <references refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" compoundref="optimize__posterior_8hpp" startline="67" endline="80">optimize_single_point</references>
-        <references refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" compoundref="global__variable__constants_8hpp" startline="25">piecewise</references>
-        <references refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" compoundref="global__variable__constants_8hpp" startline="26">piecewise_p</references>
-        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="30">quark_star</references>
-        <references refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" compoundref="global__variable__constants_8hpp" startline="82">r_trans</references>
+        <references refid="global__variable__constants_8hpp_1a860b84a4bd0a3ecfa0569fb545d09359" compoundref="global__variable__constants_8hpp" startline="35">piece_spec_phtr_css</references>
+        <references refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" compoundref="global__variable__constants_8hpp" startline="27">piecewise</references>
+        <references refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" compoundref="global__variable__constants_8hpp" startline="28">piecewise_p</references>
+        <references refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" compoundref="global__variable__constants_8hpp" startline="32">quark_star</references>
+        <references refid="global__variable__constants_8hpp_1a093102b51e2c5ff7bd0f5e47a6b29e36" compoundref="global__variable__constants_8hpp" startline="120">r_trans</references>
         <references refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" compoundref="param__eos_8cpp" startline="22">routine</references>
-        <references refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" compoundref="quark__star__utils_8hpp" startline="47" endline="80">solve_surface_h</references>
-        <references refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" compoundref="global__variable__constants_8hpp" startline="27">spectral</references>
-        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="28">spectral_causal</references>
+        <references refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" compoundref="global__variable__constants_8hpp" startline="29">spectral</references>
+        <references refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" compoundref="global__variable__constants_8hpp" startline="30">spectral_causal</references>
         <references refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" compoundref="non__param__eos_8cpp" startline="15">non_param_struct::step_i</references>
-        <references refid="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" compoundref="global__variable__constants_8hpp" startline="61">suggested_start_point</references>
         <references refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" compoundref="optimize__posterior_8hpp" startline="16">toolm_h</references>
-        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="40">verbose</references>
+        <references refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" compoundref="global__variable__constants_8hpp" startline="42">verbose</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -522,142 +534,149 @@
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref>)<sp/>offset<sp/>=<sp/>4;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>)<sp/>offset<sp/>=<sp/>3;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>)<sp/>{offset=1;<sp/><ref refid="param__eos_8cpp_1a89e36e09623fa06b2f97e5321d10d9b2" kindref="member">eos_fname</ref><sp/>=<sp/>string(argv[3]);}</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>){<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;offset;<sp/>i++)<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>.push_back(stod(argv[i+3]));}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref>){</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" kindref="member">cal_eborders</ref>(<ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>{<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;e-borders:<sp/>&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.size();<sp/>i++)<sp/>cout&lt;&lt;<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">;<sp/>cout&lt;&lt;endl;<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>params[4];</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;offset;<sp/>i++)<sp/>params[i]<sp/>=<sp/>stod(argv[i+3]);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="eos__init_8hpp_1a1c80e0e32a8e25d237368dfcd635f382" kindref="member">change_pars</ref>(params,<sp/>4,<sp/>0);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[1]<sp/>=<sp/>pow(<ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[1],<sp/>4);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>.push_back(<ref refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" kindref="member">solve_surface_h</ref>(-1.,<sp/>0.7,<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>));</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kindref="member">minimum_allowed_h</ref><sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>[3];</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" kindref="member">suggested_start_point</ref><sp/>=<sp/><ref refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kindref="member">minimum_allowed_h</ref>+0.1;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1a860b84a4bd0a3ecfa0569fb545d09359" kindref="member">piece_spec_phtr_css</ref>){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>params[8];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;offset;<sp/>i++)<sp/>params[i]<sp/>=<sp/>stod(argv[i+3]);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="eos__init_8hpp_1a1c80e0e32a8e25d237368dfcd635f382" kindref="member">change_pars</ref>(params,<sp/>8,<sp/>0);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><ref refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" kindref="member">init_interp_coeff</ref>(<ref refid="param__eos_8cpp_1a89e36e09623fa06b2f97e5321d10d9b2" kindref="member">eos_fname</ref>.c_str());</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//check<sp/>if<sp/>eos<sp/>is<sp/>right</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" kindref="member">checkeos</ref>){</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_min<sp/>=<sp/>stod(argv[3+offset]);<sp/>h_max<sp/>=<sp/>stod(argv[4+offset]);<sp/>dh<sp/>=<sp/>stod(argv[5+offset]);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>fname[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../result/repeat_eos.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" kindref="member">make_eos_table</ref>(h_min,<sp/>h_max,<sp/>dh,<sp/>12,<sp/>fname,<sp/></highlight><highlight class="stringliteral">&quot;cgs&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//make<sp/>tool<sp/>table<sp/>for<sp/>optimization</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" kindref="member">mk_tool_table</ref>){</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_min<sp/>=<sp/>stod(argv[3+offset]);<sp/>h_max<sp/>=<sp/>stod(argv[4+offset]);<sp/>dh<sp/>=<sp/>stod(argv[5+offset]);</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" kindref="member">make_tool_table</ref>(h_min,<sp/>h_max,<sp/>dh);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//routine</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" kindref="member">routine</ref>){</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_c<sp/>=<sp/>stod(argv[3+offset]);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x_result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kindref="member">int_whole_star</ref>(h_c);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>M<sp/>=<sp/>x_result[0];</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>R<sp/>=<sp/>x_result[1];</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref><sp/>=<sp/>M/R;</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>LB<sp/>=<sp/><ref refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" kindref="member">cal_lambda</ref>(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>x_result[2]);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;M:&quot;</highlight><highlight class="normal">&lt;&lt;M&lt;&lt;</highlight><highlight class="stringliteral">&quot;M_sun<sp/><sp/><sp/><sp/><sp/>R:&quot;</highlight><highlight class="normal">&lt;&lt;R*<ref refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" kindref="member">r_trans</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;km&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>C:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>Lambda:&quot;</highlight><highlight class="normal">&lt;&lt;LB&lt;&lt;endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>routine&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//optimization</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(optimizeit){</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//read<sp/>tool<sp/>table<sp/>to<sp/>accelerate<sp/>finding<sp/>root</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val1,<sp/>val2,<sp/>val3,<sp/>val4;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tool_fname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../tool/eos_table/test_hmrl.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>fp(tool_fname,<sp/>ifstream::in);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp&gt;&gt;val1&gt;&gt;val2&gt;&gt;val3&gt;&gt;val4)<sp/><ref refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" kindref="member">toolm_h</ref>[val2]<sp/>=<sp/>val1;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp.close();</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//optimize</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" kindref="member">opt_sg_point</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass<sp/>=<sp/>stod(argv[3+offset]);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrlh<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" kindref="member">optimize_single_point</ref>(mass);</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;aim<sp/>m:&quot;</highlight><highlight class="normal">&lt;&lt;mass&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>get<sp/>m:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>r:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[2]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>h:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[3]&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" kindref="member">opt_sg_pair</ref>){</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1<sp/>=<sp/>stod(argv[3+offset]),<sp/>m2<sp/>=<sp/>stod(argv[4+offset]);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>l12t_m12<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" kindref="member">optimize_single_pair</ref>(m1,<sp/>m2);</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;m1:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[3]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>m2:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[4]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l1:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l2:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>lt:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[2]&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" kindref="member">opt_file</ref>){</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&quot;../../data/ligo/low_ligo_ttest.txt&quot;,<sp/>&quot;../../result/test_ltm12l12.txt&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ifname<sp/>=<sp/>argv[3+offset];</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ofname<sp/>=<sp/>argv[4+offset];</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;ifname&lt;&lt;&quot;<sp/>&quot;&lt;&lt;ofname&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" kindref="member">optimize_file</ref>(ifname,<sp/>ofname);</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;used<sp/>time:&quot;</highlight><highlight class="normal">&lt;&lt;(time(0)-t0)/60.0&lt;&lt;</highlight><highlight class="stringliteral">&quot;min(s)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
-<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//initiate<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref><sp/>or<sp/><ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref>){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" kindref="member">cal_eborders</ref>(<ref refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kindref="member">eos_params</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>{<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;e-borders:<sp/>&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>.size();<sp/>i++)<sp/>cout&lt;&lt;<ref refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kindref="member">e_borders</ref>[i]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">;<sp/>cout&lt;&lt;endl;<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initiate<sp/>interpolation<sp/>coefficient<sp/>or<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>)<sp/><ref refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" kindref="member">init_interp_coeff</ref>(<ref refid="param__eos_8cpp_1a89e36e09623fa06b2f97e5321d10d9b2" kindref="member">eos_fname</ref>.c_str());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//check<sp/>if<sp/>eos<sp/>is<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" kindref="member">checkeos</ref>){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_min<sp/>=<sp/>stod(argv[3+offset]);<sp/>h_max<sp/>=<sp/>stod(argv[4+offset]);<sp/>dh<sp/>=<sp/>stod(argv[5+offset]);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>fname[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../result/repeat_eos.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="param__utils_8hpp_1a15dd165a72366a31be8a581455aba8d4" kindref="member">make_eos_table</ref>(h_min,<sp/>h_max,<sp/>dh,<sp/>12,<sp/>fname,<sp/></highlight><highlight class="stringliteral">&quot;cgs&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//make<sp/>tool<sp/>table<sp/>for<sp/>optimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" kindref="member">mk_tool_table</ref>){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_min<sp/>=<sp/>stod(argv[3+offset]);<sp/>h_max<sp/>=<sp/>stod(argv[4+offset]);<sp/>dh<sp/>=<sp/>stod(argv[5+offset]);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" kindref="member">make_tool_table</ref>(h_min,<sp/>h_max,<sp/>dh);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//routine</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" kindref="member">routine</ref>){</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h_c<sp/>=<sp/>stod(argv[3+offset]);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>x_result<sp/>=<sp/><ref refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kindref="member">int_whole_star</ref>(h_c);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>M<sp/>=<sp/>x_result[0];</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>R<sp/>=<sp/>x_result[1];</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref><sp/>=<sp/>M/R;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>LB<sp/>=<sp/><ref refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" kindref="member">cal_lambda</ref>(<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>,<sp/>x_result[2]);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;M:&quot;</highlight><highlight class="normal">&lt;&lt;M&lt;&lt;</highlight><highlight class="stringliteral">&quot;M_sun<sp/><sp/><sp/><sp/><sp/>R:&quot;</highlight><highlight class="normal">&lt;&lt;R*<ref refid="global__variable__constants_8hpp_1a093102b51e2c5ff7bd0f5e47a6b29e36" kindref="member">r_trans</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;km&quot;</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>C:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kindref="member">C</ref>&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/>Lambda:&quot;</highlight><highlight class="normal">&lt;&lt;LB&lt;&lt;endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;h_c&lt;&lt;&quot;<sp/>&quot;&lt;&lt;M&lt;&lt;&quot;<sp/>&quot;&lt;&lt;R*r_trans&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(exception<sp/>&amp;){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Invalid<sp/>value<sp/>encountered<sp/>in<sp/>routine&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//optimization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(optimizeit){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//read<sp/>tool<sp/>table<sp/>to<sp/>accelerate<sp/>finding<sp/>root</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val1,<sp/>val2,<sp/>val3,<sp/>val4;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>tool_fname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;../../tool/eos_table/test_hmrl.txt&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>fp(tool_fname,<sp/>ifstream::in);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(fp&gt;&gt;val1&gt;&gt;val2&gt;&gt;val3&gt;&gt;val4)<sp/><ref refid="optimize__posterior_8hpp_1acc2b980f7413d4b9e8f236554d1add16" kindref="member">toolm_h</ref>[val2]<sp/>=<sp/>val1;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp.close();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//optimize</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" kindref="member">opt_sg_point</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass<sp/>=<sp/>stod(argv[3+offset]);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>mrlh<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1adb35fbf1985beb38639c4db0562e4c2c" kindref="member">optimize_single_point</ref>(mass);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;aim<sp/>m:&quot;</highlight><highlight class="normal">&lt;&lt;mass&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>get<sp/>m:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>r:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[2]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>h:&quot;</highlight><highlight class="normal">&lt;&lt;mrlh[3]&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" kindref="member">opt_sg_pair</ref>){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m1<sp/>=<sp/>stod(argv[3+offset]),<sp/>m2<sp/>=<sp/>stod(argv[4+offset]);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kindref="member">state_type</ref><sp/>l12t_m12<sp/>=<sp/><ref refid="optimize__posterior_8hpp_1a7c2806d69096968d78c8ec3783616ba2" kindref="member">optimize_single_pair</ref>(m1,<sp/>m2);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;m1:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[3]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>m2:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[4]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l1:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[0]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>l2:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[1]&lt;&lt;</highlight><highlight class="stringliteral">&quot;\t\t<sp/>lt:&quot;</highlight><highlight class="normal">&lt;&lt;l12t_m12[2]&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" kindref="member">opt_file</ref>){</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//&quot;../../data/ligo/low_ligo_ttest.txt&quot;,<sp/>&quot;../../result/test_ltm12l12.txt&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ifname<sp/>=<sp/>argv[3+offset];</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ofname<sp/>=<sp/>argv[4+offset];</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout&lt;&lt;ifname&lt;&lt;&quot;<sp/>&quot;&lt;&lt;ofname&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="optimize__posterior_8hpp_1afadba1d9091fad5661f35917b0d699ab" kindref="member">optimize_file</ref>(ifname,<sp/>ofname);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref>)<sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;used<sp/>time:&quot;</highlight><highlight class="normal">&lt;&lt;(time(0)-t0)/60.0&lt;&lt;</highlight><highlight class="stringliteral">&quot;min(s)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147" refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" kindref="member">command_line_init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[]){</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>help<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;usage:<sp/>&quot;</highlight><highlight class="normal">+string(argv[0])+</highlight><highlight class="stringliteral">&quot;<sp/>aim<sp/>param_method<sp/>parameters<sp/>[-v|-vv|-vvv]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>(param_method<sp/>1:interp_only|2:piecewise|3:piecewise_p|4:spectral|5:spectral_causal|6:phase_trans|7:quark_star)<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>-h,<sp/>--help<sp/><sp/><sp/>show<sp/>this<sp/>massage\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>rt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>routine(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_c)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>ckeos<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check<sp/>if<sp/>eos<sp/>is<sp/>ok(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_min<sp/>+<sp/>h_max<sp/>+<sp/>dh)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>mktb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make<sp/>h-mr<sp/>table(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_min<sp/>+<sp/>h_max<sp/>+<sp/>dh)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>opts<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>single<sp/>mass(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>m1)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>optp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>single<sp/>pair(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>m1<sp/>+<sp/>m2)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>optf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>file<sp/>with<sp/>pairs<sp/>of<sp/>masses(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>in_fname<sp/>+<sp/>out_fname)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>nonp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>non-param<sp/>method(pars:<sp/>none)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>nonpmktb<sp/><sp/><sp/><sp/><sp/>non-param<sp/>method<sp/>make<sp/>table(pars:<sp/>none)&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>aim<sp/>of<sp/>the<sp/>executable</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>state<sp/>=<sp/>string(argv[1]);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;--help&quot;</highlight><highlight class="normal">)<sp/>{cout&lt;&lt;help&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;-h&quot;</highlight><highlight class="normal">)<sp/>{cout&lt;&lt;help&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;rt&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" kindref="member">routine</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;ckeos&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" kindref="member">checkeos</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;mktb&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" kindref="member">mk_tool_table</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;optf&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" kindref="member">opt_file</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;opts&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" kindref="member">opt_sg_point</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;optp&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" kindref="member">opt_sg_pair</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;nonp&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="param__eos_8cpp_1ac6c0fc5210023a9390358054bd8769f1" kindref="member">non_param</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;nonpmktb&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="param__eos_8cpp_1a612a24239deac64748507b65f16d5d8b" kindref="member">non_param_mktb</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unknown<sp/>aim<sp/>description,<sp/>exit&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parameterization<sp/>method</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param_method<sp/>=<sp/>stoi(argv[2]);</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==1)<sp/>{<ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=1;}</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==2)<sp/>{<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref>=1;}</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==3)<sp/>{<ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref>=1;}</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==4)<sp/>{<ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref>=1;}</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==5)<sp/>{<ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref>=1;}</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==6)<sp/>{<ref refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" kindref="member">phase_trans</ref>=1;}</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==7)<sp/>{<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>=1;}</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==8)<sp/>{<ref refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" kindref="member">adapt_piecewise</ref>=1;}</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==9)<sp/>{<ref refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" kindref="member">cons_cs</ref>=1;}</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unknown<sp/>parameterization<sp/>method:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;param_method&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;argc;<sp/>i++){</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-v&quot;</highlight><highlight class="normal">)<sp/><ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-vv&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-vvv&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//debuger</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;let&apos;s<sp/>go&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;I<sp/>am<sp/>fucked!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;bye&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>pretty<sp/>fucking<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>pretty<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//initiate<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="param__eos_8cpp_1a1d56075a6e615cb22adc8cb7e62a1929" kindref="member">command_line_init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[]){</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>help<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;usage:<sp/>&quot;</highlight><highlight class="normal">+string(argv[0])+</highlight><highlight class="stringliteral">&quot;<sp/>aim<sp/>param_method<sp/>parameters<sp/>[-v|-vv|-vvv]\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>(param_method<sp/>1:interp_only|2:piecewise|3:piecewise_p|4:spectral|5:spectral_causal|6:phase_trans|7:quark_star)<sp/>\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>-h,<sp/>--help<sp/><sp/><sp/>show<sp/>this<sp/>massage\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>rt<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>routine(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_c)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>ckeos<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check<sp/>if<sp/>eos<sp/>is<sp/>ok(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_min<sp/>+<sp/>h_max<sp/>+<sp/>dh)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>mktb<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>make<sp/>h-mr<sp/>table(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>h_min<sp/>+<sp/>h_max<sp/>+<sp/>dh)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>opts<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>single<sp/>mass(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>m1)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>optp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>single<sp/>pair(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>m1<sp/>+<sp/>m2)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>optf<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>optimize<sp/>a<sp/>file<sp/>with<sp/>pairs<sp/>of<sp/>masses(pars:<sp/>eos<sp/>parameters<sp/>+<sp/>in_fname<sp/>+<sp/>out_fname)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>nonp<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>non-param<sp/>method(pars:<sp/>none)\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>help<sp/>+=<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/><sp/><sp/><sp/>nonpmktb<sp/><sp/><sp/><sp/><sp/>non-param<sp/>method<sp/>make<sp/>table(pars:<sp/>none)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>aim<sp/>of<sp/>the<sp/>executable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>state<sp/>=<sp/>string(argv[1]);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;--help&quot;</highlight><highlight class="normal">)<sp/>{cout&lt;&lt;help&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;-h&quot;</highlight><highlight class="normal">)<sp/>{cout&lt;&lt;help&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;rt&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1ae69e343ec34f0f3704c86269852f35b5" kindref="member">routine</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;ckeos&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a9c58280bccf354faa879b95609db3b9f" kindref="member">checkeos</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;mktb&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1adbb075e08b70bdb7abfe2dc204e3bd8b" kindref="member">mk_tool_table</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;optf&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a7fc834134077bd4a3f1a1745da41fb36" kindref="member">opt_file</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;opts&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1af8051b73cc475149ee3686129b7c190c" kindref="member">opt_sg_point</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;optp&quot;</highlight><highlight class="normal">)<sp/><ref refid="param__eos_8cpp_1a5269eaf15afa2bb3e628025b71af2792" kindref="member">opt_sg_pair</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;nonp&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="param__eos_8cpp_1ac6c0fc5210023a9390358054bd8769f1" kindref="member">non_param</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(state==</highlight><highlight class="stringliteral">&quot;nonpmktb&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="param__eos_8cpp_1a612a24239deac64748507b65f16d5d8b" kindref="member">non_param_mktb</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unknown<sp/>aim<sp/>description,<sp/>exit&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>parameterization<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param_method<sp/>=<sp/>stoi(argv[2]);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==1)<sp/>{<ref refid="global__variable__constants_8hpp_1a2ce9aef0de35008e21974dfb785c10fc" kindref="member">interp_only</ref>=1;}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==2)<sp/>{<ref refid="global__variable__constants_8hpp_1af97efc64d34e2402ee258267738ea811" kindref="member">piecewise</ref>=1;}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==3)<sp/>{<ref refid="global__variable__constants_8hpp_1a2ca99a29bfea4da522a2ad39e600d214" kindref="member">piecewise_p</ref>=1;}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==4)<sp/>{<ref refid="global__variable__constants_8hpp_1a32e5546b387ea6359d881414998fdc86" kindref="member">spectral</ref>=1;}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==5)<sp/>{<ref refid="global__variable__constants_8hpp_1a8008d754115580a3d87444b6d6de90ec" kindref="member">spectral_causal</ref>=1;}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==6)<sp/>{<ref refid="global__variable__constants_8hpp_1a55825c06e223e316b74e617df6e2ac61" kindref="member">phase_trans</ref>=1;}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==7)<sp/>{<ref refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kindref="member">quark_star</ref>=1;}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==8)<sp/>{<ref refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" kindref="member">adapt_piecewise</ref>=1;}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==9)<sp/>{<ref refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" kindref="member">cons_cs</ref>=1;}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(param_method==10)<sp/>{<ref refid="global__variable__constants_8hpp_1a860b84a4bd0a3ecfa0569fb545d09359" kindref="member">piece_spec_phtr_css</ref>=1;}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Unknown<sp/>parameterization<sp/>method:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;param_method&lt;&lt;endl;<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;argc;<sp/>i++){</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-v&quot;</highlight><highlight class="normal">)<sp/><ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-vv&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">(argv[i])==</highlight><highlight class="stringliteral">&quot;-vvv&quot;</highlight><highlight class="normal">)<sp/>{<ref refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kindref="member">vvverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kindref="member">vverbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/><ref refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kindref="member">verbose</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//debuger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;let&apos;s<sp/>go&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;I<sp/>am<sp/>fucked!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//cout&lt;&lt;&quot;bye&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>pretty<sp/>fucking<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cout&lt;&lt;&quot;I<sp/>am<sp/>pretty<sp/>far<sp/>from<sp/>ok!&quot;&lt;&lt;endl;</highlight></codeline>
     </programlisting>
     <location file="/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_eos.cpp"/>
   </compounddef>

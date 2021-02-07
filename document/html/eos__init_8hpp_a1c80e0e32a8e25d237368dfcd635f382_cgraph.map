@@ -1,0 +1,21 @@
+<map id="change_pars" name="change_pars">
+<area shape="rect" id="node1" title=" " alt="" coords="5,141,104,168"/>
+<area shape="rect" id="node2" href="$eos__init_8hpp.html#a7b2ab5cd167f87d4a280866fa43be85c" title=" " alt="" coords="172,40,271,67"/>
+<area shape="rect" id="node3" href="$eos__init_8hpp.html#a8ff996bff52113bea7452f533095fb90" title=" " alt="" coords="169,91,273,117"/>
+<area shape="rect" id="node15" href="$eos__init_8hpp.html#ab0d22f60c3e9f33d5922fa5e5e908aea" title=" " alt="" coords="339,149,523,190"/>
+<area shape="rect" id="node16" href="$eos__init_8hpp.html#a435ea1b8b01b2bc084d7295e440afff3" title=" " alt="" coords="152,192,291,219"/>
+<area shape="rect" id="node17" href="$quark__star__utils_8hpp.html#a0c31628b10284967766aab20ececec9e" title=" " alt="" coords="162,243,281,269"/>
+<area shape="rect" id="node4" href="$integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="397,32,465,59"/>
+<area shape="rect" id="node14" href="$integrate__core_8hpp.html#ae126689d13748236aac83457bf5855df" title=" " alt="" coords="365,83,497,125"/>
+<area shape="rect" id="node5" href="$integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="599,7,651,33"/>
+<area shape="rect" id="node6" href="$integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="599,57,651,84"/>
+<area shape="rect" id="node7" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="571,132,679,159"/>
+<area shape="rect" id="node8" href="$integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="739,5,869,32"/>
+<area shape="rect" id="node9" href="$integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="734,56,874,83"/>
+<area shape="rect" id="node10" href="$integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="727,107,881,133"/>
+<area shape="rect" id="node11" href="$integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="745,157,863,184"/>
+<area shape="rect" id="node12" href="$integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="727,208,881,235"/>
+<area shape="rect" id="node13" href="$integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="740,259,868,285"/>
+<area shape="rect" id="node18" href="$quark__star__utils_8hpp.html#a34b96d39c4ed4659487ac27799f7ecf1" title=" " alt="" coords="382,243,479,269"/>
+<area shape="rect" id="node19" href="$quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="575,243,674,269"/>
+</map>

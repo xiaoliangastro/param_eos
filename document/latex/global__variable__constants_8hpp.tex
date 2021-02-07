@@ -5,6 +5,7 @@
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include $<$gsl/gsl\+\_\+const\+\_\+cgs.\+h$>$}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/math/interpolators/pchip.\+hpp$>$}\newline
 Include dependency graph for global\+\_\+variable\+\_\+constants.\+hpp\+:
 \nopagebreak
 \begin{figure}[H]
@@ -47,7 +48,7 @@ bool \mbox{\hyperlink{global__variable__constants_8hpp_a07fea4067c5fce9a3d6e2ef6
 \begin{DoxyCompactList}\small\item\em adaptive rho border, with parameters\+: delta\+\_\+rho$\ast$n+speed\+\_\+of\+\_\+sound$\ast$n. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{global__variable__constants_8hpp_a41b27a048228fee1fd9165f88d3fdbee}{cons\+\_\+cs}} = 0
 \begin{DoxyCompactList}\small\item\em constant speed of sound. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{global__variable__constants_8hpp_ada4ebd73fa485a46b9dd48db6ca60959}{piece\+\_\+spec\+\_\+phtr\+\_\+ccs}} = 0
+bool \mbox{\hyperlink{global__variable__constants_8hpp_a860b84a4bd0a3ecfa0569fb545d09359}{piece\+\_\+spec\+\_\+phtr\+\_\+css}} = 0
 \item 
 bool \mbox{\hyperlink{global__variable__constants_8hpp_ab3f078684998b83967d507d0f453f454}{verbose}} = 0
 \begin{DoxyCompactList}\small\item\em (command\+: -\/v). \end{DoxyCompactList}\item 
@@ -55,23 +56,41 @@ bool \mbox{\hyperlink{global__variable__constants_8hpp_a5b618f06482991e2bc3278d8
 \begin{DoxyCompactList}\small\item\em (command\+: -\/vv). \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{global__variable__constants_8hpp_a3329c9e8ff59b1da3d142fd08419b85a}{vvverbose}} = 0
 \begin{DoxyCompactList}\small\item\em (command\+: -\/vvv). \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{global__variable__constants_8hpp_a3de327fde01c89d6993a82ac06db5af6}{minm\+\_\+tov}} = 0.\+8
+double \mbox{\hyperlink{global__variable__constants_8hpp_a3de327fde01c89d6993a82ac06db5af6}{minm\+\_\+tov}} = 0.\+0
 \begin{DoxyCompactList}\small\item\em minimum limit of T\+OV mass \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{global__variable__constants_8hpp_aa8ac37cbfe75c0314bf944fa1939bef4}{maxm\+\_\+tov}} = 3.\+0
+double \mbox{\hyperlink{global__variable__constants_8hpp_aa8ac37cbfe75c0314bf944fa1939bef4}{maxm\+\_\+tov}} = 0.\+0
 \begin{DoxyCompactList}\small\item\em maximum limit of T\+OV mass \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{global__variable__constants_8hpp_a99853315130aa0a18b57c7309f554f9c}{const\+\_\+inte\+\_\+step}} = 0
+bool \mbox{\hyperlink{global__variable__constants_8hpp_a756d74f33b56524c2e46b47b9ffc6ac2}{consid\+\_\+const\+\_\+inter\+\_\+step}} = false
 \begin{DoxyCompactList}\small\item\em constant integration step \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{global__variable__constants_8hpp_ad77f3cf002249ce3de3de6b3a94ef1f5}{sg\+\_\+const\+\_\+step}} = 1.e-\/5
+double \mbox{\hyperlink{global__variable__constants_8hpp_ad77f3cf002249ce3de3de6b3a94ef1f5}{sg\+\_\+const\+\_\+step}} = 0.
 \begin{DoxyCompactList}\small\item\em single step in constant integration step \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a435deefa291009d6bf696aa535358c87}{deviation\+\_\+G}} = 0.
+\begin{DoxyCompactList}\small\item\em G\textquotesingle{}=G$\ast$(1+deviation\+\_\+G) \end{DoxyCompactList}\item 
 map$<$ double, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$\+::iterator \mbox{\hyperlink{global__variable__constants_8hpp_a623a8f9be8490ec6209c08d8e52fc929}{coeftb\+\_\+idx}}
 \begin{DoxyCompactList}\small\item\em index iterator-\/get the corresponding interval of h to use corresponding interpolation coefficients. \end{DoxyCompactList}\item 
 map$<$ double, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ \mbox{\hyperlink{global__variable__constants_8hpp_add31440b5514ca384bc53145ccd4f1a6}{coeftb}}
 \begin{DoxyCompactList}\small\item\em coefficient of p, e and c, taking h as key. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{global__variable__constants_8hpp_ad7f1aa953dc63f3be1a546da18a3c2aa}{mrl\+\_\+result}} \mbox{[}3\mbox{]}
 \item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_ac67f7e6c3a0652a283aea75c34565a85}{eos\+\_\+props}} \mbox{[}6\mbox{]}
+\item 
 \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_a35971b802f48032134ca16c7ae036f34}{e\+\_\+borders}}
 \item 
 \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_a4e025832d3a1a33270a793ab654db08c}{eos\+\_\+params}}
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_ab4ccc98bcfc07cf7dd5afedb00e814ab}{eos\+\_\+table\+\_\+h}}
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_a077574fb206d3aaad2454ae69a8f2d0e}{eos\+\_\+table\+\_\+p}}
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_a3be3a2590454fd95b08031a0482aa93b}{eos\+\_\+table\+\_\+e}}
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_af86540dcb1812b1dd02d9726f5dab3da}{eos\+\_\+table\+\_\+rho}}
+\item 
+vector$<$ pchip$<$ \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ $>$ \mbox{\hyperlink{global__variable__constants_8hpp_abfedbc7b72183a1cedb9bcc5b64d3529}{eos\+\_\+table\+\_\+function\+\_\+h\+\_\+base}}
+\item 
+vector$<$ pchip$<$ \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ $>$ \mbox{\hyperlink{global__variable__constants_8hpp_ab40f125f502b6dbd182e701f56b75127}{eos\+\_\+table\+\_\+function\+\_\+rho\+\_\+base}}
+\item 
+vector$<$ pchip$<$ \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} $>$ $>$ \mbox{\hyperlink{global__variable__constants_8hpp_a744fdf8d4dd2383caf21d91c03a348b2}{eos\+\_\+table\+\_\+function\+\_\+e\+\_\+base}}
 \item 
 bool \mbox{\hyperlink{global__variable__constants_8hpp_ac10fdca83ba95668d86ff24ac666803d}{check\+\_\+causal}} = 1
 \item 
@@ -79,33 +98,9 @@ double \mbox{\hyperlink{global__variable__constants_8hpp_a7a11e492a812c7256c33d3
 \item 
 double \mbox{\hyperlink{global__variable__constants_8hpp_ab352375cec5c5cea5f0654ab2a1a1807}{suggested\+\_\+start\+\_\+point}} = \mbox{\hyperlink{global__variable__constants_8hpp_a7a11e492a812c7256c33d342ce4caea4}{minimum\+\_\+allowed\+\_\+h}}+0.\+1
 \item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a41540773134a59f15f5908d1167c3c3a}{sg\+\_\+step}} = 1.e-\/10
-\begin{DoxyCompactList}\small\item\em single step. \end{DoxyCompactList}\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a58246c5c19b9d2fb525df16e3f883723}{h\+\_\+surface}} = 1e-\/10
-\begin{DoxyCompactList}\small\item\em surface of the star. \end{DoxyCompactList}\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}{h\+\_\+ig}} =1e-\/7
-\begin{DoxyCompactList}\small\item\em where to start integrate T\+OV equation. \end{DoxyCompactList}\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}{rho\+\_\+trans}} = 6.\+17714470405638e+17
+double \mbox{\hyperlink{global__variable__constants_8hpp_a9e7b5cc88c5522f8a6c2ca06a21dfca3}{deviation\+\_\+\+G\+\_\+plus1}} = \mbox{\hyperlink{global__variable__constants_8hpp_a435deefa291009d6bf696aa535358c87}{deviation\+\_\+G}}+1.
 \item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a7c49c7d65b3c65eb7a9a457c905f6564}{p\+\_\+trans}} = 5.\+55174079257738e+38
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a172789dfdaecb45defd22444f4272dc2}{r\+\_\+trans}} = 1.\+4766250385
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a541be2f598d25b67abfecd6bd6bd918f}{e\+\_\+0}} = 9.\+075720079516068750e+13/\mbox{\hyperlink{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}{rho\+\_\+trans}}
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_adad155522ac7592916e3c332a2682963}{p\+\_\+0}} = 2.\+979148040306152863e+32/\mbox{\hyperlink{global__variable__constants_8hpp_a7c49c7d65b3c65eb7a9a457c905f6564}{p\+\_\+trans}}
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}} = 2.\+161113031691454245e-\/02
-\begin{DoxyCompactList}\small\item\em border of two eos approximation methods. default\+: 0.\+0216 \end{DoxyCompactList}\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a4066e07b45853e6a2d87b1b350415257}{rho\+\_\+0}} = (\mbox{\hyperlink{global__variable__constants_8hpp_a541be2f598d25b67abfecd6bd6bd918f}{e\+\_\+0}}+\mbox{\hyperlink{global__variable__constants_8hpp_adad155522ac7592916e3c332a2682963}{p\+\_\+0}})/exp(\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}} = 2.\+7e+14/\mbox{\hyperlink{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}{rho\+\_\+trans}}
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a1d1ff9b2da2a11d49bd9a6a4d42f32d2}{max\+\_\+possible\+\_\+e}} = 1000$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}
-\item 
-\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_abf567d4749b505ef6c70a582a8082da3}{rho\+\_\+borders}} \{1.$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 1.\+85$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 3.\+7$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 7.\+4$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}\}
-\item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}{G}} = G\+S\+L\+\_\+\+C\+O\+N\+S\+T\+\_\+\+C\+G\+S\+\_\+\+G\+R\+A\+V\+I\+T\+A\+T\+I\+O\+N\+A\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT
+double \mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}} = G\+S\+L\+\_\+\+C\+O\+N\+S\+T\+\_\+\+C\+G\+S\+\_\+\+G\+R\+A\+V\+I\+T\+A\+T\+I\+O\+N\+A\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a9e7b5cc88c5522f8a6c2ca06a21dfca3}{deviation\+\_\+\+G\+\_\+plus1}}
 \item 
 const double \mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}} = G\+S\+L\+\_\+\+C\+O\+N\+S\+T\+\_\+\+C\+G\+S\+\_\+\+S\+P\+E\+E\+D\+\_\+\+O\+F\+\_\+\+L\+I\+G\+HT
 \item 
@@ -123,11 +118,43 @@ const double \mbox{\hyperlink{global__variable__constants_8hpp_a2bc24e47ff2f7868
 \item 
 const double \mbox{\hyperlink{global__variable__constants_8hpp_a397c8c4fbdc84de83906b83cc4a7ec56}{Me\+V\+Eifm3\+\_\+to\+\_\+g\+Eicm3}} = 1.e45$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a87b385f118e3715860117a77eda7136d}{eV}}/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 2)
 \item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_a59c23c9d549f37cf3d0863fdbf4b1bdf}{g\+Eicm3\+\_\+to\+\_\+dmls}} = pow(\mbox{\hyperlink{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)
+double \mbox{\hyperlink{global__variable__constants_8hpp_af597a608296fc40089de9cef7bd670d2}{g\+Eicm3\+\_\+to\+\_\+dmls}} = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)
 \item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_ab0333c10c9e52fdfc9a7873dcdd796d3}{erg\+Eicm3\+\_\+to\+\_\+dmls}} = pow(\mbox{\hyperlink{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 8)
+double \mbox{\hyperlink{global__variable__constants_8hpp_a949ce33d4b4fa91788b49fa895a1d1b4}{erg\+Eicm3\+\_\+to\+\_\+dmls}} = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 8)
 \item 
-const double \mbox{\hyperlink{global__variable__constants_8hpp_ada123d429e18016f9a60537c63db162c}{Me\+V4\+\_\+to\+\_\+dmls}} = \mbox{\hyperlink{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}{Me\+V3\+\_\+to\+\_\+ifm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}{Me\+V\+Eifm3\+\_\+to\+\_\+erg\+Eicm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_ab0333c10c9e52fdfc9a7873dcdd796d3}{erg\+Eicm3\+\_\+to\+\_\+dmls}}
+double \mbox{\hyperlink{global__variable__constants_8hpp_a29dc80723a4b13d538eb54472b3a5f9a}{Me\+V4\+\_\+to\+\_\+dmls}} = \mbox{\hyperlink{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}{Me\+V3\+\_\+to\+\_\+ifm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}{Me\+V\+Eifm3\+\_\+to\+\_\+erg\+Eicm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a949ce33d4b4fa91788b49fa895a1d1b4}{erg\+Eicm3\+\_\+to\+\_\+dmls}}
+\item 
+const double \mbox{\hyperlink{global__variable__constants_8hpp_a41540773134a59f15f5908d1167c3c3a}{sg\+\_\+step}} = 1.e-\/10
+\begin{DoxyCompactList}\small\item\em single step. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{global__variable__constants_8hpp_a58246c5c19b9d2fb525df16e3f883723}{h\+\_\+surface}} = 1e-\/10
+\begin{DoxyCompactList}\small\item\em surface of the star. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}{h\+\_\+ig}} =1e-\/7
+\begin{DoxyCompactList}\small\item\em where to start integrate T\+OV equation. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}} = 2.\+161113031691454245e-\/02
+\begin{DoxyCompactList}\small\item\em border of two eos approximation methods. default\+: 0.\+0216 \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a570861e893691c4cefa803bfacca940c}{length\+\_\+trans}} = \mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 2)
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}} = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)/(pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2))
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_ac1224f202a914cb1e244ea080e80f47f}{p\+\_\+trans}} = \mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 2)
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a093102b51e2c5ff7bd0f5e47a6b29e36}{r\+\_\+trans}} = \mbox{\hyperlink{global__variable__constants_8hpp_a570861e893691c4cefa803bfacca940c}{length\+\_\+trans}}/1.e5
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_ae3b4ac975d7fdd80fdeba4c77d9a9384}{e\+\_\+0}} = 9.\+075720079516068750e+13/\mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a065595506e759c6a409a334e85a29247}{p\+\_\+0}} = 2.\+979148040306152863e+32/\mbox{\hyperlink{global__variable__constants_8hpp_ac1224f202a914cb1e244ea080e80f47f}{p\+\_\+trans}}
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_ae5f5d9edb66645eab31a7c8389493ce7}{rho\+\_\+0}} = (\mbox{\hyperlink{global__variable__constants_8hpp_ae3b4ac975d7fdd80fdeba4c77d9a9384}{e\+\_\+0}}+\mbox{\hyperlink{global__variable__constants_8hpp_a065595506e759c6a409a334e85a29247}{p\+\_\+0}})/exp(\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}} = 2.\+7e+14/\mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_a1c48946adb93455139b71dd52f1083c2}{max\+\_\+possible\+\_\+e}} = 1000$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}
+\item 
+\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{global__variable__constants_8hpp_abf567d4749b505ef6c70a582a8082da3}{rho\+\_\+borders}} \{1.$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 1.\+85$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 3.\+7$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 7.\+4$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}\}
+\item 
+double \mbox{\hyperlink{global__variable__constants_8hpp_aa9c04f5beb6a7f4a31c52d13ea5a046e}{eos\+\_\+table\+\_\+max\+\_\+h}} = 1.\+5
+\item 
+char \mbox{\hyperlink{global__variable__constants_8hpp_a8925e3ae3177d73b690c3921f946a5c9}{init\+\_\+interpolation\+\_\+function\+\_\+type}} \mbox{[}3\mbox{]} = \{\textquotesingle{}1\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}1\textquotesingle{}\}
 \end{DoxyCompactItemize}
 
 
@@ -140,7 +167,7 @@ const double \mbox{\hyperlink{global__variable__constants_8hpp_ada123d429e18016f
 
 
 
-Definition at line 51 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 55 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
@@ -157,7 +184,7 @@ adaptive rho border, with parameters\+: delta\+\_\+rho$\ast$n+speed\+\_\+of\+\_\
 
 
 
-Definition at line 31 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 33 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}\label{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!C@{C}}
@@ -167,7 +194,7 @@ Definition at line 31 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 98 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 89 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_ac10fdca83ba95668d86ff24ac666803d}\label{global__variable__constants_8hpp_ac10fdca83ba95668d86ff24ac666803d}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!check\_causal@{check\_causal}}
@@ -177,7 +204,7 @@ Definition at line 98 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 59 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 71 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_add31440b5514ca384bc53145ccd4f1a6}\label{global__variable__constants_8hpp_add31440b5514ca384bc53145ccd4f1a6}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!coeftb@{coeftb}}
@@ -191,7 +218,7 @@ coefficient of p, e and c, taking h as key.
 
 
 
-Definition at line 53 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 57 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a623a8f9be8490ec6209c08d8e52fc929}\label{global__variable__constants_8hpp_a623a8f9be8490ec6209c08d8e52fc929}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!coeftb\_idx@{coeftb\_idx}}
@@ -205,7 +232,7 @@ index iterator-\/get the corresponding interval of h to use corresponding interp
 
 
 
-Definition at line 52 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 56 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a41b27a048228fee1fd9165f88d3fdbee}\label{global__variable__constants_8hpp_a41b27a048228fee1fd9165f88d3fdbee}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!cons\_cs@{cons\_cs}}
@@ -219,13 +246,13 @@ constant speed of sound.
 
 
 
-Definition at line 32 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 34 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a99853315130aa0a18b57c7309f554f9c}\label{global__variable__constants_8hpp_a99853315130aa0a18b57c7309f554f9c}} 
-\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!const\_inte\_step@{const\_inte\_step}}
-\index{const\_inte\_step@{const\_inte\_step}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
-\doxysubsubsection{\texorpdfstring{const\_inte\_step}{const\_inte\_step}}
-{\footnotesize\ttfamily bool const\+\_\+inte\+\_\+step = 0}
+\mbox{\Hypertarget{global__variable__constants_8hpp_a756d74f33b56524c2e46b47b9ffc6ac2}\label{global__variable__constants_8hpp_a756d74f33b56524c2e46b47b9ffc6ac2}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!consid\_const\_inter\_step@{consid\_const\_inter\_step}}
+\index{consid\_const\_inter\_step@{consid\_const\_inter\_step}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{consid\_const\_inter\_step}{consid\_const\_inter\_step}}
+{\footnotesize\ttfamily bool consid\+\_\+const\+\_\+inter\+\_\+step = false}
 
 
 
@@ -233,17 +260,41 @@ constant integration step
 
 
 
-Definition at line 47 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 49 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a541be2f598d25b67abfecd6bd6bd918f}\label{global__variable__constants_8hpp_a541be2f598d25b67abfecd6bd6bd918f}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a435deefa291009d6bf696aa535358c87}\label{global__variable__constants_8hpp_a435deefa291009d6bf696aa535358c87}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!deviation\_G@{deviation\_G}}
+\index{deviation\_G@{deviation\_G}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{deviation\_G}{deviation\_G}}
+{\footnotesize\ttfamily double deviation\+\_\+G = 0.}
+
+
+
+G\textquotesingle{}=G$\ast$(1+deviation\+\_\+G) 
+
+
+
+Definition at line 52 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a9e7b5cc88c5522f8a6c2ca06a21dfca3}\label{global__variable__constants_8hpp_a9e7b5cc88c5522f8a6c2ca06a21dfca3}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!deviation\_G\_plus1@{deviation\_G\_plus1}}
+\index{deviation\_G\_plus1@{deviation\_G\_plus1}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{deviation\_G\_plus1}{deviation\_G\_plus1}}
+{\footnotesize\ttfamily double deviation\+\_\+\+G\+\_\+plus1 = \mbox{\hyperlink{global__variable__constants_8hpp_a435deefa291009d6bf696aa535358c87}{deviation\+\_\+G}}+1.}
+
+
+
+Definition at line 87 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_ae3b4ac975d7fdd80fdeba4c77d9a9384}\label{global__variable__constants_8hpp_ae3b4ac975d7fdd80fdeba4c77d9a9384}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!e\_0@{e\_0}}
 \index{e\_0@{e\_0}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{e\_0}{e\_0}}
-{\footnotesize\ttfamily const double e\+\_\+0 = 9.\+075720079516068750e+13/\mbox{\hyperlink{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}{rho\+\_\+trans}}}
+{\footnotesize\ttfamily double e\+\_\+0 = 9.\+075720079516068750e+13/\mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}}
 
 
 
-Definition at line 84 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 122 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a35971b802f48032134ca16c7ae036f34}\label{global__variable__constants_8hpp_a35971b802f48032134ca16c7ae036f34}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!e\_borders@{e\_borders}}
@@ -253,7 +304,7 @@ Definition at line 84 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 55 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 59 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a4e025832d3a1a33270a793ab654db08c}\label{global__variable__constants_8hpp_a4e025832d3a1a33270a793ab654db08c}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_params@{eos\_params}}
@@ -263,17 +314,107 @@ Definition at line 55 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 56 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 60 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_ab0333c10c9e52fdfc9a7873dcdd796d3}\label{global__variable__constants_8hpp_ab0333c10c9e52fdfc9a7873dcdd796d3}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_ac67f7e6c3a0652a283aea75c34565a85}\label{global__variable__constants_8hpp_ac67f7e6c3a0652a283aea75c34565a85}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_props@{eos\_props}}
+\index{eos\_props@{eos\_props}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_props}{eos\_props}}
+{\footnotesize\ttfamily double eos\+\_\+props\mbox{[}6\mbox{]}}
+
+
+
+Definition at line 58 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a3be3a2590454fd95b08031a0482aa93b}\label{global__variable__constants_8hpp_a3be3a2590454fd95b08031a0482aa93b}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_e@{eos\_table\_e}}
+\index{eos\_table\_e@{eos\_table\_e}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_e}{eos\_table\_e}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} eos\+\_\+table\+\_\+e}
+
+
+
+Definition at line 64 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a744fdf8d4dd2383caf21d91c03a348b2}\label{global__variable__constants_8hpp_a744fdf8d4dd2383caf21d91c03a348b2}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_function\_e\_base@{eos\_table\_function\_e\_base}}
+\index{eos\_table\_function\_e\_base@{eos\_table\_function\_e\_base}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_function\_e\_base}{eos\_table\_function\_e\_base}}
+{\footnotesize\ttfamily vector$<$ pchip$<$\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}$>$ $>$ eos\+\_\+table\+\_\+function\+\_\+e\+\_\+base}
+
+
+
+Definition at line 68 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_abfedbc7b72183a1cedb9bcc5b64d3529}\label{global__variable__constants_8hpp_abfedbc7b72183a1cedb9bcc5b64d3529}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_function\_h\_base@{eos\_table\_function\_h\_base}}
+\index{eos\_table\_function\_h\_base@{eos\_table\_function\_h\_base}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_function\_h\_base}{eos\_table\_function\_h\_base}}
+{\footnotesize\ttfamily vector$<$ pchip$<$\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}$>$ $>$ eos\+\_\+table\+\_\+function\+\_\+h\+\_\+base}
+
+
+
+Definition at line 66 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_ab40f125f502b6dbd182e701f56b75127}\label{global__variable__constants_8hpp_ab40f125f502b6dbd182e701f56b75127}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_function\_rho\_base@{eos\_table\_function\_rho\_base}}
+\index{eos\_table\_function\_rho\_base@{eos\_table\_function\_rho\_base}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_function\_rho\_base}{eos\_table\_function\_rho\_base}}
+{\footnotesize\ttfamily vector$<$ pchip$<$\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}}$>$ $>$ eos\+\_\+table\+\_\+function\+\_\+rho\+\_\+base}
+
+
+
+Definition at line 67 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_ab4ccc98bcfc07cf7dd5afedb00e814ab}\label{global__variable__constants_8hpp_ab4ccc98bcfc07cf7dd5afedb00e814ab}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_h@{eos\_table\_h}}
+\index{eos\_table\_h@{eos\_table\_h}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_h}{eos\_table\_h}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} eos\+\_\+table\+\_\+h}
+
+
+
+Definition at line 62 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_aa9c04f5beb6a7f4a31c52d13ea5a046e}\label{global__variable__constants_8hpp_aa9c04f5beb6a7f4a31c52d13ea5a046e}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_max\_h@{eos\_table\_max\_h}}
+\index{eos\_table\_max\_h@{eos\_table\_max\_h}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_max\_h}{eos\_table\_max\_h}}
+{\footnotesize\ttfamily double eos\+\_\+table\+\_\+max\+\_\+h = 1.\+5}
+
+
+
+Definition at line 128 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a077574fb206d3aaad2454ae69a8f2d0e}\label{global__variable__constants_8hpp_a077574fb206d3aaad2454ae69a8f2d0e}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_p@{eos\_table\_p}}
+\index{eos\_table\_p@{eos\_table\_p}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_p}{eos\_table\_p}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} eos\+\_\+table\+\_\+p}
+
+
+
+Definition at line 63 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_af86540dcb1812b1dd02d9726f5dab3da}\label{global__variable__constants_8hpp_af86540dcb1812b1dd02d9726f5dab3da}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eos\_table\_rho@{eos\_table\_rho}}
+\index{eos\_table\_rho@{eos\_table\_rho}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{eos\_table\_rho}{eos\_table\_rho}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} eos\+\_\+table\+\_\+rho}
+
+
+
+Definition at line 65 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a949ce33d4b4fa91788b49fa895a1d1b4}\label{global__variable__constants_8hpp_a949ce33d4b4fa91788b49fa895a1d1b4}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!ergEicm3\_to\_dmls@{ergEicm3\_to\_dmls}}
 \index{ergEicm3\_to\_dmls@{ergEicm3\_to\_dmls}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{ergEicm3\_to\_dmls}{ergEicm3\_to\_dmls}}
-{\footnotesize\ttfamily const double erg\+Eicm3\+\_\+to\+\_\+dmls = pow(\mbox{\hyperlink{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 8)}
+{\footnotesize\ttfamily double erg\+Eicm3\+\_\+to\+\_\+dmls = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 8)}
 
 
 
-Definition at line 109 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 100 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a87b385f118e3715860117a77eda7136d}\label{global__variable__constants_8hpp_a87b385f118e3715860117a77eda7136d}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!eV@{eV}}
@@ -283,27 +424,27 @@ Definition at line 109 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 100 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 91 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}\label{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}\label{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!G@{G}}
 \index{G@{G}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{G}{G}}
-{\footnotesize\ttfamily const double G = G\+S\+L\+\_\+\+C\+O\+N\+S\+T\+\_\+\+C\+G\+S\+\_\+\+G\+R\+A\+V\+I\+T\+A\+T\+I\+O\+N\+A\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT}
+{\footnotesize\ttfamily double G = G\+S\+L\+\_\+\+C\+O\+N\+S\+T\+\_\+\+C\+G\+S\+\_\+\+G\+R\+A\+V\+I\+T\+A\+T\+I\+O\+N\+A\+L\+\_\+\+C\+O\+N\+S\+T\+A\+NT$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a9e7b5cc88c5522f8a6c2ca06a21dfca3}{deviation\+\_\+\+G\+\_\+plus1}}}
 
 
 
-Definition at line 97 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 88 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a59c23c9d549f37cf3d0863fdbf4b1bdf}\label{global__variable__constants_8hpp_a59c23c9d549f37cf3d0863fdbf4b1bdf}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_af597a608296fc40089de9cef7bd670d2}\label{global__variable__constants_8hpp_af597a608296fc40089de9cef7bd670d2}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!gEicm3\_to\_dmls@{gEicm3\_to\_dmls}}
 \index{gEicm3\_to\_dmls@{gEicm3\_to\_dmls}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{gEicm3\_to\_dmls}{gEicm3\_to\_dmls}}
-{\footnotesize\ttfamily const double g\+Eicm3\+\_\+to\+\_\+dmls = pow(\mbox{\hyperlink{global__variable__constants_8hpp_ab97e4616d23ed4c2961295010c1afc3c}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)}
+{\footnotesize\ttfamily double g\+Eicm3\+\_\+to\+\_\+dmls = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2)/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)}
 
 
 
-Definition at line 108 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 99 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}\label{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!h\_0@{h\_0}}
@@ -317,7 +458,7 @@ border of two eos approximation methods. default\+: 0.\+0216
 
 
 
-Definition at line 86 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 112 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}\label{global__variable__constants_8hpp_a71ba863ddea1e939c2e5200e64021c85}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!h\_ig@{h\_ig}}
@@ -331,7 +472,7 @@ where to start integrate T\+OV equation.
 
 
 
-Definition at line 78 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 111 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a58246c5c19b9d2fb525df16e3f883723}\label{global__variable__constants_8hpp_a58246c5c19b9d2fb525df16e3f883723}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!h\_surface@{h\_surface}}
@@ -345,7 +486,7 @@ surface of the star.
 
 
 
-Definition at line 77 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 110 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_acbb14903b4a70f049155dbecc457e163}\label{global__variable__constants_8hpp_acbb14903b4a70f049155dbecc457e163}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!Hb@{Hb}}
@@ -355,7 +496,17 @@ Definition at line 77 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 99 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 90 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a8925e3ae3177d73b690c3921f946a5c9}\label{global__variable__constants_8hpp_a8925e3ae3177d73b690c3921f946a5c9}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!init\_interpolation\_function\_type@{init\_interpolation\_function\_type}}
+\index{init\_interpolation\_function\_type@{init\_interpolation\_function\_type}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{init\_interpolation\_function\_type}{init\_interpolation\_function\_type}}
+{\footnotesize\ttfamily char init\+\_\+interpolation\+\_\+function\+\_\+type\mbox{[}3\mbox{]} = \{\textquotesingle{}1\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}1\textquotesingle{}\}}
+
+
+
+Definition at line 129 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a2ce9aef0de35008e21974dfb785c10fc}\label{global__variable__constants_8hpp_a2ce9aef0de35008e21974dfb785c10fc}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!interp\_only@{interp\_only}}
@@ -369,23 +520,33 @@ interpolation only.
 
 
 
-Definition at line 24 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 26 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a1d1ff9b2da2a11d49bd9a6a4d42f32d2}\label{global__variable__constants_8hpp_a1d1ff9b2da2a11d49bd9a6a4d42f32d2}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a570861e893691c4cefa803bfacca940c}\label{global__variable__constants_8hpp_a570861e893691c4cefa803bfacca940c}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!length\_trans@{length\_trans}}
+\index{length\_trans@{length\_trans}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{length\_trans}{length\_trans}}
+{\footnotesize\ttfamily double length\+\_\+trans = \mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}/pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 2)}
+
+
+
+Definition at line 117 of file global\+\_\+variable\+\_\+constants.\+hpp.
+
+\mbox{\Hypertarget{global__variable__constants_8hpp_a1c48946adb93455139b71dd52f1083c2}\label{global__variable__constants_8hpp_a1c48946adb93455139b71dd52f1083c2}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!max\_possible\_e@{max\_possible\_e}}
 \index{max\_possible\_e@{max\_possible\_e}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{max\_possible\_e}{max\_possible\_e}}
-{\footnotesize\ttfamily const double max\+\_\+possible\+\_\+e = 1000$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}}
+{\footnotesize\ttfamily double max\+\_\+possible\+\_\+e = 1000$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}}
 
 
 
-Definition at line 89 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 126 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_aa8ac37cbfe75c0314bf944fa1939bef4}\label{global__variable__constants_8hpp_aa8ac37cbfe75c0314bf944fa1939bef4}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!maxm\_tov@{maxm\_tov}}
 \index{maxm\_tov@{maxm\_tov}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{maxm\_tov}{maxm\_tov}}
-{\footnotesize\ttfamily double maxm\+\_\+tov = 3.\+0}
+{\footnotesize\ttfamily double maxm\+\_\+tov = 0.\+0}
 
 
 
@@ -393,7 +554,7 @@ maximum limit of T\+OV mass
 
 
 
-Definition at line 45 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 47 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}\label{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!MeV3\_to\_ifm3@{MeV3\_to\_ifm3}}
@@ -403,17 +564,17 @@ Definition at line 45 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 104 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 95 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_ada123d429e18016f9a60537c63db162c}\label{global__variable__constants_8hpp_ada123d429e18016f9a60537c63db162c}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a29dc80723a4b13d538eb54472b3a5f9a}\label{global__variable__constants_8hpp_a29dc80723a4b13d538eb54472b3a5f9a}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!MeV4\_to\_dmls@{MeV4\_to\_dmls}}
 \index{MeV4\_to\_dmls@{MeV4\_to\_dmls}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{MeV4\_to\_dmls}{MeV4\_to\_dmls}}
-{\footnotesize\ttfamily const double Me\+V4\+\_\+to\+\_\+dmls = \mbox{\hyperlink{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}{Me\+V3\+\_\+to\+\_\+ifm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}{Me\+V\+Eifm3\+\_\+to\+\_\+erg\+Eicm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_ab0333c10c9e52fdfc9a7873dcdd796d3}{erg\+Eicm3\+\_\+to\+\_\+dmls}}}
+{\footnotesize\ttfamily double Me\+V4\+\_\+to\+\_\+dmls = \mbox{\hyperlink{global__variable__constants_8hpp_a38a749ffa24145cb85c80c987f778a23}{Me\+V3\+\_\+to\+\_\+ifm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}{Me\+V\+Eifm3\+\_\+to\+\_\+erg\+Eicm3}}$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a949ce33d4b4fa91788b49fa895a1d1b4}{erg\+Eicm3\+\_\+to\+\_\+dmls}}}
 
 
 
-Definition at line 111 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 102 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a53a643b51e60be20232b711a82ce3a61}\label{global__variable__constants_8hpp_a53a643b51e60be20232b711a82ce3a61}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!MeV\_to\_ifm@{MeV\_to\_ifm}}
@@ -423,7 +584,7 @@ Definition at line 111 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 103 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 94 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}\label{global__variable__constants_8hpp_a2bc24e47ff2f786880df56d466c7f9cd}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!MeVEifm3\_to\_ergEicm3@{MeVEifm3\_to\_ergEicm3}}
@@ -433,7 +594,7 @@ Definition at line 103 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 105 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 96 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a397c8c4fbdc84de83906b83cc4a7ec56}\label{global__variable__constants_8hpp_a397c8c4fbdc84de83906b83cc4a7ec56}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!MeVEifm3\_to\_gEicm3@{MeVEifm3\_to\_gEicm3}}
@@ -443,7 +604,7 @@ Definition at line 105 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 106 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 97 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a7a11e492a812c7256c33d342ce4caea4}\label{global__variable__constants_8hpp_a7a11e492a812c7256c33d342ce4caea4}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!minimum\_allowed\_h@{minimum\_allowed\_h}}
@@ -453,13 +614,13 @@ Definition at line 106 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 60 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 72 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a3de327fde01c89d6993a82ac06db5af6}\label{global__variable__constants_8hpp_a3de327fde01c89d6993a82ac06db5af6}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!minm\_tov@{minm\_tov}}
 \index{minm\_tov@{minm\_tov}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{minm\_tov}{minm\_tov}}
-{\footnotesize\ttfamily double minm\+\_\+tov = 0.\+8}
+{\footnotesize\ttfamily double minm\+\_\+tov = 0.\+0}
 
 
 
@@ -467,7 +628,7 @@ minimum limit of T\+OV mass
 
 
 
-Definition at line 44 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 46 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_ad7f1aa953dc63f3be1a546da18a3c2aa}\label{global__variable__constants_8hpp_ad7f1aa953dc63f3be1a546da18a3c2aa}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!mrl\_result@{mrl\_result}}
@@ -477,7 +638,7 @@ Definition at line 44 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 54 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 58 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}\label{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!Ms@{Ms}}
@@ -487,27 +648,27 @@ Definition at line 54 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 101 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 92 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_adad155522ac7592916e3c332a2682963}\label{global__variable__constants_8hpp_adad155522ac7592916e3c332a2682963}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a065595506e759c6a409a334e85a29247}\label{global__variable__constants_8hpp_a065595506e759c6a409a334e85a29247}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!p\_0@{p\_0}}
 \index{p\_0@{p\_0}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{p\_0}{p\_0}}
-{\footnotesize\ttfamily const double p\+\_\+0 = 2.\+979148040306152863e+32/\mbox{\hyperlink{global__variable__constants_8hpp_a7c49c7d65b3c65eb7a9a457c905f6564}{p\+\_\+trans}}}
+{\footnotesize\ttfamily double p\+\_\+0 = 2.\+979148040306152863e+32/\mbox{\hyperlink{global__variable__constants_8hpp_ac1224f202a914cb1e244ea080e80f47f}{p\+\_\+trans}}}
 
 
 
-Definition at line 85 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 123 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a7c49c7d65b3c65eb7a9a457c905f6564}\label{global__variable__constants_8hpp_a7c49c7d65b3c65eb7a9a457c905f6564}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_ac1224f202a914cb1e244ea080e80f47f}\label{global__variable__constants_8hpp_ac1224f202a914cb1e244ea080e80f47f}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!p\_trans@{p\_trans}}
 \index{p\_trans@{p\_trans}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{p\_trans}{p\_trans}}
-{\footnotesize\ttfamily const double p\+\_\+trans = 5.\+55174079257738e+38}
+{\footnotesize\ttfamily double p\+\_\+trans = \mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 2)}
 
 
 
-Definition at line 81 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 119 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a55825c06e223e316b74e617df6e2ac61}\label{global__variable__constants_8hpp_a55825c06e223e316b74e617df6e2ac61}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!phase\_trans@{phase\_trans}}
@@ -521,17 +682,17 @@ spectral eos causal, phase transition(\href{https://arxiv.org/pdf/1811.10929.pdf
 
 
 
-Definition at line 29 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 31 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_ada4ebd73fa485a46b9dd48db6ca60959}\label{global__variable__constants_8hpp_ada4ebd73fa485a46b9dd48db6ca60959}} 
-\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!piece\_spec\_phtr\_ccs@{piece\_spec\_phtr\_ccs}}
-\index{piece\_spec\_phtr\_ccs@{piece\_spec\_phtr\_ccs}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
-\doxysubsubsection{\texorpdfstring{piece\_spec\_phtr\_ccs}{piece\_spec\_phtr\_ccs}}
-{\footnotesize\ttfamily bool piece\+\_\+spec\+\_\+phtr\+\_\+ccs = 0}
+\mbox{\Hypertarget{global__variable__constants_8hpp_a860b84a4bd0a3ecfa0569fb545d09359}\label{global__variable__constants_8hpp_a860b84a4bd0a3ecfa0569fb545d09359}} 
+\index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!piece\_spec\_phtr\_css@{piece\_spec\_phtr\_css}}
+\index{piece\_spec\_phtr\_css@{piece\_spec\_phtr\_css}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
+\doxysubsubsection{\texorpdfstring{piece\_spec\_phtr\_css}{piece\_spec\_phtr\_css}}
+{\footnotesize\ttfamily bool piece\+\_\+spec\+\_\+phtr\+\_\+css = 0}
 
 
 
-Definition at line 33 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 35 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_af97efc64d34e2402ee258267738ea811}\label{global__variable__constants_8hpp_af97efc64d34e2402ee258267738ea811}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!piecewise@{piecewise}}
@@ -545,7 +706,7 @@ piecewise polytropic expansion, conflict with causal.
 
 
 
-Definition at line 25 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 27 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a2ca99a29bfea4da522a2ad39e600d214}\label{global__variable__constants_8hpp_a2ca99a29bfea4da522a2ad39e600d214}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!piecewise\_p@{piecewise\_p}}
@@ -559,7 +720,7 @@ piecewise polytropic expansion with pressure at different densities.
 
 
 
-Definition at line 26 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 28 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_adf7a1978875a4e1d3f641e1c7d13d225}\label{global__variable__constants_8hpp_adf7a1978875a4e1d3f641e1c7d13d225}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!quark\_star@{quark\_star}}
@@ -573,63 +734,63 @@ quark star model(\+Alford\+\_\+2005\+\_\+\+Ap\+J\+\_\+629\+\_\+969).
 
 
 
-Definition at line 30 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 32 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a172789dfdaecb45defd22444f4272dc2}\label{global__variable__constants_8hpp_a172789dfdaecb45defd22444f4272dc2}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a093102b51e2c5ff7bd0f5e47a6b29e36}\label{global__variable__constants_8hpp_a093102b51e2c5ff7bd0f5e47a6b29e36}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!r\_trans@{r\_trans}}
 \index{r\_trans@{r\_trans}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{r\_trans}{r\_trans}}
-{\footnotesize\ttfamily const double r\+\_\+trans = 1.\+4766250385}
+{\footnotesize\ttfamily double r\+\_\+trans = \mbox{\hyperlink{global__variable__constants_8hpp_a570861e893691c4cefa803bfacca940c}{length\+\_\+trans}}/1.e5}
 
 
 
-Definition at line 82 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 120 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a4066e07b45853e6a2d87b1b350415257}\label{global__variable__constants_8hpp_a4066e07b45853e6a2d87b1b350415257}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_ae5f5d9edb66645eab31a7c8389493ce7}\label{global__variable__constants_8hpp_ae5f5d9edb66645eab31a7c8389493ce7}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!rho\_0@{rho\_0}}
 \index{rho\_0@{rho\_0}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{rho\_0}{rho\_0}}
-{\footnotesize\ttfamily const double rho\+\_\+0 = (\mbox{\hyperlink{global__variable__constants_8hpp_a541be2f598d25b67abfecd6bd6bd918f}{e\+\_\+0}}+\mbox{\hyperlink{global__variable__constants_8hpp_adad155522ac7592916e3c332a2682963}{p\+\_\+0}})/exp(\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})}
+{\footnotesize\ttfamily double rho\+\_\+0 = (\mbox{\hyperlink{global__variable__constants_8hpp_ae3b4ac975d7fdd80fdeba4c77d9a9384}{e\+\_\+0}}+\mbox{\hyperlink{global__variable__constants_8hpp_a065595506e759c6a409a334e85a29247}{p\+\_\+0}})/exp(\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})}
 
 
 
-Definition at line 87 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 124 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_abf567d4749b505ef6c70a582a8082da3}\label{global__variable__constants_8hpp_abf567d4749b505ef6c70a582a8082da3}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!rho\_borders@{rho\_borders}}
 \index{rho\_borders@{rho\_borders}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{rho\_borders}{rho\_borders}}
-{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} rho\+\_\+borders \{1.$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 1.\+85$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 3.\+7$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}, 7.\+4$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}{rho\+\_\+sat}}\}}
+{\footnotesize\ttfamily \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} rho\+\_\+borders \{1.$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 1.\+85$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 3.\+7$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}, 7.\+4$\ast$\mbox{\hyperlink{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}{rho\+\_\+sat}}\}}
 
 
 
-Definition at line 90 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 127 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}\label{global__variable__constants_8hpp_a16c69e5e124e25fa23b0aecbc21c8950}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}\label{global__variable__constants_8hpp_adaca891a2fc36d0856c3e9112c5476b3}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!rho\_sat@{rho\_sat}}
 \index{rho\_sat@{rho\_sat}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{rho\_sat}{rho\_sat}}
-{\footnotesize\ttfamily const double rho\+\_\+sat = 2.\+7e+14/\mbox{\hyperlink{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}{rho\+\_\+trans}}}
+{\footnotesize\ttfamily double rho\+\_\+sat = 2.\+7e+14/\mbox{\hyperlink{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}{rho\+\_\+trans}}}
 
 
 
-Definition at line 88 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 125 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
-\mbox{\Hypertarget{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}\label{global__variable__constants_8hpp_a42f01033db7468aff2667011bb543c07}} 
+\mbox{\Hypertarget{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}\label{global__variable__constants_8hpp_a352bf98659c3980ded56d97ec50e83ca}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!rho\_trans@{rho\_trans}}
 \index{rho\_trans@{rho\_trans}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{rho\_trans}{rho\_trans}}
-{\footnotesize\ttfamily const double rho\+\_\+trans = 6.\+17714470405638e+17}
+{\footnotesize\ttfamily double rho\+\_\+trans = pow(\mbox{\hyperlink{global__variable__constants_8hpp_a9e8a46a0e00368ad98642587ca4ebdbe}{C}}, 6)/(pow(\mbox{\hyperlink{global__variable__constants_8hpp_a67783a2c4f670ee5a9dadcf428324d32}{G}}, 3)$\ast$pow(\mbox{\hyperlink{global__variable__constants_8hpp_a7ce81a15c9978aea3357a2e6e36bd97c}{Ms}}, 2))}
 
 
 
-Definition at line 80 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 118 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_ad77f3cf002249ce3de3de6b3a94ef1f5}\label{global__variable__constants_8hpp_ad77f3cf002249ce3de3de6b3a94ef1f5}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!sg\_const\_step@{sg\_const\_step}}
 \index{sg\_const\_step@{sg\_const\_step}!global\_variable\_constants.hpp@{global\_variable\_constants.hpp}}
 \doxysubsubsection{\texorpdfstring{sg\_const\_step}{sg\_const\_step}}
-{\footnotesize\ttfamily double sg\+\_\+const\+\_\+step = 1.e-\/5}
+{\footnotesize\ttfamily double sg\+\_\+const\+\_\+step = 0.}
 
 
 
@@ -637,7 +798,7 @@ single step in constant integration step
 
 
 
-Definition at line 48 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 50 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a41540773134a59f15f5908d1167c3c3a}\label{global__variable__constants_8hpp_a41540773134a59f15f5908d1167c3c3a}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!sg\_step@{sg\_step}}
@@ -651,7 +812,7 @@ single step.
 
 
 
-Definition at line 76 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 109 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a32e5546b387ea6359d881414998fdc86}\label{global__variable__constants_8hpp_a32e5546b387ea6359d881414998fdc86}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!spectral@{spectral}}
@@ -665,7 +826,7 @@ spectral expansion and interpolation.
 
 
 
-Definition at line 27 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 29 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a8008d754115580a3d87444b6d6de90ec}\label{global__variable__constants_8hpp_a8008d754115580a3d87444b6d6de90ec}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!spectral\_causal@{spectral\_causal}}
@@ -679,7 +840,7 @@ note that Gamma will have different meaning, see Lindblom\+\_\+18.
 
 
 
-Definition at line 28 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 30 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_ab352375cec5c5cea5f0654ab2a1a1807}\label{global__variable__constants_8hpp_ab352375cec5c5cea5f0654ab2a1a1807}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!suggested\_start\_point@{suggested\_start\_point}}
@@ -689,7 +850,7 @@ Definition at line 28 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 61 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 73 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_ab3f078684998b83967d507d0f453f454}\label{global__variable__constants_8hpp_ab3f078684998b83967d507d0f453f454}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!verbose@{verbose}}
@@ -703,7 +864,7 @@ Definition at line 61 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 40 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 42 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a5b618f06482991e2bc3278d8888becf0}\label{global__variable__constants_8hpp_a5b618f06482991e2bc3278d8888becf0}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!vverbose@{vverbose}}
@@ -717,7 +878,7 @@ Definition at line 40 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 41 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 43 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 \mbox{\Hypertarget{global__variable__constants_8hpp_a3329c9e8ff59b1da3d142fd08419b85a}\label{global__variable__constants_8hpp_a3329c9e8ff59b1da3d142fd08419b85a}} 
 \index{global\_variable\_constants.hpp@{global\_variable\_constants.hpp}!vvverbose@{vvverbose}}
@@ -731,5 +892,5 @@ Definition at line 41 of file global\+\_\+variable\+\_\+constants.\+hpp.
 
 
 
-Definition at line 42 of file global\+\_\+variable\+\_\+constants.\+hpp.
+Definition at line 44 of file global\+\_\+variable\+\_\+constants.\+hpp.
 

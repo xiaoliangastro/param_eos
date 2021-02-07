@@ -1,26 +1,32 @@
 <map id="gammaeh_pspc" name="gammaeh_pspc">
-<area shape="rect" id="node1" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="1720,138,1837,165"/>
-<area shape="rect" id="node2" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="1564,138,1672,165"/>
-<area shape="rect" id="node3" href="$integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="1428,37,1496,63"/>
-<area shape="rect" id="node4" href="$param__utils_8hpp.html#a0e5c0924c152182239b53b638717efcc" title=" " alt="" coords="1255,9,1357,35"/>
-<area shape="rect" id="node7" href="$param__utils_8hpp.html#a2fe9fce9a25e7626896dc000d3ad374a" title=" " alt="" coords="1263,87,1349,114"/>
-<area shape="rect" id="node11" href="$integrate__core_8hpp.html#a195f250cebaa13e620a80a222972c07b" title="Calculate enthalpy and pressure at given energy density." alt="" coords="1413,290,1511,317"/>
-<area shape="rect" id="node12" href="$integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="1259,189,1353,215"/>
-<area shape="rect" id="node23" href="$integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="1252,239,1360,266"/>
-<area shape="rect" id="node24" href="$integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="1408,138,1516,165"/>
-<area shape="rect" id="node5" href="$param__utils_8hpp.html#a14167c28cd95816df5e1d80810fd7886" title=" " alt="" coords="455,38,575,65"/>
-<area shape="rect" id="node6" href="$param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,278,56,305"/>
-<area shape="rect" id="node8" href="$param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="915,59,1015,86"/>
-<area shape="rect" id="node9" href="$param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="639,135,833,162"/>
-<area shape="rect" id="node10" href="$non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="677,85,795,111"/>
-<area shape="rect" id="node13" href="$integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="1096,218,1204,245"/>
-<area shape="rect" id="node14" href="$param__utils_8hpp.html#a55d55d86595704afa06a9ad23234d8ad" title=" " alt="" coords="919,379,1011,406"/>
-<area shape="rect" id="node15" href="$param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a" title="Find a global_a with another global_b." alt="" coords="881,161,1048,203"/>
-<area shape="rect" id="node16" href="$param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="931,110,998,137"/>
-<area shape="rect" id="node17" href="$param__utils_8hpp.html#acfe1c394a95dbbf2af74a7039baef8de" title=" " alt="" coords="260,278,380,305"/>
-<area shape="rect" id="node18" href="$optimize__posterior_8hpp.html#a15d6d8653372c871397464e0f2f3cce6" title=" " alt="" coords="901,329,1028,355"/>
-<area shape="rect" id="node19" href="$optimize__posterior_8hpp.html#ae58efee8e935ee88aea236d91e11bd19" title=" " alt="" coords="700,329,772,355"/>
-<area shape="rect" id="node20" href="$optimize__posterior_8hpp.html#adb35fbf1985beb38639c4db0562e4c2c" title=" " alt="" coords="440,329,591,355"/>
-<area shape="rect" id="node21" href="$optimize__posterior_8hpp.html#a7c2806d69096968d78c8ec3783616ba2" title=" " alt="" coords="248,379,392,406"/>
-<area shape="rect" id="node22" href="$optimize__posterior_8hpp.html#afadba1d9091fad5661f35917b0d699ab" title=" " alt="" coords="104,430,200,457"/>
+<area shape="rect" id="node1" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="1672,261,1789,287"/>
+<area shape="rect" id="node2" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="1516,261,1624,287"/>
+<area shape="rect" id="node3" href="$integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="1365,122,1433,149"/>
+<area shape="rect" id="node7" href="$param__utils_8hpp.html#af26186b13728ccc8a8332ba347bbf321" title=" " alt="" coords="1138,71,1241,98"/>
+<area shape="rect" id="node10" href="$eos__init_8hpp.html#ab0d22f60c3e9f33d5922fa5e5e908aea" title=" " alt="" coords="1097,173,1281,215"/>
+<area shape="rect" id="node11" href="$param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="1151,239,1227,266"/>
+<area shape="rect" id="node17" href="$param__utils_8hpp.html#a767582317da86f45f95e49d46725ce4b" title="Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_typ..." alt="" coords="1329,387,1468,414"/>
+<area shape="rect" id="node18" href="$integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="1352,286,1445,313"/>
+<area shape="rect" id="node29" href="$integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="1345,337,1453,363"/>
+<area shape="rect" id="node30" href="$integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="1345,438,1453,465"/>
+<area shape="rect" id="node4" href="$eos__init_8hpp.html#a8ff996bff52113bea7452f533095fb90" title=" " alt="" coords="1137,122,1241,149"/>
+<area shape="rect" id="node5" href="$eos__init_8hpp.html#a1c80e0e32a8e25d237368dfcd635f382" title=" " alt="" coords="917,122,1015,149"/>
+<area shape="rect" id="node6" href="$param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,467,56,494"/>
+<area shape="rect" id="node8" href="$param__utils_8hpp.html#ac779f264d38b23e832e83a8a2c353b0c" title=" " alt="" coords="896,5,1036,47"/>
+<area shape="rect" id="node9" href="$param__utils_8hpp.html#a15dd165a72366a31be8a581455aba8d4" title=" " alt="" coords="455,85,575,111"/>
+<area shape="rect" id="node12" href="$param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="916,325,1016,351"/>
+<area shape="rect" id="node15" href="$param__utils_8hpp.html#aef1b9c57ed0bd39d11bc20a32173f215" title=" " alt="" coords="905,223,1027,250"/>
+<area shape="rect" id="node16" href="$param__utils_8hpp.html#a71f840131552a42389deefaa84ca8b7f" title=" " alt="" coords="639,223,835,250"/>
+<area shape="rect" id="node13" href="$param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="639,434,834,461"/>
+<area shape="rect" id="node14" href="$non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="678,383,795,410"/>
+<area shape="rect" id="node19" href="$integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="1135,375,1243,402"/>
+<area shape="rect" id="node20" href="$param__utils_8hpp.html#a55d55d86595704afa06a9ad23234d8ad" title=" " alt="" coords="920,375,1012,402"/>
+<area shape="rect" id="node21" href="$param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a" title="Find a global_a with another global_b." alt="" coords="883,477,1049,519"/>
+<area shape="rect" id="node22" href="$param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="933,426,999,453"/>
+<area shape="rect" id="node23" href="$param__utils_8hpp.html#acfe1c394a95dbbf2af74a7039baef8de" title=" " alt="" coords="260,467,380,494"/>
+<area shape="rect" id="node24" href="$optimize__posterior_8hpp.html#a15d6d8653372c871397464e0f2f3cce6" title=" " alt="" coords="903,594,1029,621"/>
+<area shape="rect" id="node25" href="$optimize__posterior_8hpp.html#ae58efee8e935ee88aea236d91e11bd19" title=" " alt="" coords="701,594,773,621"/>
+<area shape="rect" id="node26" href="$optimize__posterior_8hpp.html#adb35fbf1985beb38639c4db0562e4c2c" title=" " alt="" coords="440,594,591,621"/>
+<area shape="rect" id="node27" href="$optimize__posterior_8hpp.html#a7c2806d69096968d78c8ec3783616ba2" title=" " alt="" coords="248,543,392,570"/>
+<area shape="rect" id="node28" href="$optimize__posterior_8hpp.html#afadba1d9091fad5661f35917b0d699ab" title=" " alt="" coords="104,493,200,519"/>
 </map>

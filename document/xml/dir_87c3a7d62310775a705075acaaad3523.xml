@@ -12,7 +12,6 @@
     <innerfile refid="param__eos_8cpp">param_eos.cpp</innerfile>
     <innerfile refid="param__utils_8hpp">param_utils.hpp</innerfile>
     <innerfile refid="quark__star__utils_8hpp">quark_star_utils.hpp</innerfile>
-    <innerfile refid="test_8cpp">test.cpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

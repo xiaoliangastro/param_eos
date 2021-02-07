@@ -94,32 +94,35 @@ $(document).ready(function(){initNavTree('param__utils_8hpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="integrate__core_8hpp_source.html">integrate_core.hpp</a>&quot;</code><br />
 <code>#include &lt;boost/math/interpolators/makima.hpp&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for param_utils.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp__incl.png" border="0" usemap="#_2_users_2jiangjinliang_2work_2try_2_spectral___eo_s_2code_2eostool_2param__utils_8hpp" alt=""/></div>
 <map name="_2_users_2jiangjinliang_2work_2try_2_spectral___eo_s_2code_2eostool_2param__utils_8hpp" id="_2_users_2jiangjinliang_2work_2try_2_spectral___eo_s_2code_2eostool_2param__utils_8hpp">
-<area shape="rect" title=" " alt="" coords="924,5,1124,61"/>
+<area shape="rect" title=" " alt="" coords="1011,5,1211,61"/>
 <area shape="rect" href="integrate__core_8hpp.html" title=" " alt="" coords="871,117,1004,143"/>
 <area shape="rect" title=" " alt="" coords="1028,109,1193,151"/>
+<area shape="rect" title=" " alt="" coords="1218,117,1278,143"/>
 <area shape="rect" title=" " alt="" coords="5,199,179,255"/>
 <area shape="rect" title=" " alt="" coords="203,199,349,255"/>
 <area shape="rect" title=" " alt="" coords="373,199,518,255"/>
 <area shape="rect" title=" " alt="" coords="542,199,687,255"/>
 <area shape="rect" title=" " alt="" coords="711,213,790,240"/>
-<area shape="rect" title=" " alt="" coords="1226,377,1299,404"/>
+<area shape="rect" title=" " alt="" coords="1258,385,1331,411"/>
 <area shape="rect" title=" " alt="" coords="1135,213,1201,240"/>
 <area shape="rect" title=" " alt="" coords="1226,213,1281,240"/>
-<area shape="rect" title=" " alt="" coords="591,377,649,404"/>
+<area shape="rect" title=" " alt="" coords="591,385,649,411"/>
 <area shape="rect" title=" " alt="" coords="1305,213,1357,240"/>
-<area shape="rect" href="quark__star__utils_8hpp.html" title=" " alt="" coords="866,213,1009,240"/>
 <area shape="rect" href="global__variable__constants_8hpp.html" title=" " alt="" coords="975,303,1177,329"/>
+<area shape="rect" href="quark__star__utils_8hpp.html" title=" " alt="" coords="866,213,1009,240"/>
 <area shape="rect" href="data_8hpp.html" title=" " alt="" coords="1381,213,1454,240"/>
-<area shape="rect" title=" " alt="" coords="908,377,967,404"/>
+<area shape="rect" title=" " alt="" coords="1023,385,1071,411"/>
+<area shape="rect" title=" " alt="" coords="751,385,809,411"/>
+<area shape="rect" title=" " alt="" coords="1095,385,1233,411"/>
+<area shape="rect" title=" " alt="" coords="833,377,999,419"/>
 <area shape="rect" title=" " alt="" coords="657,303,767,329"/>
 <area shape="rect" title=" " alt="" coords="791,303,899,329"/>
-<area shape="rect" title=" " alt="" coords="991,377,1039,404"/>
-<area shape="rect" title=" " alt="" coords="1063,377,1201,404"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -138,43 +141,148 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a54b1ccb702b0746a0fb52c4862210696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a54b1ccb702b0746a0fb52c4862210696">fail_process</a>()&#160;&#160;&#160;*h_closest = -1; *unknown=0; return false;</td></tr>
-<tr class="separator:a54b1ccb702b0746a0fb52c4862210696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43195a886730d98d33538a76ed0cb2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#af43195a886730d98d33538a76ed0cb2c">fail_process_find_eos_prop</a>()&#160;&#160;&#160;for (int i=0; i&lt;6; i++) {<a class="el" href="global__variable__constants_8hpp.html#ac67f7e6c3a0652a283aea75c34565a85">eos_props</a>[i] = 0.;} return <a class="el" href="global__variable__constants_8hpp.html#ac67f7e6c3a0652a283aea75c34565a85">eos_props</a>;</td></tr>
+<tr class="separator:af43195a886730d98d33538a76ed0cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95912737d8a32368c191b1444488943"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#aa95912737d8a32368c191b1444488943">fail_process_check_mmax</a>(message)</td></tr>
+<tr class="separator:aa95912737d8a32368c191b1444488943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa2f9a4f71b7bbd8fae00386d6908b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a8aa2f9a4f71b7bbd8fae00386d6908b8">fail_process_check_mmax_gd</a>(message)</td></tr>
+<tr class="separator:a8aa2f9a4f71b7bbd8fae00386d6908b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6ac0194fd22cadb691f6944933626e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#aaf6ac0194fd22cadb691f6944933626e">fail_process_check_mmax_pt_two_branch</a>(message)</td></tr>
+<tr class="separator:aaf6ac0194fd22cadb691f6944933626e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ee396afdc4cc44456b696ee28f5787"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a42ee396afdc4cc44456b696ee28f5787">fail_process_find_global_prop</a>()&#160;&#160;&#160;*h_closest = -1; *unknown=0; return false;</td></tr>
+<tr class="separator:a42ee396afdc4cc44456b696ee28f5787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a868be24c590ade0f629c8d2135ab0229"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229">get_mrl</a> (double hc)</td></tr>
 <tr class="memdesc:a868be24c590ade0f629c8d2135ab0229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Python interface function for integrating the whole structure of the star.  <a href="param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229">More...</a><br /></td></tr>
 <tr class="separator:a868be24c590ade0f629c8d2135ab0229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe9fce9a25e7626896dc000d3ad374a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a2fe9fce9a25e7626896dc000d3ad374a">check_eos</a> (double *hc)</td></tr>
-<tr class="separator:a2fe9fce9a25e7626896dc000d3ad374a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c3cf3b70f141f42bcf48270238ebe7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7">check_mmax</a> (double *hc, double *M_max)</td></tr>
-<tr class="memdesc:ae0c3cf3b70f141f42bcf48270238ebe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find non-rotating maximum supported mass of an EoS.  <a href="param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7">More...</a><br /></td></tr>
-<tr class="separator:ae0c3cf3b70f141f42bcf48270238ebe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14167c28cd95816df5e1d80810fd7886"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a14167c28cd95816df5e1d80810fd7886">make_eos_table</a> (double h_start, double h_end, double dh, int precision, char *f_name, const char *unit=&quot;cgs&quot;)</td></tr>
-<tr class="separator:a14167c28cd95816df5e1d80810fd7886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacefbca547318af00d28242f0e4ea50c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c">cool_eos</a> (double *hc)</td></tr>
+<tr class="separator:aacefbca547318af00d28242f0e4ea50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5160e911d86e6fcfa634708dde4fd07"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07">check_mmax</a> (double *hc, double *M_max, double h_start, bool cp_func_type_less, double jump_size, bool check_ok)</td></tr>
+<tr class="memdesc:ab5160e911d86e6fcfa634708dde4fd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find non-rotating maximum supported mass of an EoS.  <a href="param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07">More...</a><br /></td></tr>
+<tr class="separator:ab5160e911d86e6fcfa634708dde4fd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f840131552a42389deefaa84ca8b7f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a71f840131552a42389deefaa84ca8b7f">check_mmax_pt_two_branch</a> (double *h1, double *h2, double *h3, double *h_max, double *m1, double *m2, double *m3, double *m_max, double rho_tr, double drho)</td></tr>
+<tr class="separator:a71f840131552a42389deefaa84ca8b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15dd165a72366a31be8a581455aba8d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a15dd165a72366a31be8a581455aba8d4">make_eos_table</a> (double h_start, double h_end, double dh, int precision, char *f_name, const char *unit=&quot;cgs&quot;, int get_type=1)</td></tr>
+<tr class="separator:a15dd165a72366a31be8a581455aba8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460ea10802a17c161eff76718738056b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a460ea10802a17c161eff76718738056b">interp_pe_likelihood</a> (double *e_org, double *p_org, int size_org)</td></tr>
+<tr class="separator:a460ea10802a17c161eff76718738056b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c5a1a854e42b8e307ade519a977980"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980">get_unknowns_from_knowns</a> (double known1, double known2, double *unknown1, double *unknown2, double *h_max, int get_type)</td></tr>
-<tr class="memdesc:ab3c5a1a854e42b8e307ade519a977980"><td class="mdescLeft">&#160;</td><td class="mdescRight">find nearest known property, return corresponding unknown ones.  <a href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980">More...</a><br /></td></tr>
+<tr class="memdesc:ab3c5a1a854e42b8e307ade519a977980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find nearest known properties, return corresponding unknown ones.  <a href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980">More...</a><br /></td></tr>
 <tr class="separator:ab3c5a1a854e42b8e307ade519a977980"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767582317da86f45f95e49d46725ce4b"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a767582317da86f45f95e49d46725ce4b">find_eos_properties</a> (double known_aim, int find_type)</td></tr>
+<tr class="memdesc:a767582317da86f45f95e49d46725ce4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_type=3). @params get_type must equal to init_interpolation_function_type-1.  <a href="param__utils_8hpp.html#a767582317da86f45f95e49d46725ce4b">More...</a><br /></td></tr>
+<tr class="separator:a767582317da86f45f95e49d46725ce4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55d55d86595704afa06a9ad23234d8ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a55d55d86595704afa06a9ad23234d8ad">find_closest</a> (double m_aim, double h_i, double h_max, double *h_closest, double *lambda, bool use_user_start_point=false)</td></tr>
 <tr class="separator:a55d55d86595704afa06a9ad23234d8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc6708baf1b3023282c5f1a83a8608a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a">find_closest_with_maxm_known</a> (double known_aim, double h_i, double h_max, double *h_closest, double *unknown, int get_type, bool use_user_start_point)</td></tr>
 <tr class="memdesc:addc6708baf1b3023282c5f1a83a8608a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a global_a with another global_b.  <a href="param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a">More...</a><br /></td></tr>
 <tr class="separator:addc6708baf1b3023282c5f1a83a8608a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e5c0924c152182239b53b638717efcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#a0e5c0924c152182239b53b638717efcc">integrate_eos</a> (double h_start, double h_end, double dh, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *h_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *p_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *e_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *rho_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *gamma_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *v_sq_tb)</td></tr>
-<tr class="separator:a0e5c0924c152182239b53b638717efcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26186b13728ccc8a8332ba347bbf321"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#af26186b13728ccc8a8332ba347bbf321">integrate_eos</a> (double h_start, double h_end, double dh, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *h_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *p_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *e_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *rho_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *gamma_tb, <a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *v_sq_tb, int get_type)</td></tr>
+<tr class="separator:af26186b13728ccc8a8332ba347bbf321"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac779f264d38b23e832e83a8a2c353b0c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#ac779f264d38b23e832e83a8a2c353b0c">interp_pe_likelihood_precise</a> (double *e_org, double *p_org, int size_org, double h_start, double h_end, double dh)</td></tr>
+<tr class="separator:ac779f264d38b23e832e83a8a2c353b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe1c394a95dbbf2af74a7039baef8de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#acfe1c394a95dbbf2af74a7039baef8de">make_tool_table</a> (double minh, double maxh, double dh)</td></tr>
 <tr class="separator:acfe1c394a95dbbf2af74a7039baef8de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1b9c57ed0bd39d11bc20a32173f215"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="param__utils_8hpp.html#aef1b9c57ed0bd39d11bc20a32173f215">check_mmax_gd</a> (double *hc, double *M_max, double h_start, bool cp_func_type_less, double jump_size, bool check_ok)</td></tr>
+<tr class="separator:aef1b9c57ed0bd39d11bc20a32173f215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a54b1ccb702b0746a0fb52c4862210696"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b1ccb702b0746a0fb52c4862210696">&#9670;&nbsp;</a></span>fail_process</h2>
+<a id="aa95912737d8a32368c191b1444488943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa95912737d8a32368c191b1444488943">&#9670;&nbsp;</a></span>fail_process_check_mmax</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define fail_process</td>
+          <td class="memname">#define fail_process_check_mmax</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">*hc = -1; *M_max=0.; \</div>
+<div class="line">        if (<a class="code" href="global__variable__constants_8hpp.html#ab3f078684998b83967d507d0f453f454">verbose</a>) { \</div>
+<div class="line">            cout&lt;&lt;message&lt;&lt;<span class="stringliteral">&quot;, with h=&quot;</span>&lt;&lt;h&lt;&lt;<span class="stringliteral">&quot;, h_guard=&quot;</span>&lt;&lt;h+h_guard&lt;&lt;<span class="stringliteral">&quot;, h_check_again=&quot;</span>&lt;&lt;h+h_check_again; \</div>
+<div class="line">            cout&lt;&lt;<span class="stringliteral">&quot;, M=&quot;</span>&lt;&lt;M&lt;&lt;<span class="stringliteral">&quot;, M_guard=&quot;</span>&lt;&lt;M_guard&lt;&lt;<span class="stringliteral">&quot;, M_check_again=&quot;</span>&lt;&lt;M_check_again&lt;&lt;endl;\</div>
+<div class="line">        } \</div>
+<div class="line">        return <span class="keyword">false</span>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8aa2f9a4f71b7bbd8fae00386d6908b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa2f9a4f71b7bbd8fae00386d6908b8">&#9670;&nbsp;</a></span>fail_process_check_mmax_gd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fail_process_check_mmax_gd</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">*hc = -1; *M_max=0.; \</div>
+<div class="line">        if (<a class="code" href="global__variable__constants_8hpp.html#ab3f078684998b83967d507d0f453f454">verbose</a>) { \</div>
+<div class="line">            cout&lt;&lt;message&lt;&lt;<span class="stringliteral">&quot;, with h=&quot;</span>&lt;&lt;h&lt;&lt;<span class="stringliteral">&quot;, h_guard=&quot;</span>&lt;&lt;h+h_guard; \</div>
+<div class="line">            cout&lt;&lt;<span class="stringliteral">&quot;, M=&quot;</span>&lt;&lt;M&lt;&lt;<span class="stringliteral">&quot;, M_guard=&quot;</span>&lt;&lt;M_guard&lt;&lt;endl;\</div>
+<div class="line">        } \</div>
+<div class="line">        return <span class="keyword">false</span>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaf6ac0194fd22cadb691f6944933626e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf6ac0194fd22cadb691f6944933626e">&#9670;&nbsp;</a></span>fail_process_check_mmax_pt_two_branch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fail_process_check_mmax_pt_two_branch</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">message</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">*h1 = -1, *h2 = -1, *h3 = -1, *h_max = -1, *m1 = 0., *m2 = 0., *m3 = 0., *m_max=0.; \</div>
+<div class="line">        if (<a class="code" href="global__variable__constants_8hpp.html#ab3f078684998b83967d507d0f453f454">verbose</a>) cout&lt;&lt;message&lt;&lt;endl; \</div>
+<div class="line">        return <span class="keyword">false</span>;</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af43195a886730d98d33538a76ed0cb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af43195a886730d98d33538a76ed0cb2c">&#9670;&nbsp;</a></span>fail_process_find_eos_prop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fail_process_find_eos_prop</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;for (int i=0; i&lt;6; i++) {<a class="el" href="global__variable__constants_8hpp.html#ac67f7e6c3a0652a283aea75c34565a85">eos_props</a>[i] = 0.;} return <a class="el" href="global__variable__constants_8hpp.html#ac67f7e6c3a0652a283aea75c34565a85">eos_props</a>;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42ee396afdc4cc44456b696ee28f5787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42ee396afdc4cc44456b696ee28f5787">&#9670;&nbsp;</a></span>fail_process_find_global_prop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fail_process_find_global_prop</td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td>&#160;&#160;&#160;*h_closest = -1; *unknown=0; return false;</td>
@@ -185,70 +293,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2fe9fce9a25e7626896dc000d3ad374a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fe9fce9a25e7626896dc000d3ad374a">&#9670;&nbsp;</a></span>check_eos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool check_eos </td>
-          <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>hc</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00150">150</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_cgraph.png" border="0" usemap="#param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_cgraph" alt=""/></div>
-<map name="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_cgraph" id="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,91,260"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="340,95,472,121"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="387,208,425,235"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="183,5,248,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="352,360,460,387"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="139,208,292,235"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="164,309,267,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="162,107,269,133"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="161,411,269,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="196,157,235,184"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="183,487,248,513"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="360,19,452,45"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="566,69,629,96"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="532,309,663,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="527,360,667,387"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="520,411,675,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="539,461,656,488"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="520,208,675,235"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="533,259,661,285"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="380,411,432,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="380,461,432,488"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="360,512,452,539"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="548,512,647,539"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_icgraph.png" border="0" usemap="#param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_icgraph" alt=""/></div>
-<map name="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_icgraph" id="param__utils_8hpp_a2fe9fce9a25e7626896dc000d3ad374a_icgraph">
-<area shape="rect" title=" " alt="" coords="495,31,580,57"/>
-<area shape="rect" href="param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="347,31,447,57"/>
-<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="104,5,299,32"/>
-<area shape="rect" href="non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="143,56,260,83"/>
-<area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,56,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ae0c3cf3b70f141f42bcf48270238ebe7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0c3cf3b70f141f42bcf48270238ebe7">&#9670;&nbsp;</a></span>check_mmax()</h2>
+<a id="ab5160e911d86e6fcfa634708dde4fd07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5160e911d86e6fcfa634708dde4fd07">&#9670;&nbsp;</a></span>check_mmax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,7 +309,31 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>M_max</em>&#160;</td>
+          <td class="paramname"><em>M_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h_start</em> = <code><a class="el" href="global__variable__constants_8hpp.html#ab352375cec5c5cea5f0654ab2a1a1807">suggested_start_point</a>+0.08</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cp_func_type_less</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>jump_size</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_ok</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -291,53 +361,321 @@ Here is the caller graph for this function:</div>
 </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00202">202</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00293">293</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_cgraph.png" border="0" usemap="#param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_cgraph" alt=""/></div>
-<map name="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_cgraph" id="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_cgraph">
-<area shape="rect" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="5,559,105,586"/>
-<area shape="rect" href="param__utils_8hpp.html#a2fe9fce9a25e7626896dc000d3ad374a" title=" " alt="" coords="361,635,446,662"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="153,508,261,535"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="747,863,879,890"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="793,546,832,572"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="589,432,655,459"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="759,319,867,346"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="545,483,699,510"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="571,635,673,662"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="569,838,675,864"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="568,280,676,307"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="603,534,641,560"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="589,736,655,763"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="767,470,859,496"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="973,566,1035,592"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="939,294,1069,320"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="934,344,1074,371"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="927,395,1081,422"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="945,446,1063,472"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="927,192,1081,219"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="940,243,1068,270"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="787,243,839,270"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="787,84,839,111"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="767,736,859,763"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="955,736,1053,763"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="357,534,450,560"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="349,128,457,155"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="309,432,497,459"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="594,128,650,155"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="597,179,647,206"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="597,230,647,256"/>
+<div class="center"><img src="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_cgraph.png" border="0" usemap="#param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_cgraph" id="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_cgraph">
+<area shape="rect" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="5,436,105,463"/>
+<area shape="rect" href="param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="365,461,441,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="153,411,261,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="805,411,843,437"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="589,512,655,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="568,208,676,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="545,309,699,336"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="571,461,673,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="603,360,641,387"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="589,613,655,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="778,512,870,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="967,487,1030,513"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="759,183,889,209"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="754,233,894,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="747,284,901,311"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="765,335,883,361"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="747,81,901,108"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="760,132,888,159"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="778,613,870,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="949,613,1048,640"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="357,411,450,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="349,157,457,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="309,335,497,361"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="350,56,457,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="594,157,650,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="597,56,647,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="597,107,647,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="556,5,688,32"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_icgraph.png" border="0" usemap="#param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_icgraph" alt=""/></div>
-<map name="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_icgraph" id="param__utils_8hpp_ae0c3cf3b70f141f42bcf48270238ebe7_icgraph">
+<div class="center"><img src="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_icgraph.png" border="0" usemap="#param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_icgraph" alt=""/></div>
+<map name="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_icgraph" id="param__utils_8hpp_ab5160e911d86e6fcfa634708dde4fd07_icgraph">
 <area shape="rect" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="347,31,447,57"/>
-<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="104,5,299,32"/>
+<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="104,5,299,32"/>
 <area shape="rect" href="non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="143,56,260,83"/>
+<area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,56,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef1b9c57ed0bd39d11bc20a32173f215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1b9c57ed0bd39d11bc20a32173f215">&#9670;&nbsp;</a></span>check_mmax_gd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_mmax_gd </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>hc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>M_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cp_func_type_less</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>jump_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>check_ok</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00372">372</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_cgraph.png" border="0" usemap="#param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_cgraph" id="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_cgraph">
+<area shape="rect" title=" " alt="" coords="5,436,128,463"/>
+<area shape="rect" href="param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="388,461,464,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="176,411,284,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="827,411,866,437"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="612,512,677,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="591,208,699,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="568,309,721,336"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="593,461,696,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="625,360,664,387"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="612,613,677,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="801,512,893,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="990,487,1053,513"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="781,183,912,209"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="777,233,917,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="769,284,924,311"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="788,335,905,361"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="769,81,924,108"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="783,132,911,159"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="801,613,893,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="972,613,1071,640"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="379,411,473,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="372,157,480,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="332,335,520,361"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="373,56,479,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="617,157,673,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="620,56,669,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="619,107,670,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="579,5,711,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_icgraph.png" border="0" usemap="#param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_icgraph" alt=""/></div>
+<map name="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_icgraph" id="param__utils_8hpp_aef1b9c57ed0bd39d11bc20a32173f215_icgraph">
+<area shape="rect" title=" " alt="" coords="249,5,372,32"/>
+<area shape="rect" href="param__utils_8hpp.html#a71f840131552a42389deefaa84ca8b7f" title=" " alt="" coords="5,5,201,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a71f840131552a42389deefaa84ca8b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f840131552a42389deefaa84ca8b7f">&#9670;&nbsp;</a></span>check_mmax_pt_two_branch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_mmax_pt_two_branch </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>h1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>h2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>h3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>h_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>m1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>m2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>m3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>m_max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>rho_tr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>drho</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00445">445</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_a71f840131552a42389deefaa84ca8b7f_cgraph.png" border="0" usemap="#param__utils_8hpp_a71f840131552a42389deefaa84ca8b7f_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_a71f840131552a42389deefaa84ca8b7f_cgraph" id="param__utils_8hpp_a71f840131552a42389deefaa84ca8b7f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,424,201,451"/>
+<area shape="rect" href="param__utils_8hpp.html#aef1b9c57ed0bd39d11bc20a32173f215" title=" " alt="" coords="249,424,372,451"/>
+<area shape="rect" href="param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="632,461,708,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="420,373,528,400"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="1071,360,1110,387"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="856,512,921,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="835,208,943,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="812,461,965,488"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="837,411,940,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="869,309,908,336"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="856,613,921,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="1045,499,1137,525"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1234,473,1297,500"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1025,157,1156,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1021,208,1161,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="1013,259,1168,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="1032,309,1149,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="1013,56,1168,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="1027,107,1155,133"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="1045,613,1137,640"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1216,613,1315,640"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="623,399,717,425"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="616,157,724,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="576,323,764,349"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="617,56,723,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="861,107,917,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="864,157,913,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="863,56,914,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="823,5,955,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aacefbca547318af00d28242f0e4ea50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacefbca547318af00d28242f0e4ea50c">&#9670;&nbsp;</a></span>cool_eos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cool_eos </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>hc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00246">246</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_cgraph.png" border="0" usemap="#param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_cgraph" id="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,157,81,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="389,56,427,83"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="173,5,239,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="152,208,260,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="129,157,283,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="155,335,257,361"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="187,56,225,83"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="173,423,239,449"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="362,5,454,32"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="551,208,614,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="343,259,473,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="338,309,478,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="331,360,485,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="349,107,467,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="331,157,485,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="344,208,472,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="362,461,454,488"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="533,461,632,488"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_icgraph.png" border="0" usemap="#param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_icgraph" alt=""/></div>
+<map name="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_icgraph" id="param__utils_8hpp_aacefbca547318af00d28242f0e4ea50c_icgraph">
+<area shape="rect" title=" " alt="" coords="519,81,595,108"/>
+<area shape="rect" href="param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="359,31,459,57"/>
+<area shape="rect" href="param__utils_8hpp.html#aef1b9c57ed0bd39d11bc20a32173f215" title=" " alt="" coords="348,81,471,108"/>
+<area shape="rect" href="param__utils_8hpp.html#a71f840131552a42389deefaa84ca8b7f" title=" " alt="" coords="104,119,300,145"/>
+<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="105,5,299,32"/>
+<area shape="rect" href="non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="143,56,261,83"/>
 <area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,56,83"/>
 </map>
 </div>
@@ -394,43 +732,40 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00264">264</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00498">498</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad_cgraph.png" border="0" usemap="#param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad_cgraph" alt=""/></div>
 <map name="param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad_cgraph" id="param__utils_8hpp_a55d55d86595704afa06a9ad23234d8ad_cgraph">
-<area shape="rect" title=" " alt="" coords="5,335,97,361"/>
-<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="154,309,245,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="145,360,253,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="581,56,647,83"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="349,240,442,267"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="561,5,667,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="560,664,668,691"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="581,411,647,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="341,563,449,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="301,360,489,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="759,81,851,108"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="965,169,1027,196"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="785,157,824,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="751,613,859,640"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="537,309,691,336"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="563,259,665,285"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="595,157,633,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="931,487,1061,513"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="926,537,1066,564"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="919,588,1073,615"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="937,639,1055,665"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="919,689,1073,716"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="932,740,1060,767"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="739,5,871,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="779,676,831,703"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="779,752,831,779"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="759,411,851,437"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="947,411,1045,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="586,512,642,539"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="589,563,639,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="589,461,639,488"/>
+<area shape="rect" title=" " alt="" coords="5,259,97,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="154,233,245,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="145,284,253,311"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="581,5,647,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="349,183,442,209"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="581,309,647,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="341,411,449,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="301,259,489,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="342,512,449,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="770,31,862,57"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="959,95,1022,121"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="797,107,835,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="560,360,668,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="537,157,691,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="563,208,665,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="595,107,633,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="751,259,881,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="746,309,886,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="739,360,893,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="757,411,875,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="739,461,893,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="752,512,880,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="770,208,862,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="941,208,1040,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="586,411,642,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="589,461,639,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="589,512,639,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="548,563,680,589"/>
 </map>
 </div>
 
@@ -512,43 +847,40 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00332">332</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00566">566</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_cgraph.png" border="0" usemap="#param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_cgraph" alt=""/></div>
 <map name="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_cgraph" id="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_cgraph">
-<area shape="rect" title="Find a global_a with another global_b." alt="" coords="5,327,172,369"/>
-<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="229,309,319,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="220,360,328,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="656,56,721,83"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="423,240,517,267"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="635,5,742,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="635,664,743,691"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="656,411,721,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="416,563,524,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="376,360,564,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="833,81,925,108"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1039,169,1102,196"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="860,157,899,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="825,613,933,640"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="612,309,765,336"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="637,259,740,285"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="669,157,708,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1005,487,1136,513"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1001,537,1141,564"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="993,588,1148,615"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="1012,639,1129,665"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="993,689,1148,716"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="1007,740,1135,767"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="813,5,945,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="853,676,905,703"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="853,752,905,779"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="833,411,925,437"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1021,411,1120,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="661,512,717,539"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="664,563,713,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="663,461,714,488"/>
+<area shape="rect" title="Find a global_a with another global_b." alt="" coords="5,251,172,293"/>
+<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="229,233,319,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="220,284,328,311"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="656,5,721,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="423,183,517,209"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="656,309,721,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="416,411,524,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="376,259,564,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="417,512,523,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="845,31,937,57"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1034,95,1097,121"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="871,107,910,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="635,360,743,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="612,157,765,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="637,208,740,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="669,107,708,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="825,259,956,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="821,309,961,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="813,360,968,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="832,411,949,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="813,461,968,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="827,512,955,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="845,208,937,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1016,208,1115,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="661,411,717,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="664,461,713,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="663,512,714,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="623,563,755,589"/>
 </map>
 </div>
 <div class="dynheader">
@@ -557,7 +889,54 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_icgraph.png" border="0" usemap="#param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_icgraph" alt=""/></div>
 <map name="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_icgraph" id="param__utils_8hpp_addc6708baf1b3023282c5f1a83a8608a_icgraph">
 <area shape="rect" title="Find a global_a with another global_b." alt="" coords="248,5,415,47"/>
-<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="5,13,200,39"/>
+<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="5,13,200,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a767582317da86f45f95e49d46725ce4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767582317da86f45f95e49d46725ce4b">&#9670;&nbsp;</a></span>find_eos_properties()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double * find_eos_properties </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>known_aim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>find_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_type=3). @params get_type must equal to init_interpolation_function_type-1. </p>
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00119">119</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_a767582317da86f45f95e49d46725ce4b_cgraph.png" border="0" usemap="#param__utils_8hpp_a767582317da86f45f95e49d46725ce4b_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_a767582317da86f45f95e49d46725ce4b_cgraph" id="param__utils_8hpp_a767582317da86f45f95e49d46725ce4b_cgraph">
+<area shape="rect" title="Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_typ..." alt="" coords="5,132,144,159"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="192,132,300,159"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="360,5,491,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="355,56,495,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="348,107,503,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="367,157,484,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="348,208,503,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="361,259,489,285"/>
 </map>
 </div>
 
@@ -589,43 +968,40 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00037">37</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00040">40</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_cgraph.png" border="0" usemap="#param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_cgraph" alt=""/></div>
 <map name="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_cgraph" id="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_cgraph">
-<area shape="rect" title="Python interface function for integrating the whole structure of the star." alt="" coords="5,335,72,361"/>
-<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="129,309,219,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="120,360,228,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="556,56,621,83"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="323,240,417,267"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="535,5,642,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="535,664,643,691"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="556,411,621,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="316,563,424,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="276,360,464,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="733,81,825,108"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="939,169,1002,196"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="760,157,799,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="725,613,833,640"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="512,309,665,336"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="537,259,640,285"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="569,157,608,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="905,487,1036,513"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="901,537,1041,564"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="893,588,1048,615"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="912,639,1029,665"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="893,689,1048,716"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="907,740,1035,767"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="713,5,845,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="753,676,805,703"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="753,752,805,779"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="733,411,825,437"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="921,411,1020,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="561,512,617,539"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="564,563,613,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="563,461,614,488"/>
+<area shape="rect" title="Python interface function for integrating the whole structure of the star." alt="" coords="5,259,72,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="129,233,219,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="120,284,228,311"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="556,5,621,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="323,183,417,209"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="556,309,621,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="316,411,424,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="276,259,464,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="317,512,423,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="745,31,837,57"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="934,95,997,121"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="771,107,810,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="535,360,643,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="512,157,665,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="537,208,640,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="569,107,608,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="725,259,856,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="721,309,861,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="713,360,868,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="732,411,849,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="713,461,868,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="727,512,855,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="745,208,837,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="916,208,1015,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="561,411,617,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="564,461,613,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="563,512,614,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="523,563,655,589"/>
 </map>
 </div>
 <div class="dynheader">
@@ -634,7 +1010,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_icgraph.png" border="0" usemap="#param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_icgraph" alt=""/></div>
 <map name="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_icgraph" id="param__utils_8hpp_a868be24c590ade0f629c8d2135ab0229_icgraph">
 <area shape="rect" title="Python interface function for integrating the whole structure of the star." alt="" coords="347,31,413,57"/>
-<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="find nearest known property, return corresponding unknown ones." alt="" coords="104,5,299,32"/>
+<area shape="rect" href="param__utils_8hpp.html#ab3c5a1a854e42b8e307ade519a977980" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="104,5,299,32"/>
 <area shape="rect" href="non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="143,56,260,83"/>
 <area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,56,56,83"/>
 </map>
@@ -692,7 +1068,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>find nearest known property, return corresponding unknown ones. </p>
+<p>Find nearest known properties, return corresponding unknown ones. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">known1</td><td>Known global 1 to find with. </td></tr>
@@ -711,54 +1087,51 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00397">397</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00631">631</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980_cgraph.png" border="0" usemap="#param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980_cgraph" alt=""/></div>
 <map name="param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980_cgraph" id="param__utils_8hpp_ab3c5a1a854e42b8e307ade519a977980_cgraph">
-<area shape="rect" title="find nearest known property, return corresponding unknown ones." alt="" coords="5,384,200,411"/>
-<area shape="rect" href="param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="281,333,381,360"/>
-<area shape="rect" href="param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a" title="Find a global_a with another global_b." alt="" coords="248,435,415,477"/>
-<area shape="rect" href="param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="298,384,365,411"/>
-<area shape="rect" href="param__utils_8hpp.html#a2fe9fce9a25e7626896dc000d3ad374a" title=" " alt="" coords="670,299,755,325"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="463,388,571,415"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="1056,20,1188,47"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="1103,361,1141,388"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="899,299,964,325"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="1068,232,1176,259"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="855,451,1008,477"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="880,501,983,528"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="878,45,985,72"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="877,248,985,275"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="912,400,951,427"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="899,552,964,579"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="1076,299,1168,325"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1282,421,1345,448"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1248,207,1379,233"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1243,257,1383,284"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="1236,308,1391,335"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="1255,359,1372,385"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="1236,105,1391,132"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="1249,156,1377,183"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="1096,755,1148,781"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="1096,479,1148,505"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="1076,552,1168,579"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1264,552,1363,579"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="666,400,759,427"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="659,755,767,781"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="619,540,807,567"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="903,704,959,731"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="907,755,956,781"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="906,653,957,680"/>
-<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="471,440,562,467"/>
+<area shape="rect" title="Find nearest known properties, return corresponding unknown ones." alt="" coords="5,309,200,336"/>
+<area shape="rect" href="param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="281,259,381,285"/>
+<area shape="rect" href="param__utils_8hpp.html#addc6708baf1b3023282c5f1a83a8608a" title="Find a global_a with another global_b." alt="" coords="248,361,415,402"/>
+<area shape="rect" href="param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="298,309,365,336"/>
+<area shape="rect" href="param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="675,259,751,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="463,309,571,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="1114,157,1153,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="899,107,964,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="877,360,985,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="855,208,1008,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="880,411,983,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="912,259,951,285"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="899,461,964,488"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="1087,107,1179,133"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1277,309,1339,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1068,411,1199,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1063,461,1203,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="1056,208,1211,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="1075,259,1192,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="1056,309,1211,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="1069,360,1197,387"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="1087,563,1179,589"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1259,563,1357,589"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="666,309,759,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="659,512,767,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="619,372,807,399"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="659,56,766,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="903,563,959,589"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="907,613,956,640"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="906,512,957,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="865,5,997,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="471,364,562,391"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0e5c0924c152182239b53b638717efcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5c0924c152182239b53b638717efcc">&#9670;&nbsp;</a></span>integrate_eos()</h2>
+<a id="af26186b13728ccc8a8332ba347bbf321"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26186b13728ccc8a8332ba347bbf321">&#9670;&nbsp;</a></span>integrate_eos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,7 +1188,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="global__variable__constants_8hpp.html#a6cafdeced917cafef4bfae2ebf42f082">state_type</a> *&#160;</td>
-          <td class="paramname"><em>v_sq_tb</em>&#160;</td>
+          <td class="paramname"><em>v_sq_tb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>get_type</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -825,12 +1204,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00051">51</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00054">54</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_cgraph.png" border="0" usemap="#param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_cgraph" alt=""/></div>
-<map name="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_cgraph" id="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_cgraph">
+<div class="center"><img src="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_cgraph.png" border="0" usemap="#param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_cgraph" id="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_cgraph">
 <area shape="rect" title=" " alt="" coords="5,284,108,311"/>
 <area shape="rect" href="integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="175,81,243,108"/>
 <area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="323,132,431,159"/>
@@ -846,7 +1225,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="503,5,633,32"/>
 <area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="498,56,638,83"/>
 <area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="491,107,645,133"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="509,157,627,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="509,157,627,184"/>
 <area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="491,208,645,235"/>
 <area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="504,259,632,285"/>
 <area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="331,385,423,412"/>
@@ -858,18 +1237,139 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_icgraph.png" border="0" usemap="#param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_icgraph" alt=""/></div>
-<map name="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_icgraph" id="param__utils_8hpp_a0e5c0924c152182239b53b638717efcc_icgraph">
-<area shape="rect" title=" " alt="" coords="272,5,375,32"/>
-<area shape="rect" href="param__utils_8hpp.html#a14167c28cd95816df5e1d80810fd7886" title=" " alt="" coords="104,5,224,32"/>
-<area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_icgraph.png" border="0" usemap="#param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_icgraph" alt=""/></div>
+<map name="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_icgraph" id="param__utils_8hpp_af26186b13728ccc8a8332ba347bbf321_icgraph">
+<area shape="rect" title=" " alt="" coords="292,42,395,69"/>
+<area shape="rect" href="param__utils_8hpp.html#ac779f264d38b23e832e83a8a2c353b0c" title=" " alt="" coords="104,5,244,47"/>
+<area shape="rect" href="param__utils_8hpp.html#a15dd165a72366a31be8a581455aba8d4" title=" " alt="" coords="114,71,234,98"/>
+<area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,71,56,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a14167c28cd95816df5e1d80810fd7886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14167c28cd95816df5e1d80810fd7886">&#9670;&nbsp;</a></span>make_eos_table()</h2>
+<a id="a460ea10802a17c161eff76718738056b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460ea10802a17c161eff76718738056b">&#9670;&nbsp;</a></span>interp_pe_likelihood()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double interp_pe_likelihood </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>e_org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>p_org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_org</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00157">157</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac779f264d38b23e832e83a8a2c353b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac779f264d38b23e832e83a8a2c353b0c">&#9670;&nbsp;</a></span>interp_pe_likelihood_precise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double interp_pe_likelihood_precise </td>
+          <td>(</td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>e_org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>p_org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_org</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h_start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>h_end</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dh</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00172">172</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="param__utils_8hpp_ac779f264d38b23e832e83a8a2c353b0c_cgraph.png" border="0" usemap="#param__utils_8hpp_ac779f264d38b23e832e83a8a2c353b0c_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_ac779f264d38b23e832e83a8a2c353b0c_cgraph" id="param__utils_8hpp_ac779f264d38b23e832e83a8a2c353b0c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,277,145,318"/>
+<area shape="rect" href="param__utils_8hpp.html#af26186b13728ccc8a8332ba347bbf321" title=" " alt="" coords="193,284,296,311"/>
+<area shape="rect" href="integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="363,81,431,108"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="511,132,619,159"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="499,208,631,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="545,309,584,336"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="365,385,430,412"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="346,436,449,463"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="344,233,451,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="378,335,417,361"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="365,487,430,513"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="539,31,591,57"/>
+<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="539,81,591,108"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="691,5,821,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="686,56,826,83"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="679,107,833,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="697,157,815,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="679,208,833,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="692,259,820,285"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="519,385,611,412"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="725,411,787,437"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="519,487,611,513"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="707,487,805,513"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a15dd165a72366a31be8a581455aba8d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15dd165a72366a31be8a581455aba8d4">&#9670;&nbsp;</a></span>make_eos_table()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -908,7 +1408,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>unit</em> = <code>&quot;cgs&quot;</code>&#160;</td>
+          <td class="paramname"><em>unit</em> = <code>&quot;cgs&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>get_type</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -918,14 +1424,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00107">107</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00203">203</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_cgraph.png" border="0" usemap="#param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_cgraph" alt=""/></div>
-<map name="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_cgraph" id="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_cgraph">
+<div class="center"><img src="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_cgraph.png" border="0" usemap="#param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_cgraph" alt=""/></div>
+<map name="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_cgraph" id="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,284,125,311"/>
-<area shape="rect" href="param__utils_8hpp.html#a0e5c0924c152182239b53b638717efcc" title=" " alt="" coords="173,284,276,311"/>
+<area shape="rect" href="param__utils_8hpp.html#af26186b13728ccc8a8332ba347bbf321" title=" " alt="" coords="173,284,276,311"/>
 <area shape="rect" href="integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="343,81,411,108"/>
 <area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="491,132,599,159"/>
 <area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="479,208,611,235"/>
@@ -940,7 +1446,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="671,5,801,32"/>
 <area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="666,56,806,83"/>
 <area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="659,107,813,133"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="677,157,795,184"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="677,157,795,184"/>
 <area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="659,208,813,235"/>
 <area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="672,259,800,285"/>
 <area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="499,385,591,412"/>
@@ -952,8 +1458,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_icgraph.png" border="0" usemap="#param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_icgraph" alt=""/></div>
-<map name="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_icgraph" id="param__utils_8hpp_a14167c28cd95816df5e1d80810fd7886_icgraph">
+<div class="center"><img src="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_icgraph.png" border="0" usemap="#param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_icgraph" alt=""/></div>
+<map name="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_icgraph" id="param__utils_8hpp_a15dd165a72366a31be8a581455aba8d4_icgraph">
 <area shape="rect" title=" " alt="" coords="104,5,224,32"/>
 <area shape="rect" href="param__eos_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,56,32"/>
 </map>
@@ -993,43 +1499,40 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00123">123</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="param__utils_8hpp_source.html#l00219">219</a> of file <a class="el" href="param__utils_8hpp_source.html">param_utils.hpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_cgraph.png" border="0" usemap="#param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_cgraph" alt=""/></div>
 <map name="param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_cgraph" id="param__utils_8hpp_acfe1c394a95dbbf2af74a7039baef8de_cgraph">
-<area shape="rect" title=" " alt="" coords="5,335,125,361"/>
-<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="182,309,273,336"/>
-<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="173,360,281,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="609,56,675,83"/>
-<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="377,240,470,267"/>
-<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="589,5,695,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="588,664,696,691"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="609,411,675,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="369,563,477,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="329,360,517,387"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="787,81,879,108"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="993,169,1055,196"/>
-<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="813,157,852,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="779,613,887,640"/>
-<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="565,309,719,336"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="591,259,693,285"/>
-<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="623,157,661,184"/>
-<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="959,487,1089,513"/>
-<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="954,537,1094,564"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="947,588,1101,615"/>
-<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="965,639,1083,665"/>
-<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="947,689,1101,716"/>
-<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="960,740,1088,767"/>
-<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="767,5,899,32"/>
-<area shape="rect" href="integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="807,676,859,703"/>
-<area shape="rect" href="integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="807,752,859,779"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="787,411,879,437"/>
-<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="975,411,1073,437"/>
-<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="614,512,670,539"/>
-<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="617,563,667,589"/>
-<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="617,461,667,488"/>
+<area shape="rect" title=" " alt="" coords="5,259,125,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="182,233,273,260"/>
+<area shape="rect" href="integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="173,284,281,311"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="609,5,675,32"/>
+<area shape="rect" href="integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="377,183,470,209"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="609,309,675,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="369,411,477,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="329,259,517,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="370,512,477,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="798,31,890,57"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="987,95,1050,121"/>
+<area shape="rect" href="integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="825,107,863,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="588,360,696,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="565,157,719,184"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="591,208,693,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="623,107,661,133"/>
+<area shape="rect" href="integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="779,259,909,285"/>
+<area shape="rect" href="integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="774,309,914,336"/>
+<area shape="rect" href="integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="767,360,921,387"/>
+<area shape="rect" href="integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_css model." alt="" coords="785,411,903,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="767,461,921,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#a784a9dfa05351509561ae469693951fa" title="Calculate gamma in the spectral expansion model." alt="" coords="780,512,908,539"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="798,208,890,235"/>
+<area shape="rect" href="quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="969,208,1068,235"/>
+<area shape="rect" href="integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="614,411,670,437"/>
+<area shape="rect" href="integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="617,461,667,488"/>
+<area shape="rect" href="integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="617,512,667,539"/>
+<area shape="rect" href="integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="576,563,708,589"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1046,6 +1549,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aglobal__variable__constants_8hpp_html_ab3f078684998b83967d507d0f453f454"><div class="ttname"><a href="global__variable__constants_8hpp.html#ab3f078684998b83967d507d0f453f454">verbose</a></div><div class="ttdeci">bool verbose</div><div class="ttdoc">(command: -v).</div><div class="ttdef"><b>Definition:</b> <a href="global__variable__constants_8hpp_source.html#l00042">global_variable_constants.hpp:42</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

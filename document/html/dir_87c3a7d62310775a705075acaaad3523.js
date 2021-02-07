@@ -9,6 +9,5 @@ var dir_87c3a7d62310775a705075acaaad3523 =
     [ "optimize_posterior.hpp", "optimize__posterior_8hpp.html", "optimize__posterior_8hpp" ],
     [ "param_eos.cpp", "param__eos_8cpp.html", "param__eos_8cpp" ],
     [ "param_utils.hpp", "param__utils_8hpp.html", "param__utils_8hpp" ],
-    [ "quark_star_utils.hpp", "quark__star__utils_8hpp.html", "quark__star__utils_8hpp" ],
-    [ "test.cpp", "test_8cpp.html", "test_8cpp" ]
+    [ "quark_star_utils.hpp", "quark__star__utils_8hpp.html", "quark__star__utils_8hpp" ]
 ];

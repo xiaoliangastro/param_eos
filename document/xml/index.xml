@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.16">
+  <compound refid="structcontrol__params" kind="struct"><name>control_params</name>
+    <member refid="structcontrol__params_1a9abee03203f6cbae2dae3b58a35d5634" kind="variable"><name>min_tov_mass</name></member>
+    <member refid="structcontrol__params_1ac50f6d418f5efafa53906d7d07ff5d0b" kind="variable"><name>max_tov_mass</name></member>
+    <member refid="structcontrol__params_1a9469b6b2b0a9db81114b1b70354c35b3" kind="variable"><name>check_causal</name></member>
+    <member refid="structcontrol__params_1a71c03e2fcb56766bc9919cebe3aebad6" kind="variable"><name>param_method</name></member>
+    <member refid="structcontrol__params_1ae01f86fee59cdc28d4709b9fa94a387f" kind="variable"><name>verbose_level</name></member>
+    <member refid="structcontrol__params_1af2f5bd942bc8c4ba79a97a6ba13695d5" kind="variable"><name>eos_table_max_h</name></member>
+    <member refid="structcontrol__params_1ae55b5e07b946d9e0717bdc46902a1bd1" kind="variable"><name>init_interpolation_function_type</name></member>
+    <member refid="structcontrol__params_1a7e4f26963619a8c2567e0c52b3529ebb" kind="variable"><name>const_inter_step</name></member>
+    <member refid="structcontrol__params_1a4ceba0be409627e198f9bc5785be1096" kind="variable"><name>dev_G</name></member>
+    <member refid="structcontrol__params_1a24ca3637d21117d985410c0ef7dcdab5" kind="variable"><name>consid_const_inter_step</name></member>
+    <member refid="structcontrol__params_1a740b74396de53775a2ca6da342fbec22" kind="variable"><name>consid_dev_G</name></member>
+  </compound>
   <compound refid="structnon__param__struct" kind="struct"><name>non_param_struct</name>
     <member refid="structnon__param__struct_1a104bae66e11227e671d7419222f2b839" kind="variable"><name>step_i</name></member>
     <member refid="structnon__param__struct_1a44266105a3054184d846f2fd84cc6727" kind="variable"><name>frac</name></member>
@@ -27,9 +40,13 @@
   <compound refid="eos__init_8hpp" kind="file"><name>eos_init.hpp</name>
     <member refid="eos__init_8hpp_1a1764f6f4dbc2fe6080ebb9033544acfa" kind="function"><name>init_interp_coeff</name></member>
     <member refid="eos__init_8hpp_1a0993541e6b56fc699d50f001f8371324" kind="function"><name>init_interp_coeff_through_ep_array</name></member>
-    <member refid="eos__init_8hpp_1a66d1d010d09d55450dabf0ce5fd91fe6" kind="function"><name>init_control_params</name></member>
-    <member refid="eos__init_8hpp_1a03491c8e307f5ad8ef4ce32b9e4f9f76" kind="function"><name>change_pars</name></member>
+    <member refid="eos__init_8hpp_1af5a1b499ffdcf8335477839d3c11c6cd" kind="function"><name>init_control_params</name></member>
+    <member refid="eos__init_8hpp_1a1c80e0e32a8e25d237368dfcd635f382" kind="function"><name>change_pars</name></member>
+    <member refid="eos__init_8hpp_1ab0666a02b7b027b4303150e408e492e4" kind="function"><name>init_G_related_parameters</name></member>
     <member refid="eos__init_8hpp_1a7b2ab5cd167f87d4a280866fa43be85c" kind="function"><name>cal_eborders</name></member>
+    <member refid="eos__init_8hpp_1a8ff996bff52113bea7452f533095fb90" kind="function"><name>cal_eos_table</name></member>
+    <member refid="eos__init_8hpp_1a435ea1b8b01b2bc084d7295e440afff3" kind="function"><name>check_p_at_rho185</name></member>
+    <member refid="eos__init_8hpp_1ab0d22f60c3e9f33d5922fa5e5e908aea" kind="function"><name>check_gamma_piece_spec_phtr_css</name></member>
   </compound>
   <compound refid="global__variable__constants_8hpp" kind="file"><name>global_variable_constants.hpp</name>
     <member refid="global__variable__constants_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kind="typedef"><name>state_type</name></member>
@@ -42,36 +59,33 @@
     <member refid="global__variable__constants_8hpp_1adf7a1978875a4e1d3f641e1c7d13d225" kind="variable"><name>quark_star</name></member>
     <member refid="global__variable__constants_8hpp_1a07fea4067c5fce9a3d6e2ef6f457c3db" kind="variable"><name>adapt_piecewise</name></member>
     <member refid="global__variable__constants_8hpp_1a41b27a048228fee1fd9165f88d3fdbee" kind="variable"><name>cons_cs</name></member>
-    <member refid="global__variable__constants_8hpp_1ada4ebd73fa485a46b9dd48db6ca60959" kind="variable"><name>piece_spec_phtr_ccs</name></member>
+    <member refid="global__variable__constants_8hpp_1a860b84a4bd0a3ecfa0569fb545d09359" kind="variable"><name>piece_spec_phtr_css</name></member>
     <member refid="global__variable__constants_8hpp_1ab3f078684998b83967d507d0f453f454" kind="variable"><name>verbose</name></member>
     <member refid="global__variable__constants_8hpp_1a5b618f06482991e2bc3278d8888becf0" kind="variable"><name>vverbose</name></member>
     <member refid="global__variable__constants_8hpp_1a3329c9e8ff59b1da3d142fd08419b85a" kind="variable"><name>vvverbose</name></member>
     <member refid="global__variable__constants_8hpp_1a3de327fde01c89d6993a82ac06db5af6" kind="variable"><name>minm_tov</name></member>
     <member refid="global__variable__constants_8hpp_1aa8ac37cbfe75c0314bf944fa1939bef4" kind="variable"><name>maxm_tov</name></member>
-    <member refid="global__variable__constants_8hpp_1a99853315130aa0a18b57c7309f554f9c" kind="variable"><name>const_inte_step</name></member>
+    <member refid="global__variable__constants_8hpp_1a756d74f33b56524c2e46b47b9ffc6ac2" kind="variable"><name>consid_const_inter_step</name></member>
     <member refid="global__variable__constants_8hpp_1ad77f3cf002249ce3de3de6b3a94ef1f5" kind="variable"><name>sg_const_step</name></member>
+    <member refid="global__variable__constants_8hpp_1a435deefa291009d6bf696aa535358c87" kind="variable"><name>deviation_G</name></member>
     <member refid="global__variable__constants_8hpp_1a623a8f9be8490ec6209c08d8e52fc929" kind="variable"><name>coeftb_idx</name></member>
     <member refid="global__variable__constants_8hpp_1add31440b5514ca384bc53145ccd4f1a6" kind="variable"><name>coeftb</name></member>
     <member refid="global__variable__constants_8hpp_1ad7f1aa953dc63f3be1a546da18a3c2aa" kind="variable"><name>mrl_result</name></member>
+    <member refid="global__variable__constants_8hpp_1ac67f7e6c3a0652a283aea75c34565a85" kind="variable"><name>eos_props</name></member>
     <member refid="global__variable__constants_8hpp_1a35971b802f48032134ca16c7ae036f34" kind="variable"><name>e_borders</name></member>
     <member refid="global__variable__constants_8hpp_1a4e025832d3a1a33270a793ab654db08c" kind="variable"><name>eos_params</name></member>
+    <member refid="global__variable__constants_8hpp_1ab4ccc98bcfc07cf7dd5afedb00e814ab" kind="variable"><name>eos_table_h</name></member>
+    <member refid="global__variable__constants_8hpp_1a077574fb206d3aaad2454ae69a8f2d0e" kind="variable"><name>eos_table_p</name></member>
+    <member refid="global__variable__constants_8hpp_1a3be3a2590454fd95b08031a0482aa93b" kind="variable"><name>eos_table_e</name></member>
+    <member refid="global__variable__constants_8hpp_1af86540dcb1812b1dd02d9726f5dab3da" kind="variable"><name>eos_table_rho</name></member>
+    <member refid="global__variable__constants_8hpp_1abfedbc7b72183a1cedb9bcc5b64d3529" kind="variable"><name>eos_table_function_h_base</name></member>
+    <member refid="global__variable__constants_8hpp_1ab40f125f502b6dbd182e701f56b75127" kind="variable"><name>eos_table_function_rho_base</name></member>
+    <member refid="global__variable__constants_8hpp_1a744fdf8d4dd2383caf21d91c03a348b2" kind="variable"><name>eos_table_function_e_base</name></member>
     <member refid="global__variable__constants_8hpp_1ac10fdca83ba95668d86ff24ac666803d" kind="variable"><name>check_causal</name></member>
     <member refid="global__variable__constants_8hpp_1a7a11e492a812c7256c33d342ce4caea4" kind="variable"><name>minimum_allowed_h</name></member>
     <member refid="global__variable__constants_8hpp_1ab352375cec5c5cea5f0654ab2a1a1807" kind="variable"><name>suggested_start_point</name></member>
-    <member refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kind="variable"><name>sg_step</name></member>
-    <member refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" kind="variable"><name>h_surface</name></member>
-    <member refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kind="variable"><name>h_ig</name></member>
-    <member refid="global__variable__constants_8hpp_1a42f01033db7468aff2667011bb543c07" kind="variable"><name>rho_trans</name></member>
-    <member refid="global__variable__constants_8hpp_1a7c49c7d65b3c65eb7a9a457c905f6564" kind="variable"><name>p_trans</name></member>
-    <member refid="global__variable__constants_8hpp_1a172789dfdaecb45defd22444f4272dc2" kind="variable"><name>r_trans</name></member>
-    <member refid="global__variable__constants_8hpp_1a541be2f598d25b67abfecd6bd6bd918f" kind="variable"><name>e_0</name></member>
-    <member refid="global__variable__constants_8hpp_1adad155522ac7592916e3c332a2682963" kind="variable"><name>p_0</name></member>
-    <member refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kind="variable"><name>h_0</name></member>
-    <member refid="global__variable__constants_8hpp_1a4066e07b45853e6a2d87b1b350415257" kind="variable"><name>rho_0</name></member>
-    <member refid="global__variable__constants_8hpp_1a16c69e5e124e25fa23b0aecbc21c8950" kind="variable"><name>rho_sat</name></member>
-    <member refid="global__variable__constants_8hpp_1a1d1ff9b2da2a11d49bd9a6a4d42f32d2" kind="variable"><name>max_possible_e</name></member>
-    <member refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kind="variable"><name>rho_borders</name></member>
-    <member refid="global__variable__constants_8hpp_1ab97e4616d23ed4c2961295010c1afc3c" kind="variable"><name>G</name></member>
+    <member refid="global__variable__constants_8hpp_1a9e7b5cc88c5522f8a6c2ca06a21dfca3" kind="variable"><name>deviation_G_plus1</name></member>
+    <member refid="global__variable__constants_8hpp_1a67783a2c4f670ee5a9dadcf428324d32" kind="variable"><name>G</name></member>
     <member refid="global__variable__constants_8hpp_1a9e8a46a0e00368ad98642587ca4ebdbe" kind="variable"><name>C</name></member>
     <member refid="global__variable__constants_8hpp_1acbb14903b4a70f049155dbecc457e163" kind="variable"><name>Hb</name></member>
     <member refid="global__variable__constants_8hpp_1a87b385f118e3715860117a77eda7136d" kind="variable"><name>eV</name></member>
@@ -80,9 +94,25 @@
     <member refid="global__variable__constants_8hpp_1a38a749ffa24145cb85c80c987f778a23" kind="variable"><name>MeV3_to_ifm3</name></member>
     <member refid="global__variable__constants_8hpp_1a2bc24e47ff2f786880df56d466c7f9cd" kind="variable"><name>MeVEifm3_to_ergEicm3</name></member>
     <member refid="global__variable__constants_8hpp_1a397c8c4fbdc84de83906b83cc4a7ec56" kind="variable"><name>MeVEifm3_to_gEicm3</name></member>
-    <member refid="global__variable__constants_8hpp_1a59c23c9d549f37cf3d0863fdbf4b1bdf" kind="variable"><name>gEicm3_to_dmls</name></member>
-    <member refid="global__variable__constants_8hpp_1ab0333c10c9e52fdfc9a7873dcdd796d3" kind="variable"><name>ergEicm3_to_dmls</name></member>
-    <member refid="global__variable__constants_8hpp_1ada123d429e18016f9a60537c63db162c" kind="variable"><name>MeV4_to_dmls</name></member>
+    <member refid="global__variable__constants_8hpp_1af597a608296fc40089de9cef7bd670d2" kind="variable"><name>gEicm3_to_dmls</name></member>
+    <member refid="global__variable__constants_8hpp_1a949ce33d4b4fa91788b49fa895a1d1b4" kind="variable"><name>ergEicm3_to_dmls</name></member>
+    <member refid="global__variable__constants_8hpp_1a29dc80723a4b13d538eb54472b3a5f9a" kind="variable"><name>MeV4_to_dmls</name></member>
+    <member refid="global__variable__constants_8hpp_1a41540773134a59f15f5908d1167c3c3a" kind="variable"><name>sg_step</name></member>
+    <member refid="global__variable__constants_8hpp_1a58246c5c19b9d2fb525df16e3f883723" kind="variable"><name>h_surface</name></member>
+    <member refid="global__variable__constants_8hpp_1a71ba863ddea1e939c2e5200e64021c85" kind="variable"><name>h_ig</name></member>
+    <member refid="global__variable__constants_8hpp_1a87bbbc70d878aee06e41cfacf614dfb1" kind="variable"><name>h_0</name></member>
+    <member refid="global__variable__constants_8hpp_1a570861e893691c4cefa803bfacca940c" kind="variable"><name>length_trans</name></member>
+    <member refid="global__variable__constants_8hpp_1a352bf98659c3980ded56d97ec50e83ca" kind="variable"><name>rho_trans</name></member>
+    <member refid="global__variable__constants_8hpp_1ac1224f202a914cb1e244ea080e80f47f" kind="variable"><name>p_trans</name></member>
+    <member refid="global__variable__constants_8hpp_1a093102b51e2c5ff7bd0f5e47a6b29e36" kind="variable"><name>r_trans</name></member>
+    <member refid="global__variable__constants_8hpp_1ae3b4ac975d7fdd80fdeba4c77d9a9384" kind="variable"><name>e_0</name></member>
+    <member refid="global__variable__constants_8hpp_1a065595506e759c6a409a334e85a29247" kind="variable"><name>p_0</name></member>
+    <member refid="global__variable__constants_8hpp_1ae5f5d9edb66645eab31a7c8389493ce7" kind="variable"><name>rho_0</name></member>
+    <member refid="global__variable__constants_8hpp_1adaca891a2fc36d0856c3e9112c5476b3" kind="variable"><name>rho_sat</name></member>
+    <member refid="global__variable__constants_8hpp_1a1c48946adb93455139b71dd52f1083c2" kind="variable"><name>max_possible_e</name></member>
+    <member refid="global__variable__constants_8hpp_1abf567d4749b505ef6c70a582a8082da3" kind="variable"><name>rho_borders</name></member>
+    <member refid="global__variable__constants_8hpp_1aa9c04f5beb6a7f4a31c52d13ea5a046e" kind="variable"><name>eos_table_max_h</name></member>
+    <member refid="global__variable__constants_8hpp_1a8925e3ae3177d73b690c3921f946a5c9" kind="variable"><name>init_interpolation_function_type</name></member>
   </compound>
   <compound refid="integrate__core_8hpp" kind="file"><name>integrate_core.hpp</name>
     <member refid="integrate__core_8hpp_1a043fb59041d31caa54395ec863e93c63" kind="typedef"><name>error_stepper_type</name></member>
@@ -92,6 +122,7 @@
     <member refid="integrate__core_8hpp_1a3b1660adcdf41418db65108cdb2e1b3f" kind="variable"><name>a_x</name></member>
     <member refid="integrate__core_8hpp_1ad6fa022e04ac564718690673338017c0" kind="variable"><name>a_dxdt</name></member>
     <member refid="integrate__core_8hpp_1a592868baedb54b8f932ec01e852995d4" kind="function"><name>controlled_stepper</name></member>
+    <member refid="integrate__core_8hpp_1ae126689d13748236aac83457bf5855df" kind="function"><name>controlled_stepper_cal_eos</name></member>
     <member refid="integrate__core_8hpp_1a0b7bb81f4629a3a900a765d0d9a6f168" kind="function"><name>integrate_func</name></member>
     <member refid="integrate__core_8hpp_1a11213979acaf22876fc5c366b30f6823" kind="function"><name>int_whole_star</name></member>
     <member refid="integrate__core_8hpp_1ac44351f385d2bf728eb529d1d0a640c2" kind="function"><name>cal_lambda</name></member>
@@ -106,7 +137,6 @@
     <member refid="integrate__core_8hpp_1abae461af630e5af52f7242b4880d86e6" kind="function"><name>gammah_phase_trans</name></member>
     <member refid="integrate__core_8hpp_1a98f7292845a0dda5c9385d3426a09340" kind="function"><name>gammae_cons_cs</name></member>
     <member refid="integrate__core_8hpp_1a1b6052908270e18510683b79741a7b8a" kind="function"><name>gamma_which</name></member>
-    <member refid="integrate__core_8hpp_1a195f250cebaa13e620a80a222972c07b" kind="function"><name>find_hp_at_e</name></member>
     <member refid="integrate__core_8hpp_1a36f9d85f06e2332267fd04cfd5efbcd7" kind="function"><name>dpdh</name></member>
     <member refid="integrate__core_8hpp_1a1a1838e225377bd7f2e3c713caa541dc" kind="function"><name>dedh</name></member>
     <member refid="integrate__core_8hpp_1aed2763437383ebd8b78bbc28466fdb9b" kind="function"><name>dmdh</name></member>
@@ -152,16 +182,25 @@
     <member refid="param__eos_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="param__utils_8hpp" kind="file"><name>param_utils.hpp</name>
-    <member refid="param__utils_8hpp_1a54b1ccb702b0746a0fb52c4862210696" kind="define"><name>fail_process</name></member>
+    <member refid="param__utils_8hpp_1af43195a886730d98d33538a76ed0cb2c" kind="define"><name>fail_process_find_eos_prop</name></member>
+    <member refid="param__utils_8hpp_1aa95912737d8a32368c191b1444488943" kind="define"><name>fail_process_check_mmax</name></member>
+    <member refid="param__utils_8hpp_1a8aa2f9a4f71b7bbd8fae00386d6908b8" kind="define"><name>fail_process_check_mmax_gd</name></member>
+    <member refid="param__utils_8hpp_1aaf6ac0194fd22cadb691f6944933626e" kind="define"><name>fail_process_check_mmax_pt_two_branch</name></member>
+    <member refid="param__utils_8hpp_1a42ee396afdc4cc44456b696ee28f5787" kind="define"><name>fail_process_find_global_prop</name></member>
     <member refid="param__utils_8hpp_1a868be24c590ade0f629c8d2135ab0229" kind="function"><name>get_mrl</name></member>
-    <member refid="param__utils_8hpp_1a2fe9fce9a25e7626896dc000d3ad374a" kind="function"><name>check_eos</name></member>
-    <member refid="param__utils_8hpp_1ae0c3cf3b70f141f42bcf48270238ebe7" kind="function"><name>check_mmax</name></member>
-    <member refid="param__utils_8hpp_1a14167c28cd95816df5e1d80810fd7886" kind="function"><name>make_eos_table</name></member>
+    <member refid="param__utils_8hpp_1aacefbca547318af00d28242f0e4ea50c" kind="function"><name>cool_eos</name></member>
+    <member refid="param__utils_8hpp_1ab5160e911d86e6fcfa634708dde4fd07" kind="function"><name>check_mmax</name></member>
+    <member refid="param__utils_8hpp_1a71f840131552a42389deefaa84ca8b7f" kind="function"><name>check_mmax_pt_two_branch</name></member>
+    <member refid="param__utils_8hpp_1a15dd165a72366a31be8a581455aba8d4" kind="function"><name>make_eos_table</name></member>
+    <member refid="param__utils_8hpp_1a460ea10802a17c161eff76718738056b" kind="function"><name>interp_pe_likelihood</name></member>
     <member refid="param__utils_8hpp_1ab3c5a1a854e42b8e307ade519a977980" kind="function"><name>get_unknowns_from_knowns</name></member>
+    <member refid="param__utils_8hpp_1a767582317da86f45f95e49d46725ce4b" kind="function"><name>find_eos_properties</name></member>
     <member refid="param__utils_8hpp_1a55d55d86595704afa06a9ad23234d8ad" kind="function"><name>find_closest</name></member>
     <member refid="param__utils_8hpp_1addc6708baf1b3023282c5f1a83a8608a" kind="function"><name>find_closest_with_maxm_known</name></member>
-    <member refid="param__utils_8hpp_1a0e5c0924c152182239b53b638717efcc" kind="function"><name>integrate_eos</name></member>
+    <member refid="param__utils_8hpp_1af26186b13728ccc8a8332ba347bbf321" kind="function"><name>integrate_eos</name></member>
+    <member refid="param__utils_8hpp_1ac779f264d38b23e832e83a8a2c353b0c" kind="function"><name>interp_pe_likelihood_precise</name></member>
     <member refid="param__utils_8hpp_1acfe1c394a95dbbf2af74a7039baef8de" kind="function"><name>make_tool_table</name></member>
+    <member refid="param__utils_8hpp_1aef1b9c57ed0bd39d11bc20a32173f215" kind="function"><name>check_mmax_gd</name></member>
   </compound>
   <compound refid="quark__star__utils_8hpp" kind="file"><name>quark_star_utils.hpp</name>
     <member refid="quark__star__utils_8hpp_1a6cafdeced917cafef4bfae2ebf42f082" kind="typedef"><name>state_type</name></member>
@@ -178,10 +217,6 @@
     <member refid="quark__star__utils_8hpp_1a0c31628b10284967766aab20ececec9e" kind="function"><name>solve_surface_h</name></member>
     <member refid="quark__star__utils_8hpp_1a4299fb866a66b00e9bdcefcb323d9d83" kind="function"><name>make_qks_eos_table</name></member>
     <member refid="quark__star__utils_8hpp_1a6f717bd5df3d01fe6ae19abf025f35a6" kind="function"><name>print_quark_star_surface</name></member>
-  </compound>
-  <compound refid="test_8cpp" kind="file"><name>test.cpp</name>
-    <member refid="test_8cpp_1a978f1c5a382a775575c6e561efece175" kind="function"><name>integrate_func_test</name></member>
-    <member refid="test_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dir_87c3a7d62310775a705075acaaad3523" kind="dir"><name>/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool</name>
   </compound>

@@ -1,52 +1,52 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,542,56,569"/>
-<area shape="rect" id="node2" href="$eos__init_8hpp.html#a7b2ab5cd167f87d4a280866fa43be85c" title=" " alt="" coords="121,263,220,290"/>
-<area shape="rect" id="node3" href="$integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="1034,383,1125,410"/>
-<area shape="rect" id="node4" href="$param__eos_8cpp.html#a1d56075a6e615cb22adc8cb7e62a1929" title=" " alt="" coords="104,770,237,797"/>
-<area shape="rect" id="node5" href="$eos__init_8hpp.html#a1764f6f4dbc2fe6080ebb9033544acfa" title=" " alt="" coords="113,821,229,847"/>
-<area shape="rect" id="node6" href="$integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="1025,453,1133,479"/>
-<area shape="rect" id="node34" href="$param__utils_8hpp.html#a14167c28cd95816df5e1d80810fd7886" title=" " alt="" coords="297,694,417,721"/>
-<area shape="rect" id="node37" href="$param__utils_8hpp.html#acfe1c394a95dbbf2af74a7039baef8de" title=" " alt="" coords="849,365,969,391"/>
-<area shape="rect" id="node38" href="$non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="676,567,793,594"/>
-<area shape="rect" id="node43" href="$optimize__posterior_8hpp.html#afadba1d9091fad5661f35917b0d699ab" title=" " alt="" coords="123,517,219,543"/>
-<area shape="rect" id="node44" href="$optimize__posterior_8hpp.html#a7c2806d69096968d78c8ec3783616ba2" title=" " alt="" coords="285,466,429,493"/>
-<area shape="rect" id="node46" href="$optimize__posterior_8hpp.html#adb35fbf1985beb38639c4db0562e4c2c" title=" " alt="" coords="477,415,628,442"/>
-<area shape="rect" id="node49" href="$quark__star__utils_8hpp.html#a0c31628b10284967766aab20ececec9e" title=" " alt="" coords="111,719,230,746"/>
-<area shape="rect" id="node7" href="$quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="1461,439,1527,466"/>
-<area shape="rect" id="node10" href="$integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="1229,515,1322,542"/>
-<area shape="rect" id="node20" href="$integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="1441,997,1547,1023"/>
-<area shape="rect" id="node22" href="$integrate__core_8hpp.html#a7d14308d810a0df831ad2eda66249fe0" title=" " alt="" coords="1440,287,1548,314"/>
-<area shape="rect" id="node26" href="$quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="1461,693,1527,719"/>
-<area shape="rect" id="node29" href="$integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="1221,135,1329,162"/>
-<area shape="rect" id="node33" href="$integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="1181,389,1369,415"/>
-<area shape="rect" id="node8" href="$quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="1639,439,1731,466"/>
-<area shape="rect" id="node9" href="$quark__star__utils_8hpp.html#aec8fef5fa1b32ce531d10795c9559abe" title=" " alt="" coords="1845,439,1907,466"/>
-<area shape="rect" id="node11" href="$integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="1665,642,1704,669"/>
-<area shape="rect" id="node12" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="1631,591,1739,618"/>
-<area shape="rect" id="node18" href="$integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="1417,389,1571,415"/>
-<area shape="rect" id="node19" href="$quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="1443,541,1545,567"/>
-<area shape="rect" id="node25" href="$integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="1475,642,1513,669"/>
-<area shape="rect" id="node13" href="$integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1811,642,1941,669"/>
-<area shape="rect" id="node14" href="$integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1806,693,1946,719"/>
-<area shape="rect" id="node15" href="$integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="1799,490,1953,517"/>
-<area shape="rect" id="node16" href="$integrate__core_8hpp.html#abd5004d4469acd8c8bf26b9df3ed8f50" title="Calculate gamma in the piece_spec_phtr_ccs model." alt="" coords="1817,541,1935,567"/>
-<area shape="rect" id="node17" href="$integrate__core_8hpp.html#abae461af630e5af52f7242b4880d86e6" title="Calculate gamma in the phase transition model." alt="" coords="1799,591,1953,618"/>
-<area shape="rect" id="node21" href="$integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="1619,997,1751,1023"/>
-<area shape="rect" id="node23" href="$integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="1659,313,1711,339"/>
-<area shape="rect" id="node24" href="$integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="1659,262,1711,289"/>
-<area shape="rect" id="node27" href="$quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="1639,845,1731,871"/>
-<area shape="rect" id="node28" href="$quark__star__utils_8hpp.html#a8b2dfc87ecc8cc476f9448b184584ab2" title=" " alt="" coords="1827,997,1925,1023"/>
-<area shape="rect" id="node30" href="$integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="1466,135,1522,162"/>
-<area shape="rect" id="node31" href="$integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="1469,186,1519,213"/>
-<area shape="rect" id="node32" href="$integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="1469,237,1519,263"/>
-<area shape="rect" id="node35" href="$param__utils_8hpp.html#a0e5c0924c152182239b53b638717efcc" title=" " alt="" coords="1224,743,1327,770"/>
-<area shape="rect" id="node36" href="$integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="1460,743,1528,770"/>
-<area shape="rect" id="node39" href="$param__utils_8hpp.html#ae0c3cf3b70f141f42bcf48270238ebe7" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="859,669,959,695"/>
-<area shape="rect" id="node41" href="$param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="876,466,943,493"/>
-<area shape="rect" id="node42" href="$non__param__utils_8hpp.html#a04b0dc2a856611178dde6982d8bec900" title=" " alt="" coords="841,567,977,594"/>
-<area shape="rect" id="node40" href="$param__utils_8hpp.html#a2fe9fce9a25e7626896dc000d3ad374a" title=" " alt="" coords="1233,642,1318,669"/>
-<area shape="rect" id="node45" href="$integrate__core_8hpp.html#a55c49ad0b32fc3d7bdcfc1d07c9021cb" title=" " alt="" coords="504,466,601,493"/>
-<area shape="rect" id="node47" href="$optimize__posterior_8hpp.html#ae58efee8e935ee88aea236d91e11bd19" title=" " alt="" coords="699,415,771,442"/>
-<area shape="rect" id="node48" href="$optimize__posterior_8hpp.html#a15d6d8653372c871397464e0f2f3cce6" title=" " alt="" coords="846,415,973,442"/>
-<area shape="rect" id="node50" href="$quark__star__utils_8hpp.html#a34b96d39c4ed4659487ac27799f7ecf1" title=" " alt="" coords="309,946,406,973"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,636,56,663"/>
+<area shape="rect" id="node2" href="$eos__init_8hpp.html#a7b2ab5cd167f87d4a280866fa43be85c" title=" " alt="" coords="1068,5,1167,32"/>
+<area shape="rect" id="node3" href="$integrate__core_8hpp.html#ac44351f385d2bf728eb529d1d0a640c2" title=" " alt="" coords="1072,763,1163,789"/>
+<area shape="rect" id="node4" href="$eos__init_8hpp.html#a1c80e0e32a8e25d237368dfcd635f382" title=" " alt="" coords="860,132,959,159"/>
+<area shape="rect" id="node18" href="$param__eos_8cpp.html#a1d56075a6e615cb22adc8cb7e62a1929" title=" " alt="" coords="104,864,237,891"/>
+<area shape="rect" id="node19" href="$eos__init_8hpp.html#a1764f6f4dbc2fe6080ebb9033544acfa" title=" " alt="" coords="113,915,229,941"/>
+<area shape="rect" id="node20" href="$integrate__core_8hpp.html#a11213979acaf22876fc5c366b30f6823" title="Integrate the whole structure of the star." alt="" coords="1063,712,1171,739"/>
+<area shape="rect" id="node37" href="$param__utils_8hpp.html#a15dd165a72366a31be8a581455aba8d4" title=" " alt="" coords="297,445,417,472"/>
+<area shape="rect" id="node39" href="$param__utils_8hpp.html#acfe1c394a95dbbf2af74a7039baef8de" title=" " alt="" coords="849,712,969,739"/>
+<area shape="rect" id="node40" href="$non__param__utils_8hpp.html#a0242b489eaaa0afb9df3c4f5e81cb8e4" title=" " alt="" coords="676,560,793,587"/>
+<area shape="rect" id="node45" href="$optimize__posterior_8hpp.html#afadba1d9091fad5661f35917b0d699ab" title=" " alt="" coords="123,763,219,789"/>
+<area shape="rect" id="node46" href="$optimize__posterior_8hpp.html#a7c2806d69096968d78c8ec3783616ba2" title=" " alt="" coords="285,724,429,751"/>
+<area shape="rect" id="node48" href="$optimize__posterior_8hpp.html#adb35fbf1985beb38639c4db0562e4c2c" title=" " alt="" coords="477,699,628,725"/>
+<area shape="rect" id="node5" href="$eos__init_8hpp.html#a8ff996bff52113bea7452f533095fb90" title=" " alt="" coords="1065,157,1169,184"/>
+<area shape="rect" id="node14" href="$eos__init_8hpp.html#ab0d22f60c3e9f33d5922fa5e5e908aea" title=" " alt="" coords="1025,209,1209,250"/>
+<area shape="rect" id="node15" href="$eos__init_8hpp.html#a435ea1b8b01b2bc084d7295e440afff3" title=" " alt="" coords="1048,56,1187,83"/>
+<area shape="rect" id="node16" href="$quark__star__utils_8hpp.html#a0c31628b10284967766aab20ececec9e" title=" " alt="" coords="1058,107,1177,133"/>
+<area shape="rect" id="node6" href="$integrate__core_8hpp.html#a86f802d0af08d9982cd9d828e4ee52ae" title=" " alt="" coords="1317,161,1385,188"/>
+<area shape="rect" id="node13" href="$integrate__core_8hpp.html#ae126689d13748236aac83457bf5855df" title=" " alt="" coords="1285,95,1417,137"/>
+<area shape="rect" id="node7" href="$integrate__core_8hpp.html#a1a1838e225377bd7f2e3c713caa541dc" title=" " alt="" coords="1544,136,1596,163"/>
+<area shape="rect" id="node8" href="$integrate__core_8hpp.html#a36f9d85f06e2332267fd04cfd5efbcd7" title=" " alt="" coords="1544,187,1596,213"/>
+<area shape="rect" id="node9" href="$integrate__core_8hpp.html#a1b6052908270e18510683b79741a7b8a" title="Choose a proper function to calculate the adiabatic index." alt="" coords="1516,313,1624,340"/>
+<area shape="rect" id="node10" href="$integrate__core_8hpp.html#a98f7292845a0dda5c9385d3426a09340" title="Calculate gamma in the constant speed of sound model." alt="" coords="1707,364,1837,391"/>
+<area shape="rect" id="node11" href="$integrate__core_8hpp.html#a76e3865c0c7ced67ae2f5393407d47ed" title="Calculate gamma in the gamma piecewise model." alt="" coords="1702,263,1842,289"/>
+<area shape="rect" id="node12" href="$integrate__core_8hpp.html#a1b4de4c4509b5c4c1ce02f535c84fa16" title="Calculate gamma in the pressure piecewise model." alt="" coords="1695,313,1849,340"/>
+<area shape="rect" id="node17" href="$quark__star__utils_8hpp.html#a34b96d39c4ed4659487ac27799f7ecf1" title=" " alt="" coords="1303,44,1400,71"/>
+<area shape="rect" id="node21" href="$quark__star__utils_8hpp.html#ac6fc12ffe5a897dd97b16e2142ee6b48" title=" " alt="" coords="1537,465,1603,492"/>
+<area shape="rect" id="node23" href="$integrate__core_8hpp.html#a9bfd97f8b9b041cdbc4cbf75441ad389" title="Integrate the most central core part of the compact star to avoid singular point." alt="" coords="1305,719,1398,745"/>
+<area shape="rect" id="node28" href="$quark__star__utils_8hpp.html#a270550ca7295802d7a80068ad867aec0" title=" " alt="" coords="1537,820,1603,847"/>
+<area shape="rect" id="node30" href="$integrate__core_8hpp.html#ad5ee2a42f15d72545cc54c4ba0ea182e" title=" " alt="" coords="1297,921,1405,948"/>
+<area shape="rect" id="node34" href="$integrate__core_8hpp.html#a75bc4b8b8be857c5cb21e1ccbc2ab035" title=" " alt="" coords="1257,769,1445,796"/>
+<area shape="rect" id="node35" href="$integrate__core_8hpp.html#a0b7bb81f4629a3a900a765d0d9a6f168" title="Integrated portable function to integrate ODE." alt="" coords="1298,415,1405,441"/>
+<area shape="rect" id="node22" href="$quark__star__utils_8hpp.html#ab35af16c223fe587846751af4d2772fb" title=" " alt="" coords="1726,465,1818,492"/>
+<area shape="rect" id="node24" href="$integrate__core_8hpp.html#a5bd395991f95231deed00b9a52bffecd" title=" " alt="" coords="1753,617,1791,644"/>
+<area shape="rect" id="node25" href="$integrate__core_8hpp.html#a3c6882bb4d37f66684a037145b64abfd" title=" " alt="" coords="1493,668,1647,695"/>
+<area shape="rect" id="node26" href="$quark__star__utils_8hpp.html#a894121d0ec2087fe413b0a7803f2f204" title=" " alt="" coords="1519,567,1621,593"/>
+<area shape="rect" id="node27" href="$integrate__core_8hpp.html#a8ad4cb6876fef3c488b0dc9067bdf035" title=" " alt="" coords="1551,617,1589,644"/>
+<area shape="rect" id="node29" href="$quark__star__utils_8hpp.html#ade62bd9362d57c2f67639557d30784cb" title=" " alt="" coords="1726,820,1818,847"/>
+<area shape="rect" id="node31" href="$integrate__core_8hpp.html#aed2763437383ebd8b78bbc28466fdb9b" title=" " alt="" coords="1542,871,1598,897"/>
+<area shape="rect" id="node32" href="$integrate__core_8hpp.html#a80371cb559ff987c3eb4711da75313f8" title=" " alt="" coords="1545,921,1595,948"/>
+<area shape="rect" id="node33" href="$integrate__core_8hpp.html#ae1dc7b36c9b1f2921e63389b914a4828" title=" " alt="" coords="1545,972,1595,999"/>
+<area shape="rect" id="node36" href="$integrate__core_8hpp.html#a592868baedb54b8f932ec01e852995d4" title=" " alt="" coords="1504,263,1636,289"/>
+<area shape="rect" id="node38" href="$param__utils_8hpp.html#af26186b13728ccc8a8332ba347bbf321" title=" " alt="" coords="1066,427,1169,453"/>
+<area shape="rect" id="node41" href="$param__utils_8hpp.html#ab5160e911d86e6fcfa634708dde4fd07" title="Find non&#45;rotating maximum supported mass of an EoS." alt="" coords="859,560,959,587"/>
+<area shape="rect" id="node43" href="$param__utils_8hpp.html#a868be24c590ade0f629c8d2135ab0229" title="Python interface function for integrating the whole structure of the star." alt="" coords="876,661,943,688"/>
+<area shape="rect" id="node44" href="$non__param__utils_8hpp.html#a04b0dc2a856611178dde6982d8bec900" title=" " alt="" coords="841,611,977,637"/>
+<area shape="rect" id="node42" href="$param__utils_8hpp.html#aacefbca547318af00d28242f0e4ea50c" title=" " alt="" coords="1313,617,1389,644"/>
+<area shape="rect" id="node47" href="$integrate__core_8hpp.html#a55c49ad0b32fc3d7bdcfc1d07c9021cb" title=" " alt="" coords="504,749,601,776"/>
+<area shape="rect" id="node49" href="$optimize__posterior_8hpp.html#ae58efee8e935ee88aea236d91e11bd19" title=" " alt="" coords="699,731,771,757"/>
+<area shape="rect" id="node50" href="$optimize__posterior_8hpp.html#a15d6d8653372c871397464e0f2f3cce6" title=" " alt="" coords="846,763,973,789"/>
 </map>

@@ -11,10 +11,10 @@
     <includes refid="param__utils_8hpp" local="yes">param_utils.hpp</includes>
     <includes refid="non__param__utils_8hpp" local="yes">non_param_utils.hpp</includes>
     <incdepgraph>
-      <node id="25">
+      <node id="26">
         <label>boost/math/interpolators/makima.hpp</label>
       </node>
-      <node id="23">
+      <node id="20">
         <label>gsl/gsl_const_cgs.h</label>
       </node>
       <node id="10">
@@ -26,7 +26,7 @@
       <node id="4">
         <label>string</label>
       </node>
-      <node id="22">
+      <node id="18">
         <label>map</label>
       </node>
       <node id="14">
@@ -35,14 +35,14 @@
       <node id="3">
         <label>fstream</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>non_param_utils.hpp</label>
         <link refid="non__param__utils_8hpp"/>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -51,43 +51,48 @@
       <node id="7">
         <label>pthread.h</label>
       </node>
-      <node id="18">
+      <node id="21">
+        <label>boost/math/interpolators/pchip.hpp</label>
+      </node>
+      <node id="19">
         <label>vector</label>
       </node>
-      <node id="20">
+      <node id="24">
         <label>gsl/gsl_roots.h</label>
       </node>
-      <node id="17">
+      <node id="22">
         <label>quark_star_utils.hpp</label>
         <link refid="quark__star__utils_8hpp"/>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="16">
         <label>array</label>
       </node>
-      <node id="21">
+      <node id="17">
         <label>global_variable_constants.hpp</label>
         <link refid="global__variable__constants_8hpp"/>
-        <childnode refid="22" relation="include">
-        </childnode>
         <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -101,7 +106,9 @@
         <link refid="param__utils_8hpp"/>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -121,13 +128,13 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="13">
         <label>boost/numeric/odeint/integrate/integrate_const.hpp</label>
       </node>
-      <node id="24">
+      <node id="25">
         <label>data.hpp</label>
         <link refid="data_8hpp"/>
       </node>
@@ -156,9 +163,9 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -167,7 +174,7 @@
       <node id="12">
         <label>boost/numeric/odeint/integrate/integrate_adaptive.hpp</label>
       </node>
-      <node id="19">
+      <node id="23">
         <label>gsl/gsl_errno.h</label>
       </node>
     </incdepgraph>

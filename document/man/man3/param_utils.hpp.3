@@ -1,4 +1,4 @@
-.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp" 3 "Mon Dec 7 2020" "my_ns_structure" \" -*- nroff -*-
+.TH "/Users/jiangjinliang/work/try/Spectral_EoS/code/eostool/param_utils.hpp" 3 "Sun Feb 7 2021" "my_ns_structure" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,12 +10,26 @@
 .br
 \fC#include <boost/math/interpolators/makima\&.hpp>\fP
 .br
+\fC#include <cstdlib>\fP
+.br
 
 .SS "Macros"
 
 .in +1c
 .ti -1c
-.RI "#define \fBfail_process\fP()   *h_closest = \-1; *unknown=0; return false;"
+.RI "#define \fBfail_process_find_eos_prop\fP()   for (int i=0; i<6; i++) {\fBeos_props\fP[i] = 0\&.;} return \fBeos_props\fP;"
+.br
+.ti -1c
+.RI "#define \fBfail_process_check_mmax\fP(message)"
+.br
+.ti -1c
+.RI "#define \fBfail_process_check_mmax_gd\fP(message)"
+.br
+.ti -1c
+.RI "#define \fBfail_process_check_mmax_pt_two_branch\fP(message)"
+.br
+.ti -1c
+.RI "#define \fBfail_process_find_global_prop\fP()   *h_closest = \-1; *unknown=0; return false;"
 .br
 .in -1c
 .SS "Functions"
@@ -26,19 +40,29 @@
 .br
 .RI "Python interface function for integrating the whole structure of the star\&. "
 .ti -1c
-.RI "bool \fBcheck_eos\fP (double *hc)"
+.RI "bool \fBcool_eos\fP (double *hc)"
 .br
 .ti -1c
-.RI "bool \fBcheck_mmax\fP (double *hc, double *M_max)"
+.RI "bool \fBcheck_mmax\fP (double *hc, double *M_max, double h_start, bool cp_func_type_less, double jump_size, bool check_ok)"
 .br
 .RI "Find non-rotating maximum supported mass of an EoS\&. "
 .ti -1c
-.RI "void \fBmake_eos_table\fP (double h_start, double h_end, double dh, int precision, char *f_name, const char *unit='cgs')"
+.RI "bool \fBcheck_mmax_pt_two_branch\fP (double *h1, double *h2, double *h3, double *h_max, double *m1, double *m2, double *m3, double *m_max, double rho_tr, double drho)"
+.br
+.ti -1c
+.RI "void \fBmake_eos_table\fP (double h_start, double h_end, double dh, int precision, char *f_name, const char *unit='cgs', int get_type=1)"
+.br
+.ti -1c
+.RI "double \fBinterp_pe_likelihood\fP (double *e_org, double *p_org, int size_org)"
 .br
 .ti -1c
 .RI "bool \fBget_unknowns_from_knowns\fP (double known1, double known2, double *unknown1, double *unknown2, double *h_max, int get_type)"
 .br
-.RI "find nearest known property, return corresponding unknown ones\&. "
+.RI "Find nearest known properties, return corresponding unknown ones\&. "
+.ti -1c
+.RI "double * \fBfind_eos_properties\fP (double known_aim, int find_type)"
+.br
+.RI "Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_type=3)\&. @params get_type must equal to init_interpolation_function_type-1\&. "
 .ti -1c
 .RI "bool \fBfind_closest\fP (double m_aim, double h_i, double h_max, double *h_closest, double *lambda, bool use_user_start_point=false)"
 .br
@@ -47,23 +71,57 @@
 .br
 .RI "Find a global_a with another global_b\&. "
 .ti -1c
-.RI "bool \fBintegrate_eos\fP (double h_start, double h_end, double dh, \fBstate_type\fP *h_tb, \fBstate_type\fP *p_tb, \fBstate_type\fP *e_tb, \fBstate_type\fP *rho_tb, \fBstate_type\fP *gamma_tb, \fBstate_type\fP *v_sq_tb)"
+.RI "bool \fBintegrate_eos\fP (double h_start, double h_end, double dh, \fBstate_type\fP *h_tb, \fBstate_type\fP *p_tb, \fBstate_type\fP *e_tb, \fBstate_type\fP *rho_tb, \fBstate_type\fP *gamma_tb, \fBstate_type\fP *v_sq_tb, int get_type)"
+.br
+.ti -1c
+.RI "double \fBinterp_pe_likelihood_precise\fP (double *e_org, double *p_org, int size_org, double h_start, double h_end, double dh)"
 .br
 .ti -1c
 .RI "void \fBmake_tool_table\fP (double minh, double maxh, double dh)"
 .br
+.ti -1c
+.RI "bool \fBcheck_mmax_gd\fP (double *hc, double *M_max, double h_start, bool cp_func_type_less, double jump_size, bool check_ok)"
+.br
 .in -1c
 .SH "Macro Definition Documentation"
 .PP 
-.SS "#define fail_process()   *h_closest = \-1; *unknown=0; return false;"
+.SS "#define fail_process_check_mmax(message)"
+\fBValue:\fP
+.PP
+.nf
+*hc = -1; *M_max=0\&.; \
+        if (verbose) { \
+            cout<<message<<", with h="<<h<<", h_guard="<<h+h_guard<<", h_check_again="<<h+h_check_again; \
+            cout<<", M="<<M<<", M_guard="<<M_guard<<", M_check_again="<<M_check_again<<endl;\
+        } \
+        return false;
+.fi
+.SS "#define fail_process_check_mmax_gd(message)"
+\fBValue:\fP
+.PP
+.nf
+*hc = -1; *M_max=0\&.; \
+        if (verbose) { \
+            cout<<message<<", with h="<<h<<", h_guard="<<h+h_guard; \
+            cout<<", M="<<M<<", M_guard="<<M_guard<<endl;\
+        } \
+        return false;
+.fi
+.SS "#define fail_process_check_mmax_pt_two_branch(message)"
+\fBValue:\fP
+.PP
+.nf
+*h1 = -1, *h2 = -1, *h3 = -1, *h_max = -1, *m1 = 0\&., *m2 = 0\&., *m3 = 0\&., *m_max=0\&.; \
+        if (verbose) cout<<message<<endl; \
+        return false;
+.fi
+.SS "#define fail_process_find_eos_prop()   for (int i=0; i<6; i++) {\fBeos_props\fP[i] = 0\&.;} return \fBeos_props\fP;"
+
+.SS "#define fail_process_find_global_prop()   *h_closest = \-1; *unknown=0; return false;"
 
 .SH "Function Documentation"
 .PP 
-.SS "bool check_eos (double * hc)"
-
-.PP
-Definition at line 150 of file param_utils\&.hpp\&.
-.SS "bool check_mmax (double * hc, double * M_max)"
+.SS "bool check_mmax (double * hc, double * M_max, double h_start = \fC\fBsuggested_start_point\fP+0\&.08\fP, bool cp_func_type_less = \fCtrue\fP, double jump_size = \fC0\&.1\fP, bool check_ok = \fCtrue\fP)"
 
 .PP
 Find non-rotating maximum supported mass of an EoS\&. The challenge is the 'noise' or none monotonicity property, the solution is:
@@ -86,11 +144,23 @@ A bigger guard to check again, 2\&. Judge whether a step before is larger\&. err
 .PP
 
 .PP
-Definition at line 202 of file param_utils\&.hpp\&.
+Definition at line 293 of file param_utils\&.hpp\&.
+.SS "bool check_mmax_gd (double * hc, double * M_max, double h_start, bool cp_func_type_less, double jump_size, bool check_ok)"
+
+.PP
+Definition at line 372 of file param_utils\&.hpp\&.
+.SS "bool check_mmax_pt_two_branch (double * h1, double * h2, double * h3, double * h_max, double * m1, double * m2, double * m3, double * m_max, double rho_tr, double drho)"
+
+.PP
+Definition at line 445 of file param_utils\&.hpp\&.
+.SS "bool cool_eos (double * hc)"
+
+.PP
+Definition at line 246 of file param_utils\&.hpp\&.
 .SS "bool find_closest (double m_aim, double h_i, double h_max, double * h_closest, double * lambda, bool use_user_start_point = \fCfalse\fP)"
 
 .PP
-Definition at line 264 of file param_utils\&.hpp\&.
+Definition at line 498 of file param_utils\&.hpp\&.
 .SS "bool find_closest_with_maxm_known (double known_aim, double h_i, double h_max, double * h_closest, double * unknown, int get_type, bool use_user_start_point = \fCfalse\fP)"
 
 .PP
@@ -120,7 +190,13 @@ Find a global_a with another global_b\&.
 .PP
 
 .PP
-Definition at line 332 of file param_utils\&.hpp\&.
+Definition at line 566 of file param_utils\&.hpp\&.
+.SS "double * find_eos_properties (double known_aim, int find_type)"
+
+.PP
+Python interface function for finding eos properties from h(get_type=1), rho(get_type=2) or e(get_type=3)\&. @params get_type must equal to init_interpolation_function_type-1\&. 
+.PP
+Definition at line 119 of file param_utils\&.hpp\&.
 .SS "double * get_mrl (double hc)"
 
 .PP
@@ -140,11 +216,11 @@ Use this for python control only, because double* is convenient for python, and 
 .PP
 
 .PP
-Definition at line 37 of file param_utils\&.hpp\&.
+Definition at line 40 of file param_utils\&.hpp\&.
 .SS "bool get_unknowns_from_knowns (double known1, double known2, double * unknown1, double * unknown2, double * h_max, int get_type)"
 
 .PP
-find nearest known property, return corresponding unknown ones\&. 
+Find nearest known properties, return corresponding unknown ones\&. 
 .PP
 \fBParameters\fP
 .RS 4
@@ -168,19 +244,27 @@ find nearest known property, return corresponding unknown ones\&.
 .PP
 
 .PP
-Definition at line 397 of file param_utils\&.hpp\&.
-.SS "bool integrate_eos (double h_start, double h_end, double dh, \fBstate_type\fP * h_tb, \fBstate_type\fP * p_tb, \fBstate_type\fP * e_tb, \fBstate_type\fP * rho_tb, \fBstate_type\fP * gamma_tb, \fBstate_type\fP * v_sq_tb)"
+Definition at line 631 of file param_utils\&.hpp\&.
+.SS "bool integrate_eos (double h_start, double h_end, double dh, \fBstate_type\fP * h_tb, \fBstate_type\fP * p_tb, \fBstate_type\fP * e_tb, \fBstate_type\fP * rho_tb, \fBstate_type\fP * gamma_tb, \fBstate_type\fP * v_sq_tb, int get_type)"
 
 .PP
-Definition at line 51 of file param_utils\&.hpp\&.
-.SS "void make_eos_table (double h_start, double h_end, double dh, int precision, char * f_name, const char * unit = \fC'cgs'\fP)"
+Definition at line 54 of file param_utils\&.hpp\&.
+.SS "double interp_pe_likelihood (double * e_org, double * p_org, int size_org)"
 
 .PP
-Definition at line 107 of file param_utils\&.hpp\&.
+Definition at line 157 of file param_utils\&.hpp\&.
+.SS "double interp_pe_likelihood_precise (double * e_org, double * p_org, int size_org, double h_start, double h_end, double dh)"
+
+.PP
+Definition at line 172 of file param_utils\&.hpp\&.
+.SS "void make_eos_table (double h_start, double h_end, double dh, int precision, char * f_name, const char * unit = \fC'cgs'\fP, int get_type = \fC1\fP)"
+
+.PP
+Definition at line 203 of file param_utils\&.hpp\&.
 .SS "void make_tool_table (double minh, double maxh, double dh)"
 
 .PP
-Definition at line 123 of file param_utils\&.hpp\&.
+Definition at line 219 of file param_utils\&.hpp\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for my_ns_structure from the source code\&.

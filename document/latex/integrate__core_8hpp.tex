@@ -10,8 +10,8 @@
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
 {\ttfamily \#include $<$array$>$}\newline
-{\ttfamily \#include \char`\"{}quark\+\_\+star\+\_\+utils.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}global\+\_\+variable\+\_\+constants.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quark\+\_\+star\+\_\+utils.\+hpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}data.\+hpp\char`\"{}}\newline
 Include dependency graph for integrate\+\_\+core.\+hpp\+:
 \nopagebreak
@@ -46,6 +46,8 @@ typedef controlled\+\_\+runge\+\_\+kutta$<$ \mbox{\hyperlink{integrate__core_8hp
 \item 
 \mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4}{controlled\+\_\+stepper}} (default\+\_\+error\+\_\+checker$<$ double, range\+\_\+algebra, default\+\_\+operations $>$(\mbox{\hyperlink{integrate__core_8hpp_a460492ca5cb862b459c8d89a8a7b22ca}{abs\+\_\+err}}, \mbox{\hyperlink{integrate__core_8hpp_acddbc945f890f2682b685e05defdda61}{rel\+\_\+err}}, \mbox{\hyperlink{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}{a\+\_\+x}}, \mbox{\hyperlink{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}{a\+\_\+dxdt}}))
 \item 
+\mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_ae126689d13748236aac83457bf5855df}{controlled\+\_\+stepper\+\_\+cal\+\_\+eos}} (default\+\_\+error\+\_\+checker$<$ double, range\+\_\+algebra, default\+\_\+operations $>$(1e-\/15, 1e-\/9, \mbox{\hyperlink{integrate__core_8hpp_a3b1660adcdf41418db65108cdb2e1b3f}{a\+\_\+x}}, \mbox{\hyperlink{integrate__core_8hpp_ad6fa022e04ac564718690673338017c0}{a\+\_\+dxdt}}))
+\item 
 \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a0b7bb81f4629a3a900a765d0d9a6f168}{integrate\+\_\+func}} (\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} x0, void func(const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&, double), double start\+\_\+t, double end\+\_\+t, bool reverse)
 \begin{DoxyCompactList}\small\item\em Integrated portable function to integrate O\+DE. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \mbox{\hyperlink{integrate__core_8hpp_a11213979acaf22876fc5c366b30f6823}{int\+\_\+whole\+\_\+star}} (double hc)
@@ -61,7 +63,7 @@ double \mbox{\hyperlink{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}{
 double \mbox{\hyperlink{integrate__core_8hpp_a3c6882bb4d37f66684a037145b64abfd}{gammah\+\_\+interpolation}} (double p, double e)
 \item 
 double \mbox{\hyperlink{integrate__core_8hpp_abd5004d4469acd8c8bf26b9df3ed8f50}{gammaeh\+\_\+pspc}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
-\begin{DoxyCompactList}\small\item\em Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+ccs model. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+css model. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{integrate__core_8hpp_a784a9dfa05351509561ae469693951fa}{gammah\+\_\+spectral}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a, double h\+\_\+init=\mbox{\hyperlink{global__variable__constants_8hpp_a87bbbc70d878aee06e41cfacf614dfb1}{h\+\_\+0}})
 \begin{DoxyCompactList}\small\item\em Calculate gamma in the spectral expansion model. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{integrate__core_8hpp_a76e3865c0c7ced67ae2f5393407d47ed}{gammae\+\_\+piecewise}} (double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
@@ -74,8 +76,6 @@ double \mbox{\hyperlink{integrate__core_8hpp_a98f7292845a0dda5c9385d3426a09340}{
 \begin{DoxyCompactList}\small\item\em Calculate gamma in the constant speed of sound model. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}{gamma\+\_\+which}} (double h, double p, double e, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} a)
 \begin{DoxyCompactList}\small\item\em Choose a proper function to calculate the adiabatic index. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}{find\+\_\+hp\+\_\+at\+\_\+e}} (const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&x, \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&dxdt, double e)
-\begin{DoxyCompactList}\small\item\em Calculate enthalpy and pressure at given energy density. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{integrate__core_8hpp_a36f9d85f06e2332267fd04cfd5efbcd7}{dpdh}} (double p, double e)
 \item 
 double \mbox{\hyperlink{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}{dedh}} (double p, double e, double Gamma)
@@ -141,7 +141,7 @@ Definition at line 58 of file integrate\+\_\+core.\+hpp.
 
 
 
-Definition at line 195 of file integrate\+\_\+core.\+hpp.
+Definition at line 188 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -167,7 +167,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 71 of file integrate\+\_\+core.\+hpp.
+Definition at line 72 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -191,6 +191,20 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{integrate__core_8hpp_a592868baedb54b8f932ec01e852995d4_icgraph}
 \end{center}
 \end{figure}
+\mbox{\Hypertarget{integrate__core_8hpp_ae126689d13748236aac83457bf5855df}\label{integrate__core_8hpp_ae126689d13748236aac83457bf5855df}} 
+\index{integrate\_core.hpp@{integrate\_core.hpp}!controlled\_stepper\_cal\_eos@{controlled\_stepper\_cal\_eos}}
+\index{controlled\_stepper\_cal\_eos@{controlled\_stepper\_cal\_eos}!integrate\_core.hpp@{integrate\_core.hpp}}
+\doxysubsubsection{\texorpdfstring{controlled\_stepper\_cal\_eos()}{controlled\_stepper\_cal\_eos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{integrate__core_8hpp_a316792556e400adc33b04b149de69507}{controlled\+\_\+stepper\+\_\+type}} controlled\+\_\+stepper\+\_\+cal\+\_\+eos (\begin{DoxyParamCaption}\item[{default\+\_\+error\+\_\+checker$<$ double, range\+\_\+algebra, default\+\_\+operations $>$}]{1e-\/15, 1e-\/9, a\+\_\+x, a\+\_\+dxdt }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integrate__core_8hpp_ae126689d13748236aac83457bf5855df_icgraph}
+\end{center}
+\end{figure}
 \mbox{\Hypertarget{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}\label{integrate__core_8hpp_a1a1838e225377bd7f2e3c713caa541dc}} 
 \index{integrate\_core.hpp@{integrate\_core.hpp}!dedh@{dedh}}
 \index{dedh@{dedh}!integrate\_core.hpp@{integrate\_core.hpp}}
@@ -199,7 +213,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 174 of file integrate\+\_\+core.\+hpp.
+Definition at line 167 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -217,7 +231,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 176 of file integrate\+\_\+core.\+hpp.
+Definition at line 169 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -235,7 +249,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 172 of file integrate\+\_\+core.\+hpp.
+Definition at line 165 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -253,7 +267,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 178 of file integrate\+\_\+core.\+hpp.
+Definition at line 171 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -271,7 +285,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 180 of file integrate\+\_\+core.\+hpp.
+Definition at line 173 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -289,7 +303,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 76 of file integrate\+\_\+core.\+hpp.
+Definition at line 77 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -297,28 +311,6 @@ Here is the caller graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{integrate__core_8hpp_a5bd395991f95231deed00b9a52bffecd_icgraph}
-\end{center}
-\end{figure}
-\mbox{\Hypertarget{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}\label{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b}} 
-\index{integrate\_core.hpp@{integrate\_core.hpp}!find\_hp\_at\_e@{find\_hp\_at\_e}}
-\index{find\_hp\_at\_e@{find\_hp\_at\_e}!integrate\_core.hpp@{integrate\_core.hpp}}
-\doxysubsubsection{\texorpdfstring{find\_hp\_at\_e()}{find\_hp\_at\_e()}}
-{\footnotesize\ttfamily void find\+\_\+hp\+\_\+at\+\_\+e (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{x,  }\item[{\mbox{\hyperlink{global__variable__constants_8hpp_a6cafdeced917cafef4bfae2ebf42f082}{state\+\_\+type}} \&}]{dxdt,  }\item[{double}]{e }\end{DoxyParamCaption})}
-
-
-
-Calculate enthalpy and pressure at given energy density. 
-
-
-
-Definition at line 159 of file integrate\+\_\+core.\+hpp.
-
-Here is the call graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{integrate__core_8hpp_a195f250cebaa13e620a80a222972c07b_cgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}\label{integrate__core_8hpp_a1b6052908270e18510683b79741a7b8a}} 
@@ -344,7 +336,7 @@ Choose a proper function to calculate the adiabatic index.
 \end{DoxyParams}
 
 
-Definition at line 148 of file integrate\+\_\+core.\+hpp.
+Definition at line 149 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -373,11 +365,11 @@ Here is the caller graph for this function\+:
 Calculate gamma in the constant speed of sound model. 
 
 \begin{DoxyAttention}{Attention}
-Define v$^\wedge$2=dp/de, and p=ke$^\wedge$\{gamma\}. 
+Define v$^\wedge$2=dp/drho, and p=K$\ast$rho$^\wedge$\{gamma\}. 
 \end{DoxyAttention}
 
 
-Definition at line 138 of file integrate\+\_\+core.\+hpp.
+Definition at line 139 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -399,7 +391,7 @@ Calculate gamma in the gamma piecewise model.
 
 
 
-Definition at line 112 of file integrate\+\_\+core.\+hpp.
+Definition at line 111 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -439,11 +431,11 @@ Here is the caller graph for this function\+:
 
 
 
-Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+ccs model. 
+Calculate gamma in the piece\+\_\+spec\+\_\+phtr\+\_\+css model. 
 
 
 
-Definition at line 87 of file integrate\+\_\+core.\+hpp.
+Definition at line 88 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -461,7 +453,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 84 of file integrate\+\_\+core.\+hpp.
+Definition at line 85 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -483,7 +475,7 @@ Calculate gamma in the phase transition model.
 
 
 
-Definition at line 127 of file integrate\+\_\+core.\+hpp.
+Definition at line 128 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -505,7 +497,7 @@ Calculate gamma in the spectral expansion model.
 
 
 
-Definition at line 103 of file integrate\+\_\+core.\+hpp.
+Definition at line 102 of file integrate\+\_\+core.\+hpp.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -527,7 +519,7 @@ Integrate the most central core part of the compact star to avoid singular point
 
 
 
-Definition at line 274 of file integrate\+\_\+core.\+hpp.
+Definition at line 265 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -553,7 +545,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 202 of file integrate\+\_\+core.\+hpp.
+Definition at line 196 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -579,7 +571,7 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 212 of file integrate\+\_\+core.\+hpp.
+Definition at line 204 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -617,7 +609,7 @@ Radius r in this function should multiply half Schwarzschild radius of the sun.
 \end{DoxyParams}
 
 
-Definition at line 307 of file integrate\+\_\+core.\+hpp.
+Definition at line 297 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -647,7 +639,7 @@ Integrated portable function to integrate O\+DE.
 
 
 
-Definition at line 242 of file integrate\+\_\+core.\+hpp.
+Definition at line 233 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -673,9 +665,10 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 74 of file integrate\+\_\+core.\+hpp.
+Definition at line 75 of file integrate\+\_\+core.\+hpp.
 
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -690,7 +683,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 
-Definition at line 230 of file integrate\+\_\+core.\+hpp.
+Definition at line 221 of file integrate\+\_\+core.\+hpp.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -698,14 +691,6 @@ Here is the call graph for this function\+:
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0_cgraph}
-\end{center}
-\end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{integrate__core_8hpp_a7d14308d810a0df831ad2eda66249fe0_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}\label{integrate__core_8hpp_a8ad4cb6876fef3c488b0dc9067bdf035}} 
@@ -716,9 +701,10 @@ Here is the caller graph for this function\+:
 
 
 
-Definition at line 82 of file integrate\+\_\+core.\+hpp.
+Definition at line 83 of file integrate\+\_\+core.\+hpp.
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
